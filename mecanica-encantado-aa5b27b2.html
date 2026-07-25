@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mecânica Encantado | Oficina em Piedade, Rio de Janeiro — +30 Anos de Confiança</title>
+<meta name="description" content="Auto Mecânica Encantado da Piedade: mecânica, auto-elétrica, lanternagem e pintura para carros nacionais e importados. +30 anos, 1.500m² em Piedade/RJ. Faça seu orçamento pelo WhatsApp.">
+<meta name="keywords" content="oficina mecânica rio de janeiro, mecânica piedade, auto elétrica, lanternagem e pintura, oficina carros importados rj, mecânica encantado">
+<meta name="author" content="Auto Mecânica Encantado da Piedade">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d1117">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Mecânica Encantado — Oficina de Confiança há +30 Anos em Piedade/RJ">
+<meta property="og:description" content="Mecânica, auto-elétrica, lanternagem e pintura para carros nacionais e importados. 1.500m² de estrutura em Piedade, Rio de Janeiro.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Auto Mecânica Encantado da Piedade",
+  "image": "https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93",
+  "description": "Oficina de mecânica, auto-elétrica, lanternagem e pintura para carros nacionais e importados, com mais de 30 anos de atuação e 1.500m² de estrutura.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Amorim, 29 - Piedade",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "20740-360",
+    "addressCountry": "BR"
+  },
+  "telephone": "+552121468323",
+  "email": "mec@mecanicaencantado.com.br",
+  "foundingDate": "1995-03-24",
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-13:00"
+}
+</script>
+<style>
+  :root{
+    --bg:#0d1117;
+    --bg-2:#131a24;
+    --surface:#182130;
+    --line:rgba(255,255,255,.08);
+    --txt:#eef2ف7;
+    --txt:#eef2f7;
+    --muted:#9aa7b8;
+    --accent:#ff5722;
+    --accent-2:#ffa726;
+    --accent-soft:rgba(255,87,34,.12);
+    --radius:18px;
+    --shadow:0 24px 60px -20px rgba(0,0,0,.6);
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--txt);
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.brand{font-family:'Sora',sans-serif;line-height:1.1;letter-spacing:-.02em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  section{padding:110px 22px;position:relative}
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-2);margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+  .section-title{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800;margin-bottom:18px}
+  .section-sub{color:var(--muted);font-size:1.05rem;max-width:620px}
+  .grad{background:linear-gradient(100deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:15px 28px;border-radius:100px;font-weight:700;font-size:.98rem;
+    cursor:pointer;border:none;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;
+    font-family:'Sora',sans-serif;
+  }
+  .btn-primary{background:linear-gradient(100deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 12px 30px -8px rgba(255,87,34,.6)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -8px rgba(255,87,34,.75)}
+  .btn-ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid var(--line)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    padding:18px 22px;transition:background .3s ease,padding .3s ease,box-shadow .3s ease;
+  }
+  header.scrolled{background:rgba(13,17,23,.85);backdrop-filter:blur(14px);padding:12px 22px;box-shadow:0 8px 30px -12px rgba(0,0,0,.7)}
+  .nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.15rem}
+  .brand .mark{
+    width:42px;height:42px;border-radius:12px;flex:none;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:grid;place-items:center;font-size:1.3rem;box-shadow:0 8px 20px -6px rgba(255,87,34,.6);
+  }
+  .brand small{display:block;font-size:.68rem;color:var(--muted);font-weight:500;letter-spacing:.06em;font-family:'Inter'}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-size:.95rem;font-weight:500;color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{display:inline-flex}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+  .burger span{width:26px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+
+  /* Hero */
+  .hero{
+    min-height:100vh;display:flex;align-items:center;padding-top:120px;
+    background:
+      linear-gradient(180deg,rgba(13,17,23,.72),rgba(13,17,23,.92) 70%,var(--bg)),
+      url('https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+  }
+  .hero-inner{max-width:820px}
+  .badge-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;
+    padding:8px 16px;border-radius:100px;background:rgba(255,255,255,.07);border:1px solid var(--line);color:#dfe6ef;
+  }
+  .pill b{color:var(--accent-2)}
+  .hero h1{font-size:clamp(2.4rem,6.2vw,4.4rem);font-weight:800;margin-bottom:22px}
+  .hero p{font-size:clamp(1.05rem,2vw,1.28rem);color:#d5dde7;max-width:600px;margin-bottom:36px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:44px}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:38px}
+  .stat b{display:block;font-family:'Sora';font-size:2rem;font-weight:800}
+  .stat span{color:var(--muted);font-size:.9rem}
+
+  /* Sobre */
+  .about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+  .about-img{position:relative}
+  .about-img img{border-radius:var(--radius);box-shadow:var(--shadow)}
+  .about-img .float-card{
+    position:absolute;bottom:-28px;left:-28px;background:var(--surface);border:1px solid var(--line);
+    padding:20px 24px;border-radius:16px;box-shadow:var(--shadow);display:flex;align-items:center;gap:16px;
+  }
+  .about-img .float-card .n{font-family:'Sora';font-size:2rem;font-weight:800;color:var(--accent-2)}
+  .about-img .float-card .t{font-size:.85rem;color:var(--muted);max-width:120px}
+  .about-list{list-style:none;margin-top:26px;display:grid;gap:14px}
+  .about-list li{display:flex;gap:12px;align-items:flex-start;color:#cdd6e1}
+  .about-list .ic{color:var(--accent);flex:none;font-weight:800;margin-top:2px}
+
+  /* Serviços */
+  .services{background:var(--bg-2)}
+  .head-flex{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:52px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:34px 28px;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+    position:relative;overflow:hidden;
+  }
+  .card::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,var(--accent-soft),transparent 55%);opacity:0;transition:opacity .35s}
+  .card:hover{transform:translateY(-8px);border-color:rgba(255,87,34,.5);box-shadow:var(--shadow)}
+  .card:hover::after{opacity:1}
+  .card .ico{
+    width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:20px;
+    background:var(--accent-soft);border:1px solid rgba(255,87,34,.3);position:relative;z-index:1;
+  }
+  .card h3{font-size:1.25rem;margin-bottom:10px;position:relative;z-index:1}
+  .card p{color:var(--muted);font-size:.96rem;position:relative;z-index:1}
+
+  /* Diferenciais */
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px;margin-top:52px}
+  .feat{padding:30px 26px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg,var(--surface),transparent)}
+  .feat .big{font-family:'Sora';font-size:2.6rem;font-weight:800;color:transparent;background:linear-gradient(100deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;margin-bottom:6px}
+  .feat h3{font-size:1.1rem;margin-bottom:8px}
+  .feat p{color:var(--muted);font-size:.92rem}
+
+  /* Depoimentos */
+  .testi{background:var(--bg-2)}
+  .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:20px}
+  .quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;position:relative}
+  .quote .stars{color:var(--accent-2);letter-spacing:3px;margin-bottom:16px;font-size:1.05rem}
+  .quote p{font-size:1rem;color:#dbe3ec;margin-bottom:22px;font-style:italic}
+  .quote .who{display:flex;align-items:center;gap:14px}
+  .quote .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:800;font-family:'Sora';color:#fff;flex:none}
+  .quote .who b{display:block;font-size:.95rem}
+  .quote .who span{font-size:.82rem;color:var(--muted)}
+  .rec-banner{
+    margin-top:44px;background:var(--accent-soft);border:1px solid rgba(255,87,34,.3);border-radius:var(--radius);
+    padding:26px 30px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;text-align:center;
+  }
+  .rec-banner .pct{font-family:'Sora';font-size:2.6rem;font-weight:800;color:var(--accent-2)}
+  .rec-banner p{color:#e6ecf3}
+
+  /* Contato */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:stretch}
+  .contact-info{display:grid;gap:18px;align-content:start}
+  .info-row{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);padding:20px 22px;border-radius:14px;transition:border-color .3s}
+  .info-row:hover{border-color:rgba(255,87,34,.4)}
+  .info-row .ic{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.3rem;flex:none}
+  .info-row b{display:block;font-family:'Sora';font-size:1rem;margin-bottom:3px}
+  .info-row span,.info-row a{color:var(--muted);font-size:.95rem}
+  .info-row a:hover{color:var(--accent-2)}
+  .map-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:420px;display:flex;flex-direction:column}
+  .map-card iframe{width:100%;flex:1;border:0;filter:grayscale(.3) contrast(1.05)}
+  .cta-strip{
+    margin-top:70px;text-align:center;background:linear-gradient(120deg,var(--accent),var(--accent-2));
+    border-radius:26px;padding:56px 30px;color:#fff;position:relative;overflow:hidden;
+  }
+  .cta-strip h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:14px}
+  .cta-strip p{max-width:540px;margin:0 auto 30px;font-size:1.08rem;opacity:.95}
+  .cta-strip .btn-white{background:#fff;color:#1a1000;box-shadow:0 14px 30px -8px rgba(0,0,0,.4)}
+  .cta-strip .btn-white:hover{transform:translateY(-3px)}
+
+  /* Footer */
+  footer{background:#090c11;padding:70px 22px 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;max-width:var(--maxw);margin:0 auto}
+  .foot-grid p{color:var(--muted);font-size:.94rem;margin-top:16px;max-width:320px}
+  .foot-col h4{font-family:'Sora';font-size:1rem;margin-bottom:16px}
+  .foot-col a,.foot-col span{display:block;color:var(--muted);font-size:.92rem;margin-bottom:10px;transition:color .2s}
+  .foot-col a:hover{color:var(--accent-2)}
+  .socials{display:flex;gap:12px;margin-top:18px}
+  .socials a{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);display:grid;place-items:center;transition:.25s}
+  .socials a:hover{background:var(--accent);transform:translateY(-3px)}
+  .foot-bottom{max-width:var(--maxw);margin:40px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}
+  .foot-bottom .rm{color:var(--accent-2);font-weight:600}
+
+  /* Float WhatsApp */
+  .wa-float{
+    position:fixed;bottom:26px;right:26px;z-index:80;
+    display:flex;align-items:center;gap:12px;background:#25D366;color:#fff;
+    padding:14px 22px 14px 16px;border-radius:100px;font-weight:700;font-family:'Sora';
+    box-shadow:0 14px 34px -8px rgba(37,211,102,.6);transition:transform .25s,box-shadow .25s;
+  }
+  .wa-float:hover{transform:scale(1.06)}
+  .wa-float svg{width:26px;height:26px;flex:none}
+  .wa-float .lbl{font-size:.95rem}
+  .wa-pulse{position:absolute;inset:0;border-radius:100px;box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(38px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
+
+  /* Responsive */
+  @media(max-width:900px){
+    .about-grid,.contact-grid,.foot-grid{grid-template-columns:1fr}
+    .about-img{order:-1}
+    .about-img .float-card{left:0;bottom:-20px}
+    .nav-links{
+      position:fixed;top:0;right:0;height:100vh;width:min(80vw,320px);flex-direction:column;justify-content:center;
+      background:rgba(13,17,23,.97);backdrop-filter:blur(14px);transform:translateX(100%);transition:transform .35s ease;gap:26px;padding:40px;
+    }
+    .nav-links.open{transform:none}
+    .nav-links .nav-cta{display:inline-flex}
+    .burger{display:flex;z-index:70}
+    .burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .burger.x span:nth-child(2){opacity:0}
+    .burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .hero{background-attachment:scroll}
+  }
+  @media(max-width:560px){
+    section{padding:80px 20px}
+    .hero-stats{gap:24px}
+    .wa-float .lbl{display:none}
+    .wa-float{padding:16px}
+    .cta-strip{padding:44px 22px}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <nav class="nav wrap">
+    <a href="#top" class="brand">
+      <span class="mark">🔧</span>
+      <span>Mecânica Encantado<small>Piedade · Rio de Janeiro</small></span>
+    </a>
+    <div class="nav-links" id="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-primary nav-cta" href="https://wa.me/5521970344816?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="badge-row reveal">
+      <span class="pill">⭐ <b>+30 anos</b> em Piedade</span>
+      <span class="pill">🏭 <b>1.500m²</b> de estrutura</span>
+      <span class="pill">🚗 Nacionais &amp; Importados</span>
+    </div>
+    <h1 class="reveal d1">Seu carro em mãos que <span class="grad">entendem do assunto</span> há mais de 30 anos.</h1>
+    <p class="reveal d2">Mecânica, auto-elétrica, lanternagem e pintura com diagnóstico honesto e serviço de confiança. Uma das oficinas mais tradicionais do Rio de Janeiro — agora com o atendimento ágil que você merece.</p>
+    <div class="hero-actions reveal d3">
+      <a class="btn btn-primary" href="https://wa.me/5521970344816?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20servi%C3%A7o." target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="hero-stats reveal d4">
+      <div class="stat"><b>1995</b><span>Fundada com tradição</span></div>
+      <div class="stat"><b>1.500m²</b><span>Oficina completa</span></div>
+      <div class="stat"><b>84%</b><span>Clientes recomendam</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Quem somos</span>
+      <h2 class="section-title">Tradição de Piedade que atravessou gerações</h2>
+      <p class="section-sub">Desde 24 de março de 1995, a <strong>Auto Mecânica Encantado da Piedade</strong> cuida dos carros das famílias cariocas com a mesma dedicação de sempre. Em mais de três décadas, construímos uma reputação sólida sobre uma base simples: transparência, serviço bem feito e respeito com quem confia no nosso trabalho.</p>
+      <ul class="about-list">
+        <li><span class="ic">✔</span> Estrutura completa com mais de <strong>1.500m²</strong> para mecânica, funilaria e pintura.</li>
+        <li><span class="ic">✔</span> Equipe experiente em veículos <strong>nacionais e importados</strong>.</li>
+        <li><span class="ic">✔</span> Diagnóstico claro e orçamento sem surpresas antes de qualquer serviço.</li>
+        <li><span class="ic">✔</span> Localização de fácil acesso em <strong>Piedade, Rio de Janeiro</strong>.</li>
+      </ul>
+    </div>
+    <div class="about-img reveal d2">
+      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=80" alt="Mecânico experiente trabalhando em motor de veículo na oficina">
+      <div class="float-card">
+        <span class="n">30+</span>
+        <span class="t">anos cuidando dos carros do Rio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="services">
+  <div class="wrap">
+    <div class="head-flex">
+      <div class="reveal">
+        <span class="eyebrow">O que fazemos</span>
+        <h2 class="section-title">Tudo o que seu carro precisa, num só lugar</h2>
+      </div>
+      <p class="section-sub reveal d1">Da revisão preventiva ao reparo de colisão. Serviço completo com equipamentos adequados e mão de obra especializada.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal d1">
+        <div class="ico">⚙️</div>
+        <h3>Mecânica Geral</h3>
+        <p>Revisões, motor, suspensão, freios, embreagem e troca de óleo. Manutenção preventiva e corretiva para seu carro rodar seguro.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico">🔌</div>
+        <h3>Auto-Elétrica</h3>
+        <p>Diagnóstico eletrônico, injeção, bateria, alternador, iluminação e parte elétrica em geral. Identificamos a falha com precisão.</p>
+      </div>
+      <div class="card reveal d3">
+        <div class="ico">🔨</div>
+        <h3>Lanternagem / Funilaria</h3>
+        <p>Reparo de amassados, estruturas e recuperação pós-colisão devolvendo a forma original do seu veículo com acabamento de qualidade.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="ico">🎨</div>
+        <h3>Pintura Automotiva</h3>
+        <p>Pintura parcial ou completa com combinação de cor precisa e acabamento profissional. Seu carro com aparência de novo.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico">🌎</div>
+        <h3>Carros Importados</h3>
+        <p>Atendimento especializado para veículos importados, respeitando as particularidades de cada marca e modelo.</p>
+      </div>
+      <div class="card reveal d3">
+        <div class="ico">🛡️</div>
+        <h3>Revisão Preventiva</h3>
+        <p>Check-up completo antes de viagens e no dia a dia. Evite quebras inesperadas e economize com manutenção em dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Por que a Encantado</span>
+      <h2 class="section-title">Mais de 30 anos não se constroem por acaso</h2>
+      <p class="section-sub">A confiança de gerações de clientes é o nosso maior diferencial. Veja o que faz da Mecânica Encantado a escolha certa para o seu veículo.</p>
+    </div>
+    <div class="feats">
+      <div class="feat reveal d1">
+        <div class="big">1995</div>
+        <h3>Tradição comprovada</h3>
+        <p>Oficina consolidada em Piedade, com histórico e reputação construídos ao longo de mais de três décadas.</p>
+      </div>
+      <div class="feat reveal d2">
+        <div class="big">1.500m²</div>
+        <h3>Estrutura completa</h3>
+        <p>Amplo espaço para mecânica, funilaria e pintura, com capacidade para atender vários veículos com organização.</p>
+      </div>
+      <div class="feat reveal d3">
+        <div class="big">100%</div>
+        <h3>Diagnóstico honesto</h3>
+        <p>Você sabe exatamente o que será feito e quanto vai custar. Nada de serviço desnecessário.</p>
+      </div>
+      <div class="feat reveal d4">
+        <div class="big">A→Z</div>
+        <h3>Serviço integrado</h3>
+        <p>Da parte mecânica ao acabamento de pintura, tudo resolvido na mesma oficina, com agilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="testi">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Quem confia, recomenda</span>
+      <h2 class="section-title">A voz de quem já é cliente</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="quote reveal d1">
+        <div class="stars">★★★★★</div>
+        <p>"Levo meu carro na Encantado há anos. Serviço sério, preço justo e sempre explicam tudo direitinho antes de mexer. Confiança total."</p>
+        <div class="who"><span class="av">C</span><div><b>Carlos Mendes</b><span>Cliente há 8 anos · Piedade</span></div></div>
+      </div>
+      <div class="quote reveal d2">
+        <div class="stars">★★★★★</div>
+        <p>"Bati o carro e fiquei com receio, mas a lanternagem e a pintura ficaram impecáveis. Ninguém acredita que o carro sofreu colisão."</p>
+        <div class="who"><span class="av">R</span><div><b>Renata Souza</b><span>Cliente · Zona Norte / RJ</span></div></div>
+      </div>
+      <div class="quote reveal d3">
+        <div class="stars">★★★★★</div>
+        <p>"Oficina de confiança de verdade. Resolveram um problema elétrico que ninguém achava. Recomendo de olhos fechados."</p>
+        <div class="who"><span class="av">A</span><div><b>André Lima</b><span>Cliente · Cascadura</span></div></div>
+      </div>
+    </div>
+    <div class="rec-banner reveal">
+      <span class="pct">84%</span>
+      <p><strong>dos clientes recomendam a Mecânica Encantado</strong> nas avaliações públicas. Uma reputação construída com trabalho honesto ao longo de mais de 30 anos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2 class="section-title">Traga seu carro para quem entende</h2>
+      <p class="section-sub" style="margin-bottom:44px">Estamos em Piedade, prontos para atender. Chame no WhatsApp, ligue ou visite a oficina — o orçamento é sem compromisso.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal d1">
+        <a class="info-row" href="https://wa.me/5521970344816?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <span class="ic">💬</span>
+          <div><b>WhatsApp</b><span>(21) 97034-4816 · resposta rápida</span></div>
+        </a>
+        <a class="info-row" href="tel:+552121468323">
+          <span class="ic">📞</span>
+          <div><b>Telefone</b><span>(21) 2146-8323 · 2143-6154 · 2143-6155</span></div>
+        </a>
+        <a class="info-row" href="mailto:mec@mecanicaencantado.com.br">
+          <span class="ic">✉️</span>
+          <div><b>E-mail</b><span>mec@mecanicaencantado.com.br</span></div>
+        </a>
+        <a class="info-row" href="https://maps.google.com/?q=Rua+Amorim,+29+-+Piedade,+Rio+de+Janeiro+-+RJ,+20740-360" target="_blank" rel="noopener">
+          <span class="ic">📍</span>
+          <div><b>Endereço</b><span>Rua Amorim, 29 - Piedade, Rio de Janeiro - RJ, 20740-360</span></div>
+        </a>
+        <div class="info-row">
+          <span class="ic">🕒</span>
+          <div><b>Horário de atendimento</b><span>Seg a Sex: 8h às 18h · Sáb: 8h às 13h</span></div>
+        </div>
+      </div>
+      <div class="map-card reveal d2">
+        <iframe title="Localização Mecânica Encantado" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua%20Amorim,%2029%20-%20Piedade,%20Rio%20de%20Janeiro%20-%20RJ,%2020740-360&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="cta-strip reveal">
+      <h2>Peça seu orçamento agora mesmo</h2>
+      <p>Sem compromisso e sem enrolação. Fale com quem cuida dos carros do Rio há mais de 30 anos.</p>
+      <a class="btn btn-white" href="https://wa.me/5521970344816?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20sem%20compromisso." target="_blank" rel="noopener">💬 Chamar no WhatsApp agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a href="#top" class="brand"><span class="mark">🔧</span><span>Mecânica Encantado<small>Auto Mecânica Encantado da Piedade</small></span></a>
+      <p>Oficina de mecânica, auto-elétrica, lanternagem e pintura para carros nacionais e importados. Tradição e confiança em Piedade, Rio de Janeiro, desde 1995.</p>
+      <div class="socials">
+        <a href="https://facebook.com/MecanicaEncantado" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://wa.me/5521970344816" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+        <a href="mailto:mec@mecanicaencantado.com.br" aria-label="E-mail">✉</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Serviços</h4>
+      <a href="#servicos">Mecânica Geral</a>
+      <a href="#servicos">Auto-Elétrica</a>
+      <a href="#servicos">Lanternagem &amp; Funilaria</a>
+      <a href="#servicos">Pintura Automotiva</a>
+      <a href="#servicos">Carros Importados</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <a href="tel:+552121468323">(21) 2146-8323</a>
+      <a href="https://wa.me/5521970344816" target="_blank" rel="noopener">WhatsApp: (21) 97034-4816</a>
+      <a href="mailto:mec@mecanicaencantado.com.br">mec@mecanicaencantado.com.br</a>
+      <span>Rua Amorim, 29 - Piedade</span>
+      <span>Rio de Janeiro - RJ, 20740-360</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Auto Mecânica Encantado da Piedade · CNPJ 00.538.936/0001-70 · Todos os direitos reservados.</span>
+    <span>Site desenvolvido por <span class="rm">RM Digital Solutions</span></span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="wa-float" href="https://wa.me/5521970344816?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Mec%C3%A2nica%20Encantado%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <span class="wa-pulse"></span>
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.7.9 3.7 1.4 5.8 1.4h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.3.8.8-4.2-.3-.4c-1-1.6-1.5-3.4-1.5-5.4C5.2 9.7 10 5 16 5s10.8 4.8 10.8 10.8S22 24.8 16 24.8zm5.9-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  <span class="lbl">Fale conosco</span>
+</a>
+
+<script>
+  // Header scroll
+  const header=document.getElementById('header');
+  window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>40));
+
+  // Mobile menu
+  const burger=document.getElementById('burger'),nav=document.getElementById('navlinks');
+  burger.addEventListener('click',()=>{nav.classList.toggle('open');burger.classList.toggle('x')});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.classList.remove('x')}));
+
+  // Scroll reveal
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
