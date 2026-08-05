@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barber House · Barbearia em Sepetiba, Rio de Janeiro | Corte, Barba e Cuidados</title>
+<meta name="description" content="Barber House — Barbearia do Santista, em Sepetiba, Zona Oeste do Rio. Corte clássico e moderno, barba e tratamentos de pele e cabelo com Wagner Lúcio Vicente. Agende seu horário pelo WhatsApp: (21) 96683-6181.">
+<meta name="theme-color" content="#100D0B">
+<meta name="author" content="Barber House — Barbearia do Santista">
+<link rel="canonical" href="https://barberhouse-sepetiba.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Barber House — Barbearia do Santista">
+<meta property="og:title" content="Barber House · Barbearia em Sepetiba, Rio de Janeiro">
+<meta property="og:description" content="Corte clássico e moderno, barba e cuidados de pele e cabelo em Sepetiba. Hora marcada direto no WhatsApp.">
+<meta property="og:url" content="https://barberhouse-sepetiba.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta property="og:image:alt" content="Cliente sendo atendido na cadeira de uma barbearia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barber House · Barbearia em Sepetiba, Rio de Janeiro">
+<meta name="twitter:description" content="Corte clássico e moderno, barba e cuidados de pele e cabelo em Sepetiba. Hora marcada direto no WhatsApp.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&h=630&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Sora:wght@200..700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#100D0B;
+  --coal:#181310;
+  --slate:#221B17;
+  --pine:#16332C;
+  --bone:#F4EEE5;
+  --bone-2:#EAE1D4;
+  --sand:#C9BDAC;
+  --mute:#8C8177;
+  --copper:#C2703A;
+  --copper-lt:#E0A268;
+  --copper-dk:#96522A;
+  --line-d:rgba(244,238,229,.14);
+  --line-l:rgba(16,13,11,.12);
+
+  --ff-display:"Fraunces", "Iowan Old Style", Georgia, serif;
+  --ff-text:"Sora", "Helvetica Neue", system-ui, sans-serif;
+
+  --shell:min(1200px, 100% - 2.5rem);
+  --r-card:4px;
+  --r-media:8px;
+  --ease:cubic-bezier(.22,.68,.32,1);
+}
+@media (min-width:768px){ :root{ --shell:min(1200px, 100% - 5rem); } }
+
+/* ============ RESET ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--bone);
+  font-family:var(--ff-text);
+  font-weight:300;
+  font-size:clamp(1rem,.97rem + .18vw,1.075rem);
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{
+  font-family:var(--ff-display);
+  font-variation-settings:"SOFT" 14,"WONK" 1;
+  font-weight:600;
+  line-height:1.02;
+  letter-spacing:-.022em;
+  margin:0;
+  text-wrap:balance;
+}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--copper-lt);outline-offset:3px;border-radius:2px}
+
+/* ============ LAYOUT ============ */
+.shell{width:var(--shell);margin-inline:auto}
+section{position:relative}
+.sec{padding-block:clamp(4.5rem,10vw,8.5rem)}
+.sec--light{background:var(--bone);color:var(--ink)}
+.sec--pine{background:var(--pine);color:var(--bone)}
+[id]{scroll-margin-top:84px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:1rem;top:-100px;z-index:99;background:var(--copper);color:#fff;padding:.7rem 1.1rem;border-radius:999px;font-size:.85rem;transition:top .2s}
+.skip:focus{top:1rem}
+
+/* ============ TIPOGRAFIA UTIL ============ */
+.eyebrow{
+  font-family:var(--ff-text);font-weight:600;font-size:.7rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--copper-lt);display:flex;align-items:center;gap:.7rem;
+}
+.sec--light .eyebrow{color:var(--copper-dk)}
+.eyebrow::before{content:"";width:26px;height:2px;background:currentColor;flex:none;opacity:.8}
+.h-xl{font-size:clamp(2.35rem,7.4vw,5.1rem)}
+.h-lg{font-size:clamp(1.95rem,4.6vw,3.5rem)}
+.h-md{font-size:clamp(1.4rem,2.4vw,1.85rem)}
+.lead{font-size:clamp(1.02rem,.98rem + .4vw,1.2rem);color:var(--sand);max-width:56ch}
+.sec--light .lead{color:#4A423B}
+.pole{
+  height:6px;border-radius:99px;
+  background:
+    repeating-linear-gradient(115deg,var(--copper) 0 9px,transparent 9px 18px),
+    linear-gradient(90deg,var(--bone-2),var(--sand));
+}
+
+/* ============ BOTÕES ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  font-family:var(--ff-text);font-weight:600;font-size:.9rem;letter-spacing:.01em;
+  padding:.95rem 1.5rem;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease),background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn--primary{background:var(--copper);color:#fff;box-shadow:0 10px 24px -14px rgba(194,112,58,.9)}
+.btn--primary:hover{background:var(--copper-lt);color:var(--ink);transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(224,162,104,.8)}
+.btn--ghost{border-color:var(--line-d);color:var(--bone);background:rgba(244,238,229,.03)}
+.btn--ghost:hover{border-color:var(--copper-lt);color:var(--copper-lt);transform:translateY(-2px)}
+.sec--light .btn--ghost{border-color:var(--line-l);color:var(--ink);background:transparent}
+.sec--light .btn--ghost:hover{border-color:var(--copper-dk);color:var(--copper-dk)}
+.btn--sm{padding:.62rem 1.05rem;font-size:.82rem}
+
+/* ============ HEADER ============ */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(16,13,11,.72);
+  backdrop-filter:saturate(1.4) blur(14px);
+  -webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:background-color .3s var(--ease),border-color .3s var(--ease);
+}
+.header.is-stuck{background:rgba(16,13,11,.94);border-bottom-color:var(--line-d)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+
+/* LOGO */
+.logo{display:inline-flex;align-items:center;gap:.7rem}
+.logo__mark{width:30px;height:38px;flex:none}
+.logo__mark .pole-fill{transition:transform .5s var(--ease)}
+.logo:hover .logo__mark .pole-fill{transform:translateY(-2px)}
+.logo__txt{display:flex;flex-direction:column;line-height:1}
+.logo__name{
+  font-family:var(--ff-display);font-variation-settings:"SOFT" 8,"WONK" 0;
+  font-weight:700;font-size:1.06rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.logo__sub{
+  font-family:var(--ff-text);font-size:.53rem;font-weight:500;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--copper-lt);margin-top:.34rem;
+}
+.footer .logo__name,.footer .logo__sub{}
+
+/* NAV */
+.nav{display:flex;align-items:center;gap:2rem}
+.nav__list{display:flex;gap:1.9rem}
+.nav__list a{
+  font-size:.83rem;font-weight:400;letter-spacing:.06em;color:var(--sand);position:relative;padding-block:.3rem;
+  transition:color .25s var(--ease);
+}
+.nav__list a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--copper-lt);
+  transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease);
+}
+.nav__list a:hover{color:var(--bone)}
+.nav__list a:hover::after{transform:scaleX(1);transform-origin:left}
+.header .btn--primary{white-space:nowrap}
+.burger{
+  display:none;width:44px;height:44px;border:1px solid var(--line-d);border-radius:999px;
+  background:transparent;align-items:center;justify-content:center;cursor:pointer;
+}
+.burger span{display:block;width:17px;height:1.5px;background:var(--bone);position:relative;transition:background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:17px;height:1.5px;background:var(--bone);transition:transform .3s var(--ease)}
+.burger span::before{top:-5.5px}
+.burger span::after{top:5.5px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(5.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-5.5px) rotate(-45deg)}
+
+@media (max-width:940px){
+  .burger{display:inline-flex}
+  .nav{
+    position:absolute;left:0;right:0;top:100%;
+    background:rgba(16,13,11,.98);border-bottom:1px solid var(--line-d);
+    flex-direction:column;align-items:stretch;gap:0;padding:.5rem 0 1.4rem;
+    display:none;
+  }
+  .nav.is-open{display:flex}
+  .nav__list{flex-direction:column;gap:0;width:var(--shell);margin-inline:auto}
+  .nav__list a{padding:.95rem 0;border-bottom:1px solid var(--line-d);font-size:1rem;display:block}
+  .nav__list a::after{display:none}
+  .nav .nav__cta{width:var(--shell);margin:1.2rem auto 0}
+  .nav .nav__cta .btn{width:100%}
+}
+@media (min-width:941px){ .nav__cta{display:none} }
+@media (max-width:420px){ .header__cta{display:none} }
+
+/* ============ HERO ============ */
+.hero{position:relative;background:var(--ink);overflow:hidden;isolation:isolate}
+.hero__media{position:absolute;inset:0;z-index:0}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:62% 38%}
+.hero__media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(16,13,11,.62) 0%,rgba(16,13,11,.80) 45%,rgba(16,13,11,.97) 100%),
+    radial-gradient(130% 95% at 12% 45%,rgba(16,13,11,.94) 0%,rgba(16,13,11,.30) 68%);
+}
+.hero__in{
+  position:relative;z-index:1;
+  min-height:clamp(560px,100svh,940px);
+  display:flex;align-items:center;
+  padding-block:clamp(3rem,9vw,5rem);
+}
+.hero__copy{max-width:660px}
+.hero h1{margin:1.4rem 0 0}
+.hero h1 em{
+  font-style:normal;color:var(--copper-lt);
+  font-variation-settings:"SOFT" 30,"WONK" 1;
+}
+.hero__lead{margin-top:1.4rem;color:#DAD0C3}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.1rem}
+.hero__facts{
+  display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2.6rem;
+  border-top:1px solid var(--line-d);padding-top:1.5rem;
+}
+.hero__facts li{
+  font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;font-weight:500;color:var(--sand);
+  border:1px solid var(--line-d);border-radius:999px;padding:.42rem .85rem;background:rgba(244,238,229,.03);
+}
+@media (min-width:900px){
+  .hero__media{inset:0 0 0 32%}
+  .hero__media::after{
+    background:linear-gradient(90deg,var(--ink) 0%,rgba(16,13,11,.94) 20%,rgba(16,13,11,.36) 62%,rgba(16,13,11,.62) 100%);
+  }
+  .hero::before{
+    content:"";position:absolute;z-index:2;top:0;bottom:0;left:32%;width:5px;
+    background:repeating-linear-gradient(180deg,var(--copper) 0 14px,rgba(244,238,229,.85) 14px 28px);
+    opacity:.55;
+  }
+}
+.hero__scroll{
+  position:absolute;z-index:2;left:50%;transform:translateX(-50%);bottom:1.5rem;
+  font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);
+  display:flex;align-items:center;gap:.55rem;
+}
+.hero__scroll i{display:block;width:1px;height:26px;background:linear-gradient(180deg,var(--copper-lt),transparent)}
+@media (max-width:560px){.hero__scroll{display:none}}
+
+/* ============ FAIXA ============ */
+.strip{background:var(--copper);color:#fff;overflow:hidden;border-block:1px solid rgba(0,0,0,.15)}
+.strip__in{display:flex;align-items:center;gap:2.6rem;padding-block:.95rem;flex-wrap:wrap;justify-content:center}
+.strip span{
+  font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:.7rem;
+}
+.strip span::before{content:"";width:5px;height:5px;background:rgba(255,255,255,.85);transform:rotate(45deg)}
+
+/* ============ SOBRE ============ */
+.about{display:grid;gap:clamp(2.5rem,5vw,4.5rem);align-items:start}
+@media (min-width:960px){ .about{grid-template-columns:.95fr 1.05fr} }
+.about__media{position:relative}
+.about__media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-media);filter:saturate(.92) contrast(1.03)}
+.about__badge{
+  position:absolute;right:-.6rem;bottom:-1.4rem;background:var(--ink);color:var(--bone);
+  border-radius:var(--r-card);padding:1.05rem 1.25rem;max-width:230px;
+  box-shadow:0 22px 50px -28px rgba(16,13,11,.9);
+}
+.about__badge strong{display:block;font-family:var(--ff-display);font-size:1.02rem;font-weight:600;letter-spacing:.01em}
+.about__badge span{display:block;font-size:.73rem;color:var(--sand);line-height:1.55;margin-top:.3rem}
+.about h2{margin-top:1.3rem}
+.about__text{margin-top:1.5rem;display:grid;gap:1.15rem;max-width:60ch;color:#4A423B}
+.pillars{display:grid;gap:1px;margin-top:2.6rem;background:var(--line-l);border-block:1px solid var(--line-l)}
+@media (min-width:620px){ .pillars{grid-template-columns:repeat(3,1fr)} }
+.pillar{background:var(--bone);padding:1.5rem 1.3rem 1.6rem}
+.pillar svg{width:26px;height:26px;color:var(--copper-dk)}
+.pillar h3{font-size:1.02rem;margin-top:.9rem;font-variation-settings:"SOFT" 8,"WONK" 0}
+.pillar p{font-size:.88rem;color:#5B5249;margin-top:.45rem;line-height:1.6}
+
+/* ============ SERVIÇOS ============ */
+.sec--services{background:var(--coal)}
+.sec--services::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:radial-gradient(80% 60% at 85% 0%,rgba(194,112,58,.16),transparent 60%);
+}
+.svc__head{display:grid;gap:1.4rem;position:relative}
+@media (min-width:900px){ .svc__head{grid-template-columns:1fr auto;align-items:end} }
+.svc__grid{display:grid;gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-top:clamp(2.5rem,5vw,3.8rem);position:relative}
+@media (min-width:640px){ .svc__grid{grid-template-columns:repeat(2,1fr)} }
+@media (min-width:1040px){ .svc__grid{grid-template-columns:repeat(3,1fr)} }
+.svc{
+  background:var(--coal);padding:2rem 1.6rem 2.1rem;position:relative;overflow:hidden;
+  transition:background-color .35s var(--ease);
+}
+.svc::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.svc:hover{background:var(--slate)}
+.svc:hover::after{transform:scaleX(1)}
+.svc__n{font-family:var(--ff-display);font-size:.85rem;letter-spacing:.2em;color:var(--copper-lt);font-weight:600}
+.svc h3{font-size:1.32rem;margin-top:1.1rem}
+.svc p{font-size:.9rem;color:var(--sand);margin-top:.6rem;line-height:1.65}
+.svc__tag{display:inline-block;margin-top:1.3rem;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);border-top:1px solid var(--line-d);padding-top:.9rem;width:100%}
+.svc__note{
+  margin-top:2rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.4rem;justify-content:space-between;
+  border:1px dashed var(--line-d);border-radius:var(--r-card);padding:1.3rem 1.5rem;background:rgba(244,238,229,.03);
+}
+.svc__note p{font-size:.92rem;color:var(--sand);max-width:52ch}
+.svc__note strong{color:var(--bone);font-weight:500}
+
+/* ============ GALERIA ============ */
+.gal{display:grid;gap:.8rem;margin-top:clamp(2.4rem,5vw,3.4rem);grid-template-columns:repeat(2,1fr)}
+@media (min-width:860px){ .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:190px} }
+.gal figure{margin:0;overflow:hidden;border-radius:var(--r-media);background:var(--slate);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .5s var(--ease);filter:saturate(.9)}
+.gal figure:hover img{transform:scale(1.05);filter:saturate(1.05)}
+.gal figure:nth-child(1){grid-column:span 2}
+@media (min-width:860px){
+  .gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .gal figure:nth-child(4){grid-column:span 2}
+}
+@media (max-width:859px){ .gal figure{aspect-ratio:1} .gal figure:nth-child(1){aspect-ratio:16/11} }
+
+/* ============ COMPROMISSO / PROVA ============ */
+.sec--pine::before{
+  content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background:repeating-linear-gradient(115deg,rgba(244,238,229,.5) 0 1px,transparent 1px 16px);
+}
+.proof{display:grid;gap:clamp(2.5rem,5vw,4rem);position:relative}
+@media (min-width:980px){ .proof{grid-template-columns:.85fr 1.15fr;align-items:start} }
+.proof__list{display:grid;gap:1.6rem}
+@media (min-width:640px){ .proof__list{grid-template-columns:repeat(2,1fr);gap:1.9rem 2.2rem} }
+.proof__item{border-top:1px solid rgba(244,238,229,.2);padding-top:1.15rem}
+.proof__item h3{font-size:1.1rem;display:flex;align-items:center;gap:.65rem}
+.proof__item h3 svg{width:20px;height:20px;color:var(--copper-lt);flex:none}
+.proof__item p{font-size:.9rem;color:#BFCFC7;margin-top:.5rem;line-height:1.65}
+.quote{margin:clamp(3rem,6vw,4.5rem) 0 0;position:relative;border-left:3px solid var(--copper);padding-left:clamp(1.2rem,3vw,2.2rem)}
+.quote p{
+  font-family:var(--ff-display);font-variation-settings:"SOFT" 40,"WONK" 1;
+  font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.24;letter-spacing:-.02em;color:var(--bone);text-wrap:balance;
+}
+.quote footer{margin-top:1rem;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper-lt)}
+
+/* ============ CTA BAND ============ */
+.cta{background:var(--ink);position:relative;overflow:hidden}
+.cta::before{
+  content:"";position:absolute;inset:0;opacity:.30;
+  background:url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
+  filter:grayscale(1) contrast(1.1);
+}
+.cta::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,13,11,.97),rgba(16,13,11,.80))}
+.cta__in{position:relative;z-index:1;text-align:center;display:grid;justify-items:center;gap:1.4rem}
+.cta__in .pole{width:96px}
+.cta h2{max-width:16ch}
+.cta p{max-width:50ch;color:var(--sand)}
+.cta__actions{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:.7rem}
+.cta__phone{font-family:var(--ff-display);font-size:clamp(1.5rem,4vw,2.1rem);letter-spacing:.01em;display:inline-block;margin-top:.4rem;transition:color .25s}
+.cta__phone:hover{color:var(--copper-lt)}
+
+/* ============ CONTATO ============ */
+.contact{display:grid;gap:clamp(2.2rem,4vw,3.5rem)}
+@media (min-width:920px){ .contact{grid-template-columns:1fr 1fr;align-items:center} }
+.info{display:grid;gap:1.6rem;margin-top:2.2rem}
+.info__row{display:flex;gap:1rem;align-items:flex-start}
+.info__row svg{width:22px;height:22px;color:var(--copper-dk);flex:none;margin-top:.25rem}
+.info__row h3{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-family:var(--ff-text);font-weight:600;color:#6B6158}
+.info__row p,.info__row a{display:block;font-size:1.02rem;color:var(--ink);margin-top:.25rem;line-height:1.5}
+.info__row a{transition:color .2s}
+.info__row a:hover{color:var(--copper-dk)}
+.info__row small{display:block;color:#6B6158;font-size:.82rem;margin-top:.3rem}
+.mapcard{
+  border-radius:var(--r-media);overflow:hidden;border:1px solid var(--line-l);
+  background:var(--bone-2);display:block;position:relative;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.mapcard:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(16,13,11,.55)}
+.mapcard img{width:100%;aspect-ratio:5/4;object-fit:cover;filter:saturate(.85)}
+.mapcard__bar{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.05rem 1.3rem;background:var(--ink);color:var(--bone);
+}
+.mapcard__bar strong{font-family:var(--ff-display);font-weight:600;font-size:1rem}
+.mapcard__bar span{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-lt);display:inline-flex;align-items:center;gap:.5rem}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--coal);border-top:1px solid var(--line-d);padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+.footer__top{display:grid;gap:2.5rem}
+@media (min-width:820px){ .footer__top{grid-template-columns:1.2fr .8fr .8fr} }
+.footer p{font-size:.9rem;color:var(--sand);max-width:38ch;margin-top:1.2rem}
+.footer h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-family:var(--ff-text);font-weight:600;color:var(--mute)}
+.footer ul{margin-top:1.1rem;display:grid;gap:.6rem}
+.footer ul a{font-size:.92rem;color:var(--sand);transition:color .2s}
+.footer ul a:hover{color:var(--copper-lt)}
+.footer__bottom{
+  margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line-d);
+  display:flex;flex-wrap:wrap;gap:.8rem 1.5rem;justify-content:space-between;align-items:center;
+}
+.footer__bottom p{font-size:.76rem;color:var(--mute);margin:0;max-width:64ch;line-height:1.6}
+
+/* ============ WHATSAPP FLUTUANTE ============ */
+.wa-float{
+  position:fixed;right:1rem;bottom:1rem;z-index:60;
+  width:56px;height:56px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;
+  background:#1F8F55;color:#fff;box-shadow:0 14px 30px -12px rgba(0,0,0,.7);
+  transition:transform .3s var(--ease),background-color .3s var(--ease);
+}
+.wa-float:hover{transform:translateY(-3px) scale(1.04);background:#24A462}
+.wa-float svg{width:28px;height:28px}
+@media (min-width:941px){ .wa-float{right:1.6rem;bottom:1.6rem} }
+
+/* ============ REVEAL (à prova de falhas) ============ */
+.js-reveal .reveal{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.js-reveal .reveal.is-in{opacity:1;transform:none}
+.js-reveal .reveal[data-d="1"]{transition-delay:.09s}
+.js-reveal .reveal[data-d="2"]{transition-delay:.18s}
+.js-reveal .reveal[data-d="3"]{transition-delay:.27s}
+.js-reveal .reveal[data-d="4"]{transition-delay:.36s}
+.js-reveal .reveal[data-d="5"]{transition-delay:.45s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js-reveal .reveal{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="header" id="topo">
+  <div class="shell header__in">
+    <a class="logo" href="#topo" aria-label="Barber House — Barbearia do Santista, início">
+      <svg class="logo__mark" viewBox="0 0 30 38" fill="none" aria-hidden="true" focusable="false">
+        <rect x="1" y="1" width="28" height="36" rx="13.5" stroke="#C2703A" stroke-width="1.6"/>
+        <g class="pole-fill">
+          <path d="M5 22.5 14.5 6.5" stroke="#F4EEE5" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M5 30.5 22.5 6.5" stroke="#C2703A" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M11.5 31.5 25 12" stroke="#F4EEE5" stroke-width="2.4" stroke-linecap="round"/>
+        </g>
+        <circle cx="15" cy="34" r="1.6" fill="#E0A268"/>
+      </svg>
+      <span class="logo__txt">
+        <span class="logo__name">Barber House</span>
+        <span class="logo__sub">Barbearia do Santista</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="menu" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#a-casa">A casa</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#ambiente">Ambiente</a></li>
+        <li><a href="#compromisso">Compromisso</a></li>
+        <li><a href="#visite">Visite</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a class="btn btn--primary" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barber%20House." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      </div>
+    </nav>
+
+    <div class="header__cta" style="display:flex;align-items:center;gap:.6rem">
+      <a class="btn btn--primary btn--sm" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barber%20House." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.43 1.32 4.92L2.1 22l5.38-1.4a9.8 9.8 0 0 0 4.56 1.13h.01c5.43 0 9.84-4.4 9.84-9.84 0-2.63-1.02-5.1-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.19.83.85-3.1-.2-.32a8.14 8.14 0 0 1-1.25-4.35c0-4.5 3.67-8.17 8.18-8.17 2.18 0 4.23.85 5.77 2.4a8.11 8.11 0 0 1 2.39 5.78c0 4.5-3.67 8.17-8.18 8.17Zm4.49-6.12c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.04-.39-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.18.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+        Agendar
+      </a>
+    </div>
+
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu de navegação"><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=80"
+           alt="Barbeiro finalizando o corte de um cliente sentado na cadeira da barbearia"
+           width="1800" height="1200" fetchpriority="high" decoding="async">
+    </div>
+    <div class="shell hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow">Sepetiba · Zona Oeste do Rio</p>
+        <h1 class="h-xl" id="hero-title">Um corte bem feito<br>muda a <em>semana inteira</em>.</h1>
+        <p class="lead hero__lead">Na Barber House, o Wagner cuida do corte, da barba e da pele com a calma de quem faz isso todo dia — clássico quando o cliente pede clássico, moderno quando o cliente pede moderno. Você marca a hora pelo WhatsApp e senta na cadeira sem espera.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barber%20House." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.43 1.32 4.92L2.1 22l5.38-1.4a9.8 9.8 0 0 0 4.56 1.13h.01c5.43 0 9.84-4.4 9.84-9.84 0-2.63-1.02-5.1-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.19.83.85-3.1-.2-.32a8.14 8.14 0 0 1-1.25-4.35c0-4.5 3.67-8.17 8.18-8.17 2.18 0 4.23.85 5.77 2.4a8.11 8.11 0 0 1 2.39 5.78c0 4.5-3.67 8.17-8.18 8.17Zm4.49-6.12c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.04-.39-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.18.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+            Agendar meu horário
+          </a>
+          <a class="btn btn--ghost" href="tel:+5521966836181">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+            (21) 96683-6181
+          </a>
+        </div>
+        <ul class="hero__facts">
+          <li>Corte clássico</li>
+          <li>Degradê e cortes modernos</li>
+          <li>Barba</li>
+          <li>Pele e cabelo</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hero__scroll"><i></i> Role para conhecer</p>
+  </section>
+
+  <!-- ================= FAIXA ================= -->
+  <div class="strip" role="presentation">
+    <div class="shell strip__in">
+      <span>Hora marcada pelo WhatsApp</span>
+      <span>Atendimento com o Wagner</span>
+      <span>Barbearia de bairro em Sepetiba</span>
+    </div>
+  </div>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="sec sec--light" id="a-casa" aria-labelledby="casa-title">
+    <div class="shell about">
+      <div class="about__media reveal">
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80"
+             alt="Barbeiro alinhando a barba de um cliente com atenção aos detalhes"
+             width="900" height="1125" loading="lazy" decoding="async">
+        <div class="about__badge">
+          <strong>Wagner Lúcio Vicente</strong>
+          <span>Barbeiro responsável — atende pessoalmente cada cadeira.</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow reveal">A casa</p>
+        <h2 class="h-lg reveal" data-d="1" id="casa-title">Barbearia de verdade, do jeito que o bairro gosta.</h2>
+        <div class="about__text">
+          <p class="reveal" data-d="2">A Barber House — conhecida em Sepetiba como a Barbearia do Santista — é uma barbearia masculina onde ninguém é atendido no automático. Antes da máquina ligar, tem conversa: o que você faz, como prefere o acabamento, quanto tempo até o próximo corte.</p>
+          <p class="reveal" data-d="2">Aqui convivem as duas escolas. O corte clássico, de tesoura e acabamento caprichado, para quem gosta de discrição. E o corte moderno, com degradê bem trabalhado, para quem quer forma e presença. A barba entra no mesmo cuidado — desenho, alinhamento e finalização — junto de tratamentos de pele e cabelo para manter tudo em ordem entre uma visita e outra.</p>
+          <p class="reveal" data-d="3">Simples assim: você manda mensagem, combina o horário e senta na cadeira. Sem fila em pé, sem “volta mais tarde”.</p>
+        </div>
+
+        <ul class="pillars reveal" data-d="3">
+          <li class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg>
+            <h3>Hora marcada</h3>
+            <p>A agenda é confirmada no WhatsApp antes de você sair de casa.</p>
+          </li>
+          <li class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.6 15.4M8.6 8.6 20 20"/></svg>
+            <h3>Duas escolas</h3>
+            <p>Clássico na tesoura ou degradê moderno — você escolhe o caminho.</p>
+          </li>
+          <li class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <h3>Aqui do lado</h3>
+            <p>Em Sepetiba, perto de casa. Sem trânsito, sem atravessar a cidade.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="sec sec--services" id="servicos" aria-labelledby="svc-title">
+    <div class="shell">
+      <div class="svc__head">
+        <div>
+          <p class="eyebrow reveal">Serviços</p>
+          <h2 class="h-lg reveal" data-d="1" id="svc-title" style="margin-top:1.2rem;max-width:20ch">O que a cadeira resolve</h2>
+        </div>
+        <p class="lead reveal" data-d="2" style="max-width:40ch">Cada serviço termina do mesmo jeito: espelho na mão e a sua aprovação antes de tirar a capa.</p>
+      </div>
+
+      <div class="svc__grid">
+        <article class="svc reveal">
+          <p class="svc__n">01</p>
+          <h3>Corte clássico</h3>
+          <p>Tesoura, máquina e acabamento limpo. O corte que fica bem no trabalho, no casamento e na segunda-feira.</p>
+          <span class="svc__tag">Discreto · Atemporal</span>
+        </article>
+        <article class="svc reveal" data-d="1">
+          <p class="svc__n">02</p>
+          <h3>Corte moderno</h3>
+          <p>Degradê baixo, médio ou alto, com transição bem puxada e topo desenhado do jeito que você usa o cabelo.</p>
+          <span class="svc__tag">Degradê · Fade</span>
+        </article>
+        <article class="svc reveal" data-d="2">
+          <p class="svc__n">03</p>
+          <h3>Barba</h3>
+          <p>Desenho do contorno, alinhamento no tamanho certo e finalização — respeitando o formato do seu rosto.</p>
+          <span class="svc__tag">Desenho · Alinhamento</span>
+        </article>
+        <article class="svc reveal">
+          <p class="svc__n">04</p>
+          <h3>Corte + barba</h3>
+          <p>O combo completo, feito na sequência certa para o conjunto fechar. É o pedido mais comum da casa.</p>
+          <span class="svc__tag">Serviço completo</span>
+        </article>
+        <article class="svc reveal" data-d="1">
+          <p class="svc__n">05</p>
+          <h3>Tratamento de pele</h3>
+          <p>Cuidado do rosto para quem faz a barba com frequência: limpeza, hidratação e conforto depois da navalha.</p>
+          <span class="svc__tag">Cuidado masculino</span>
+        </article>
+        <article class="svc reveal" data-d="2">
+          <p class="svc__n">06</p>
+          <h3>Tratamento capilar</h3>
+          <p>Hidratação e cuidado do couro cabeludo, para o cabelo aguentar bem o intervalo até o próximo corte.</p>
+          <span class="svc__tag">Cabelo saudável</span>
+        </article>
+      </div>
+
+      <div class="svc__note reveal">
+        <p><strong>Valores e duração conforme o serviço.</strong> Chame no WhatsApp, diga o que você quer fazer e o Wagner te passa o preço e o melhor horário na hora.</p>
+        <a class="btn btn--primary" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Gostaria%20de%20saber%20os%20valores%20e%20hor%C3%A1rios%20da%20Barber%20House." target="_blank" rel="noopener">Consultar valores</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AMBIENTE ================= -->
+  <section class="sec sec--light" id="ambiente" aria-labelledby="amb-title">
+    <div class="shell">
+      <p class="eyebrow reveal">Ambiente</p>
+      <h2 class="h-lg reveal" data-d="1" id="amb-title" style="margin-top:1.2rem;max-width:18ch">O clima da casa</h2>
+      <p class="lead reveal" data-d="2" style="margin-top:1.1rem">Cadeira confortável, ferramenta limpa e tempo suficiente para fazer direito. É esse o ritmo aqui.</p>
+
+      <div class="gal">
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=80" alt="Cliente recebendo corte de cabelo em uma barbearia com boa iluminação" width="1000" height="750" loading="lazy" decoding="async">
+        </figure>
+        <figure class="reveal" data-d="1">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="Tesoura, pente e máquina de corte organizados sobre a bancada" width="700" height="700" loading="lazy" decoding="async">
+        </figure>
+        <figure class="reveal" data-d="2">
+          <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=700&q=80" alt="Cadeira de barbeiro vazia diante do espelho da barbearia" width="700" height="700" loading="lazy" decoding="async">
+        </figure>
+        <figure class="reveal" data-d="3">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=80" alt="Barbeiro fazendo o acabamento da nuca de um cliente" width="1000" height="600" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPROMISSO ================= -->
+  <section class="sec sec--pine" id="compromisso" aria-labelledby="comp-title">
+    <div class="shell proof">
+      <div>
+        <p class="eyebrow reveal">Por que voltam</p>
+        <h2 class="h-lg reveal" data-d="1" id="comp-title" style="margin-top:1.2rem;max-width:14ch">O compromisso da casa</h2>
+      </div>
+
+      <ul class="proof__list">
+        <li class="proof__item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Hora marcada é hora cumprida</h3>
+          <p>Sua mensagem é respondida e o horário é combinado. Você chega, senta e é atendido.</p>
+        </li>
+        <li class="proof__item reveal" data-d="1">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>Quem corta é o Wagner</h3>
+          <p>Atendimento pessoal do começo ao fim. Ele lembra do seu corte na visita seguinte.</p>
+        </li>
+        <li class="proof__item reveal" data-d="2">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 7v6c0 4.4 3.4 7.6 8 8.6 4.6-1 8-4.2 8-8.6V7l-8-4Z"/></svg>Especialidade masculina</h3>
+          <p>A casa é dedicada ao cabelo e à barba do homem — clássico, degradê, pele e cuidado.</p>
+        </li>
+        <li class="proof__item reveal" data-d="3">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M10 21v-6h4v6"/></svg>Barbearia de bairro</h3>
+          <p>Em Sepetiba, no meio do dia a dia de quem mora aqui. Perto, prático e conhecido.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="shell">
+      <blockquote class="quote reveal">
+        <p>Ninguém sai desta cadeira sem conferir no espelho — e sem gostar do que vê.</p>
+        <footer>O jeito da Barber House</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="sec cta" aria-labelledby="cta-title">
+    <div class="shell cta__in">
+      <span class="pole reveal" aria-hidden="true"></span>
+      <h2 class="h-lg reveal" data-d="1" id="cta-title">Escolha o horário. O resto é com a gente.</h2>
+      <p class="reveal" data-d="2">Mande uma mensagem dizendo o serviço e o melhor dia para você. A confirmação vem pelo mesmo WhatsApp.</p>
+      <div class="cta__actions reveal" data-d="3">
+        <a class="btn btn--primary" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Quero%20agendar%20corte%20na%20Barber%20House.%20Qual%20hor%C3%A1rio%20voc%C3%AA%20tem%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.43 1.32 4.92L2.1 22l5.38-1.4a9.8 9.8 0 0 0 4.56 1.13h.01c5.43 0 9.84-4.4 9.84-9.84 0-2.63-1.02-5.1-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.19.83.85-3.1-.2-.32a8.14 8.14 0 0 1-1.25-4.35c0-4.5 3.67-8.17 8.18-8.17 2.18 0 4.23.85 5.77 2.4a8.11 8.11 0 0 1 2.39 5.78c0 4.5-3.67 8.17-8.18 8.17Zm4.49-6.12c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.04-.39-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.18.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn--ghost" href="tel:+5521966836181">Prefiro ligar</a>
+      </div>
+      <a class="cta__phone reveal" data-d="4" href="tel:+5521966836181">(21) 96683-6181</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="sec sec--light" id="visite" aria-labelledby="visite-title">
+    <div class="shell contact">
+      <div>
+        <p class="eyebrow reveal">Visite</p>
+        <h2 class="h-lg reveal" data-d="1" id="visite-title" style="margin-top:1.2rem;max-width:16ch">Onde a gente te espera</h2>
+
+        <div class="info">
+          <div class="info__row reveal" data-d="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <div>
+              <h3>Endereço</h3>
+              <p>Rua Doutor Nunes Machado, 50<br>Sepetiba — Rio de Janeiro / RJ</p>
+              <small>Zona Oeste, a poucos minutos do centro do bairro.</small>
+            </div>
+          </div>
+          <div class="info__row reveal" data-d="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <a href="tel:+5521966836181">(21) 96683-6181</a>
+              <a href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20da%20Barber%20House." target="_blank" rel="noopener">Abrir conversa no WhatsApp</a>
+            </div>
+          </div>
+          <div class="info__row reveal" data-d="3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg>
+            <div>
+              <h3>Atendimento</h3>
+              <p>Somente com horário agendado</p>
+              <small>Confirme a disponibilidade do dia pelo WhatsApp — a resposta costuma sair rápido.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="mapcard reveal" data-d="2"
+         href="https://www.google.com/maps/search/?api=1&query=Rua%20Doutor%20Nunes%20Machado%2C%2050%20-%20Sepetiba%2C%20Rio%20de%20Janeiro%20-%20RJ"
+         target="_blank" rel="noopener"
+         aria-label="Abrir o endereço da Barber House no Google Maps">
+        <img src="https://images.unsplash.com/photo-1595964207453-95cbeef8a7b1?auto=format&fit=crop&w=1000&q=75"
+             alt="Vista de rua tranquila de bairro, ilustrando a localização da barbearia em Sepetiba"
+             width="1000" height="800" loading="lazy" decoding="async">
+        <span class="mapcard__bar">
+          <strong>Rua Doutor Nunes Machado, 50 — Sepetiba</strong>
+          <span>Traçar rota
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__top">
+      <div>
+        <a class="logo" href="#topo" aria-label="Barber House — Barbearia do Santista, voltar ao topo">
+          <svg class="logo__mark" viewBox="0 0 30 38" fill="none" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="28" height="36" rx="13.5" stroke="#C2703A" stroke-width="1.6"/>
+            <g class="pole-fill">
+              <path d="M5 22.5 14.5 6.5" stroke="#F4EEE5" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M5 30.5 22.5 6.5" stroke="#C2703A" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M11.5 31.5 25 12" stroke="#F4EEE5" stroke-width="2.4" stroke-linecap="round"/>
+            </g>
+            <circle cx="15" cy="34" r="1.6" fill="#E0A268"/>
+          </svg>
+          <span class="logo__txt">
+            <span class="logo__name">Barber House</span>
+            <span class="logo__sub">Barbearia do Santista</span>
+          </span>
+        </a>
+        <p>Barbearia masculina em Sepetiba, Zona Oeste do Rio de Janeiro. Corte clássico e moderno, barba e cuidados de pele e cabelo, com Wagner Lúcio Vicente.</p>
+      </div>
+
+      <nav aria-label="Navegação do rodapé">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#a-casa">A casa</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#ambiente">Ambiente</a></li>
+          <li><a href="#compromisso">Compromisso</a></li>
+          <li><a href="#visite">Visite</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5521966836181">(21) 96683-6181</a></li>
+          <li><a href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20da%20Barber%20House." target="_blank" rel="noopener">Agendar no WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Rua%20Doutor%20Nunes%20Machado%2C%2050%20-%20Sepetiba%2C%20Rio%20de%20Janeiro%20-%20RJ" target="_blank" rel="noopener">Rua Doutor Nunes Machado, 50 — Sepetiba, RJ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="ano">2026</span> Barber House — Barbearia do Santista · Sepetiba, Rio de Janeiro / RJ</p>
+      <p>Página demonstrativa de proposta visual. Imagens ilustrativas.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5521966836181?text=Ol%C3%A1%2C%20Wagner!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barber%20House." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.43 1.32 4.92L2.1 22l5.38-1.4a9.8 9.8 0 0 0 4.56 1.13h.01c5.43 0 9.84-4.4 9.84-9.84 0-2.63-1.02-5.1-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.19.83.85-3.1-.2-.32a8.14 8.14 0 0 1-1.25-4.35c0-4.5 3.67-8.17 8.18-8.17 2.18 0 4.23.85 5.77 2.4a8.11 8.11 0 0 1 2.39 5.78c0 4.5-3.67 8.17-8.18 8.17Zm4.49-6.12c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.04-.39-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.18.2-.57.2-1.06.14-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"Barber House — Barbearia do Santista",
+  "alternateName":"Barbearia do Santista",
+  "description":"Barbearia masculina em Sepetiba, Zona Oeste do Rio de Janeiro. Corte clássico e moderno, barba e tratamentos de pele e cabelo, com agendamento pelo WhatsApp.",
+  "url":"https://barberhouse-sepetiba.com.br/",
+  "image":"https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+  "telephone":"+5521966836181",
+  "founder":{"@type":"Person","name":"Wagner Lúcio Vicente"},
+  "employee":{"@type":"Person","name":"Wagner Lúcio Vicente","jobTitle":"Barbeiro"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Rua Doutor Nunes Machado, 50",
+    "addressLocality":"Sepetiba",
+    "addressRegion":"RJ",
+    "addressCountry":"BR"
+  },
+  "areaServed":[
+    {"@type":"Place","name":"Sepetiba, Rio de Janeiro"},
+    {"@type":"Place","name":"Zona Oeste do Rio de Janeiro"}
+  ],
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=Rua%20Doutor%20Nunes%20Machado%2C%2050%20-%20Sepetiba%2C%20Rio%20de%20Janeiro%20-%20RJ",
+  "currenciesAccepted":"BRL",
+  "potentialAction":{
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://wa.me/5521966836181",
+      "inLanguage":"pt-BR",
+      "actionPlatform":["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]
+    },
+    "result":{"@type":"Reservation","name":"Agendamento de horário pelo WhatsApp"}
+  },
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Serviços da Barber House",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte clássico"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte moderno (degradê)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Barba"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte + barba"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tratamento de pele"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tratamento capilar"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  var docEl = document.documentElement;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canReveal = 'IntersectionObserver' in window && !reduced;
+
+  /* O estado inicial invisível só entra em cena depois que o JS confirma que vai animar.
+     Sem JS (ou com reduced motion), todo o conteúdo permanece visível. */
+  if (canReveal) {
+    docEl.classList.add('js-reveal');
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+    var items = document.querySelectorAll('.reveal');
+    for (var i = 0; i < items.length; i++) {
+      /* Segurança: se algo já estiver na primeira dobra, mostra imediatamente. */
+      if (items[i].getBoundingClientRect().top < window.innerHeight * 0.92) {
+        items[i].classList.add('is-in');
+      } else {
+        io.observe(items[i]);
+      }
+    }
+  }
+
+  /* Menu mobile */
+  var burger = document.querySelector('.burger');
+  var nav = document.getElementById('menu');
+  if (burger && nav) {
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.focus();
+      }
+    });
+  }
+
+  /* Header com fundo sólido após o scroll */
+  var header = document.querySelector('.header');
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      if (header) header.classList.toggle('is-stuck', window.scrollY > 24);
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* Ano do rodapé */
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
