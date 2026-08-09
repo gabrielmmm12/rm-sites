@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rio Brasa | Rodízio premium na Barra, Lagoa e Brasília — a churrascaria carioca</title>
+<meta name="description" content="Rio Brasa: churrascaria de rodízio premium com cerca de 40 cortes na brasa, buffet árabe, japonês e frutos do mar, adega e espaço de eventos. Barra da Tijuca, Lagoa e Brasília. Reserve pelo WhatsApp.">
+<meta name="theme-color" content="#100D0B">
+<meta name="author" content="Rio Brasa">
+<link rel="canonical" href="https://riobrasa.com.br/">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Rio Brasa">
+<meta property="og:title" content="Rio Brasa | A única churrascaria genuinamente carioca">
+<meta property="og:description" content="Rodízio premium com cerca de 40 cortes na brasa, buffet árabe, japonês e frutos do mar. Barra, Lagoa e Brasília. Reserve pelo WhatsApp.">
+<meta property="og:url" content="https://riobrasa.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rio Brasa | A única churrascaria genuinamente carioca">
+<meta name="twitter:description" content="Rodízio premium com cerca de 40 cortes na brasa, buffet árabe, japonês e frutos do mar. Barra, Lagoa e Brasília.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&h=630&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --carvao:#100D0B;
+  --carvao-2:#181310;
+  --fumaca:#241C17;
+  --fumaca-2:#332720;
+  --brasa:#D9411E;
+  --brasa-luz:#F2762F;
+  --latao:#DFA94A;
+  --latao-escuro:#B98529;
+  --mata:#15302A;
+  --creme:#F8F2E7;
+  --creme-2:#EFE5D4;
+  --tinta:#221A15;
+  --tinta-suave:#5C4C41;
+
+  --claro-70:rgba(248,242,231,.72);
+  --claro-45:rgba(248,242,231,.46);
+  --linha-clara:rgba(223,169,74,.24);
+  --linha-escura:rgba(34,26,21,.14);
+
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --texto:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --raio:18px;
+  --raio-g:30px;
+  --wrap:1200px;
+  --gut:clamp(20px,5vw,44px);
+  --sec:clamp(72px,10vw,140px);
+  --t:.42s cubic-bezier(.22,.8,.28,1);
+  --sombra:0 30px 70px -34px rgba(0,0,0,.72);
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--carvao);
+  color:var(--creme);
+  font-family:var(--texto);
+  font-size:clamp(1rem,.96rem + .22vw,1.075rem);
+  line-height:1.65;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.04;margin:0;letter-spacing:-.018em;font-variation-settings:"SOFT" 22,"WONK" 1}
+p{margin:0}
+::selection{background:var(--brasa);color:#fff}
+:focus-visible{outline:2px solid var(--latao);outline-offset:3px;border-radius:6px}
+
+.wrap{width:min(100% - (var(--gut)*2),var(--wrap));margin-inline:auto}
+.sec{padding-block:var(--sec);position:relative}
+.grao::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+}
+.claro{background:var(--creme);color:var(--tinta)}
+.claro h1,.claro h2,.claro h3{color:var(--tinta)}
+
+/* ============ TIPOGRAFIA ============ */
+.olho{
+  font-family:var(--texto);font-size:.735rem;letter-spacing:.28em;text-transform:uppercase;
+  font-weight:500;color:var(--latao);display:inline-flex;align-items:center;gap:.7em;margin-bottom:1.15rem;
+}
+.olho::before{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+.claro .olho{color:var(--latao-escuro)}
+.t1{font-size:clamp(2.6rem,7.6vw,5.2rem);font-weight:800}
+.t2{font-size:clamp(2.05rem,4.7vw,3.5rem);font-weight:700}
+.t3{font-size:clamp(1.2rem,1.9vw,1.42rem);font-weight:700;letter-spacing:-.01em}
+.italico{font-style:italic;font-weight:500;color:var(--latao);font-variation-settings:"SOFT" 60,"WONK" 1}
+.lead{font-size:clamp(1.03rem,1.35vw,1.18rem);color:var(--claro-70);max-width:56ch}
+.claro .lead{color:var(--tinta-suave)}
+
+/* ============ LOGO ============ */
+.logo{display:inline-flex;align-items:center;gap:.62rem;line-height:1}
+.logo svg{width:34px;height:34px;flex:none}
+.logo__txt{display:flex;flex-direction:column;gap:.14em}
+.logo__nome{font-family:var(--display);font-size:1.32rem;letter-spacing:-.02em;font-weight:800;white-space:nowrap}
+.logo__nome i{font-style:italic;font-weight:500;font-variation-settings:"SOFT" 60,"WONK" 1;color:var(--latao);margin-right:.14em}
+.logo__sub{font-size:.5rem;letter-spacing:.42em;text-transform:uppercase;color:var(--claro-45);font-weight:500}
+.claro .logo__sub{color:var(--tinta-suave)}
+.logo--g svg{width:46px;height:46px}
+.logo--g .logo__nome{font-size:1.72rem}
+
+/* ============ BOTÕES ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.95rem 1.55rem;border-radius:999px;font-weight:500;font-size:.95rem;letter-spacing:.01em;
+  transition:transform var(--t),background-color var(--t),color var(--t),box-shadow var(--t),border-color var(--t);
+  border:1px solid transparent;will-change:transform;text-align:center;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--brasa{background:var(--brasa);color:#fff;box-shadow:0 14px 34px -16px rgba(217,65,30,.9)}
+.btn--brasa:hover{background:var(--brasa-luz);transform:translateY(-2px);box-shadow:0 20px 40px -16px rgba(242,118,47,.85)}
+.btn--vidro{border-color:var(--linha-clara);color:var(--creme);background:rgba(248,242,231,.05)}
+.btn--vidro:hover{background:rgba(248,242,231,.11);border-color:var(--latao);transform:translateY(-2px)}
+.btn--tinta{background:var(--tinta);color:var(--creme)}
+.btn--tinta:hover{background:var(--fumaca-2);transform:translateY(-2px)}
+.btn--linha{border-color:rgba(34,26,21,.22);color:var(--tinta)}
+.btn--linha:hover{border-color:var(--tinta);transform:translateY(-2px)}
+
+/* ============ HEADER ============ */
+.topo{
+  position:fixed;inset:0 0 auto;z-index:60;padding-block:.9rem;
+  transition:background-color var(--t),backdrop-filter var(--t),box-shadow var(--t),padding var(--t);
+}
+.topo.fixo{background:rgba(16,13,11,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(223,169,74,.16);padding-block:.55rem}
+.topo__in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav{display:none;align-items:center;gap:clamp(1rem,2.2vw,2rem)}
+.nav a{font-size:.9rem;color:var(--claro-70);position:relative;padding-block:.3rem;transition:color var(--t)}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--latao);transition:width var(--t)}
+.nav a:hover{color:var(--creme)}
+.nav a:hover::after{width:100%}
+.topo__cta{display:none}
+.menu-btn{display:inline-flex;flex-direction:column;gap:5px;padding:.7rem;border:1px solid var(--linha-clara);border-radius:12px}
+.menu-btn span{width:20px;height:1.5px;background:var(--creme);display:block;transition:transform var(--t),opacity var(--t)}
+.aberto .menu-btn span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.aberto .menu-btn span:nth-child(2){opacity:0}
+.aberto .menu-btn span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.painel{
+  position:fixed;inset:0;z-index:55;background:var(--carvao-2);
+  display:flex;flex-direction:column;justify-content:center;gap:.4rem;padding:6rem var(--gut) 3rem;
+  transform:translateY(-100%);transition:transform .5s cubic-bezier(.22,.8,.28,1);visibility:hidden;
+}
+.painel.on{transform:none;visibility:visible}
+.painel a{font-family:var(--display);font-size:clamp(1.9rem,8vw,2.6rem);padding-block:.45rem;border-bottom:1px solid rgba(248,242,231,.08)}
+.painel a:last-of-type{border-bottom:0}
+.painel .btn{margin-top:1.6rem}
+@media (min-width:1000px){
+  .nav,.topo__cta{display:flex}
+  .menu-btn{display:none}
+}
+
+/* ============ HERO (sempre visível) ============ */
+.hero{
+  position:relative;padding-top:clamp(108px,15vh,150px);padding-bottom:clamp(48px,7vw,86px);
+  background:
+    radial-gradient(90% 70% at 84% 12%,rgba(217,65,30,.30),transparent 62%),
+    radial-gradient(60% 60% at 4% 96%,rgba(21,48,42,.75),transparent 70%),
+    linear-gradient(180deg,#0B0908,#15100D 62%,#100D0B);
+  overflow:hidden;
+}
+.hero__grade{display:grid;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.hero__txt{max-width:640px}
+.hero .t1{margin-bottom:1.35rem}
+.hero__mini{
+  display:inline-flex;align-items:center;gap:.55rem;padding:.42rem .95rem .42rem .55rem;border-radius:999px;
+  border:1px solid var(--linha-clara);background:rgba(248,242,231,.05);font-size:.79rem;color:var(--claro-70);
+  margin-bottom:1.5rem;letter-spacing:.02em;
+}
+.hero__mini b{color:var(--creme);font-weight:500}
+.estrelas{display:inline-flex;gap:1px;color:var(--latao)}
+.estrelas svg{width:13px;height:13px}
+.hero__acoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.1rem}
+.hero__fatos{
+  display:flex;flex-wrap:wrap;gap:.55rem 1.7rem;margin-top:2.2rem;padding-top:1.5rem;
+  border-top:1px solid rgba(248,242,231,.1);font-size:.86rem;color:var(--claro-45);
+}
+.hero__fatos b{color:var(--latao);font-weight:500}
+.hero__foto{position:relative}
+.moldura{
+  position:relative;border-radius:var(--raio-g);overflow:hidden;
+  background:linear-gradient(150deg,var(--fumaca-2),#0E0B09 70%);
+  box-shadow:var(--sombra);border:1px solid rgba(223,169,74,.16);
+}
+.moldura img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.hero__foto .moldura img{aspect-ratio:5/4}
+.selo{
+  position:absolute;left:-6px;bottom:-14px;background:var(--creme);color:var(--tinta);
+  border-radius:16px;padding:.85rem 1.1rem;box-shadow:0 22px 44px -20px rgba(0,0,0,.8);
+  display:flex;align-items:center;gap:.75rem;
+}
+.selo__n{font-family:var(--display);font-size:1.85rem;font-weight:800;line-height:1}
+.selo__t{font-size:.68rem;line-height:1.32;color:var(--tinta-suave);letter-spacing:.02em}
+@media (min-width:900px){
+  .hero__grade{grid-template-columns:1.06fr .94fr}
+  .hero__foto .moldura img{aspect-ratio:4/5}
+  .selo{left:-26px}
+}
+
+/* ============ TICKER ============ */
+.faixa{background:var(--brasa);color:#fff;padding-block:.85rem;overflow:hidden;position:relative}
+.faixa__pista{display:flex;width:max-content;animation:desliza 42s linear infinite}
+.faixa__pista span{
+  font-family:var(--display);font-size:clamp(.95rem,1.6vw,1.15rem);font-weight:600;font-style:italic;
+  padding-inline:1.5rem;white-space:nowrap;display:inline-flex;align-items:center;gap:1.5rem;
+}
+.faixa__pista span::after{content:"";width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.6)}
+@keyframes desliza{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.faixa__pista{animation:none}}
+
+/* ============ SOBRE ============ */
+.sobre__grade{display:grid;gap:clamp(2.2rem,5vw,4.4rem);align-items:center}
+.sobre__fotos{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.sobre__fotos .moldura:first-child{grid-column:1/-1}
+.sobre__fotos .moldura:first-child img{aspect-ratio:16/10}
+.sobre__fotos .moldura img{aspect-ratio:1/1}
+.assinatura{
+  margin-top:2.2rem;padding-left:1.25rem;border-left:2px solid var(--latao);
+  font-family:var(--display);font-style:italic;font-size:clamp(1.08rem,1.7vw,1.3rem);line-height:1.5;
+}
+.assinatura small{display:block;font-family:var(--texto);font-style:normal;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-suave);margin-top:.7rem}
+@media (min-width:920px){.sobre__grade{grid-template-columns:.95fr 1.05fr}}
+
+/* ============ CARDS ============ */
+.cards{display:grid;gap:1rem;margin-top:clamp(2.4rem,4vw,3.4rem)}
+@media (min-width:660px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1020px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{
+  position:relative;padding:clamp(1.6rem,2.6vw,2.1rem);border-radius:var(--raio);
+  background:linear-gradient(165deg,rgba(248,242,231,.055),rgba(248,242,231,.018));
+  border:1px solid rgba(248,242,231,.09);overflow:hidden;
+  transition:transform var(--t),border-color var(--t),background-color var(--t);
+}
+.card::before{
+  content:"";position:absolute;inset:auto -30% -60% auto;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(217,65,30,.34),transparent 68%);opacity:0;transition:opacity var(--t);
+}
+.card:hover{transform:translateY(-5px);border-color:var(--linha-clara)}
+.card:hover::before{opacity:1}
+.card__ic{
+  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin-bottom:1.25rem;
+  background:rgba(223,169,74,.12);border:1px solid var(--linha-clara);color:var(--latao);position:relative;
+}
+.card__ic svg{width:22px;height:22px}
+.card h3{margin-bottom:.6rem;position:relative}
+.card p{font-size:.94rem;color:var(--claro-70);position:relative}
+.card__tag{
+  position:relative;display:inline-block;margin-top:1.15rem;font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--latao);font-weight:500;
+}
+
+/* ============ PROVA SOCIAL ============ */
+.notas{display:grid;gap:1rem;margin-top:clamp(2.4rem,4vw,3.2rem)}
+@media (min-width:760px){.notas{grid-template-columns:repeat(3,1fr)}}
+.nota{
+  background:#fff;border:1px solid var(--linha-escura);border-radius:var(--raio);padding:1.6rem 1.5rem;
+  transition:transform var(--t),box-shadow var(--t);
+}
+.nota:hover{transform:translateY(-4px);box-shadow:0 24px 50px -34px rgba(34,26,21,.55)}
+.nota__topo{display:flex;align-items:baseline;gap:.6rem}
+.nota__n{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1;color:var(--tinta)}
+.nota__max{font-size:.86rem;color:var(--tinta-suave)}
+.nota__est{margin:.7rem 0 .55rem;color:var(--latao-escuro)}
+.nota__est svg{width:15px;height:15px}
+.nota h3{font-size:1.02rem;font-family:var(--texto);font-weight:700;letter-spacing:0}
+.nota p{font-size:.85rem;color:var(--tinta-suave);margin-top:.25rem}
+.frase{
+  margin-top:clamp(2.6rem,4vw,3.6rem);padding:clamp(1.8rem,4vw,3rem);border-radius:var(--raio-g);
+  background:linear-gradient(140deg,var(--mata),#0E211D);color:var(--creme);text-align:center;
+}
+.frase p{font-family:var(--display);font-style:italic;font-size:clamp(1.35rem,3.1vw,2.1rem);line-height:1.32;max-width:22ch;margin-inline:auto;font-variation-settings:"SOFT" 60,"WONK" 1}
+.frase small{display:block;margin-top:1.3rem;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--latao)}
+
+/* ============ CTA ============ */
+.cta{
+  position:relative;overflow:hidden;
+  background:linear-gradient(120deg,#7E1F0C 0%,var(--brasa) 48%,#A83214 100%);
+}
+.cta__in{display:grid;gap:2rem;align-items:center;text-align:center}
+.cta h2{color:#fff}
+.cta p{color:rgba(255,255,255,.86);margin-top:1rem;max-width:52ch;margin-inline:auto}
+.cta__acoes{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:.6rem}
+.cta .btn--vidro{border-color:rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.08)}
+.cta .btn--vidro:hover{background:rgba(255,255,255,.18);border-color:#fff}
+.cta .btn--creme{background:var(--creme);color:var(--tinta)}
+.cta .btn--creme:hover{background:#fff;transform:translateY(-2px)}
+
+/* ============ UNIDADES ============ */
+.unidades{display:grid;gap:1rem;margin-top:clamp(2.4rem,4vw,3.2rem)}
+@media (min-width:700px){.unidades{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.unidades{grid-template-columns:repeat(4,1fr)}}
+.uni{
+  display:flex;flex-direction:column;gap:.55rem;padding:1.6rem 1.45rem;border-radius:var(--raio);
+  background:#fff;border:1px solid var(--linha-escura);transition:transform var(--t),box-shadow var(--t),border-color var(--t);
+}
+.uni:hover{transform:translateY(-4px);border-color:rgba(223,169,74,.5);box-shadow:0 26px 52px -36px rgba(34,26,21,.6)}
+.uni h3{font-size:1.14rem}
+.uni address{font-style:normal;font-size:.9rem;color:var(--tinta-suave);line-height:1.55}
+.uni__links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:auto;padding-top:.9rem}
+.uni__links a{
+  font-size:.79rem;padding:.42rem .8rem;border-radius:999px;border:1px solid var(--linha-escura);
+  display:inline-flex;align-items:center;gap:.35rem;transition:background-color var(--t),color var(--t),border-color var(--t);
+}
+.uni__links a svg{width:13px;height:13px}
+.uni__links a:hover{background:var(--tinta);color:var(--creme);border-color:var(--tinta)}
+.uni__links a.wa:hover{background:#1EA85C;border-color:#1EA85C;color:#fff}
+
+/* ============ CONTATO ============ */
+.contato__grade{display:grid;gap:clamp(2rem,4vw,3.6rem)}
+@media (min-width:920px){.contato__grade{grid-template-columns:1fr 1fr}}
+.dados{display:grid;gap:1.35rem;margin-top:2.2rem}
+.dado{display:flex;gap:1rem;align-items:flex-start}
+.dado__ic{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;background:rgba(223,169,74,.12);border:1px solid var(--linha-clara);color:var(--latao)}
+.dado__ic svg{width:18px;height:18px}
+.dado h3{font-family:var(--texto);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--latao);font-weight:500;margin-bottom:.25rem}
+.dado p,.dado address{font-style:normal;font-size:1rem;color:var(--creme);line-height:1.55}
+.dado a{border-bottom:1px solid rgba(223,169,74,.4);transition:border-color var(--t),color var(--t)}
+.dado a:hover{color:var(--latao);border-color:var(--latao)}
+.mapa{
+  position:relative;display:block;border-radius:var(--raio-g);overflow:hidden;min-height:340px;
+  border:1px solid rgba(223,169,74,.2);
+  background:
+    radial-gradient(70% 60% at 70% 20%,rgba(217,65,30,.22),transparent 60%),
+    linear-gradient(160deg,#1B2A26,#0E0B09);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:1.6rem;
+  transition:transform var(--t),border-color var(--t);
+}
+.mapa:hover{transform:translateY(-4px);border-color:var(--latao)}
+.mapa__linhas{position:absolute;inset:0;opacity:.5}
+.mapa__pin{position:absolute;top:42%;left:52%;transform:translate(-50%,-50%);width:54px;height:54px;display:grid;place-items:center}
+.mapa__pin span{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(242,118,47,.5);animation:pulso 2.8s ease-out infinite}
+.mapa__pin svg{width:26px;height:26px;color:var(--brasa-luz);position:relative;filter:drop-shadow(0 6px 14px rgba(0,0,0,.6))}
+@keyframes pulso{0%{transform:scale(.5);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+@media (prefers-reduced-motion:reduce){.mapa__pin span{animation:none}}
+.mapa__txt{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.mapa__txt strong{font-family:var(--display);font-size:1.16rem;display:block}
+.mapa__txt small{color:var(--claro-45);font-size:.85rem}
+.mapa__ir{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--latao);display:inline-flex;align-items:center;gap:.4rem}
+.mapa__ir svg{width:14px;height:14px}
+.horarios{margin-top:2rem;border-top:1px solid rgba(248,242,231,.1);padding-top:1.4rem;display:grid;gap:.5rem}
+.hor{display:flex;justify-content:space-between;gap:1rem;font-size:.93rem;color:var(--claro-70)}
+.hor b{color:var(--creme);font-weight:500}
+
+/* ============ RODAPÉ ============ */
+.rodape{background:#0B0908;padding-block:clamp(3.4rem,6vw,4.8rem) 2rem;border-top:1px solid rgba(223,169,74,.14)}
+.rodape__grade{display:grid;gap:2.4rem}
+@media (min-width:840px){.rodape__grade{grid-template-columns:1.4fr 1fr 1fr}}
+.rodape p{font-size:.92rem;color:var(--claro-45);max-width:38ch;margin-top:1.2rem}
+.rodape h4{font-family:var(--texto);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--latao);font-weight:500;margin-bottom:1.05rem}
+.rodape ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.rodape li a{font-size:.93rem;color:var(--claro-70);transition:color var(--t)}
+.rodape li a:hover{color:var(--latao)}
+.social{display:flex;gap:.6rem;margin-top:1.6rem}
+.social a{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--linha-clara);color:var(--claro-70);transition:background-color var(--t),color var(--t),transform var(--t)}
+.social a svg{width:18px;height:18px}
+.social a:hover{background:var(--latao);color:var(--carvao);transform:translateY(-3px)}
+.rodape__base{
+  margin-top:clamp(2.6rem,5vw,3.6rem);padding-top:1.5rem;border-top:1px solid rgba(248,242,231,.08);
+  display:flex;flex-wrap:wrap;gap:.7rem 1.5rem;justify-content:space-between;font-size:.79rem;color:rgba(248,242,231,.34);
+}
+
+/* ============ DOCK MOBILE ============ */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;gap:.55rem;padding:.6rem .7rem calc(.6rem + env(safe-area-inset-bottom));
+  background:rgba(16,13,11,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-top:1px solid rgba(223,169,74,.2);
+}
+.dock a{flex:1;padding:.85rem;border-radius:14px;font-size:.9rem;font-weight:500;display:flex;align-items:center;justify-content:center;gap:.45rem}
+.dock a svg{width:17px;height:17px}
+.dock__lig{border:1px solid var(--linha-clara);color:var(--creme)}
+.dock__wa{background:var(--brasa);color:#fff}
+body{padding-bottom:74px}
+@media (min-width:1000px){.dock{display:none}body{padding-bottom:0}}
+
+/* ============ REVEAL À PROVA DE FALHAS ============ */
+.reveal-on [data-reveal]{opacity:0;transform:translateY(22px)}
+.reveal-on [data-reveal].vis{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.22,.8,.28,1),transform .8s cubic-bezier(.22,.8,.28,1);transition-delay:var(--d,0ms)}
+</style>
+</head>
+
+<body>
+<a class="btn" href="#conteudo" style="position:absolute;left:-9999px">Ir para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="wrap topo__in">
+    <a class="logo" href="#topo" aria-label="Rio Brasa — página inicial">
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="#DFA94A" stroke-width="1.2" opacity=".55"/>
+        <path d="M20 7c4.2 5 7.4 8.4 7.4 13.2A7.4 7.4 0 0 1 20 27.6a7.4 7.4 0 0 1-7.4-7.4C12.6 15.4 15.8 12 20 7Z" fill="#D9411E"/>
+        <path d="M20 15.4c2.1 2.5 3.4 4 3.4 6.1A3.4 3.4 0 0 1 20 24.9a3.4 3.4 0 0 1-3.4-3.4c0-2.1 1.3-3.6 3.4-6.1Z" fill="#DFA94A"/>
+        <path d="M11 31.4h18" stroke="#DFA94A" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="logo__txt">
+        <span class="logo__nome"><i>Rio</i>Brasa</span>
+        <span class="logo__sub">Churrascaria</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">A casa</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--brasa topo__cta" href="https://wa.me/5521972391222" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+      Reservar no WhatsApp
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="painel" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="painel" id="painel">
+  <a href="#sobre">A casa</a>
+  <a href="#experiencia">Experiência</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#unidades">Unidades</a>
+  <a href="#contato">Contato</a>
+  <a class="btn btn--brasa" href="https://wa.me/5521972391222" target="_blank" rel="noopener">Reservar no WhatsApp</a>
+</div>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero grao" aria-labelledby="h1">
+    <div class="wrap hero__grade">
+      <div class="hero__txt">
+        <p class="hero__mini">
+          <span class="estrelas" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+          </span>
+          <b>4,6</b> no Google · 6.414 avaliações na Barra
+        </p>
+
+        <h1 class="t1" id="h1">Rodízio de fogo alto,<br><span class="italico">alma carioca.</span></h1>
+
+        <p class="lead">A única churrascaria genuinamente carioca. Cerca de 40 cortes servidos direto do espeto, buffet árabe, japonês e frutos do mar, adega e um serviço que trata cada mesa como convidada da casa desde o ano 2000.</p>
+
+        <div class="hero__acoes">
+          <a class="btn btn--brasa" href="https://wa.me/5521972391222" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+            Reservar mesa agora
+          </a>
+          <a class="btn btn--vidro" href="tel:+552121999191">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5c0-.6.4-1 1-1h2.7c.5 0 .9.3 1 .8l.8 3c.1.4 0 .8-.4 1L7.5 10c1 2.2 2.3 3.5 4.5 4.5l1.2-1.6c.2-.3.6-.5 1-.4l3 .8c.5.1.8.5.8 1V17c0 .6-.4 1-1 1h-1C9.6 18 4 12.4 4 6V5Z" stroke-linejoin="round"/></svg>
+            (21) 2199-9191
+          </a>
+        </div>
+
+        <p class="hero__fatos">
+          <span>Rodízio <b>R$ 184,90</b></span>
+          <span>Seg a sáb <b>12h às 23h</b></span>
+          <span>Dom <b>12h às 22h</b></span>
+          <span><b>4 unidades</b> · Rio e Brasília</span>
+        </p>
+      </div>
+
+      <div class="hero__foto">
+        <figure class="moldura" style="margin:0">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80"
+               alt="Cortes de carne assando lentamente sobre a brasa, com fogo alto e fumaça"
+               width="1000" height="1250" fetchpriority="high" decoding="async"
+               onerror="this.style.display='none'">
+        </figure>
+        <div class="selo">
+          <span class="selo__n">4,6</span>
+          <span class="selo__t">Nota no Google<br>com 6.414 avaliações</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAIXA ================= -->
+  <div class="faixa" role="presentation">
+    <div class="faixa__pista" aria-hidden="true">
+      <span>Picanha na brasa</span><span>Costela no bafo</span><span>Cordeiro</span><span>Ancho</span><span>Fraldinha</span><span>Cupim</span><span>Buffet árabe</span><span>Sushi na hora</span><span>Frutos do mar</span><span>Adega climatizada</span>
+      <span>Picanha na brasa</span><span>Costela no bafo</span><span>Cordeiro</span><span>Ancho</span><span>Fraldinha</span><span>Cupim</span><span>Buffet árabe</span><span>Sushi na hora</span><span>Frutos do mar</span><span>Adega climatizada</span>
+    </div>
+  </div>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="sec claro grao" id="sobre" aria-labelledby="h-sobre">
+    <div class="wrap sobre__grade">
+      <div class="sobre__fotos" data-reveal>
+        <figure class="moldura" style="margin:0">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
+               alt="Salão de restaurante com iluminação quente e mesas postas para o jantar"
+               width="900" height="560" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        </figure>
+        <figure class="moldura" style="margin:0">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+               alt="Corte de carne grelhada fatiado sobre tábua de madeira"
+               width="700" height="700" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        </figure>
+        <figure class="moldura" style="margin:0">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80"
+               alt="Taça de vinho tinto servida em ambiente de luz baixa"
+               width="700" height="700" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        </figure>
+      </div>
+
+      <div data-reveal style="--d:120ms">
+        <p class="olho">A casa</p>
+        <h2 class="t2" id="h-sobre">Nascida no Rio,<br>feita <span class="italico">para o Rio.</span></h2>
+        <p class="lead" style="margin-top:1.4rem">Desde 11 de dezembro de 2000, a Rio Brasa serve o churrasco que a cidade reconhece como seu: fogo bem conduzido, corte na medida, sal na hora certa e um salão que aguenta desde o almoço rápido de terça até a confraternização de fim de ano.</p>
+        <p class="lead" style="margin-top:1.1rem">Sob o comando de Wagdy Radwan, a casa cresceu para quatro endereços — três no Rio e um em Brasília — sem abrir mão do que sustenta um rodízio premium: passador atento à mesa, brasa constante e um buffet que vai muito além do acompanhamento.</p>
+
+        <p class="assinatura">“Churrasco bom não é o que chega mais rápido — é o que chega no ponto.”
+          <small>Rio Brasa · desde 2000</small>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIÊNCIA ================= -->
+  <section class="sec grao" id="experiencia" aria-labelledby="h-exp" style="background:linear-gradient(180deg,#100D0B,#15100D 55%,#100D0B)">
+    <div class="wrap">
+      <div style="max-width:60ch" data-reveal>
+        <p class="olho">A experiência</p>
+        <h2 class="t2" id="h-exp">Uma noite inteira <span class="italico">resolvida</span> num só endereço.</h2>
+        <p class="lead" style="margin-top:1.3rem">Rodízio, buffet, adega, eventos e espaço para as crianças. Tudo pensado para que a mesa dure o tempo que ela merecer.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c3 3.4 5.2 5.8 5.2 9a5.2 5.2 0 0 1-10.4 0C6.8 8.8 9 6.4 12 3Z" stroke-linejoin="round"/><path d="M12 11.5c1.3 1.6 2.1 2.5 2.1 3.7a2.1 2.1 0 1 1-4.2 0c0-1.2.8-2.1 2.1-3.7Z"/></svg></div>
+          <h3 class="t3">Rodízio de ~40 cortes</h3>
+          <p>Carnes nobres e cortes exóticos passando de mesa em mesa, sempre no ponto pedido. O clássico brasileiro servido com padrão de casa premium.</p>
+          <span class="card__tag">R$ 184,90 por pessoa</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:80ms">
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0Z" stroke-linejoin="round"/><path d="M2 20h20" stroke-linecap="round"/><path d="M9 7c0-1 1-1.4 1-2.4M13 7c0-1 1-1.4 1-2.4" stroke-linecap="round"/></svg></div>
+          <h3 class="t3">Buffet árabe, japonês e frutos do mar</h3>
+          <p>Três cozinhas convivendo na mesma ilha: mezze árabe, sushi preparado na hora e frutos do mar frescos para quem quer variar entre um espeto e outro.</p>
+          <span class="card__tag">Incluso no rodízio</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:160ms">
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h10l-1 8a4 4 0 0 1-8 0L7 3Z" stroke-linejoin="round"/><path d="M12 15v6M8.5 21h7" stroke-linecap="round"/></svg></div>
+          <h3 class="t3">Adega</h3>
+          <p>Rótulos selecionados para harmonizar com brasa: tintos encorpados para os cortes bovinos, opções leves para o buffet. Peça a indicação ao maître.</p>
+          <span class="card__tag">Harmonização sugerida</span>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 8a3 3 0 1 0 0-.1M17 9a2.4 2.4 0 1 0 0-.1" stroke-linejoin="round"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 14.4c2.9.4 5 2.8 5 5.6" stroke-linecap="round"/></svg></div>
+          <h3 class="t3">Espaço de eventos</h3>
+          <p>Aniversários, confraternizações e encontros de empresa com atendimento dedicado e menu combinado antes do evento. Orçamento pela central de reservas.</p>
+          <span class="card__tag">eventos@riobrasa.com.br</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:80ms">
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3.5 19.5 10 12 16.5 4.5 10 12 3.5Z" stroke-linejoin="round"/><path d="M12 16.5V21M9.5 21h5" stroke-linecap="round"/></svg></div>
+          <h3 class="t3">Parquinho com recreador</h3>
+          <p>As crianças brincam acompanhadas por recreador enquanto os adultos aproveitam a mesa com calma. Almoço de domingo do jeito que deveria ser.</p>
+          <span class="card__tag">Ideal para famílias</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:160ms">
+          <div class="card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke-linecap="round"/></svg></div>
+          <h3 class="t3">Empório CR</h3>
+          <p>Anexo à casa, para levar para casa um pouco do que você provou aqui. Uma parada natural na saída do almoço ou do jantar.</p>
+          <span class="card__tag">Ao lado do restaurante</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROVA SOCIAL ================= -->
+  <section class="sec claro grao" id="avaliacoes" aria-labelledby="h-av">
+    <div class="wrap">
+      <div style="max-width:58ch" data-reveal>
+        <p class="olho">Quem já sentou à mesa</p>
+        <h2 class="t2" id="h-av">Mais de duas décadas <span class="italico">avaliadas</span> em público.</h2>
+        <p class="lead" style="margin-top:1.3rem">As notas abaixo são as que o público deixou nas principais plataformas de avaliação.</p>
+      </div>
+
+      <div class="notas">
+        <article class="nota" data-reveal>
+          <p class="nota__topo"><span class="nota__n">4,6</span><span class="nota__max">/ 5,0</span></p>
+          <p class="nota__est estrelas" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+          </p>
+          <h3>Google</h3>
+          <p>6.414 avaliações · unidade Barra da Tijuca</p>
+        </article>
+
+        <article class="nota" data-reveal style="--d:90ms">
+          <p class="nota__topo"><span class="nota__n">4,8</span><span class="nota__max">/ 5,0</span></p>
+          <p class="nota__est estrelas" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+          </p>
+          <h3>Restaurant Guru</h3>
+          <p>Cerca de 15 mil avaliações</p>
+        </article>
+
+        <article class="nota" data-reveal style="--d:180ms">
+          <p class="nota__topo"><span class="nota__n">4,3</span><span class="nota__max">/ 5,0</span></p>
+          <p class="nota__est estrelas" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" opacity=".45"><path d="m12 2 3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8Z"/></svg>
+          </p>
+          <h3>TripAdvisor</h3>
+          <p>Cerca de 930 avaliações</p>
+        </article>
+      </div>
+
+      <div class="frase" data-reveal>
+        <p>O rodízio que os cariocas indicam quando querem impressionar.</p>
+        <small>Rio Brasa · Barra · Lagoa · Brasília</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="sec cta grao" aria-labelledby="h-cta">
+    <div class="wrap cta__in" data-reveal>
+      <div>
+        <h2 class="t2" id="h-cta">Mesa reservada em<br>menos de um minuto.</h2>
+        <p>Fale direto com a nossa central pelo WhatsApp e garanta seu horário — inclusive para grupos grandes, aniversários e confraternizações de empresa.</p>
+      </div>
+      <div class="cta__acoes">
+        <a class="btn btn--creme" href="https://wa.me/5521972391222" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a class="btn btn--vidro" href="tel:+552121999191">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5c0-.6.4-1 1-1h2.7c.5 0 .9.3 1 .8l.8 3c.1.4 0 .8-.4 1L7.5 10c1 2.2 2.3 3.5 4.5 4.5l1.2-1.6c.2-.3.6-.5 1-.4l3 .8c.5.1.8.5.8 1V17c0 .6-.4 1-1 1h-1C9.6 18 4 12.4 4 6V5Z" stroke-linejoin="round"/></svg>
+          Ligar: (21) 2199-9191
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= UNIDADES ================= -->
+  <section class="sec claro grao" id="unidades" aria-labelledby="h-uni">
+    <div class="wrap">
+      <div style="max-width:56ch" data-reveal>
+        <p class="olho">Onde encontrar</p>
+        <h2 class="t2" id="h-uni">Quatro casas, <span class="italico">a mesma brasa.</span></h2>
+      </div>
+
+      <div class="unidades">
+        <article class="uni" data-reveal>
+          <h3>Barra</h3>
+          <address>Av. Ayrton Senna, 2541<br>Barra da Tijuca — Rio de Janeiro/RJ<br>CEP 22775-002</address>
+          <div class="uni__links">
+            <a href="tel:+552121999191">(21) 2199-9191</a>
+            <a class="wa" href="https://wa.me/5521972391222" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Ayrton%20Senna%2C%202541%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%2022775-002%20Rio%20de%20Janeiro" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+
+        <article class="uni" data-reveal style="--d:80ms">
+          <h3>Barra 2</h3>
+          <address>Av. Armando Lombardi, 583<br>Barra da Tijuca — Rio de Janeiro/RJ</address>
+          <div class="uni__links">
+            <a href="tel:+552121999191">(21) 2199-9191</a>
+            <a class="wa" href="https://wa.me/5521972391222" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Armando%20Lombardi%2C%20583%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+
+        <article class="uni" data-reveal style="--d:160ms">
+          <h3>Lagoa</h3>
+          <address>Av. Borges de Medeiros, 829<br>Lagoa — Rio de Janeiro/RJ</address>
+          <div class="uni__links">
+            <a href="tel:+552121379208">(21) 2137-9208</a>
+            <a class="wa" href="https://wa.me/5521983211502" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Borges%20de%20Medeiros%2C%20829%20-%20Lagoa%2C%20Rio%20de%20Janeiro" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+
+        <article class="uni" data-reveal style="--d:240ms">
+          <h3>Brasília</h3>
+          <address>SHS Quadra 5, Bloco F<br>Asa Sul — Brasília/DF</address>
+          <div class="uni__links">
+            <a href="mailto:eventos@riobrasa.com.br">E-mail</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=SHS%20Quadra%205%2C%20Bloco%20F%2C%20Asa%20Sul%2C%20Bras%C3%ADlia" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="sec grao" id="contato" aria-labelledby="h-cont" style="background:linear-gradient(180deg,#100D0B,#16110E)">
+    <div class="wrap contato__grade">
+      <div data-reveal>
+        <p class="olho">Contato</p>
+        <h2 class="t2" id="h-cont">Vamos <span class="italico">preparar</span> a sua mesa.</h2>
+
+        <div class="dados">
+          <div class="dado">
+            <span class="dado__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <div>
+              <h3>Unidade Barra</h3>
+              <address>Av. Ayrton Senna, 2541 — Barra da Tijuca<br>Rio de Janeiro/RJ, 22775-002</address>
+            </div>
+          </div>
+
+          <div class="dado">
+            <span class="dado__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5c0-.6.4-1 1-1h2.7c.5 0 .9.3 1 .8l.8 3c.1.4 0 .8-.4 1L7.5 10c1 2.2 2.3 3.5 4.5 4.5l1.2-1.6c.2-.3.6-.5 1-.4l3 .8c.5.1.8.5.8 1V17c0 .6-.4 1-1 1h-1C9.6 18 4 12.4 4 6V5Z" stroke-linejoin="round"/></svg></span>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <p><a href="tel:+552121999191">(21) 2199-9191</a> · <a href="https://wa.me/5521972391222" target="_blank" rel="noopener">(21) 97239-1222</a></p>
+            </div>
+          </div>
+
+          <div class="dado">
+            <span class="dado__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6" stroke-linejoin="round"/></svg></span>
+            <div>
+              <h3>Reservas e eventos</h3>
+              <p><a href="mailto:eventos@riobrasa.com.br">eventos@riobrasa.com.br</a></p>
+            </div>
+          </div>
+
+          <div class="dado">
+            <span class="dado__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+            <div>
+              <h3>Instagram</h3>
+              <p><a href="https://instagram.com/rio_brasa" target="_blank" rel="noopener">@rio_brasa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="horarios">
+          <p class="hor"><span>Segunda a sábado</span><b>12h às 23h</b></p>
+          <p class="hor"><span>Domingo</span><b>12h às 22h</b></p>
+          <p class="hor"><span>Rodízio completo</span><b>R$ 184,90</b></p>
+        </div>
+      </div>
+
+      <a class="mapa" data-reveal style="--d:120ms"
+         href="https://www.google.com/maps/search/?api=1&query=Av.%20Ayrton%20Senna%2C%202541%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%2022775-002%20Rio%20de%20Janeiro"
+         target="_blank" rel="noopener" aria-label="Abrir a localização da unidade Barra no Google Maps">
+        <svg class="mapa__linhas" viewBox="0 0 400 400" preserveAspectRatio="none" aria-hidden="true">
+          <g stroke="rgba(223,169,74,.22)" stroke-width="1" fill="none">
+            <path d="M0 90h400M0 190h400M0 285h400M70 0v400M180 0v400M300 0v400"/>
+          </g>
+          <g stroke="rgba(242,118,47,.4)" stroke-width="2.4" fill="none">
+            <path d="M0 235c60-4 90-40 180-45s150-30 220-60"/>
+          </g>
+          <g fill="rgba(248,242,231,.05)">
+            <rect x="86" y="106" width="76" height="66" rx="6"/>
+            <rect x="200" y="206" width="82" height="60" rx="6"/>
+            <rect x="316" y="118" width="60" height="54" rx="6"/>
+          </g>
+        </svg>
+        <span class="mapa__pin" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s7-5.9 7-12a7 7 0 1 0-14 0c0 6.1 7 12 7 12Zm0-14.6a2.7 2.7 0 1 1 0 5.4 2.7 2.7 0 0 1 0-5.4Z"/></svg>
+        </span>
+        <span class="mapa__txt">
+          <span>
+            <strong>Barra da Tijuca</strong>
+            <small>Av. Ayrton Senna, 2541 — estacionamento no local</small>
+          </span>
+          <span class="mapa__ir">Traçar rota
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 18 18 6M9 6h9v9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape grao">
+  <div class="wrap">
+    <div class="rodape__grade">
+      <div>
+        <a class="logo logo--g" href="#topo" aria-label="Rio Brasa — voltar ao topo">
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <circle cx="20" cy="20" r="19" fill="none" stroke="#DFA94A" stroke-width="1.2" opacity=".55"/>
+            <path d="M20 7c4.2 5 7.4 8.4 7.4 13.2A7.4 7.4 0 0 1 20 27.6a7.4 7.4 0 0 1-7.4-7.4C12.6 15.4 15.8 12 20 7Z" fill="#D9411E"/>
+            <path d="M20 15.4c2.1 2.5 3.4 4 3.4 6.1A3.4 3.4 0 0 1 20 24.9a3.4 3.4 0 0 1-3.4-3.4c0-2.1 1.3-3.6 3.4-6.1Z" fill="#DFA94A"/>
+            <path d="M11 31.4h18" stroke="#DFA94A" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="logo__txt">
+            <span class="logo__nome"><i>Rio</i>Brasa</span>
+            <span class="logo__sub">Churrascaria</span>
+          </span>
+        </a>
+        <p>Rodízio premium, buffet completo e adega. Barra, Lagoa e Brasília — servindo o Rio desde 2000.</p>
+        <div class="social">
+          <a href="https://instagram.com/rio_brasa" target="_blank" rel="noopener" aria-label="Instagram da Rio Brasa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/riobrasa" target="_blank" rel="noopener" aria-label="Facebook da Rio Brasa">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.3-1.6 1.7-1.6h1.6V4.2c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.6H7.6V14h2.8v8h3.1Z"/></svg>
+          </a>
+          <a href="https://wa.me/5521972391222" target="_blank" rel="noopener" aria-label="WhatsApp da Rio Brasa">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#sobre">A casa</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Reservas</h4>
+        <ul>
+          <li><a href="tel:+552121999191">(21) 2199-9191</a></li>
+          <li><a href="https://wa.me/5521972391222" target="_blank" rel="noopener">WhatsApp Barra</a></li>
+          <li><a href="tel:+552121379208">(21) 2137-9208 — Lagoa</a></li>
+          <li><a href="mailto:eventos@riobrasa.com.br">eventos@riobrasa.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape__base">
+      <span>© <span id="ano">2026</span> Rio Brasa — Todos os direitos reservados.</span>
+      <span>Seg a sáb 12h–23h · Dom 12h–22h</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Ações rápidas">
+  <a class="dock__lig" href="tel:+552121999191">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5c0-.6.4-1 1-1h2.7c.5 0 .9.3 1 .8l.8 3c.1.4 0 .8-.4 1L7.5 10c1 2.2 2.3 3.5 4.5 4.5l1.2-1.6c.2-.3.6-.5 1-.4l3 .8c.5.1.8.5.8 1V17c0 .6-.4 1-1 1h-1C9.6 18 4 12.4 4 6V5Z" stroke-linejoin="round"/></svg>
+    Ligar
+  </a>
+  <a class="dock__wa" href="https://wa.me/5521972391222" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.3-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.3.3c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    Reservar no WhatsApp
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Rio Brasa",
+  "description":"Churrascaria de rodízio premium com cerca de 40 cortes na brasa, buffet árabe, japonês e frutos do mar, adega, espaço de eventos e parquinho com recreador.",
+  "url":"https://riobrasa.com.br/",
+  "telephone":"+55-21-2199-9191",
+  "email":"eventos@riobrasa.com.br",
+  "image":["https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=80"],
+  "priceRange":"R$$$",
+  "currenciesAccepted":"BRL",
+  "servesCuisine":["Churrasco","Brasileira","Árabe","Japonesa","Frutos do mar"],
+  "acceptsReservations":"True",
+  "foundingDate":"2000-12-11",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Av. Ayrton Senna, 2541",
+    "addressLocality":"Rio de Janeiro",
+    "addressRegion":"RJ",
+    "postalCode":"22775-002",
+    "addressCountry":"BR"
+  },
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=Av.%20Ayrton%20Senna%2C%202541%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%2022775-002%20Rio%20de%20Janeiro",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"23:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"22:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","bestRating":"5","reviewCount":"6414"},
+  "sameAs":["https://www.instagram.com/rio_brasa","https://www.facebook.com/riobrasa"],
+  "department":[
+    {"@type":"Restaurant","name":"Rio Brasa Barra 2","address":{"@type":"PostalAddress","streetAddress":"Av. Armando Lombardi, 583","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},
+    {"@type":"Restaurant","name":"Rio Brasa Lagoa","telephone":"+55-21-2137-9208","address":{"@type":"PostalAddress","streetAddress":"Av. Borges de Medeiros, 829","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}},
+    {"@type":"Restaurant","name":"Rio Brasa Brasília","address":{"@type":"PostalAddress","streetAddress":"SHS Quadra 5, Bloco F, Asa Sul","addressLocality":"Brasília","addressRegion":"DF","addressCountry":"BR"}}
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var raiz = document.documentElement;
+
+  /* --- Reveal à prova de falhas: só esconde se o JS realmente for animar --- */
+  var reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var podeAnimar = ('IntersectionObserver' in window) && !reduz;
+
+  if (podeAnimar) {
+    raiz.classList.add('reveal-on');
+    var alvos = document.querySelectorAll('[data-reveal]');
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    alvos.forEach(function (el) { obs.observe(el); });
+
+    /* Rede de segurança: se algo falhar, tudo aparece */
+    setTimeout(function () {
+      document.querySelectorAll('[data-reveal]:not(.vis)').forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight) el.classList.add('vis');
+      });
+    }, 2200);
+    window.addEventListener('error', function () { raiz.classList.remove('reveal-on'); }, true);
+  }
+
+  /* --- Header sólido ao rolar --- */
+  var topo = document.getElementById('topo');
+  var ultimo = -1;
+  function aoRolar() {
+    var y = window.scrollY > 30;
+    if (y !== ultimo) { topo.classList.toggle('fixo', y); ultimo = y; }
+  }
+  aoRolar();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  /* --- Menu mobile --- */
+  var btn = document.getElementById('menuBtn');
+  var painel = document.getElementById('painel');
+  function fechar() {
+    painel.classList.remove('on');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Abrir menu');
+    document.body.classList.remove('aberto');
+    document.body.style.overflow = '';
+  }
+  btn.addEventListener('click', function () {
+    var abrindo = !painel.classList.contains('on');
+    painel.classList.toggle('on', abrindo);
+    btn.setAttribute('aria-expanded', String(abrindo));
+    btn.setAttribute('aria-label', abrindo ? 'Fechar menu' : 'Abrir menu');
+    document.body.classList.toggle('aberto', abrindo);
+    document.body.style.overflow = abrindo ? 'hidden' : '';
+  });
+  painel.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', fechar); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+
+  /* --- Ano do rodapé --- */
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
