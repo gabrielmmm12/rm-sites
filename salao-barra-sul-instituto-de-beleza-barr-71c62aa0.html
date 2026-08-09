@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instituto de Beleza Barra Sul | Salão de beleza na Barra da Tijuca desde 1972</title>
+<meta name="description" content="Cabelo, manicure, pedicure e estética na Barra da Tijuca. O Instituto de Beleza Barra Sul atende na Av. Érico Veríssimo, 816, de terça a sábado, das 9h às 19h. Nota 4,8 no Google.">
+<meta name="theme-color" content="#1E1714">
+<link rel="canonical" href="https://salaobarrasul.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto de Beleza Barra Sul">
+<meta property="og:title" content="Instituto de Beleza Barra Sul | Beleza na Barra da Tijuca desde 1972">
+<meta property="og:description" content="Meio século cuidando da beleza carioca. Cabelo, unhas e estética no mesmo endereço, na Av. Érico Veríssimo, 816 — Barra da Tijuca.">
+<meta property="og:url" content="https://salaobarrasul.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='10' fill='%231E1714'/%3E%3Cg fill='none' stroke='%23E7D9C6' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M22 6c8.3 0 15 6.7 15 15v17H7V21C7 12.7 13.7 6 22 6Z'/%3E%3Cpath d='M13.5 27c2.8-3.6 5.7-3.6 8.5 0s5.7 3.6 8.5 0'/%3E%3C/g%3E%3Ccircle cx='22' cy='16.5' r='2.4' fill='%23B5613C'/%3E%3C/svg%3E">
+
+<script>
+  /* Só esconde conteúdo para animar se o JS realmente vai rodar e o usuário aceita movimento.
+     Sem JS ou com "reduzir movimento", TUDO permanece visível. */
+  (function () {
+    try {
+      var ok = 'IntersectionObserver' in window &&
+               !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (ok) document.documentElement.classList.add('anim-ready');
+    } catch (e) {}
+  })();
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#1E1714;
+  --ink-2:#2C231D;
+  --ink-soft:#4A3B33;
+  --cream:#FBF7F1;
+  --sand:#F4EBDE;
+  --shell:#E7D9C6;
+  --copper:#B5613C;
+  --copper-deep:#8A4526;
+  --sage:#4F5E52;
+  --sage-soft:#93A18F;
+  --line:rgba(30,23,20,.13);
+  --line-strong:rgba(30,23,20,.24);
+  --line-light:rgba(251,247,241,.18);
+  --max:1180px;
+  --gut:clamp(1.15rem, 4.5vw, 2.75rem);
+  --r-sm:12px;
+  --r:18px;
+  --r-lg:26px;
+  --arch:min(50%, 190px);
+  --sh-1:0 1px 2px rgba(30,23,20,.05), 0 12px 32px -18px rgba(30,23,20,.35);
+  --sh-2:0 2px 4px rgba(30,23,20,.06), 0 30px 60px -30px rgba(30,23,20,.45);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink-soft);
+  font-family:'Jost',system-ui,sans-serif;
+  font-size:clamp(1rem,.97rem + .18vw,1.075rem);
+  line-height:1.72;
+  font-weight:400;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* grão sutil de papel */
+body::after{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+h1,h2,h3,h4{
+  font-family:'Fraunces','Georgia',serif;
+  font-optical-sizing:auto;
+  color:var(--ink);
+  font-weight:400;
+  letter-spacing:-.018em;
+  line-height:1.06;
+  margin:0;
+  text-wrap:balance;
+}
+p{margin:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--copper-deep);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.section{padding-block:clamp(4.25rem,10vw,8rem)}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;
+  color:var(--copper-deep);display:flex;align-items:center;gap:.7rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;flex:none;opacity:.6}
+.eyebrow.center{justify-content:center}
+.lede{font-size:clamp(1.05rem,1rem + .35vw,1.22rem);max-width:56ch}
+em.fx{font-style:italic;color:var(--copper);font-weight:300}
+
+/* ============ BOTÕES ============ */
+.btn{
+  --bg:var(--ink); --fg:var(--cream); --bd:var(--ink);
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  background:var(--bg);color:var(--fg);border:1px solid var(--bd);
+  padding:.92rem 1.6rem;border-radius:999px;
+  font-family:'Jost',sans-serif;font-size:.92rem;font-weight:500;letter-spacing:.03em;
+  text-decoration:none;cursor:pointer;
+  transition:transform .25s var(--ease), background-color .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease), box-shadow .25s var(--ease);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh-1)}
+.btn--accent{--bg:var(--copper-deep);--bd:var(--copper-deep)}
+.btn--accent:hover{--bg:#763A1F;--bd:#763A1F}
+.btn--ghost{--bg:transparent;--fg:var(--ink);--bd:var(--line-strong)}
+.btn--ghost:hover{--bd:var(--ink);--bg:rgba(30,23,20,.04)}
+.btn--light{--bg:var(--cream);--fg:var(--ink);--bd:var(--cream)}
+.btn--outline-light{--bg:transparent;--fg:var(--cream);--bd:var(--line-light)}
+.btn--outline-light:hover{--bd:var(--cream)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-row{display:flex;flex-wrap:wrap;gap:.75rem}
+
+/* ============ LOGO ============ */
+.logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
+.logo__mark{width:38px;height:38px;flex:none;color:var(--ink);transition:transform .5s var(--ease)}
+.logo:hover .logo__mark{transform:translateY(-2px) rotate(-3deg)}
+.logo__mark .dot{fill:var(--copper)}
+.logo__txt{display:flex;flex-direction:column;line-height:1}
+.logo__name{
+  font-family:'Fraunces',serif;font-weight:500;font-size:1.26rem;letter-spacing:-.015em;color:var(--ink);
+}
+.logo__sub{
+  font-size:.55rem;letter-spacing:.28em;text-transform:uppercase;color:var(--copper-deep);
+  margin-top:.34rem;font-weight:500;
+}
+.logo--light .logo__name{color:var(--cream)}
+.logo--light .logo__mark{color:var(--shell)}
+.logo--light .logo__sub{color:var(--sage-soft)}
+
+/* ============ HEADER ============ */
+.hdr{
+  position:sticky;top:0;z-index:100;
+  background:rgba(251,247,241,.86);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s var(--ease), box-shadow .3s var(--ease), background-color .3s var(--ease);
+}
+.hdr.is-stuck{border-bottom-color:var(--line);box-shadow:0 10px 30px -26px rgba(30,23,20,.6)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:74px}
+.nav{display:none;align-items:center;gap:clamp(1.1rem,2.4vw,2.1rem)}
+.nav a{
+  position:relative;text-decoration:none;color:var(--ink-soft);font-size:.9rem;font-weight:400;
+  padding-block:.35rem;transition:color .25s var(--ease);
+}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--copper);
+  transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease);
+}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.hdr__cta{display:none}
+.burger{
+  display:inline-flex;flex-direction:column;justify-content:center;gap:5px;
+  width:46px;height:46px;padding:0 12px;border:1px solid var(--line-strong);border-radius:999px;
+  background:transparent;cursor:pointer;
+}
+.burger span{display:block;height:1.5px;background:var(--ink);border-radius:2px;transition:transform .3s var(--ease),opacity .2s var(--ease)}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+.mnav{
+  display:grid;grid-template-rows:0fr;overflow:hidden;
+  background:var(--cream);border-bottom:1px solid transparent;
+  transition:grid-template-rows .38s var(--ease), border-color .38s;
+}
+.mnav.is-open{grid-template-rows:1fr;border-bottom-color:var(--line)}
+.mnav__in{min-height:0}
+.mnav ul{list-style:none;margin:0;padding:.5rem 0 1.6rem}
+.mnav li+li{border-top:1px solid var(--line)}
+.mnav a{
+  display:flex;justify-content:space-between;align-items:center;
+  text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-size:1.32rem;padding:.95rem .1rem;
+}
+.mnav a span{color:var(--copper);font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.18em}
+.mnav .btn{width:100%;margin-top:1rem}
+
+/* ============ HERO (sempre visível, sem depender de JS) ============ */
+.hero{position:relative;padding-block:clamp(2.4rem,6vw,4.6rem) clamp(3rem,7vw,5.5rem);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:auto -20% 30% -30%;height:70vh;z-index:-1;
+  background:radial-gradient(60% 55% at 30% 40%, rgba(181,97,60,.13), transparent 70%),
+             radial-gradient(50% 50% at 85% 20%, rgba(79,94,82,.12), transparent 70%);
+  pointer-events:none;
+}
+.hero__grid{display:grid;gap:clamp(2.4rem,5vw,3.5rem);align-items:center}
+.hero h1{font-size:clamp(2.65rem,8.2vw,4.9rem);margin:1.15rem 0 0;font-weight:400}
+.hero__lede{margin-top:1.35rem}
+.hero .btn-row{margin-top:2rem}
+.hero__meta{
+  display:flex;flex-wrap:wrap;gap:.65rem 1.5rem;margin-top:2.15rem;padding-top:1.4rem;
+  border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-soft);
+}
+.hero__meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hero__meta svg{width:16px;height:16px;color:var(--copper);flex:none}
+
+.frame{position:relative}
+.frame__img{
+  position:relative;overflow:hidden;
+  border-radius:var(--arch) var(--arch) var(--r) var(--r);
+  background:linear-gradient(155deg,var(--shell),var(--sand) 45%,#D8C6AE);
+  box-shadow:var(--sh-2);
+  aspect-ratio:4/4.6;
+}
+.frame__img img{width:100%;height:100%;object-fit:cover}
+.frame::after{
+  content:"";position:absolute;inset:14px -14px -14px 14px;z-index:-1;
+  border:1px solid var(--line-strong);
+  border-radius:var(--arch) var(--arch) var(--r) var(--r);
+}
+.badge{
+  position:absolute;left:-8px;bottom:26px;
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r);
+  padding:.85rem 1.05rem;box-shadow:var(--sh-1);display:flex;align-items:center;gap:.75rem;
+}
+.badge__num{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--ink);line-height:1}
+.badge__stars{display:flex;gap:2px;color:var(--copper)}
+.badge__stars svg{width:12px;height:12px}
+.badge__txt{font-size:.72rem;line-height:1.35;color:var(--ink-soft)}
+.seal{
+  position:absolute;top:-14px;right:-6px;width:96px;height:96px;border-radius:50%;
+  background:var(--ink);color:var(--cream);display:grid;place-items:center;text-align:center;
+  font-family:'Fraunces',serif;font-size:.78rem;line-height:1.25;letter-spacing:.02em;
+  transform:rotate(-8deg);box-shadow:var(--sh-1);
+}
+.seal b{display:block;font-size:1.28rem;font-weight:500;color:var(--shell)}
+
+/* ============ TICKER ============ */
+.ticker{background:var(--ink);color:var(--shell);padding-block:1rem;overflow:hidden}
+.ticker__track{display:flex;width:max-content;animation:slide 42s linear infinite}
+.ticker__group{display:flex;align-items:center;gap:2.6rem;padding-right:2.6rem}
+.ticker span{
+  font-family:'Fraunces',serif;font-size:clamp(.95rem,2.4vw,1.18rem);white-space:nowrap;
+  font-style:italic;font-weight:300;opacity:.92;
+}
+.ticker i{color:var(--copper);font-style:normal;font-size:.7rem}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ============ SOBRE ============ */
+.sobre{background:linear-gradient(180deg,var(--cream),var(--sand))}
+.sobre__grid{display:grid;gap:clamp(2.4rem,5vw,4rem);align-items:center}
+.sobre h2{font-size:clamp(2.05rem,5.4vw,3.25rem);margin:1.05rem 0 1.4rem}
+.pillars{list-style:none;margin:2.3rem 0 0;padding:0;display:grid;gap:1.35rem}
+.pillars li{display:grid;grid-template-columns:auto 1fr;gap:1.05rem;align-items:start}
+.pillars .ico{
+  width:44px;height:44px;border-radius:50%;background:var(--cream);border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--copper-deep);flex:none;
+}
+.pillars .ico svg{width:20px;height:20px}
+.pillars h3{font-size:1.13rem;font-family:'Jost',sans-serif;font-weight:500;letter-spacing:0;margin-bottom:.2rem}
+.pillars p{font-size:.95rem}
+
+/* ============ SERVIÇOS ============ */
+.head{max-width:60ch;margin-bottom:clamp(2.4rem,5vw,3.4rem)}
+.head h2{font-size:clamp(2.05rem,5.4vw,3.25rem);margin:1.05rem 0 1.15rem}
+.head.center{margin-inline:auto;text-align:center}
+.head.center .lede{margin-inline:auto}
+.cards{display:grid;gap:1.05rem}
+.card{
+  position:relative;background:var(--cream);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(1.55rem,3.4vw,2.1rem);overflow:hidden;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+}
+.card::before{
+  content:"";position:absolute;inset:auto -30% -60% auto;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(181,97,60,.14),transparent 65%);
+  opacity:0;transition:opacity .45s var(--ease);
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh-2);border-color:var(--line-strong)}
+.card:hover::before{opacity:1}
+.card__ico{
+  width:52px;height:52px;border-radius:15px;background:var(--sand);border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--copper-deep);margin-bottom:1.35rem;
+  transition:background-color .35s var(--ease), color .35s var(--ease);
+}
+.card:hover .card__ico{background:var(--ink);color:var(--shell)}
+.card__ico svg{width:24px;height:24px}
+.card h3{font-size:1.34rem;margin-bottom:.6rem}
+.card p{font-size:.94rem}
+.card__tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.05rem}
+.card__tags span{
+  font-size:.71rem;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);
+  border:1px solid var(--line);border-radius:999px;padding:.3rem .68rem;
+}
+.serv-note{
+  margin-top:2.4rem;padding:1.35rem 1.5rem;border:1px dashed var(--line-strong);border-radius:var(--r);
+  font-size:.93rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;
+}
+
+/* ============ PROVA SOCIAL ============ */
+.proof{background:var(--ink);color:var(--shell);position:relative;overflow:hidden}
+.proof::before{
+  content:"";position:absolute;inset:-40% -10% auto auto;width:60vw;height:60vw;max-width:640px;max-height:640px;
+  background:radial-gradient(circle,rgba(181,97,60,.2),transparent 62%);
+}
+.proof h2,.proof h3{color:var(--cream)}
+.proof .eyebrow{color:var(--sage-soft)}
+.proof .lede{color:rgba(231,217,198,.82)}
+.stats{
+  display:grid;gap:1px;background:var(--line-light);border:1px solid var(--line-light);
+  border-radius:var(--r-lg);overflow:hidden;margin-bottom:clamp(2.4rem,5vw,3.4rem);
+}
+.stat{background:var(--ink);padding:clamp(1.5rem,3.4vw,2rem);text-align:center}
+.stat b{display:block;font-family:'Fraunces',serif;font-weight:400;font-size:clamp(2.1rem,5.5vw,2.9rem);color:var(--cream);line-height:1}
+.stat small{display:block;margin-top:.6rem;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--sage-soft)}
+.stat .badge__stars{justify-content:center;margin-bottom:.55rem}
+.quotes{display:grid;gap:1.05rem}
+.quote{
+  background:rgba(251,247,241,.045);border:1px solid var(--line-light);border-radius:var(--r-lg);
+  padding:clamp(1.55rem,3.4vw,2.05rem);transition:background-color .35s var(--ease),transform .35s var(--ease);
+}
+.quote:hover{background:rgba(251,247,241,.08);transform:translateY(-4px)}
+.quote svg.qm{width:26px;height:26px;color:var(--copper);margin-bottom:.9rem}
+.quote h3{font-size:1.22rem;margin-bottom:.55rem}
+.quote p{font-size:.94rem;color:rgba(231,217,198,.78)}
+.proof__note{margin-top:1.6rem;font-size:.8rem;color:rgba(231,217,198,.55);text-align:center}
+
+/* ============ FAIXA CTA ============ */
+.band{background:var(--sand)}
+.band__in{
+  display:grid;gap:2rem;align-items:center;
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(2rem,5vw,3.4rem);box-shadow:var(--sh-1);
+}
+.band h2{font-size:clamp(1.85rem,4.8vw,2.85rem);margin-bottom:.95rem}
+
+/* ============ CONTATO ============ */
+.contact__grid{display:grid;gap:clamp(2rem,4.5vw,3rem)}
+.info{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1.5rem}
+.info li{display:grid;grid-template-columns:auto 1fr;gap:1.05rem;align-items:start}
+.info .ico{width:40px;height:40px;border-radius:12px;background:var(--sand);display:grid;place-items:center;color:var(--copper-deep);flex:none}
+.info .ico svg{width:19px;height:19px}
+.info dt,.info h3{font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;color:var(--sage);font-family:'Jost',sans-serif;font-weight:500;margin-bottom:.25rem}
+.info a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong);transition:border-color .25s,color .25s}
+.info a:hover{color:var(--copper-deep);border-color:var(--copper-deep)}
+.info p,.info a{font-size:1rem}
+.hours{display:grid;gap:.4rem;margin-top:.15rem}
+.hours div{display:flex;justify-content:space-between;gap:1rem;max-width:300px;font-size:.95rem;padding-bottom:.35rem;border-bottom:1px dotted var(--line)}
+.hours .off{color:var(--sage-soft)}
+
+.mapcard{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--ink) 0%,#33271F 55%,var(--sage) 160%);
+  color:var(--cream);padding:clamp(1.7rem,4vw,2.4rem);min-height:330px;
+  display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;
+}
+.mapcard::before{
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.42;
+  background-image:
+    linear-gradient(rgba(231,217,198,.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(231,217,198,.18) 1px, transparent 1px);
+  background-size:52px 52px;
+  -webkit-mask-image:radial-gradient(75% 75% at 60% 35%, #000, transparent 78%);
+  mask-image:radial-gradient(75% 75% at 60% 35%, #000, transparent 78%);
+}
+.mapcard::after{
+  content:"";position:absolute;top:26%;left:52%;width:16px;height:16px;border-radius:50%;
+  background:var(--copper);box-shadow:0 0 0 8px rgba(181,97,60,.28), 0 0 0 20px rgba(181,97,60,.13);
+  z-index:-1;
+}
+.mapcard h3{color:var(--cream);font-size:1.42rem;margin-bottom:.5rem}
+.mapcard p{color:rgba(231,217,198,.8);font-size:.95rem;margin-bottom:1.35rem}
+.socials{display:flex;gap:.6rem;margin-top:1.9rem}
+.socials a{
+  width:46px;height:46px;border-radius:50%;border:1px solid var(--line-strong);
+  display:grid;place-items:center;color:var(--ink);text-decoration:none;
+  transition:background-color .3s var(--ease),color .3s var(--ease),transform .3s var(--ease),border-color .3s;
+}
+.socials a:hover{background:var(--ink);color:var(--cream);border-color:var(--ink);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px}
+
+/* ============ RODAPÉ ============ */
+.ftr{background:var(--ink);color:rgba(231,217,198,.7);padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+.ftr__top{display:grid;gap:2.4rem;padding-bottom:2.6rem;border-bottom:1px solid var(--line-light)}
+.ftr p{font-size:.92rem;max-width:42ch}
+.ftr h4{color:var(--cream);font-family:'Jost',sans-serif;font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;margin-bottom:1rem}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.ftr a{color:rgba(231,217,198,.72);text-decoration:none;font-size:.93rem;transition:color .25s}
+.ftr a:hover{color:var(--copper)}
+.ftr__bot{display:flex;flex-wrap:wrap;gap:.7rem 1.5rem;justify-content:space-between;padding-top:1.8rem;font-size:.78rem;color:rgba(231,217,198,.5)}
+
+/* ============ WHATSAPP FLUTUANTE ============ */
+.float{
+  position:fixed;right:16px;bottom:16px;z-index:90;
+  width:56px;height:56px;border-radius:50%;background:var(--copper-deep);color:var(--cream);
+  display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(30,23,20,.6);
+  text-decoration:none;transition:transform .3s var(--ease),background-color .3s var(--ease);
+}
+.float:hover{transform:scale(1.06);background:#763A1F}
+.float svg{width:27px;height:27px}
+
+/* ============ REVEAL À PROVA DE FALHAS ============ */
+.anim-ready .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.anim-ready .reveal.is-in{opacity:1;transform:none}
+
+/* ============ RESPONSIVO ============ */
+@media (min-width:600px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .quotes{grid-template-columns:repeat(2,1fr)}
+  .ftr__top{grid-template-columns:1.4fr 1fr 1fr}
+  .float{right:24px;bottom:24px}
+}
+@media (min-width:860px){
+  .hero__grid{grid-template-columns:1.06fr .94fr;gap:clamp(2.6rem,5vw,4.5rem)}
+  .sobre__grid{grid-template-columns:.92fr 1.08fr}
+  .contact__grid{grid-template-columns:1.05fr .95fr}
+  .band__in{grid-template-columns:1.35fr auto;padding-inline:clamp(2.4rem,5vw,4rem)}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .quotes{grid-template-columns:repeat(3,1fr)}
+  .nav{display:flex}
+  .hdr__cta{display:inline-flex}
+  .burger{display:none}
+  .mnav{display:none}
+  .badge{left:-34px}
+  .seal{right:-24px;width:108px;height:108px}
+}
+@media (min-width:1040px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .ticker__track{animation:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hdr" id="topo">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#topo" aria-label="Instituto de Beleza Barra Sul — início">
+      <svg class="logo__mark" viewBox="0 0 44 44" aria-hidden="true" fill="none">
+        <path d="M22 5c8.8 0 16 7.2 16 16v18H6V21C6 12.2 13.2 5 22 5Z" stroke="currentColor" stroke-width="2"/>
+        <path d="M13 27.5c3-3.9 6-3.9 9 0s6 3.9 9 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle class="dot" cx="22" cy="16" r="2.6"/>
+      </svg>
+      <span class="logo__txt">
+        <span class="logo__name">Barra&nbsp;Sul</span>
+        <span class="logo__sub">Instituto de Beleza</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">O salão</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--accent hdr__cta" href="https://wa.me/5521982570232" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-1 1.2-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.6a.6.6 0 0 0 0-.6L8.9 6.5c-.3-.6-.5-.5-.7-.6H7.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.6 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2 15 15 0 0 0 1.6.6 3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .2-1.4Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+      Agendar no WhatsApp
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mnav" id="mnav">
+    <div class="mnav__in">
+      <div class="wrap">
+        <ul>
+          <li><a href="#sobre">O salão <span>01</span></a></li>
+          <li><a href="#servicos">Serviços <span>02</span></a></li>
+          <li><a href="#avaliacoes">Avaliações <span>03</span></a></li>
+          <li><a href="#contato">Contato <span>04</span></a></li>
+        </ul>
+        <a class="btn btn--accent" href="https://wa.me/5521982570232" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow">Barra da Tijuca · Rio de Janeiro · desde 1972</p>
+        <h1>A beleza da Barra tem <em class="fx">endereço</em> há meio século.</h1>
+        <p class="lede hero__lede">
+          Cabelo, unhas e estética no mesmo lugar, com profissionais que as clientes chamam pelo nome.
+          Uma loja de rua na Érico Veríssimo, onde o atendimento tem hora marcada — e tempo de sobra.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--accent" href="https://wa.me/5521982570232" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm5.5-5.8c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-1 1.2-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.6a.6.6 0 0 0 0-.6L8.9 6.5c-.3-.6-.5-.5-.7-.6H7.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.6 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2 15 15 0 0 0 1.6.6 3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .2-1.4Z"/></svg>
+            Marcar meu horário
+          </a>
+          <a class="btn btn--ghost" href="tel:+552124936838">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            (21) 2493-6838
+          </a>
+        </div>
+        <div class="hero__meta">
+          <span>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            <strong>4,8</strong> no Google · +189 avaliações
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+            Terça a sábado, 9h às 19h
+          </span>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="frame__img">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=80"
+               alt="Cabeleireiro finalizando o penteado de uma cliente em um salão de beleza claro e acolhedor"
+               width="1100" height="1265" fetchpriority="high" decoding="async"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="seal" aria-hidden="true"><span>desde<b>1972</b>na Barra</span></div>
+        <div class="badge">
+          <div>
+            <div class="badge__stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            </div>
+            <span class="badge__num">4,8</span>
+          </div>
+          <span class="badge__txt">Avaliação<br>do Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TICKER ================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__group">
+        <span>Corte &amp; finalização</span><i>◆</i>
+        <span>Coloração</span><i>◆</i>
+        <span>Mechas &amp; luzes</span><i>◆</i>
+        <span>Hidratação profunda</span><i>◆</i>
+        <span>Escova</span><i>◆</i>
+        <span>Manicure &amp; pedicure</span><i>◆</i>
+        <span>Design de sobrancelhas</span><i>◆</i>
+        <span>Limpeza de pele</span><i>◆</i>
+        <span>Penteados de festa</span><i>◆</i>
+      </div>
+      <div class="ticker__group">
+        <span>Corte &amp; finalização</span><i>◆</i>
+        <span>Coloração</span><i>◆</i>
+        <span>Mechas &amp; luzes</span><i>◆</i>
+        <span>Hidratação profunda</span><i>◆</i>
+        <span>Escova</span><i>◆</i>
+        <span>Manicure &amp; pedicure</span><i>◆</i>
+        <span>Design de sobrancelhas</span><i>◆</i>
+        <span>Limpeza de pele</span><i>◆</i>
+        <span>Penteados de festa</span><i>◆</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="section sobre" id="sobre">
+    <div class="wrap sobre__grid">
+      <div class="frame reveal">
+        <div class="frame__img" style="aspect-ratio:4/4.3">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80"
+               alt="Profissional cuidando dos cabelos de uma cliente sentada na cadeira do salão"
+               width="900" height="970" loading="lazy" decoding="async"
+               onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="reveal" style="--d:120ms">
+        <p class="eyebrow">O salão</p>
+        <h2>Um clássico do bairro que nunca saiu de moda.</h2>
+        <p class="lede">
+          O Instituto de Beleza Barra Sul abriu as portas em 27 de janeiro de 1972, quando a Barra ainda estava
+          começando a virar Barra. De lá para cá, mudou tudo em volta — e permaneceu o essencial: mão firme,
+          conversa boa e a sensação de estar em casa enquanto alguém cuida de você.
+        </p>
+        <ul class="pillars">
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>
+            </span>
+            <div>
+              <h3>Profissionais que você conhece pelo nome</h3>
+              <p>Nas avaliações públicas, clientes citam Luiz e Naldo diretamente. Aqui, quem cuida do seu cabelo hoje é quem já cuidou dele antes.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 3.5C19 16.6 12 21 12 21Z"/></svg>
+            </span>
+            <div>
+              <h3>Tudo resolvido em uma única visita</h3>
+              <p>Cabeleireiro, manicure, pedicure e estética no mesmo endereço. Você marca uma vez e sai pronta — sem correr a cidade.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.6V21h14V9.6"/><path d="M10 21v-6h4v6"/></svg>
+            </span>
+            <div>
+              <h3>Loja de rua, atendimento sem pressa</h3>
+              <p>Na Av. Érico Veríssimo, 816 — Loja A. Fácil de chegar, fácil de estacionar por perto, longe do corre-corre do shopping.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Serviços</p>
+        <h2>Do corte à pele: cuidado completo, do jeito carioca.</h2>
+        <p class="lede">Trabalhamos com o que dá resultado no clima do Rio — sol, sal e umidade pedem técnica e produto certo.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9"/><path d="M8.1 8.1 20 20"/></svg>
+          </div>
+          <h3>Corte &amp; finalização</h3>
+          <p>Leitura do rosto, do fio e da rotina antes da tesoura. Corte que cai bem no dia seguinte, não só na cadeira.</p>
+          <div class="card__tags"><span>Feminino</span><span>Masculino</span><span>Infantil</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:90ms">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.2 6 10a6 6 0 0 1-12 0c0-3.8 6-10 6-10Z"/><path d="M12 17.5a3.5 3.5 0 0 1-3.5-3.5"/></svg>
+          </div>
+          <h3>Coloração &amp; mechas</h3>
+          <p>Cobertura de brancos, tons naturais, iluminados e correção de cor. Diagnóstico do fio antes de qualquer química.</p>
+          <div class="card__tags"><span>Luzes</span><span>Retoque de raiz</span><span>Matização</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:180ms">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c4-1 6 1 8 0s4-3 8-2"/><path d="M4 18c4-1 6 1 8 0s4-3 8-2"/><path d="M12 3v5"/><path d="M9.5 5.5 12 3l2.5 2.5"/></svg>
+          </div>
+          <h3>Tratamentos &amp; hidratação</h3>
+          <p>Cronograma capilar para cabelo castigado por praia, piscina e secador. Brilho, maciez e ponta viva de novo.</p>
+          <div class="card__tags"><span>Nutrição</span><span>Reconstrução</span><span>Anti-frizz</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21c-1.5-3 0-6 2.5-8.2C12 10.6 13 8.5 12.6 6"/><path d="M17 21c1.5-3 .3-6.4-2-8.4"/><path d="M12.6 6C13.4 4 15.4 3 17.6 3.4"/><circle cx="6.5" cy="9.5" r="2.5"/></svg>
+          </div>
+          <h3>Escova, penteados &amp; noivas</h3>
+          <p>Escova modelada, ondas, coques e penteados para casamento, formatura e evento. Prova de penteado sob agendamento.</p>
+          <div class="card__tags"><span>Escova</span><span>Festa</span><span>Noivas</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:90ms">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5A2.5 2.5 0 0 1 14 3.5v9a2.5 2.5 0 0 1-5 0Z"/><path d="M9 8h5"/><path d="M7.5 17h8l-.8 3.2a1 1 0 0 1-1 .8H9.3a1 1 0 0 1-1-.8Z"/></svg>
+          </div>
+          <h3>Manicure &amp; pedicure</h3>
+          <p>Esmaltação caprichada, cutícula bem feita e higiene rigorosa em cada atendimento. Spa dos pés para quem passa o dia em pé.</p>
+          <div class="card__tags"><span>Alongamento</span><span>Esmaltação</span><span>Spa dos pés</span></div>
+        </article>
+
+        <article class="card reveal" style="--d:180ms">
+          <div class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M21 3v6h-6"/><circle cx="12" cy="12" r="3.2"/></svg>
+          </div>
+          <h3>Estética &amp; cuidados com a pele</h3>
+          <p>Limpeza de pele, design de sobrancelhas e depilação em ambiente reservado, com produtos adequados a cada tipo de pele.</p>
+          <div class="card__tags"><span>Limpeza de pele</span><span>Sobrancelhas</span><span>Depilação</span></div>
+        </article>
+      </div>
+
+      <div class="serv-note reveal">
+        <p>Quer saber valores, duração ou disponibilidade de um serviço específico? Chame no WhatsApp — respondemos no horário do salão.</p>
+        <a class="btn btn--ghost" href="https://wa.me/5521982570232" target="_blank" rel="noopener">Perguntar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROVA SOCIAL ================= -->
+  <section class="section proof" id="avaliacoes">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow center">Quem já sentou na cadeira</p>
+        <h2>Meio século de clientes que voltam.</h2>
+        <p class="lede">A melhor propaganda de um salão de bairro continua sendo a mesma: a cliente que volta e traz uma amiga.</p>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="badge__stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+          </div>
+          <b>4,8</b><small>Nota no Google</small>
+        </div>
+        <div class="stat"><b>+189</b><small>Avaliações públicas</small></div>
+        <div class="stat"><b>5,0</b><small>Nota na agenda Trinks</small></div>
+        <div class="stat"><b>1972</b><small>Ano de fundação</small></div>
+      </div>
+
+      <div class="quotes">
+        <article class="quote reveal">
+          <svg class="qm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6 6.6 4 9.6 4 13.4V19h6.6v-6.6H7.4c0-2.3 1-3.9 3-4.9L9.5 5Zm10 0C16 6.6 14 9.6 14 13.4V19h6.6v-6.6h-3.2c0-2.3 1-3.9 3-4.9L19.5 5Z"/></svg>
+          <h3>Atendimento que acolhe</h3>
+          <p>O elogio mais repetido nas avaliações é o mesmo há anos: a forma como as pessoas são recebidas. Aqui ninguém é ficha de agenda.</p>
+        </article>
+        <article class="quote reveal" style="--d:90ms">
+          <svg class="qm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6 6.6 4 9.6 4 13.4V19h6.6v-6.6H7.4c0-2.3 1-3.9 3-4.9L9.5 5Zm10 0C16 6.6 14 9.6 14 13.4V19h6.6v-6.6h-3.2c0-2.3 1-3.9 3-4.9L19.5 5Z"/></svg>
+          <h3>Luiz e Naldo, citados pelo nome</h3>
+          <p>Quando o cliente escreve o nome do profissional na avaliação, é porque confiou. Os nossos cabeleireiros aparecem assim, direto.</p>
+        </article>
+        <article class="quote reveal" style="--d:180ms">
+          <svg class="qm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6 6.6 4 9.6 4 13.4V19h6.6v-6.6H7.4c0-2.3 1-3.9 3-4.9L9.5 5Zm10 0C16 6.6 14 9.6 14 13.4V19h6.6v-6.6h-3.2c0-2.3 1-3.9 3-4.9L19.5 5Z"/></svg>
+          <h3>Resultado que dura a semana</h3>
+          <p>Cor, corte e escova pensados para o dia a dia do Rio: aguentam praia, calor e umidade sem perder a forma.</p>
+        </article>
+      </div>
+      <p class="proof__note">Resumo dos elogios mais frequentes nas avaliações públicas do salão (Google e Trinks).</p>
+    </div>
+  </section>
+
+  <!-- ================= FAIXA CTA ================= -->
+  <section class="section band">
+    <div class="wrap">
+      <div class="band__in reveal">
+        <div>
+          <p class="eyebrow">Agende seu horário</p>
+          <h2 style="margin-top:1rem">Sua próxima vez no espelho pode ser esta semana.</h2>
+          <p class="lede">Atendemos de terça a sábado, das 9h às 19h. Mande uma mensagem com o serviço desejado e a gente encaixa o melhor horário para você.</p>
+        </div>
+        <div class="btn-row" style="flex-direction:column">
+          <a class="btn btn--accent" href="https://wa.me/5521982570232" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm5.5-5.8c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-1 1.2-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.6a.6.6 0 0 0 0-.6L8.9 6.5c-.3-.6-.5-.5-.7-.6H7.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.6 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2 15 15 0 0 0 1.6.6 3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .2-1.4Z"/></svg>
+            WhatsApp (21) 98257-0232
+          </a>
+          <a class="btn btn--ghost" href="tel:+552124916784">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            Ligar (21) 2491-6784
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="section" id="contato">
+    <div class="wrap contact__grid">
+      <div class="reveal">
+        <p class="eyebrow">Contato &amp; visita</p>
+        <h2 style="font-size:clamp(2.05rem,5.4vw,3.1rem);margin:1.05rem 0 1.1rem">Estamos na Érico Veríssimo, 816.</h2>
+        <p class="lede">Loja A, no coração da Barra da Tijuca. Se preferir, confirme seu horário antes de vir — a agenda costuma ficar cheia no fim de semana.</p>
+
+        <ul class="info">
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
+            </span>
+            <div>
+              <h3>Endereço</h3>
+              <p>Av. Érico Veríssimo, 816 — Loja A<br>Barra da Tijuca, Rio de Janeiro/RJ · CEP 22621-180</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+            </span>
+            <div>
+              <h3>Horários</h3>
+              <div class="hours">
+                <div><span>Terça a sábado</span><strong>9h — 19h</strong></div>
+                <div class="off"><span>Domingo e segunda</span><span>Fechado</span></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <h3>Telefones</h3>
+              <p><a href="tel:+552124936838">(21) 2493-6838</a> · <a href="tel:+552124916784">(21) 2491-6784</a><br>
+              WhatsApp: <a href="https://wa.me/5521982570232" target="_blank" rel="noopener">(21) 98257-0232</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/><path d="m9.5 15.5 1.8 1.8 3.4-3.4"/></svg>
+            </span>
+            <div>
+              <h3>Agendamento online</h3>
+              <p><a href="https://www.trinks.com/barrasul" target="_blank" rel="noopener">Reservar pela agenda Trinks</a></p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/salaobarrasul" target="_blank" rel="noopener" aria-label="Instagram do Salão Barra Sul">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/SalaoBarraSul" target="_blank" rel="noopener" aria-label="Facebook do Salão Barra Sul">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7.3c0-.8.2-1.3 1.4-1.3H17V3.1A19 19 0 0 0 14.7 3c-2.5 0-4.2 1.5-4.2 4.2V9H8v3h2.5v9h3.3v-9h2.6l.4-3H14Z"/></svg>
+          </a>
+          <a href="https://wa.me/5521982570232" target="_blank" rel="noopener" aria-label="WhatsApp do Salão Barra Sul">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm5.5-5.8c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-1 1.2-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.6a.6.6 0 0 0 0-.6L8.9 6.5c-.3-.6-.5-.5-.7-.6H7.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.6 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2 15 15 0 0 0 1.6.6 3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .2-1.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mapcard reveal" style="--d:120ms">
+        <h3>Como chegar</h3>
+        <p>Av. Érico Veríssimo, 816 — Loja A, Barra da Tijuca. Abra a rota no seu aplicativo de mapas favorito.</p>
+        <a class="btn btn--light" style="align-self:flex-start"
+           href="https://www.google.com/maps/search/?api=1&query=Av.%20%C3%89rico%20Ver%C3%ADssimo%2C%20816%2C%20Loja%20A%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022621-180%20Rio%20de%20Janeiro"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
+          Ver no mapa
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div>
+        <a class="logo logo--light" href="#topo" aria-label="Instituto de Beleza Barra Sul — voltar ao topo">
+          <svg class="logo__mark" viewBox="0 0 44 44" aria-hidden="true" fill="none">
+            <path d="M22 5c8.8 0 16 7.2 16 16v18H6V21C6 12.2 13.2 5 22 5Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M13 27.5c3-3.9 6-3.9 9 0s6 3.9 9 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle class="dot" cx="22" cy="16" r="2.6"/>
+          </svg>
+          <span class="logo__txt">
+            <span class="logo__name">Barra&nbsp;Sul</span>
+            <span class="logo__sub">Instituto de Beleza</span>
+          </span>
+        </a>
+        <p style="margin-top:1.4rem">Salão de beleza e estética na Barra da Tijuca desde 1972. Cabelo, manicure, pedicure e cuidados com a pele, de terça a sábado.</p>
+      </div>
+
+      <nav aria-label="Navegação do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#sobre">O salão</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Fale com a gente</h4>
+        <ul>
+          <li><a href="https://wa.me/5521982570232" target="_blank" rel="noopener">WhatsApp (21) 98257-0232</a></li>
+          <li><a href="tel:+552124936838">(21) 2493-6838</a></li>
+          <li><a href="tel:+552124916784">(21) 2491-6784</a></li>
+          <li><a href="https://www.instagram.com/salaobarrasul" target="_blank" rel="noopener">@salaobarrasul</a></li>
+          <li><a href="https://www.trinks.com/barrasul" target="_blank" rel="noopener">Agendar online</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ftr__bot">
+      <span>© <span id="ano">2026</span> Salão Barra Sul Ltda · CNPJ 42.232.231/0001-70</span>
+      <span>Av. Érico Veríssimo, 816, Loja A — Barra da Tijuca, Rio de Janeiro/RJ</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5521982570232" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com o Salão Barra Sul">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm5.5-5.8c-.3-.2-1.8-.9-2-1s-.5-.2-.7.1-.8 1-1 1.2-.4.2-.7 0a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.6a.6.6 0 0 0 0-.6L8.9 6.5c-.3-.6-.5-.5-.7-.6H7.6a1.2 1.2 0 0 0-.9.4A3.6 3.6 0 0 0 5.6 9c0 1.6 1.1 3.1 1.3 3.3a12.4 12.4 0 0 0 4.8 4.2 15 15 0 0 0 1.6.6 3.9 3.9 0 0 0 1.8.1 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .2-1.4Z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Instituto de Beleza Barra Sul",
+  "alternateName": "Salão Barra Sul",
+  "legalName": "Salao Barra Sul Ltda",
+  "description": "Salão de beleza e estética na Barra da Tijuca desde 1972. Cabeleireiros, manicure, pedicure e cuidados com a beleza.",
+  "url": "https://salaobarrasul.com.br/",
+  "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+  "telephone": "+55-21-2493-6838",
+  "foundingDate": "1972-01-27",
+  "taxID": "42.232.231/0001-70",
+  "currenciesAccepted": "BRL",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Érico Veríssimo, 816, Loja A",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22621-180",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Barra da Tijuca, Rio de Janeiro"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "189",
+    "bestRating": "5"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.%20%C3%89rico%20Ver%C3%ADssimo%2C%20816%2C%20Loja%20A%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022621-180%20Rio%20de%20Janeiro",
+  "sameAs": [
+    "https://www.instagram.com/salaobarrasul",
+    "https://www.facebook.com/SalaoBarraSul",
+    "https://www.trinks.com/barrasul"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte e finalização"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coloração e mechas"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tratamentos e hidratação capilar"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Escova e penteados"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manicure e pedicure"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Estética e cuidados com a pele"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* --- Menu mobile --- */
+  var burger = document.getElementById('burger');
+  var mnav = document.getElementById('mnav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!open));
+      burger.setAttribute('aria-label', open ? 'Abrir menu' : 'Fechar menu');
+      mnav.classList.toggle('is-open', !open);
+    });
+    mnav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Abrir menu');
+        mnav.classList.remove('is-open');
+      }
+    });
+  }
+
+  /* --- Sombra do cabeçalho ao rolar --- */
+  var hdr = document.querySelector('.hdr');
+  var onScroll = function () {
+    if (hdr) hdr.classList.toggle('is-stuck', window.scrollY > 12);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* --- Ano do rodapé --- */
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+
+  /* --- Scroll reveal (só se o CSS de animação foi habilitado) --- */
+  if (!document.documentElement.classList.contains('anim-ready')) return;
+
+  var items = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+  items.forEach(function (el) { io.observe(el); });
+
+  /* Rede de segurança: se algo falhar, mostra tudo depois de 3s */
+  setTimeout(function () {
+    document.querySelectorAll('.reveal:not(.is-in)').forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) el.classList.add('is-in');
+    });
+  }, 3000);
+})();
+</script>
+
+</body>
+</html>
