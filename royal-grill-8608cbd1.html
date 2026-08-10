@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Grill — Churrascaria à la carte na Barra da Tijuca | Desde 1984</title>
+<meta name="description" content="Churrascaria à la carte no CasaShopping, Barra da Tijuca, desde 1984. Picanha argentina, ancho, costela ripa e coração de alcatra grelhados em rechaud na sua mesa. Reserve pelo WhatsApp: (21) 3325-6166.">
+<link rel="canonical" href="https://royalgrillbarra.com.br/">
+<meta name="theme-color" content="#150F0D">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Royal Grill">
+<meta property="og:title" content="Royal Grill — Churrascaria à la carte na Barra da Tijuca">
+<meta property="og:description" content="Cortes nobres grelhados em rechaud na sua mesa, no CasaShopping, desde 1984. Nota 4,5 no Google. Reservas pelo WhatsApp.">
+<meta property="og:url" content="https://royalgrillbarra.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Royal Grill — Churrascaria à la carte na Barra da Tijuca">
+<meta name="twitter:description" content="Cortes nobres na brasa, à la carte, no CasaShopping, desde 1984.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=630&q=70">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..800&family=Jost:wght@300..600&display=swap" rel="stylesheet">
+
+<script>
+/* Habilita o reveal SOMENTE se o JS rodar e o usuário não pedir menos movimento.
+   Sem isso, todo o conteúdo permanece visível por padrão. */
+(function () {
+  try {
+    var reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ('IntersectionObserver' in window && !reduz) {
+      document.documentElement.classList.add('js-anim');
+    }
+  } catch (e) {}
+})();
+</script>
+
+<style>
+:root{
+  /* ————— paleta autoral: brasa, latão e carvão ————— */
+  --carvao:#150F0D;
+  --carvao-2:#1E1613;
+  --carvao-3:#2A201B;
+  --creme:#F7F1E6;
+  --creme-2:#EFE5D5;
+  --vinho:#6B1F2A;
+  --brasa:#D2552A;
+  --brasa-clara:#F09257;
+  --latao:#C9A15C;
+  --latao-clara:#EBCB92;
+  --fumaca:#9C8D7E;
+  --tinta:#241B17;
+  --tinta-suave:#5A4B43;
+
+  --fonte-display:'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --fonte-texto:'Jost', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+
+  --raio:14px;
+  --raio-g:22px;
+  --sombra:0 24px 60px -30px rgba(10,6,4,.65);
+  --transicao:.32s cubic-bezier(.22,.61,.36,1);
+  --container:min(1180px, 100% - 2.6rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+
+body{
+  margin:0;
+  background:var(--carvao);
+  color:var(--creme);
+  font-family:var(--fonte-texto);
+  font-weight:400;
+  font-size:clamp(1rem,.97rem + .18vw,1.075rem);
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* textura de grão — dá profundidade sem pesar */
+body::after{
+  content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.045;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--fonte-display);font-weight:600;line-height:1.05;letter-spacing:-.015em;margin:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+.container{width:var(--container);margin-inline:auto}
+.secao{padding:clamp(4.5rem,9vw,8.5rem) 0;scroll-margin-top:80px;position:relative}
+.claro{background:var(--creme);color:var(--tinta)}
+.escuro{background:var(--carvao);color:var(--creme)}
+
+.pular{position:absolute;left:-9999px;top:0;background:var(--brasa);color:#fff;padding:.8rem 1.2rem;z-index:100;border-radius:0 0 10px 0}
+.pular:focus{left:0}
+
+:focus-visible{outline:2px solid var(--latao-clara);outline-offset:3px;border-radius:4px}
+
+/* ————— logotipo ————— */
+.logo{display:inline-flex;align-items:center;gap:.72rem;text-decoration:none;line-height:1}
+.logo .mark{width:38px;height:38px;flex:none;color:var(--latao);transition:transform var(--transicao)}
+.logo:hover .mark{transform:translateY(-2px) rotate(-3deg)}
+.logo-txt{display:flex;flex-direction:column;gap:.28rem}
+.logo-word{font-family:var(--fonte-display);font-weight:600;font-size:clamp(1rem,2.4vw,1.16rem);letter-spacing:.2em;text-transform:uppercase}
+.logo-word em{font-style:normal;color:var(--latao)}
+.logo-sub{font-size:.54rem;letter-spacing:.32em;text-transform:uppercase;color:var(--fumaca);font-weight:500}
+
+/* ————— cabeçalho ————— */
+.topo{position:fixed;inset:0 0 auto;z-index:50;padding:1rem 0;transition:background var(--transicao),box-shadow var(--transicao),padding var(--transicao);border-bottom:1px solid transparent}
+.topo.fixo{background:rgba(19,14,12,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:rgba(201,161,92,.18);padding:.62rem 0}
+.topo-int{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav{display:none}
+.nav ul{display:flex;align-items:center;gap:clamp(1rem,2.4vw,2.1rem)}
+.nav a{text-decoration:none;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#E4DACC;position:relative;padding:.3rem 0;transition:color var(--transicao)}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--latao);transition:width var(--transicao)}
+.nav a:hover{color:#fff}
+.nav a:hover::after{width:100%}
+.topo-cta{display:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border:none;cursor:pointer;text-decoration:none;font-family:var(--fonte-texto);font-weight:500;font-size:.83rem;letter-spacing:.13em;text-transform:uppercase;padding:1rem 1.6rem;border-radius:100px;transition:transform var(--transicao),background var(--transicao),color var(--transicao),box-shadow var(--transicao)}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-brasa{background:linear-gradient(135deg,var(--brasa) 0%,#B33F1E 100%);color:#FFF6EF;box-shadow:0 14px 30px -14px rgba(210,85,42,.9)}
+.btn-brasa:hover{transform:translateY(-2px);box-shadow:0 20px 40px -16px rgba(210,85,42,1)}
+.btn-linha{background:transparent;color:var(--creme);border:1px solid rgba(201,161,92,.5)}
+.btn-linha:hover{background:rgba(201,161,92,.13);border-color:var(--latao);transform:translateY(-2px)}
+.claro .btn-linha{color:var(--tinta);border-color:rgba(36,27,23,.28)}
+.claro .btn-linha:hover{background:rgba(36,27,23,.06);border-color:var(--tinta)}
+.btn-mini{padding:.72rem 1.15rem;font-size:.72rem}
+
+.menu-btn{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:44px;padding:0 11px;background:transparent;border:1px solid rgba(201,161,92,.4);border-radius:100px;cursor:pointer}
+.menu-btn span{display:block;height:1.5px;background:var(--creme);border-radius:2px;transition:transform var(--transicao),opacity var(--transicao)}
+.menu-btn span:nth-child(1){width:100%}
+.menu-btn span:nth-child(2){width:70%}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){width:100%;transform:translateY(-6.5px) rotate(-45deg)}
+
+.painel{position:fixed;inset:72px 0 auto;z-index:49;background:rgba(19,14,12,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,161,92,.2);padding:1.2rem 0 1.9rem;transform:translateY(-14px);opacity:0;visibility:hidden;transition:opacity var(--transicao),transform var(--transicao),visibility var(--transicao)}
+.painel.aberto{opacity:1;visibility:visible;transform:translateY(0)}
+.painel ul{display:flex;flex-direction:column}
+.painel a{display:block;padding:.85rem 0;text-decoration:none;font-family:var(--fonte-display);font-size:1.4rem;border-bottom:1px solid rgba(201,161,92,.13);color:var(--creme)}
+.painel .btn{margin-top:1.4rem;width:100%}
+
+/* ————— hero (sempre visível, sem depender de JS) ————— */
+.hero{position:relative;padding:clamp(7.5rem,16vw,10.5rem) 0 clamp(3.5rem,7vw,5.5rem);overflow:hidden;background:var(--carvao)}
+.hero::before{content:"";position:absolute;top:-22%;right:-16%;width:min(880px,105vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(210,85,42,.32) 0%,rgba(107,31,42,.16) 42%,transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;left:-18%;bottom:-30%;width:min(620px,90vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(201,161,92,.14) 0%,transparent 68%);pointer-events:none}
+.hero-grid{position:relative;z-index:2;display:grid;gap:clamp(2.6rem,6vw,4.2rem);align-items:center}
+
+.olho{display:inline-flex;align-items:center;gap:.7rem;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;font-weight:500;color:var(--latao);margin-bottom:1.3rem}
+.olho::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,var(--brasa),var(--latao))}
+.claro .olho{color:#8A5A2B}
+.claro .olho::before{background:linear-gradient(90deg,var(--brasa),#8A5A2B)}
+
+.hero h1{font-size:clamp(2.65rem,7.4vw,5.05rem);font-weight:600;letter-spacing:-.028em;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--brasa-clara)}
+.hero-lead{margin-top:1.5rem;max-width:54ch;color:#D6CABB;font-size:clamp(1.02rem,1.9vw,1.19rem);font-weight:300}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.2rem}
+.hero-selos{display:flex;flex-wrap:wrap;gap:.55rem 1.4rem;margin-top:2.1rem;padding-top:1.6rem;border-top:1px solid rgba(201,161,92,.2)}
+.selo{display:inline-flex;align-items:center;gap:.5rem;font-size:.79rem;letter-spacing:.05em;color:#C3B5A5}
+.selo svg{width:15px;height:15px;color:var(--latao);flex:none}
+.selo b{color:var(--creme);font-weight:500}
+
+.moldura{position:relative;isolation:isolate}
+.moldura::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid rgba(201,161,92,.42);border-radius:var(--raio-g);z-index:-1}
+.moldura img{width:100%;height:clamp(310px,52vw,540px);object-fit:cover;border-radius:var(--raio-g);background:linear-gradient(150deg,var(--carvao-3),var(--vinho));box-shadow:var(--sombra)}
+.nota-flutuante{position:absolute;left:-6px;bottom:-18px;display:flex;align-items:center;gap:.8rem;background:rgba(21,15,13,.93);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(201,161,92,.35);border-radius:100px;padding:.7rem 1.15rem;box-shadow:var(--sombra)}
+.nota-flutuante .n{font-family:var(--fonte-display);font-size:1.6rem;font-weight:700;line-height:1;color:var(--latao-clara)}
+.nota-flutuante small{display:block;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fumaca)}
+.estrelas{display:flex;gap:2px;color:var(--latao)}
+.estrelas svg{width:12px;height:12px}
+
+/* ————— faixa ————— */
+.faixa{border-top:1px solid rgba(201,161,92,.18);border-bottom:1px solid rgba(201,161,92,.18);background:var(--carvao-2)}
+.faixa ul{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(201,161,92,.16)}
+.faixa li{background:var(--carvao-2);padding:1.5rem clamp(1rem,3vw,1.8rem);text-align:center}
+.faixa b{display:block;font-family:var(--fonte-display);font-size:clamp(1.35rem,3.4vw,1.9rem);font-weight:600;color:var(--latao-clara);line-height:1.1}
+.faixa span{display:block;margin-top:.3rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--fumaca)}
+
+/* ————— sobre ————— */
+.duas{display:grid;gap:clamp(2.4rem,6vw,4.6rem);align-items:center}
+.claro h2{font-size:clamp(2rem,4.6vw,3.15rem);color:var(--tinta);text-wrap:balance}
+.escuro h2{font-size:clamp(2rem,4.6vw,3.15rem);color:var(--creme);text-wrap:balance}
+.texto-corpo{margin-top:1.5rem;color:var(--tinta-suave);font-weight:300;max-width:60ch}
+.texto-corpo + .texto-corpo{margin-top:1.05rem}
+.escuro .texto-corpo{color:#C3B5A5}
+.assina{margin-top:1.9rem;font-family:var(--fonte-display);font-style:italic;font-size:1.22rem;color:var(--vinho)}
+
+.sobre-img{position:relative}
+.sobre-img img{width:100%;height:clamp(300px,48vw,520px);object-fit:cover;border-radius:var(--raio-g);background:linear-gradient(150deg,var(--carvao-3),var(--vinho))}
+.tarja{position:absolute;right:clamp(-8px,-1vw,0px);bottom:22px;background:var(--vinho);color:var(--creme);padding:1rem 1.35rem;border-radius:var(--raio);max-width:230px;box-shadow:var(--sombra)}
+.tarja b{display:block;font-family:var(--fonte-display);font-size:1.5rem;line-height:1;color:var(--latao-clara)}
+.tarja span{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#E3D3C2}
+
+/* ————— diferenciais ————— */
+.cabecalho-secao{max-width:62ch;margin-bottom:clamp(2.4rem,5vw,3.6rem)}
+.cabecalho-secao .texto-corpo{margin-top:1.1rem}
+.grade{display:grid;gap:clamp(1rem,2.2vw,1.5rem);grid-template-columns:1fr}
+.card{background:var(--carvao-2);border:1px solid rgba(201,161,92,.16);border-radius:var(--raio-g);padding:clamp(1.6rem,3vw,2.1rem);transition:transform var(--transicao),border-color var(--transicao),background var(--transicao)}
+.card:hover{transform:translateY(-5px);border-color:rgba(201,161,92,.45);background:var(--carvao-3)}
+.card .ico{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,rgba(210,85,42,.22),rgba(201,161,92,.12));border:1px solid rgba(201,161,92,.24);color:var(--brasa-clara);margin-bottom:1.15rem}
+.card .ico svg{width:22px;height:22px}
+.card h3{font-size:1.24rem;margin-bottom:.6rem;color:var(--creme)}
+.card p{font-size:.94rem;color:#B7A99A;font-weight:300}
+
+/* ————— cardápio ————— */
+.pratos{display:grid;gap:clamp(1.2rem,2.4vw,1.8rem);grid-template-columns:1fr}
+.prato{background:#fff;border-radius:var(--raio-g);overflow:hidden;border:1px solid rgba(36,27,23,.09);transition:transform var(--transicao),box-shadow var(--transicao)}
+.prato:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(36,27,23,.55)}
+.prato-media{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--carvao-3),var(--vinho))}
+.prato-media img{width:100%;height:230px;object-fit:cover;transition:transform .7s cubic-bezier(.22,.61,.36,1)}
+.prato:hover .prato-media img{transform:scale(1.06)}
+.prato-media .tag{position:absolute;top:14px;left:14px;background:rgba(21,15,13,.82);color:var(--latao-clara);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;padding:.42rem .8rem;border-radius:100px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.prato-txt{padding:1.5rem 1.5rem 1.75rem}
+.prato-txt h3{font-size:1.35rem;color:var(--tinta);margin-bottom:.5rem}
+.prato-txt p{font-size:.94rem;color:var(--tinta-suave);font-weight:300}
+.aviso{margin-top:clamp(2rem,4vw,2.8rem);display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem;padding:1.3rem 1.6rem;border-radius:var(--raio-g);background:var(--creme-2);border:1px dashed rgba(107,31,42,.3)}
+.aviso p{font-size:.92rem;color:var(--tinta-suave);font-weight:300;max-width:62ch}
+.aviso strong{color:var(--vinho);font-weight:500}
+
+/* ————— prova social ————— */
+.notas{display:grid;gap:1px;background:rgba(201,161,92,.2);border:1px solid rgba(201,161,92,.2);border-radius:var(--raio-g);overflow:hidden;grid-template-columns:1fr}
+.nota-item{background:var(--carvao-2);padding:clamp(1.5rem,3vw,2rem);text-align:center}
+.nota-item .v{font-family:var(--fonte-display);font-size:clamp(2.2rem,5vw,2.9rem);font-weight:700;line-height:1;color:var(--latao-clara)}
+.nota-item .rede{margin-top:.55rem;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--creme);font-weight:500}
+.nota-item .qtd{margin-top:.28rem;font-size:.82rem;color:var(--fumaca);font-weight:300}
+.destaque-frase{margin-top:clamp(2.4rem,5vw,3.4rem);text-align:center;max-width:22ch;margin-inline:auto}
+.destaque-frase blockquote{margin:0;font-family:var(--fonte-display);font-style:italic;font-size:clamp(1.7rem,4.4vw,2.7rem);line-height:1.18;color:var(--creme)}
+.destaque-frase cite{display:block;margin-top:1.1rem;font-style:normal;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--latao)}
+.rank{margin-top:2.4rem;display:flex;justify-content:center}
+.rank span{display:inline-flex;align-items:center;gap:.65rem;border:1px solid rgba(201,161,92,.3);border-radius:100px;padding:.7rem 1.3rem;font-size:.82rem;color:#C3B5A5;text-align:center}
+.rank svg{width:16px;height:16px;color:var(--latao);flex:none}
+
+/* ————— chamada ————— */
+.chamada{background:linear-gradient(120deg,var(--vinho) 0%,#43151E 45%,#8E3418 100%);position:relative;overflow:hidden;padding:clamp(3.6rem,8vw,6rem) 0}
+.chamada::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 20%,rgba(240,146,87,.35),transparent 55%);pointer-events:none}
+.chamada-int{position:relative;z-index:2;text-align:center;max-width:44ch;margin-inline:auto}
+.chamada h2{color:#FFF3E6;font-size:clamp(2rem,5vw,3.3rem)}
+.chamada p{margin-top:1.1rem;color:#F0DDCC;font-weight:300}
+.chamada .acoes{display:flex;flex-wrap:wrap;justify-content:center;gap:.85rem;margin-top:2.2rem}
+.btn-creme{background:var(--creme);color:var(--tinta)}
+.btn-creme:hover{background:#fff;transform:translateY(-2px)}
+.btn-claro-linha{background:transparent;color:#FFF3E6;border:1px solid rgba(255,243,230,.45)}
+.btn-claro-linha:hover{background:rgba(255,243,230,.14);transform:translateY(-2px)}
+
+/* ————— contato ————— */
+.contato-grid{display:grid;gap:clamp(2rem,5vw,3.4rem)}
+.info{display:grid;gap:1.4rem}
+.info-item{display:flex;gap:1rem;align-items:flex-start}
+.info-item .ico{width:42px;height:42px;flex:none;display:grid;place-items:center;border-radius:12px;background:var(--creme-2);color:var(--vinho);border:1px solid rgba(107,31,42,.15)}
+.info-item .ico svg{width:19px;height:19px}
+.info-item h3{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-family:var(--fonte-texto);font-weight:600;color:var(--vinho);margin-bottom:.28rem}
+.info-item p,.info-item a{font-size:1rem;color:var(--tinta-suave);font-weight:300;text-decoration:none;transition:color var(--transicao)}
+.info-item a:hover{color:var(--brasa)}
+.mapa-card{background:var(--carvao);border-radius:var(--raio-g);overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
+.mapa-card img{width:100%;height:clamp(220px,32vw,300px);object-fit:cover;opacity:.88;background:linear-gradient(150deg,var(--carvao-3),var(--vinho))}
+.mapa-txt{padding:1.6rem;color:var(--creme)}
+.mapa-txt h3{font-size:1.3rem;margin-bottom:.5rem}
+.mapa-txt p{font-size:.93rem;color:#B7A99A;font-weight:300;margin-bottom:1.3rem}
+
+/* ————— rodapé ————— */
+.rodape{background:#100B0A;border-top:1px solid rgba(201,161,92,.16);padding:clamp(3rem,6vw,4.5rem) 0 2rem}
+.rodape-grid{display:grid;gap:2.6rem}
+.rodape-sobre p{margin-top:1.3rem;color:#9C8D7E;font-size:.93rem;font-weight:300;max-width:36ch}
+.social{display:flex;gap:.7rem;margin-top:1.5rem}
+.social a{width:42px;height:42px;display:grid;place-items:center;border-radius:100px;border:1px solid rgba(201,161,92,.3);color:var(--latao);transition:background var(--transicao),transform var(--transicao),color var(--transicao)}
+.social a:hover{background:var(--latao);color:var(--carvao);transform:translateY(-3px)}
+.social svg{width:18px;height:18px}
+.rodape h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-family:var(--fonte-texto);font-weight:600;color:var(--creme);margin-bottom:1.1rem}
+.rodape li{margin-bottom:.6rem}
+.rodape li a,.rodape li span{color:#9C8D7E;text-decoration:none;font-size:.93rem;font-weight:300;transition:color var(--transicao)}
+.rodape li a:hover{color:var(--latao-clara)}
+.rodape-base{margin-top:clamp(2.4rem,5vw,3.4rem);padding-top:1.5rem;border-top:1px solid rgba(201,161,92,.14);display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;justify-content:space-between;font-size:.76rem;color:#7E7167;font-weight:300}
+
+/* ————— reveal à prova de falhas ————— */
+.js-anim .rev{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+.js-anim .rev.em-cena{opacity:1;transform:none}
+.js-anim .rev.d1{transition-delay:.08s}
+.js-anim .rev.d2{transition-delay:.16s}
+.js-anim .rev.d3{transition-delay:.24s}
+@media (prefers-reduced-motion: reduce){
+  .js-anim .rev{opacity:1!important;transform:none!important;transition:none!important}
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+
+/* ————— responsivo ————— */
+@media (min-width:600px){
+  .faixa ul{grid-template-columns:repeat(4,1fr)}
+  .grade{grid-template-columns:repeat(2,1fr)}
+  .pratos{grid-template-columns:repeat(2,1fr)}
+  .notas{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:920px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .duas{grid-template-columns:1fr 1fr}
+  .grade{grid-template-columns:repeat(3,1fr)}
+  .pratos{grid-template-columns:repeat(3,1fr)}
+  .notas{grid-template-columns:repeat(4,1fr)}
+  .contato-grid{grid-template-columns:1fr 1fr}
+  .rodape-grid{grid-template-columns:1.6fr 1fr 1fr}
+  .nav{display:block}
+  .topo-cta{display:inline-flex}
+  .menu-btn{display:none}
+  .painel{display:none}
+  .destaque-frase{max-width:26ch}
+}
+</style>
+</head>
+
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="container topo-int">
+    <a class="logo" href="#topo" aria-label="Royal Grill — página inicial">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="latao" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#EFC885"/><stop offset="1" stop-color="#B8873C"/>
+          </linearGradient>
+        </defs>
+        <path d="M5 28.6V13.4c0-1 1.1-1.5 1.9-.9l5.4 4.1c.6.4 1.4.2 1.7-.4l4.1-8.5c.4-.8 1.5-.8 1.9 0l4.1 8.5c.3.6 1.1.8 1.7.4l5.4-4.1c.8-.6 1.9-.1 1.9.9v15.2z" fill="url(#latao)"/>
+        <path d="M20 15.6c1.9 1.8 2.8 3.4 2.8 5 0 1.6-1.3 2.9-2.8 2.9s-2.8-1.3-2.8-2.9c0-1.6.9-3.2 2.8-5z" fill="#150F0D" opacity=".5"/>
+        <rect x="4" y="30.8" width="32" height="2.6" rx="1.3" fill="currentColor"/>
+        <rect x="7" y="35.2" width="26" height="1.5" rx=".75" fill="currentColor" opacity=".5"/>
+      </svg>
+      <span class="logo-txt">
+        <span class="logo-word">Royal <em>Grill</em></span>
+        <span class="logo-sub">Barra da Tijuca · 1984</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">A casa</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-brasa btn-mini topo-cta" href="https://wa.me/5521982101354" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29"/></svg>
+      Reservar
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="painelMenu" aria-label="Abrir menu de navegação">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="painel" id="painelMenu">
+  <div class="container">
+    <nav aria-label="Navegação mobile">
+      <ul>
+        <li><a href="#sobre">A casa</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-brasa" href="https://wa.me/5521982101354" target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+  <!-- ————— HERO ————— -->
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="olho">Churrascaria à la carte · CasaShopping</span>
+        <h1 id="titulo-hero">Cortes nobres <em>na brasa</em>, servidos na sua mesa desde 1984.</h1>
+        <p class="hero-lead">Na Barra da Tijuca, dentro do CasaShopping, o Royal Grill grelha picanha argentina, ancho, costela ripa e coração de alcatra em rechaud, na sua frente. Sem rodízio, sem pressa: cada corte no ponto que você pediu.</p>
+
+        <div class="hero-acoes">
+          <a class="btn btn-brasa" href="https://wa.me/5521982101354" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29"/></svg>
+            Reservar mesa
+          </a>
+          <a class="btn btn-linha" href="tel:+552133256166">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            (21) 3325-6166
+          </a>
+        </div>
+
+        <ul class="hero-selos">
+          <li class="selo">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+            <span><b>4,5</b> no Google · 699 avaliações</span>
+          </li>
+          <li class="selo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <span><b>Aceitamos</b> reserva</span>
+          </li>
+          <li class="selo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6.5 17V9.8L8 6h8l1.5 3.8V17M4 9.8h16"/><circle cx="8" cy="19" r="1.6"/><circle cx="16" cy="19" r="1.6"/></svg>
+            <span><b>Manobrista</b> e estacionamento</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="moldura">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&q=72"
+             alt="Corte de carne bovina grelhado, fatiado e servido em prato, com marcas da grelha"
+             width="1100" height="760" fetchpriority="high" decoding="async"
+             onerror="this.style.visibility='hidden'">
+        <div class="nota-flutuante">
+          <span class="n">4,5</span>
+          <div>
+            <div class="estrelas" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" opacity=".5"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2l-5-4.9 6.9-1z"/></svg>
+            </div>
+            <small>Avaliação no Google</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— FAIXA ————— -->
+  <section class="faixa" aria-label="Resumo da casa">
+    <ul>
+      <li class="rev"><b>1984</b><span>Desde a abertura</span></li>
+      <li class="rev d1"><b>À la carte</b><span>Sem rodízio</span></li>
+      <li class="rev d2"><b>Rechaud</b><span>Grelhado à mesa</span></li>
+      <li class="rev d3"><b>CasaShopping</b><span>Barra da Tijuca</span></li>
+    </ul>
+  </section>
+
+  <!-- ————— SOBRE ————— -->
+  <section class="secao claro" id="sobre" aria-labelledby="titulo-sobre">
+    <div class="container duas">
+      <div class="rev">
+        <span class="olho">A casa</span>
+        <h2 id="titulo-sobre">No mesmo endereço desde a inauguração do CasaShopping.</h2>
+        <p class="texto-corpo">O Royal Grill abriu as portas em 10 de setembro de 1984, junto com o CasaShopping, e nunca saiu do lugar. São quatro décadas grelhando para as mesmas famílias da Barra — e para os filhos e netos que hoje sentam nas mesmas mesas.</p>
+        <p class="texto-corpo">Aqui a lógica é outra: nada de espeto passando de mesa em mesa. Você escolhe o corte no cardápio, ele chega inteiro, é grelhado no rechaud na sua frente e fatiado na hora. Peixes e palmito grelhado dividem o mesmo cuidado com quem prefere um prato mais leve.</p>
+        <p class="assina">“Sabor com tradição desde 1984.”</p>
+      </div>
+
+      <div class="sobre-img rev d1">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=72"
+             alt="Salão de restaurante com mesas postas, iluminação quente e ambiente acolhedor"
+             width="1000" height="700" loading="lazy" decoding="async"
+             onerror="this.style.visibility='hidden'">
+        <div class="tarja">
+          <b>42 anos</b>
+          <span>de casa cheia na Barra</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— DIFERENCIAIS ————— -->
+  <section class="secao escuro" id="diferenciais" aria-labelledby="titulo-dif">
+    <div class="container">
+      <div class="cabecalho-secao rev">
+        <span class="olho">Por que o Royal Grill</span>
+        <h2 id="titulo-dif">Churrasco de verdade tem hora, ponto e testemunha.</h2>
+        <p class="texto-corpo">Cada detalhe da casa existe para a carne chegar quente, no ponto pedido e sem correria — do almoço executivo ao jantar de família.</p>
+      </div>
+
+      <ul class="grade">
+        <li class="card rev">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s5 4.2 5 8.6c0 2.2-1.4 3.8-3 4.4.6-1.6.2-3.4-1.2-4.6-.6 2.2-2.6 2.6-3.4 4.4-.6 1.4 0 2.9 1 3.8-2.4-.4-4.4-2.6-4.4-5.6C6 8.6 12 7 12 2Z"/><path d="M4 21h16"/></svg></span>
+          <h3>Grelhado na sua frente</h3>
+          <p>O corte vai ao rechaud na mesa: você acompanha o ponto, sente o cheiro e come no minuto certo.</p>
+        </li>
+        <li class="card rev d1">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4c4 1 8 4 11 8l-2 2C9.8 11 6.4 8.2 3 7Z"/><path d="m14 14 6 6"/><path d="M18 4 8 14"/></svg></span>
+          <h3>Cortes nobres à la carte</h3>
+          <p>Picanha argentina, ancho, costela ripa e coração de alcatra. Você escolhe o corte — não o contrário.</p>
+        </li>
+        <li class="card rev d2">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></span>
+          <h3>Almoço executivo sem atraso</h3>
+          <p>Ritmo de cozinha pensado para quem tem uma hora de intervalo e não abre mão de comer bem.</p>
+        </li>
+        <li class="card rev">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></span>
+          <h3>Reserva garantida</h3>
+          <p>Aniversário, almoço de negócios ou domingo em família: é só reservar pelo WhatsApp ou telefone.</p>
+        </li>
+        <li class="card rev d1">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6.5 17V9.8L8 6h8l1.5 3.8V17M4 9.8h16"/><circle cx="8" cy="19" r="1.6"/><circle cx="16" cy="19" r="1.6"/></svg></span>
+          <h3>Manobrista e estacionamento</h3>
+          <p>Chegou, entregou a chave, sentou. Dentro do CasaShopping, com acesso direto pela Av. Ayrton Senna.</p>
+        </li>
+        <li class="card rev d2">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3.5-4.5 7.5-6 11-6 4.5 0 7.5 3 9 6-1.5 3-4.5 6-9 6-3.5 0-7.5-1.5-11-6Z"/><circle cx="16.5" cy="11" r="1"/><path d="M6 12h4"/></svg></span>
+          <h3>Peixes e palmito na grelha</h3>
+          <p>Quem não come carne também tem lugar à mesa: peixes frescos e palmito grelhado no mesmo padrão.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ————— CARDÁPIO ————— -->
+  <section class="secao claro" id="cardapio" aria-labelledby="titulo-cardapio">
+    <div class="container">
+      <div class="cabecalho-secao rev">
+        <span class="olho">Da brasa para a mesa</span>
+        <h2 id="titulo-cardapio">Os cortes que fizeram a fama da casa.</h2>
+        <p class="texto-corpo">Seleção de carnes com marmoreio na medida, temperadas com sal e fogo — servidas para dividir ou individuais.</p>
+      </div>
+
+      <ul class="pratos">
+        <li class="prato rev">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=760&q=72" alt="Corte de carne grelhado e fatiado, servido em prato com acompanhamentos" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Clássico da casa</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Picanha argentina</h3>
+            <p>Peça generosa, capa de gordura dourada na brasa e miolo suculento. Fatiada na mesa, no ponto que você pedir.</p>
+          </div>
+        </li>
+
+        <li class="prato rev d1">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=760&q=72" alt="Bife alto grelhado, fatiado sobre tábua de madeira" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Marmoreio</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Ancho</h3>
+            <p>O coração do contrafilé, com gordura entremeada que derrete no calor e deixa a carne macia do começo ao fim.</p>
+          </div>
+        </li>
+
+        <li class="prato rev d2">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=760&q=72" alt="Carne sobre a grelha em brasa viva, com marcas de selagem" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Fogo e paciência</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Costela ripa</h3>
+            <p>Assada com calma até soltar do osso, mantendo a fibra úmida e o sabor profundo de churrasco de verdade.</p>
+          </div>
+        </li>
+
+        <li class="prato rev">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=760&q=72" alt="Pedaços de carne bovina grelhados servidos em travessa" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Para dividir</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Coração de alcatra</h3>
+            <p>A parte mais macia da alcatra, selada por fora e rosada por dentro. Uma escolha segura para a mesa toda.</p>
+          </div>
+        </li>
+
+        <li class="prato rev d1">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=760&q=72" alt="Filé de peixe grelhado servido em prato branco com guarnição" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Mais leve</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Peixes grelhados</h3>
+            <p>Para quem quer sair leve do almoço: peixe na grelha, azeite, limão e a mesma atenção dada às carnes.</p>
+          </div>
+        </li>
+
+        <li class="prato rev d2">
+          <div class="prato-media">
+            <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=760&q=72" alt="Legumes frescos preparados para grelhar" width="760" height="500" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">
+            <span class="tag">Acompanhamento</span>
+          </div>
+          <div class="prato-txt">
+            <h3>Palmito grelhado</h3>
+            <p>Dourado na chapa, macio por dentro. O acompanhamento que quase sempre vira pedido repetido.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="aviso rev">
+        <p><strong>Cardápio à la carte</strong> — ticket médio de R$ 100 a R$ 130 por pessoa. Consulte os cortes disponíveis do dia e faça sua reserva pelo WhatsApp.</p>
+        <a class="btn btn-linha btn-mini" href="https://wa.me/5521982101354" target="_blank" rel="noopener">Ver disponibilidade</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— PROVA SOCIAL ————— -->
+  <section class="secao escuro" id="avaliacoes" aria-labelledby="titulo-aval">
+    <div class="container">
+      <div class="cabecalho-secao rev">
+        <span class="olho">Quem senta, volta</span>
+        <h2 id="titulo-aval">Quatro décadas avaliadas em público.</h2>
+        <p class="texto-corpo">Notas conquistadas por milhares de clientes reais nas principais plataformas de avaliação.</p>
+      </div>
+
+      <ul class="notas rev d1">
+        <li class="nota-item">
+          <div class="v">4,5</div>
+          <div class="rede">Google</div>
+          <div class="qtd">699 avaliações</div>
+        </li>
+        <li class="nota-item">
+          <div class="v">4,4</div>
+          <div class="rede">Facebook</div>
+          <div class="qtd">721 avaliações</div>
+        </li>
+        <li class="nota-item">
+          <div class="v">4,1</div>
+          <div class="rede">Tripadvisor</div>
+          <div class="qtd">257 avaliações</div>
+        </li>
+        <li class="nota-item">
+          <div class="v">8,3</div>
+          <div class="rede">Foursquare</div>
+          <div class="qtd">253 dicas</div>
+        </li>
+      </ul>
+
+      <div class="rank rev d2">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><path d="M17 4H7v6a5 5 0 0 0 10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+          #513 entre 5.787 restaurantes do Rio de Janeiro no Tripadvisor
+        </span>
+      </div>
+
+      <figure class="destaque-frase rev d3">
+        <blockquote>Sabor com tradição desde 1984.</blockquote>
+        <cite>Royal Grill · Barra da Tijuca</cite>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ————— CHAMADA ————— -->
+  <section class="chamada" aria-labelledby="titulo-chamada">
+    <div class="container chamada-int rev">
+      <h2 id="titulo-chamada">Mesa reservada, brasa acesa.</h2>
+      <p>Fale com a gente agora e garanta seu lugar no almoço ou no jantar. Atendemos também para grupos e comemorações.</p>
+      <div class="acoes">
+        <a class="btn btn-creme" href="https://wa.me/5521982101354" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a class="btn btn-claro-linha" href="tel:+552133256166">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Ligar: (21) 3325-6166
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— CONTATO ————— -->
+  <section class="secao claro" id="contato" aria-labelledby="titulo-contato">
+    <div class="container contato-grid">
+      <div class="rev">
+        <span class="olho">Onde nos encontrar</span>
+        <h2 id="titulo-contato">Av. Ayrton Senna, 2150 — CasaShopping.</h2>
+        <p class="texto-corpo">Bloco G, lojas B e C, na Barra da Tijuca. Fácil de chegar, com manobrista na porta e estacionamento do shopping.</p>
+
+        <ul class="info" style="margin-top:2.2rem">
+          <li class="info-item">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/></svg></span>
+            <div>
+              <h3>Endereço</h3>
+              <p>Av. Ayrton Senna, 2150 — Bloco G, lojas B e C<br>CasaShopping, Barra da Tijuca<br>Rio de Janeiro/RJ · CEP 22775-003</p>
+            </div>
+          </li>
+          <li class="info-item">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <p><a href="tel:+552133256166">(21) 3325-6166</a><br><a href="https://wa.me/5521982101354" target="_blank" rel="noopener">WhatsApp para reservas e pedidos</a></p>
+            </div>
+          </li>
+          <li class="info-item">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
+            <div>
+              <h3>E-mail</h3>
+              <p><a href="mailto:rrrestaurantecarioca@gmail.com">rrrestaurantecarioca@gmail.com</a></p>
+            </div>
+          </li>
+          <li class="info-item">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></span>
+            <div>
+              <h3>Instagram</h3>
+              <p><a href="https://instagram.com/royalgrillbarra" target="_blank" rel="noopener">@royalgrillbarra</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mapa-card rev d1">
+        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=72"
+             alt="Mesa de restaurante posta com taças, sugerindo o ambiente da casa"
+             width="900" height="600" loading="lazy" decoding="async"
+             onerror="this.style.visibility='hidden'">
+        <div class="mapa-txt">
+          <h3>Como chegar</h3>
+          <p>Estamos dentro do CasaShopping, com acesso pela Av. Ayrton Senna. Abra a rota no seu celular e venha almoçar ou jantar com a gente.</p>
+          <a class="btn btn-brasa btn-mini" href="https://www.google.com/maps/search/?api=1&query=Av.%20Ayrton%20Senna%2C%202150%20-%20Bloco%20G%2C%20Lojas%20B%20e%20C%20-%20CasaShopping%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022775-003%20Rio%20de%20Janeiro" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/></svg>
+            Abrir no Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ————— RODAPÉ ————— -->
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-grid">
+      <div class="rodape-sobre">
+        <a class="logo" href="#topo" aria-label="Royal Grill — voltar ao topo">
+          <svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="latao2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#EFC885"/><stop offset="1" stop-color="#B8873C"/>
+              </linearGradient>
+            </defs>
+            <path d="M5 28.6V13.4c0-1 1.1-1.5 1.9-.9l5.4 4.1c.6.4 1.4.2 1.7-.4l4.1-8.5c.4-.8 1.5-.8 1.9 0l4.1 8.5c.3.6 1.1.8 1.7.4l5.4-4.1c.8-.6 1.9-.1 1.9.9v15.2z" fill="url(#latao2)"/>
+            <path d="M20 15.6c1.9 1.8 2.8 3.4 2.8 5 0 1.6-1.3 2.9-2.8 2.9s-2.8-1.3-2.8-2.9c0-1.6.9-3.2 2.8-5z" fill="#100B0A" opacity=".5"/>
+            <rect x="4" y="30.8" width="32" height="2.6" rx="1.3" fill="currentColor"/>
+            <rect x="7" y="35.2" width="26" height="1.5" rx=".75" fill="currentColor" opacity=".5"/>
+          </svg>
+          <span class="logo-txt">
+            <span class="logo-word">Royal <em>Grill</em></span>
+            <span class="logo-sub">Barra da Tijuca · 1984</span>
+          </span>
+        </a>
+        <p>Churrascaria à la carte no CasaShopping. Cortes nobres grelhados no rechaud, na sua mesa, desde 1984.</p>
+        <div class="social">
+          <a href="https://instagram.com/royalgrillbarra" target="_blank" rel="noopener" aria-label="Instagram do Royal Grill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://wa.me/5521982101354" target="_blank" rel="noopener" aria-label="WhatsApp do Royal Grill">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2m0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29"/></svg>
+          </a>
+          <a href="tel:+552133256166" aria-label="Ligar para o Royal Grill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Navegação do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#sobre">A casa</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+552133256166">(21) 3325-6166</a></li>
+          <li><a href="https://wa.me/5521982101354" target="_blank" rel="noopener">WhatsApp · reservas</a></li>
+          <li><a href="mailto:rrrestaurantecarioca@gmail.com">rrrestaurantecarioca@gmail.com</a></li>
+          <li><span>Av. Ayrton Senna, 2150 — Bloco G, lojas B e C</span></li>
+          <li><span>CasaShopping · Barra da Tijuca · Rio de Janeiro/RJ</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <span>© 2026 Royal Grill · R.R. Restaurante Carioca Ltda · CNPJ 29.017.159/0001-09</span>
+      <span>Página demonstrativa criada como amostra de site para o Royal Grill.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var doc = document.documentElement;
+
+  /* Cabeçalho fixo */
+  var topo = document.getElementById('topo');
+  var aoRolar = function () {
+    if (window.scrollY > 12) { topo.classList.add('fixo'); }
+    else { topo.classList.remove('fixo'); }
+  };
+  aoRolar();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  /* Menu mobile */
+  var btn = document.getElementById('menuBtn');
+  var painel = document.getElementById('painelMenu');
+  var fechar = function () {
+    painel.classList.remove('aberto');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Abrir menu de navegação');
+  };
+  if (btn && painel) {
+    btn.addEventListener('click', function () {
+      var aberto = painel.classList.toggle('aberto');
+      btn.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      btn.setAttribute('aria-label', aberto ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+    });
+    painel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { fechar(); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && painel.classList.contains('aberto')) { fechar(); btn.focus(); }
+    });
+  }
+
+  /* Scroll reveal — só roda se a classe js-anim foi aplicada no <head> */
+  if (!doc.classList.contains('js-anim')) { return; }
+
+  var alvos = document.querySelectorAll('.rev');
+  if (!alvos.length) { return; }
+
+  var obs = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (entrada) {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add('em-cena');
+        obs.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  alvos.forEach(function (el) { obs.observe(el); });
+
+  /* Rede de segurança: nada fica invisível para sempre */
+  window.setTimeout(function () {
+    document.querySelectorAll('.rev:not(.em-cena)').forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) { el.classList.add('em-cena'); }
+    });
+  }, 2500);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Royal Grill",
+  "legalName": "R.R. Restaurante Carioca Ltda",
+  "url": "https://royalgrillbarra.com.br/",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=72",
+  "description": "Churrascaria à la carte na Barra da Tijuca, dentro do CasaShopping, desde 1984. Cortes nobres como picanha argentina, ancho, costela ripa e coração de alcatra grelhados em rechaud à mesa, além de peixes e palmito grelhado.",
+  "telephone": "+55-21-3325-6166",
+  "email": "rrrestaurantecarioca@gmail.com",
+  "foundingDate": "1984-09-10",
+  "priceRange": "R$100–R$130",
+  "currenciesAccepted": "BRL",
+  "servesCuisine": ["Churrascaria", "Steakhouse", "Brasileira"],
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Ayrton Senna, 2150 - Bloco G, Lojas B e C - CasaShopping",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22775-003",
+    "addressCountry": "BR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.%20Ayrton%20Senna%2C%202150%20-%20Bloco%20G%2C%20Lojas%20B%20e%20C%20-%20CasaShopping%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022775-003%20Rio%20de%20Janeiro",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "699",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://instagram.com/royalgrillbarra",
+    "https://wa.me/5521982101354"
+  ],
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Manobrista", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Estacionamento", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Aceita reserva", "value": true }
+  ]
+}
+</script>
+</body>
+</html>
