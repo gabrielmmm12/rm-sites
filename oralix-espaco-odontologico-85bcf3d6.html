@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oralix – Espaço Odontológico | Implante, Prótese e Day Clinic no Rio de Janeiro</title>
+<meta name="description" content="Espaço odontológico no Rio de Janeiro dedicado a implante, prótese e reabilitação oral. Formato day clinic, atendimento bilíngue e plano de tratamento explicado do início ao fim.">
+<meta name="theme-color" content="#0E2E2B">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Oralix – Espaço Odontológico">
+<meta property="og:title" content="Oralix – Espaço Odontológico | Implante, Prótese e Day Clinic">
+<meta property="og:description" content="Implante, prótese e reabilitação oral no Rio de Janeiro. Etapas concentradas em formato day clinic, agenda reservada e atendimento bilíngue.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta property="og:image:alt" content="Consultório odontológico moderno, claro e organizado">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Oralix – Espaço Odontológico">
+<meta name="twitter:description" content="Implante, prótese e reabilitação oral no Rio de Janeiro, em formato day clinic.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&h=630&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Sora:wght@200..600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Dentist", "LocalBusiness"],
+  "name": "Oralix – Espaço Odontológico",
+  "description": "Espaço odontológico no Rio de Janeiro dedicado a implante, prótese e reabilitação oral, com formato day clinic e atendimento bilíngue.",
+  "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "City", "name": "Rio de Janeiro" },
+  "medicalSpecialty": "Dentistry",
+  "knowsLanguage": ["pt-BR", "en"],
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Implante dentário" },
+    { "@type": "MedicalProcedure", "name": "Prótese fixa e prótese sobre implante" },
+    { "@type": "MedicalProcedure", "name": "Reabilitação oral" },
+    { "@type": "MedicalProcedure", "name": "Odontologia estética" },
+    { "@type": "MedicalProcedure", "name": "Periodontia e prevenção" },
+    { "@type": "MedicalProcedure", "name": "Diagnóstico e plano de tratamento" }
+  ]
+}
+</script>
+
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --deep:#0E2E2B;
+  --deep-2:#14413C;
+  --ink:#0B211F;
+  --sage:#7FA79E;
+  --sage-soft:#D8E4E0;
+  --brass:#C79A56;
+  --brass-ink:#8A6023;
+  --ivory:#F8F5F0;
+  --sand:#EFE8DD;
+  --line:rgba(11,33,31,.14);
+  --muted:#59706C;
+  --white:#fff;
+  --r-s:10px; --r-m:18px; --r-l:28px;
+  --shadow-s:0 1px 2px rgba(11,33,31,.05), 0 8px 24px -14px rgba(11,33,31,.28);
+  --shadow-m:0 2px 4px rgba(11,33,31,.05), 0 30px 60px -34px rgba(11,33,31,.45);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --pad:clamp(20px,5vw,64px);
+  --sec:clamp(74px,11vw,146px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:"Sora",system-ui,sans-serif;
+  font-weight:300;
+  font-size:clamp(1rem,.955rem + .22vw,1.09rem);
+  line-height:1.68;
+  letter-spacing:.004em;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{
+  font-family:"Fraunces","Times New Roman",serif;
+  font-optical-sizing:auto;
+  font-weight:500;
+  line-height:1.06;
+  letter-spacing:-.018em;
+  margin:0;
+}
+p{margin:0}
+:focus-visible{outline:2px solid var(--brass-ink);outline-offset:3px;border-radius:4px}
+
+.wrap{width:min(100%,1220px);margin-inline:auto;padding-inline:var(--pad)}
+.section{padding-block:var(--sec);position:relative}
+[id]{scroll-margin-top:96px}
+
+.eyebrow{
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;
+  color:var(--brass-ink);display:flex;align-items:center;gap:.7rem;margin-bottom:1.4rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.55;flex:none}
+.eyebrow--light{color:var(--brass)}
+.lead{color:var(--muted);max-width:56ch}
+.h2{font-size:clamp(2rem,1.35rem + 2.9vw,3.25rem)}
+.h3{font-size:clamp(1.2rem,1.06rem + .55vw,1.45rem);letter-spacing:-.01em}
+
+/* ---------- skip ---------- */
+.skip{position:absolute;left:-9999px;top:0;background:var(--deep);color:var(--ivory);padding:.9rem 1.3rem;z-index:200;border-radius:0 0 var(--r-s) 0}
+.skip:focus{left:0}
+
+/* ---------- logo ---------- */
+.logo{display:inline-flex;align-items:center;gap:.72rem;text-decoration:none;color:inherit}
+.logo .mark{width:38px;height:38px;flex:none;color:currentColor}
+.logo-type{display:flex;flex-direction:column;line-height:1}
+.logo-name{
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.32rem;letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.logo-name em{font-style:normal;color:var(--brass-ink)}
+.logo-sub{
+  font-size:.505rem;letter-spacing:.36em;text-transform:uppercase;color:var(--muted);
+  margin-top:.42rem;font-weight:400;
+}
+.on-dark .logo-name em{color:var(--brass)}
+.on-dark .logo-sub{color:rgba(248,245,240,.62)}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:100;background:rgba(248,245,240,.82);backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid transparent;transition:border-color .3s var(--ease),background .3s var(--ease)}
+.hdr.is-stuck{border-bottom-color:var(--line);background:rgba(248,245,240,.94)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:78px}
+.nav{display:none}
+.nav a{
+  text-decoration:none;font-size:.85rem;letter-spacing:.05em;color:var(--muted);
+  padding:.4rem 0;position:relative;transition:color .25s var(--ease);
+}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--brass-ink);transition:right .38s var(--ease)}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{right:0}
+.hdr-cta{display:none}
+.burger{
+  width:46px;height:46px;display:grid;place-items:center;background:transparent;border:1px solid var(--line);
+  border-radius:999px;cursor:pointer;color:var(--ink)
+}
+.burger span{display:block;width:17px;height:1.5px;background:currentColor;position:relative;transition:transform .3s var(--ease),background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:17px;height:1.5px;background:currentColor;transition:transform .3s var(--ease)}
+.burger span::before{top:-5.5px}.burger span::after{top:5.5px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(5.5px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-5.5px) rotate(-45deg)}
+.mnav{
+  display:grid;grid-template-rows:0fr;transition:grid-template-rows .42s var(--ease);
+  border-top:1px solid transparent;background:var(--ivory)
+}
+.mnav.is-open{grid-template-rows:1fr;border-top-color:var(--line)}
+.mnav-in{overflow:hidden}
+.mnav ul{list-style:none;margin:0;padding:.6rem var(--pad) 1.6rem}
+.mnav li+li{border-top:1px solid var(--line)}
+.mnav a{display:block;text-decoration:none;padding:1rem 0;font-family:"Fraunces",serif;font-size:1.35rem}
+.mnav .btn{margin-top:1.2rem;width:100%}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  font-family:"Sora",sans-serif;font-size:.86rem;font-weight:400;letter-spacing:.06em;
+  padding:1.02rem 1.7rem;border-radius:999px;border:1px solid transparent;text-decoration:none;cursor:pointer;
+  transition:transform .25s var(--ease),background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+.btn svg{width:15px;height:15px;flex:none;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn--primary{background:var(--deep);color:var(--ivory);box-shadow:var(--shadow-s)}
+.btn--primary:hover{background:var(--deep-2);transform:translateY(-2px);box-shadow:var(--shadow-m)}
+.btn--ghost{border-color:var(--line);color:var(--ink)}
+.btn--ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn--light{background:var(--brass);color:#1b1206}
+.btn--light:hover{background:#d8ab66;transform:translateY(-2px)}
+.btn--outline-light{border-color:rgba(248,245,240,.35);color:var(--ivory)}
+.btn--outline-light:hover{border-color:var(--ivory);transform:translateY(-2px)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(46px,7vw,90px) clamp(56px,7vw,104px)}
+.hero::before{
+  content:"";position:absolute;left:-25%;top:-18%;width:85%;height:85%;
+  background:radial-gradient(closest-side,rgba(127,167,158,.28),transparent 72%);pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;right:-10%;bottom:-12%;width:60%;height:60%;
+  background:radial-gradient(closest-side,rgba(199,154,86,.16),transparent 70%);pointer-events:none;
+}
+.hero-in{position:relative;display:grid;gap:clamp(38px,6vw,64px)}
+.hero h1{font-size:clamp(2.55rem,1.5rem + 5.1vw,4.75rem);font-weight:400}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--brass-ink)}
+.hero p.lead{margin-top:1.6rem;font-size:clamp(1.02rem,.97rem + .3vw,1.16rem)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.3rem}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:1.5rem 2.2rem;margin-top:2.8rem;padding-top:1.7rem;border-top:1px solid var(--line);
+}
+.hero-meta div{max-width:200px}
+.hero-meta dt{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-ink);margin-bottom:.4rem}
+.hero-meta dd{margin:0;font-size:.92rem;color:var(--muted);line-height:1.5}
+.media{position:relative;background:linear-gradient(155deg,var(--sage-soft),var(--sand));overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover}
+.hero-media{border-radius:230px 230px var(--r-m) var(--r-m);aspect-ratio:3/3.5;box-shadow:var(--shadow-m)}
+.hero-frame{position:relative}
+.hero-frame::before{
+  content:"";position:absolute;inset:-14px -14px 34px -14px;border:1px solid var(--line);
+  border-radius:244px 244px var(--r-l) var(--r-l);pointer-events:none;
+}
+.badge{
+  position:absolute;left:-6px;bottom:22px;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--r-m);padding:1rem 1.2rem;box-shadow:var(--shadow-m);max-width:230px;
+}
+.badge strong{display:block;font-family:"Fraunces",serif;font-size:1.02rem;font-weight:500;letter-spacing:-.01em}
+.badge span{display:block;font-size:.74rem;color:var(--muted);letter-spacing:.05em;margin-top:.28rem;line-height:1.5}
+
+/* ---------- strip ---------- */
+.strip{border-block:1px solid var(--line);background:linear-gradient(90deg,rgba(216,228,224,.4),rgba(239,232,221,.4))}
+.strip ul{
+  list-style:none;margin:0;padding:1.15rem 0;display:flex;flex-wrap:wrap;justify-content:center;
+  gap:.7rem 1.6rem;font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;color:var(--deep);
+}
+.strip li{display:flex;align-items:center;gap:1.6rem}
+.strip li::after{content:"";width:5px;height:5px;rotate:45deg;background:var(--brass);opacity:.85}
+.strip li:last-child::after{display:none}
+
+/* ---------- sobre ---------- */
+.about-grid{display:grid;gap:clamp(40px,6vw,74px);align-items:start}
+.about-media{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.about-media .media:first-child{border-radius:var(--r-l) var(--r-l) var(--r-s) var(--r-l);aspect-ratio:3/4}
+.about-media .media:last-child{border-radius:var(--r-l) var(--r-s) var(--r-l) var(--r-l);aspect-ratio:3/4;margin-top:clamp(24px,5vw,54px)}
+.pillars{list-style:none;margin:2.6rem 0 0;padding:0;display:grid;gap:0}
+.pillars li{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.pillars li:last-child{border-bottom:1px solid var(--line)}
+.pillars .num{font-family:"Fraunces",serif;font-size:.82rem;letter-spacing:.1em;color:var(--brass-ink);padding-top:.3rem}
+.pillars h3{margin-bottom:.4rem}
+.pillars p{font-size:.94rem;color:var(--muted)}
+
+/* ---------- serviços ---------- */
+.sec-head{display:grid;gap:1.6rem;margin-bottom:clamp(38px,5vw,62px)}
+.cards{display:grid;gap:14px}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r-m);padding:clamp(26px,4vw,36px);
+  position:relative;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease);
+}
+.card::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:2px;background:var(--brass);
+  transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease);
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-m);border-color:rgba(11,33,31,.2)}
+.card:hover::after{transform:scaleX(1)}
+.card .ico{
+  width:46px;height:46px;border-radius:50%;display:grid;place-items:center;margin-bottom:1.5rem;
+  background:var(--sage-soft);color:var(--deep);
+}
+.card .ico svg{width:22px;height:22px}
+.card h3{margin-bottom:.6rem}
+.card p{font-size:.93rem;color:var(--muted)}
+
+/* ---------- day clinic (dark) ---------- */
+.dark{background:var(--deep);color:var(--ivory)}
+.dark .lead{color:rgba(248,245,240,.72)}
+.dc-grid{display:grid;gap:clamp(40px,6vw,70px);align-items:center}
+.dc-media{border-radius:var(--r-l);aspect-ratio:4/3;box-shadow:0 40px 80px -50px rgba(0,0,0,.8)}
+.steps{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:1.3rem;padding:1.45rem 0;border-top:1px solid rgba(248,245,240,.16)}
+.steps li:last-child{border-bottom:1px solid rgba(248,245,240,.16)}
+.steps .num{font-family:"Fraunces",serif;font-size:1.55rem;color:var(--brass);line-height:1;padding-top:.1rem;min-width:2.1rem}
+.steps h3{font-size:1.08rem;margin-bottom:.3rem}
+.steps p{font-size:.9rem;color:rgba(248,245,240,.66)}
+
+/* ---------- prova social ---------- */
+.quote{
+  border:1px solid var(--line);border-radius:var(--r-l);background:var(--white);
+  padding:clamp(30px,5.5vw,60px);position:relative;box-shadow:var(--shadow-s);
+}
+.quote svg{width:34px;height:34px;color:var(--brass);opacity:.9;margin-bottom:1.1rem}
+.quote blockquote{margin:0;font-family:"Fraunces",serif;font-weight:300;font-size:clamp(1.3rem,1.05rem + 1.15vw,2rem);line-height:1.32;letter-spacing:-.015em}
+.quote figcaption{margin-top:1.6rem;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.trust{display:grid;gap:14px;margin-top:22px}
+.trust div{border:1px solid var(--line);border-radius:var(--r-m);padding:1.5rem 1.6rem;background:linear-gradient(160deg,rgba(216,228,224,.42),rgba(248,245,240,.2))}
+.trust dt{font-family:"Fraunces",serif;font-size:1.02rem;margin-bottom:.35rem}
+.trust dd{margin:0;font-size:.88rem;color:var(--muted);line-height:1.55}
+
+/* ---------- contato ---------- */
+.contact-grid{display:grid;gap:clamp(38px,5vw,62px);align-items:start}
+.info{list-style:none;margin:2.4rem 0 0;padding:0;display:grid;gap:1.5rem}
+.info li{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.info .ico{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--deep);flex:none}
+.info .ico svg{width:17px;height:17px}
+.info h3{font-size:.98rem;margin-bottom:.2rem}
+.info p{font-size:.9rem;color:var(--muted)}
+.form{background:var(--white);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(24px,4vw,40px);box-shadow:var(--shadow-s)}
+.field{display:grid;gap:.45rem;margin-bottom:1.05rem}
+.field label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{
+  font-family:inherit;font-size:.96rem;font-weight:300;color:var(--ink);
+  background:var(--ivory);border:1px solid var(--line);border-radius:var(--r-s);padding:.88rem 1rem;
+  transition:border-color .25s var(--ease),background .25s var(--ease);width:100%;
+}
+.field textarea{resize:vertical;min-height:104px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--deep);background:var(--white);outline:none}
+.form .btn{width:100%;margin-top:.6rem}
+.form-note{font-size:.76rem;color:var(--muted);margin-top:1rem;line-height:1.6}
+.form-status{margin-top:1rem;font-size:.9rem;color:var(--deep);background:var(--sage-soft);border-radius:var(--r-s);padding:.9rem 1rem;display:none}
+.form-status.is-on{display:block}
+
+/* ---------- cta band ---------- */
+.band{background:linear-gradient(135deg,var(--deep) 0%,#123B36 55%,#17463F 100%);color:var(--ivory);border-radius:var(--r-l);padding:clamp(34px,6vw,72px);text-align:center;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:auto -20% -60% -20%;height:120%;background:radial-gradient(closest-side,rgba(199,154,86,.22),transparent 70%)}
+.band>*{position:relative}
+.band h2{font-size:clamp(1.75rem,1.25rem + 2.3vw,2.8rem);font-weight:400}
+.band p{margin:1.2rem auto 0;max-width:52ch;color:rgba(248,245,240,.75)}
+.band .actions{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:2.1rem}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--deep);color:rgba(248,245,240,.72);padding-block:clamp(56px,7vw,86px) 2.2rem;margin-top:0}
+.ftr-grid{display:grid;gap:2.6rem}
+.ftr p{font-size:.9rem;max-width:38ch}
+.ftr h4{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-family:"Sora",sans-serif;font-weight:500;margin-bottom:1rem}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:.65rem}
+.ftr ul a{text-decoration:none;font-size:.9rem;transition:color .25s var(--ease)}
+.ftr ul a:hover{color:var(--ivory)}
+.ftr-bottom{margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(248,245,240,.14);display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;font-size:.76rem;letter-spacing:.04em}
+
+/* ---------- reveal (only applied when JS confirms) ---------- */
+.reveal{transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.js-anim .reveal{opacity:0;transform:translateY(20px)}
+.js-anim .reveal.is-in{opacity:1;transform:none}
+
+@media (min-width:640px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .trust{grid-template-columns:repeat(2,1fr)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+}
+@media (min-width:900px){
+  .nav{display:flex;gap:clamp(1.5rem,2.6vw,2.6rem);align-items:center}
+  .hdr-cta{display:inline-flex;padding:.82rem 1.4rem}
+  .burger{display:none}
+  .mnav{display:none}
+  .hero-in{grid-template-columns:1.04fr .96fr;align-items:center;gap:clamp(48px,5vw,86px)}
+  .hero-media{aspect-ratio:4/5}
+  .badge{left:-38px}
+  .about-grid{grid-template-columns:.92fr 1.08fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .dc-grid{grid-template-columns:1.02fr .98fr}
+  .sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:2.6rem}
+  .contact-grid{grid-template-columns:.94fr 1.06fr}
+  .ftr-grid{grid-template-columns:1.6fr 1fr 1fr}
+  .quote{padding-right:clamp(60px,10vw,140px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="hdr" id="topo">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#topo" aria-label="Oralix – Espaço Odontológico, início">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="18.4" stroke="currentColor" stroke-width="1.1" opacity=".3"/>
+        <path d="M9.6 18.6a10.4 10.4 0 0 1 20.8 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M13.6 24.4c1.8 2.7 3.9 4 6.4 4s4.6-1.3 6.4-4" stroke="#C79A56" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-type">
+        <span class="logo-name">Oral<em>i</em>x</span>
+        <span class="logo-sub">Espaço Odontológico</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#clinica">A clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#day-clinic">Day Clinic</a>
+      <a href="#confianca">Por que a Oralix</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--primary hdr-cta" href="#contato">
+      Agendar avaliação
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mnav" id="menu-mobile">
+    <div class="mnav-in">
+      <ul>
+        <li><a href="#clinica">A clínica</a></li>
+        <li><a href="#tratamentos">Tratamentos</a></li>
+        <li><a href="#day-clinic">Day Clinic</a></li>
+        <li><a href="#confianca">Por que a Oralix</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div style="padding:0 var(--pad) 1.8rem">
+        <a class="btn btn--primary" href="#contato">Agendar avaliação</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-in">
+      <div>
+        <p class="eyebrow">Rio de Janeiro · Implante · Prótese</p>
+        <h1 id="hero-title">Seu sorriso, planejado com <em>precisão</em>. Seu tempo, tratado com respeito.</h1>
+        <p class="lead">Um espaço odontológico dedicado a implante, prótese e reabilitação oral — com etapas concentradas em formato <strong>day clinic</strong>, agenda reservada e atendimento bilíngue do primeiro contato ao acompanhamento final.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#contato">
+            Agendar avaliação
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#day-clinic">Como funciona o day clinic</a>
+        </div>
+
+        <dl class="hero-meta">
+          <div>
+            <dt>Foco clínico</dt>
+            <dd>Implantes, próteses e reabilitação oral</dd>
+          </div>
+          <div>
+            <dt>Formato</dt>
+            <dd>Day clinic, com hora marcada</dd>
+          </div>
+          <div>
+            <dt>Idiomas</dt>
+            <dd>Português &amp; English</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-frame">
+        <div class="media hero-media">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80"
+               alt="Ambiente odontológico moderno, claro e organizado, com cadeira clínica preparada para atendimento"
+               width="1000" height="1250" fetchpriority="high" decoding="async">
+        </div>
+        <div class="badge">
+          <strong>Atendimento bilíngue</strong>
+          <span>Consultas, orientações e pós-operatório em português e inglês.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="false">
+    <div class="wrap">
+      <ul>
+        <li>Implantes</li>
+        <li>Próteses</li>
+        <li>Reabilitação oral</li>
+        <li>Estética</li>
+        <li>Day Clinic</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="section" id="clinica" aria-labelledby="clinica-title">
+    <div class="wrap about-grid">
+      <div class="about-media reveal">
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"
+               alt="Profissional de odontologia em atendimento, com instrumental clínico organizado"
+               width="700" height="933" loading="lazy" decoding="async">
+        </div>
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"
+               alt="Detalhe de sala clínica odontológica com iluminação suave e acabamento discreto"
+               width="700" height="933" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <div class="reveal" style="--d:.1s">
+        <p class="eyebrow">A clínica</p>
+        <h2 class="h2" id="clinica-title">Um espaço odontológico — não uma linha de produção.</h2>
+        <p class="lead" style="margin-top:1.5rem">A Oralix nasceu de uma ideia simples: reabilitação oral bem feita exige diagnóstico cuidadoso, planejamento claro e tempo dedicado a uma pessoa por vez. Aqui, cada agenda é montada para que o paciente não divida a atenção da equipe com ninguém.</p>
+
+        <ol class="pillars">
+          <li>
+            <span class="num">01</span>
+            <div>
+              <h3 class="h3">Especialização em implante e prótese</h3>
+              <p>O foco da casa é reabilitar: implantes unitários, próteses fixas, próteses sobre implante e casos de reabilitação completa — do planejamento à conferência do resultado.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div>
+              <h3 class="h3">Day clinic: menos idas, mais previsibilidade</h3>
+              <p>Sempre que o caso permite, etapas que costumam virar várias consultas são concentradas em um único dia, com intervalo e conforto planejados.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div>
+              <h3 class="h3">Atendimento bilíngue</h3>
+              <p>Português e inglês em toda a jornada — orientações, termos clínicos e recomendações pós-procedimento explicados no idioma do paciente.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div>
+              <h3 class="h3">Plano antes do procedimento</h3>
+              <p>Diagnóstico, alternativas possíveis, sequência das etapas e cuidados envolvidos são apresentados por escrito antes de qualquer decisão.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="tratamentos" aria-labelledby="tratamentos-title" style="background:linear-gradient(180deg,rgba(239,232,221,.55),rgba(248,245,240,0))">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Tratamentos</p>
+          <h2 class="h2" id="tratamentos-title">O que fazemos, com profundidade.</h2>
+        </div>
+        <p class="lead">Preferimos poucas frentes bem executadas a um catálogo extenso. Todo tratamento começa por uma avaliação clínica e termina com acompanhamento — inclusive quando a indicação é não intervir.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M8 6h8M8.5 10h7M9 14h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10.5 21h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3 class="h3">Implantes dentários</h3>
+          <p>Substituição de dentes ausentes com planejamento individual, avaliação do osso e da gengiva e definição da melhor sequência para cada caso.</p>
+        </article>
+
+        <article class="card reveal" style="--d:.06s">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.5 13.5v3M10 13v3.6M14 13v3.6M17.5 13.5v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3 class="h3">Próteses fixas e sobre implante</h3>
+          <p>Coroas, pontes e próteses sobre implante ajustadas em função, encaixe e naturalidade — cor, forma e proporção conferidas com o paciente.</p>
+        </article>
+
+        <article class="card reveal" style="--d:.12s">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 8 4.2-8 4.2-8-4.2L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m4 12.2 8 4.2 8-4.2M4 16.8 12 21l8-4.2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+          <h3 class="h3">Reabilitação oral completa</h3>
+          <p>Casos que envolvem várias áreas ao mesmo tempo, conduzidos com uma única linha de raciocínio clínico e etapas em ordem definida.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5 13.7 9l5.5 1.7-5.5 1.7L12 18l-1.7-5.6L4.8 10.7 10.3 9 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M18.5 16.5 19.2 19l2.3.8-2.3.8-.7 2.4" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" opacity=".6"/></svg></div>
+          <h3 class="h3">Estética do sorriso</h3>
+          <p>Facetas, clareamento e ajustes de forma pensados a partir do rosto e da expressão — resultado discreto, sem aparência artificial.</p>
+        </article>
+
+        <article class="card reveal" style="--d:.06s">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.2 19 6v6c0 4.3-3 7.4-7 8.8-4-1.4-7-4.5-7-8.8V6l7-2.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="h3">Prevenção e periodontia</h3>
+          <p>Saúde da gengiva e do osso é pré-requisito de qualquer reabilitação duradoura. Tratamos a base antes de construir sobre ela.</p>
+        </article>
+
+        <article class="card reveal" style="--d:.12s">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.5h8.5L19 8v12.5H6V3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 3.5V8h5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12.5h6M9 16h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3 class="h3">Diagnóstico e plano de tratamento</h3>
+          <p>Avaliação inicial detalhada, com registro do caso e apresentação das opções — o que é urgente, o que é eletivo e o que pode esperar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAY CLINIC -->
+  <section class="section dark" id="day-clinic" aria-labelledby="dayclinic-title">
+    <div class="wrap dc-grid">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--light">Day Clinic</p>
+        <h2 class="h2" id="dayclinic-title">Um dia reservado. Um caso por vez.</h2>
+        <p class="lead" style="margin-top:1.5rem">Para quem tem pouca margem na agenda, dividir um tratamento em muitas consultas é o maior obstáculo. O formato day clinic da Oralix reorganiza esse percurso: quando o caso permite, as etapas compatíveis são reunidas em um único dia, com a equipe dedicada exclusivamente ao paciente.</p>
+
+        <ol class="steps">
+          <li><span class="num">01</span><div><h3>Avaliação e diagnóstico</h3><p>Exame clínico, escuta do que incomoda e registro completo do caso.</p></div></li>
+          <li><span class="num">02</span><div><h3>Plano apresentado</h3><p>Alternativas, sequência das etapas e cuidados explicados com calma, antes de qualquer decisão.</p></div></li>
+          <li><span class="num">03</span><div><h3>O dia do procedimento</h3><p>Agenda reservada, etapas concentradas e intervalos previstos para o conforto do paciente.</p></div></li>
+          <li><span class="num">04</span><div><h3>Acompanhamento</h3><p>Retornos programados para conferir adaptação, função e estética do resultado.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="reveal" style="--d:.1s">
+        <div class="media dc-media">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80"
+               alt="Atendimento odontológico em ambiente clínico tranquilo, com equipe dedicada ao paciente"
+               width="900" height="675" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="section" id="confianca" aria-labelledby="confianca-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Por que a Oralix</p>
+          <h2 class="h2" id="confianca-title">Confiança se constrói no detalhe.</h2>
+        </div>
+        <p class="lead">Não prometemos atalhos. Prometemos método: diagnóstico honesto, plano explicado, execução cuidadosa e acompanhamento depois que o tratamento termina.</p>
+      </div>
+
+      <figure class="quote reveal" style="margin:0">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 5.4c-3.4 1.8-5.4 4.8-5.4 8.6 0 2.9 1.7 4.6 4 4.6 2 0 3.6-1.5 3.6-3.5s-1.4-3.4-3.2-3.4c-.3 0-.6 0-.9.1.4-1.8 1.7-3.3 3.5-4.3l-1.6-2.1Zm9.3 0c-3.4 1.8-5.4 4.8-5.4 8.6 0 2.9 1.7 4.6 4 4.6 2 0 3.6-1.5 3.6-3.5s-1.4-3.4-3.2-3.4c-.3 0-.6 0-.9.1.4-1.8 1.7-3.3 3.5-4.3l-1.6-2.1Z"/></svg>
+        <blockquote>“Atendemos pessoas que não têm tempo a perder e não abrem mão de um trabalho bem feito. Por isso planejamos cada etapa antes de começar — e explicamos tudo, sem pressa.”</blockquote>
+        <figcaption>Equipe clínica Oralix</figcaption>
+      </figure>
+
+      <dl class="trust">
+        <div class="reveal">
+          <dt>Foco em reabilitação</dt>
+          <dd>Implante e prótese não são um item da lista: são a especialidade da casa.</dd>
+        </div>
+        <div class="reveal" style="--d:.06s">
+          <dt>Agenda com hora reservada</dt>
+          <dd>Atendimento marcado com intervalo próprio. Sem sala de espera lotada.</dd>
+        </div>
+        <div class="reveal" style="--d:.12s">
+          <dt>Comunicação bilíngue</dt>
+          <dd>Português e inglês em toda a jornada, incluindo orientações pós-procedimento.</dd>
+        </div>
+        <div class="reveal" style="--d:.18s">
+          <dt>Protocolos de biossegurança</dt>
+          <dd>Esterilização, materiais rastreáveis e rotinas de controle seguidas à risca.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="band reveal">
+        <h2 id="cta-title">Comece pela avaliação. O resto se planeja a partir dela.</h2>
+        <p>Envie sua solicitação e retornamos com as opções de horário disponíveis, incluindo o formato day clinic quando o caso for compatível.</p>
+        <div class="actions">
+          <a class="btn btn--light" href="#contato">
+            Solicitar avaliação
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline-light" href="#tratamentos">Ver tratamentos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato" style="padding-top:0" aria-labelledby="contato-title">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contato</p>
+        <h2 class="h2" id="contato-title">Vamos conversar sobre o seu caso.</h2>
+        <p class="lead" style="margin-top:1.4rem">Preencha o formulário com o melhor horário para retorno. Nossa equipe responde com as datas disponíveis e as orientações para a primeira consulta.</p>
+
+        <ul class="info">
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.5"/></svg></span>
+            <div><h3>Onde estamos</h3><p>Rio de Janeiro — RJ. O endereço completo e as orientações de acesso são enviados na confirmação do agendamento.</p></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.6" y="5" width="16.8" height="15.4" rx="2.4" stroke="currentColor" stroke-width="1.5"/><path d="M3.6 9.6h16.8M8.4 3.4v3.4M15.6 3.4v3.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            <div><h3>Agenda</h3><p>Atendimento exclusivamente com hora marcada, para garantir tempo dedicado a cada paciente.</p></div>
+          </li>
+          <li>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.6" stroke="currentColor" stroke-width="1.5"/><path d="M3.6 12h16.8M12 3.4c2.2 2.4 3.3 5.4 3.3 8.6S14.2 18.2 12 20.6c-2.2-2.4-3.3-5.4-3.3-8.6S9.8 5.8 12 3.4Z" stroke="currentColor" stroke-width="1.5"/></svg></span>
+            <div><h3>Idiomas</h3><p>Atendimento em português e inglês, do primeiro contato ao acompanhamento pós-procedimento.</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--d:.1s">
+        <form class="form" id="form-contato" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required placeholder="Como podemos chamá-lo(a)?">
+            </div>
+            <div class="field">
+              <label for="fone">Telefone para retorno</label>
+              <input type="tel" id="fone" name="fone" autocomplete="tel" required placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="seu@email.com">
+          </div>
+
+          <div class="field">
+            <label for="assunto">Sobre o que você quer falar</label>
+            <select id="assunto" name="assunto">
+              <option>Implante dentário</option>
+              <option>Prótese fixa ou sobre implante</option>
+              <option>Reabilitação oral completa</option>
+              <option>Estética do sorriso</option>
+              <option>Avaliação geral / segunda opinião</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="msg">Conte um pouco do seu caso</label>
+            <textarea id="msg" name="msg" placeholder="Descreva brevemente o que você gostaria de resolver e o melhor período para retorno."></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">
+            Enviar solicitação
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <p class="form-note">Seus dados são usados apenas para o retorno do agendamento. Nenhuma informação clínica é solicitada por este formulário.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr on-dark">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="logo" href="#topo" style="color:var(--ivory)" aria-label="Oralix – Espaço Odontológico, voltar ao topo">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="20" cy="20" r="18.4" stroke="currentColor" stroke-width="1.1" opacity=".35"/>
+            <path d="M9.6 18.6a10.4 10.4 0 0 1 20.8 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M13.6 24.4c1.8 2.7 3.9 4 6.4 4s4.6-1.3 6.4-4" stroke="#C79A56" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-type">
+            <span class="logo-name">Oral<em>i</em>x</span>
+            <span class="logo-sub">Espaço Odontológico</span>
+          </span>
+        </a>
+        <p style="margin-top:1.4rem">Implante, prótese e reabilitação oral no Rio de Janeiro, em formato day clinic e com atendimento bilíngue.</p>
+      </div>
+
+      <div>
+        <h4>Tratamentos</h4>
+        <ul>
+          <li><a href="#tratamentos">Implantes dentários</a></li>
+          <li><a href="#tratamentos">Próteses fixas</a></li>
+          <li><a href="#tratamentos">Reabilitação oral</a></li>
+          <li><a href="#tratamentos">Estética do sorriso</a></li>
+          <li><a href="#tratamentos">Prevenção e periodontia</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#clinica">A clínica</a></li>
+          <li><a href="#day-clinic">Day Clinic</a></li>
+          <li><a href="#confianca">Por que a Oralix</a></li>
+          <li><a href="#contato">Agendar avaliação</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ftr-bottom">
+      <span>© <span id="ano">2026</span> Oralix – Espaço Odontológico · Rio de Janeiro/RJ</span>
+      <span>Atendimento com hora marcada · Português &amp; English</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ano no rodapé */
+  var ano = document.getElementById("ano");
+  if (ano) ano.textContent = new Date().getFullYear();
+
+  /* header com hairline ao rolar */
+  var hdr = document.querySelector(".hdr");
+  var onScroll = function () {
+    if (window.scrollY > 8) hdr.classList.add("is-stuck");
+    else hdr.classList.remove("is-stuck");
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* menu mobile */
+  var burger = document.getElementById("burger");
+  var mnav = document.getElementById("menu-mobile");
+  if (burger && mnav) {
+    var setMenu = function (open) {
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+      mnav.classList.toggle("is-open", open);
+    };
+    burger.addEventListener("click", function () {
+      setMenu(burger.getAttribute("aria-expanded") !== "true");
+    });
+    mnav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setMenu(false);
+    });
+  }
+
+  /* imagens: se falharem, fica o gradiente do container */
+  Array.prototype.forEach.call(document.querySelectorAll(".media img"), function (img) {
+    img.addEventListener("error", function () { img.style.display = "none"; });
+  });
+
+  /* formulário (demonstração de fluxo) */
+  var form = document.getElementById("form-contato");
+  var status = document.getElementById("form-status");
+  if (form && status) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var nome = form.querySelector("#nome");
+      var fone = form.querySelector("#fone");
+      if (!nome.value.trim() || !fone.value.trim()) {
+        status.textContent = "Por favor, preencha seu nome e um telefone para retorno.";
+        status.classList.add("is-on");
+        (nome.value.trim() ? fone : nome).focus();
+        return;
+      }
+      status.textContent = "Solicitação registrada, " + nome.value.trim().split(" ")[0] + ". Em breve entramos em contato com as opções de horário.";
+      status.classList.add("is-on");
+      form.reset();
+    });
+  }
+
+  /* scroll reveal — só ativa se houver suporte e sem prefers-reduced-motion.
+     A classe que esconde os elementos é aplicada AQUI: sem JS, tudo continua visível. */
+  var reduz = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduz && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-anim");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var d = entry.target.style.getPropertyValue("--d");
+          if (d) entry.target.style.transitionDelay = d;
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
+
+    Array.prototype.forEach.call(document.querySelectorAll(".reveal"), function (el) {
+      io.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+</html>
