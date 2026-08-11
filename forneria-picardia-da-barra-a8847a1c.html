@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forneria Picardia da Barra | Pizzaria italiana na Barra da Tijuca</title>
+<meta name="description" content="Pizzas de longa fermentação assadas no forno da casa, antipasti, rotolinas, calzones, vinhos e jazz na Barra da Tijuca. Salão, retirada e delivery — terça a domingo, 18h às 23h30.">
+<meta name="theme-color" content="#14100D">
+<link rel="canonical" href="https://picardia.com.br/">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Forneria Picardia da Barra">
+<meta property="og:title" content="Forneria Picardia da Barra | Pizzaria italiana na Barra da Tijuca">
+<meta property="og:description" content="Massa de longa fermentação, forno em brasa e jazz ao fundo. Pizzas clássicas italianas, calzones, rotolinas, antipasti e vinhos na Barra da Tijuca.">
+<meta property="og:url" content="https://picardia.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Forneria Picardia da Barra">
+<meta name="twitter:description" content="Pizzas de longa fermentação, vinhos e jazz na Barra da Tijuca. Terça a domingo, das 18h às 23h30.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..800&family=Karla:ital,wght@0,300..800;1,300..600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314100D'/%3E%3Cpath d='M16 46V32a16 16 0 0 1 32 0v14z' fill='none' stroke='%23D2A557' stroke-width='3.4'/%3E%3Cpath d='M32 42c-4 0-6.5-2.6-6.5-6 0-3.2 2.4-4.6 3.2-7.6.6 1.4 1.6 2.2 2.6 2.8-.2-3 1-5.6 3.4-7.2-.4 2.6.8 4 2.2 5.6 1.2 1.4 1.9 3 1.6 5.2-.4 4-3.1 7.2-6.5 7.2z' fill='%23C4451F'/%3E%3C/svg%3E">
+
+<script>
+  (function () {
+    try {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if ('IntersectionObserver' in window && !reduce) {
+        document.documentElement.classList.add('has-reveal');
+      }
+    } catch (e) { /* sem JS confiável: tudo permanece visível */ }
+  })();
+</script>
+
+<style>
+  :root{
+    /* Paleta autoral — "Brasa & Crema" */
+    --ink:        #14100D;
+    --ink-2:      #1E1813;
+    --ink-3:      #2B231C;
+    --crema:      #F7EFE4;
+    --crema-2:    #EFE4D3;
+    --ember:      #C4451F;
+    --ember-lt:   #E2703F;
+    --olive:      #4C5941;
+    --olive-lt:   #7E8C6B;
+    --brass:      #D2A557;
+    --muted:      #8E7C6B;
+    --muted-lt:   #C3B4A3;
+
+    --shadow-sm: 0 1px 2px rgba(20,16,13,.06), 0 8px 24px -14px rgba(20,16,13,.28);
+    --shadow-md: 0 2px 6px rgba(20,16,13,.07), 0 30px 60px -34px rgba(20,16,13,.45);
+
+    --arch: 50% 50% 10px 10px / 34% 34% 3% 3%;
+    --pad: clamp(20px, 5vw, 52px);
+    --sec: clamp(64px, 11vw, 132px);
+
+    --f-display: 'Fraunces', 'Georgia', serif;
+    --f-body: 'Karla', 'Helvetica Neue', sans-serif;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+  body{
+    margin:0;
+    background:var(--crema);
+    color:var(--ink);
+    font-family:var(--f-body);
+    font-size:clamp(1rem, .96rem + .25vw, 1.09rem);
+    line-height:1.65;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3,h4{
+    font-family:var(--f-display);
+    font-weight:500;
+    line-height:1.03;
+    letter-spacing:-.022em;
+    margin:0;
+    font-variation-settings:'opsz' 90;
+  }
+  p{ margin:0; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+
+  .wrap{ width:100%; max-width:1200px; margin-inline:auto; padding-inline:var(--pad); }
+
+  .skip{
+    position:absolute; left:-9999px; top:0; z-index:200;
+    background:var(--ink); color:var(--crema); padding:14px 20px; border-radius:0 0 12px 0;
+    font-size:.9rem; letter-spacing:.02em;
+  }
+  .skip:focus{ left:0; }
+
+  :focus-visible{ outline:2.5px solid var(--ember); outline-offset:3px; border-radius:4px; }
+
+  /* ---------- LOGO ---------- */
+  .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; line-height:1; }
+  .brand-mark{ flex:0 0 auto; width:38px; height:38px; }
+  .brand-mark .arch{ stroke:var(--brass); }
+  .brand-mark .flame{ fill:var(--ember); }
+  .brand-words{ display:flex; flex-direction:column; gap:3px; }
+  .brand-top{
+    font-family:var(--f-body); font-size:.58rem; font-weight:700;
+    letter-spacing:.34em; text-transform:uppercase; color:var(--brass);
+  }
+  .brand-name{
+    font-family:var(--f-display); font-size:1.24rem; font-weight:600;
+    letter-spacing:-.02em; font-variation-settings:'opsz' 40;
+  }
+  .brand-name em{ font-style:italic; font-weight:400; }
+
+  /* ---------- HEADER ---------- */
+  .site-header{
+    position:sticky; top:0; z-index:90;
+    background:rgba(20,16,13,0);
+    transition:background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
+  }
+  .site-header .brand-name{ color:var(--crema); }
+  .header-inner{
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding-block:clamp(14px, 2vw, 20px);
+    border-bottom:1px solid rgba(247,239,228,.10);
+    transition:border-color .35s ease;
+  }
+  .site-header.is-stuck{
+    background:rgba(20,16,13,.92);
+    backdrop-filter:saturate(140%) blur(10px);
+    -webkit-backdrop-filter:saturate(140%) blur(10px);
+    box-shadow:0 12px 40px -28px rgba(0,0,0,.9);
+  }
+  .site-header.is-stuck .header-inner{ border-color:rgba(247,239,228,.06); }
+
+  .nav{ display:none; }
+  .nav a{
+    text-decoration:none; color:var(--crema-2); font-size:.83rem; font-weight:600;
+    letter-spacing:.14em; text-transform:uppercase; padding:6px 2px; position:relative;
+    transition:color .25s ease;
+  }
+  .nav a::after{
+    content:''; position:absolute; left:0; right:0; bottom:0; height:1px;
+    background:var(--brass); transform:scaleX(0); transform-origin:left;
+    transition:transform .3s cubic-bezier(.4,0,.2,1);
+  }
+  .nav a:hover{ color:#fff; }
+  .nav a:hover::after{ transform:scaleX(1); }
+
+  .header-cta{ display:none; }
+
+  .burger{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background:transparent; border:1px solid rgba(247,239,228,.28); color:var(--crema);
+    border-radius:999px; padding:9px 16px; cursor:pointer;
+    font-family:var(--f-body); font-size:.74rem; font-weight:700;
+    letter-spacing:.16em; text-transform:uppercase;
+    transition:border-color .25s ease, background .25s ease;
+  }
+  .burger:hover{ border-color:var(--brass); background:rgba(210,165,87,.10); }
+  .burger svg{ width:15px; height:15px; }
+
+  .mobile-panel{
+    display:none;
+    background:rgba(20,16,13,.97);
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(247,239,228,.10);
+  }
+  .mobile-panel.is-open{ display:block; }
+  .mobile-panel ul{ list-style:none; margin:0; padding:14px 0 26px; }
+  .mobile-panel li + li{ border-top:1px solid rgba(247,239,228,.08); }
+  .mobile-panel a{
+    display:block; padding:15px 2px; text-decoration:none; color:var(--crema);
+    font-family:var(--f-display); font-size:1.32rem; letter-spacing:-.01em;
+  }
+  .mobile-panel .m-cta{ margin-top:18px; }
+
+  /* ---------- BOTÕES ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:15px 26px; border-radius:999px; text-decoration:none; cursor:pointer;
+    font-family:var(--f-body); font-size:.84rem; font-weight:700;
+    letter-spacing:.1em; text-transform:uppercase; border:1px solid transparent;
+    transition:transform .22s cubic-bezier(.4,0,.2,1), background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .btn svg{ width:17px; height:17px; flex:0 0 auto; }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn:active{ transform:translateY(0); }
+
+  .btn-primary{ background:var(--ember); color:#fff; box-shadow:0 14px 30px -16px rgba(196,69,31,.85); }
+  .btn-primary:hover{ background:#AE3B18; box-shadow:0 20px 38px -16px rgba(196,69,31,.95); }
+
+  .btn-ghost-light{ color:var(--crema); border-color:rgba(247,239,228,.32); }
+  .btn-ghost-light:hover{ border-color:var(--brass); color:#fff; background:rgba(210,165,87,.12); }
+
+  .btn-dark{ background:var(--ink); color:var(--crema); }
+  .btn-dark:hover{ background:var(--ink-3); }
+
+  .btn-ghost-dark{ color:var(--ink); border-color:rgba(20,16,13,.24); }
+  .btn-ghost-dark:hover{ border-color:var(--ink); background:rgba(20,16,13,.05); }
+
+  .btn-cream{ background:var(--crema); color:var(--ink); }
+  .btn-cream:hover{ background:#fff; }
+
+  .btn-sm{ padding:12px 20px; font-size:.76rem; }
+
+  /* ---------- EYEBROW / RÓTULOS ---------- */
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-size:.72rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--ember); margin-bottom:22px;
+  }
+  .eyebrow::before{ content:''; width:26px; height:1px; background:currentColor; opacity:.75; }
+  .eyebrow.on-dark{ color:var(--brass); }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:var(--ink);
+    color:var(--crema);
+    margin-top:calc(-1 * (clamp(14px, 2vw, 20px) * 2 + 38px + 1px));
+    padding-top:calc(clamp(14px, 2vw, 20px) * 2 + 38px + 1px);
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .hero::before{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background:
+      radial-gradient(120% 85% at 78% 8%, rgba(196,69,31,.34) 0%, rgba(196,69,31,0) 58%),
+      radial-gradient(90% 70% at 8% 92%, rgba(76,89,65,.30) 0%, rgba(76,89,65,0) 60%),
+      linear-gradient(180deg, #16110E 0%, #14100D 60%, #191310 100%);
+  }
+  .hero::after{
+    content:''; position:absolute; inset:0; z-index:-1; opacity:.05; pointer-events:none;
+    background-image:radial-gradient(rgba(247,239,228,.9) .6px, transparent .7px);
+    background-size:4px 4px;
+  }
+  .hero-grid{
+    display:grid; gap:clamp(38px, 6vw, 56px);
+    padding-block:clamp(44px, 8vw, 96px) clamp(56px, 9vw, 104px);
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.55rem, 9.2vw, 5.1rem);
+    font-weight:400;
+    font-variation-settings:'opsz' 144;
+    letter-spacing:-.035em;
+    color:#FBF6EE;
+    margin-bottom:26px;
+    max-width:15ch;
+  }
+  .hero h1 .accent{
+    font-style:italic; font-weight:500; color:var(--brass);
+    display:inline-block;
+  }
+  .hero-lead{
+    color:rgba(247,239,228,.80);
+    font-size:clamp(1.02rem, .96rem + .5vw, 1.2rem);
+    max-width:52ch; margin-bottom:34px;
+  }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:34px; }
+  .hero-facts{
+    display:flex; flex-wrap:wrap; align-items:center; gap:12px 22px;
+    padding-top:26px; border-top:1px solid rgba(247,239,228,.13);
+    font-size:.87rem; color:rgba(247,239,228,.72);
+  }
+  .hero-facts b{ color:var(--crema); font-weight:700; }
+  .fact{ display:inline-flex; align-items:center; gap:9px; }
+  .fact svg{ width:16px; height:16px; color:var(--brass); flex:0 0 auto; }
+
+  .stars{ display:inline-flex; gap:2px; }
+  .stars svg{ width:15px; height:15px; fill:var(--brass); }
+
+  .hero-media{ position:relative; }
+  .hero-figure{
+    position:relative; margin:0;
+    border-radius:var(--arch); overflow:hidden;
+    background:linear-gradient(160deg, #3A2A1F, #1B1512);
+    box-shadow:0 50px 90px -50px rgba(0,0,0,.95);
+    aspect-ratio:4/5;
+  }
+  .hero-figure img{ width:100%; height:100%; object-fit:cover; }
+  .hero-figure::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(20,16,13,0) 45%, rgba(20,16,13,.55) 100%);
+  }
+  .hero-badge{
+    position:absolute; left:50%; bottom:-26px; transform:translateX(-50%);
+    background:var(--crema); color:var(--ink);
+    border-radius:999px; padding:13px 22px; white-space:nowrap;
+    box-shadow:var(--shadow-md); z-index:2;
+    font-family:var(--f-display); font-size:.95rem; font-weight:500;
+  }
+  .hero-badge span{
+    display:block; font-family:var(--f-body); font-size:.62rem; font-weight:700;
+    letter-spacing:.22em; text-transform:uppercase; color:var(--muted);
+  }
+
+  /* ---------- MARQUEE ---------- */
+  .strip{
+    background:var(--ember); color:#FDF3EA; overflow:hidden;
+    border-block:1px solid rgba(20,16,13,.18);
+  }
+  .strip-track{
+    display:flex; width:max-content; gap:0;
+    animation:slide 44s linear infinite;
+  }
+  .strip-track ul{
+    display:flex; align-items:center; gap:clamp(22px,5vw,52px);
+    list-style:none; margin:0; padding:13px clamp(11px,2.6vw,26px);
+    font-size:.76rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .strip-track li{ display:inline-flex; align-items:center; gap:clamp(22px,5vw,52px); }
+  .strip-track li::after{ content:'✦'; color:rgba(253,243,234,.55); letter-spacing:0; }
+  @keyframes slide{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce){
+    .strip-track{ animation:none; }
+    .strip{ overflow-x:auto; }
+  }
+
+  /* ---------- SEÇÕES ---------- */
+  section{ scroll-margin-top:86px; }
+  .section{ padding-block:var(--sec); }
+  .section-dark{ background:var(--ink); color:var(--crema); }
+  .section-dark h2{ color:#FBF6EE; }
+  .section-olive{ background:var(--olive); color:var(--crema); }
+
+  .h2{
+    font-size:clamp(2rem, 6.2vw, 3.5rem);
+    font-weight:400; font-variation-settings:'opsz' 120; letter-spacing:-.03em;
+    max-width:18ch;
+  }
+  .h2 em{ font-style:italic; color:var(--ember); font-weight:500; }
+  .section-dark .h2 em,
+  .section-olive .h2 em{ color:var(--brass); }
+  .lead{ color:var(--muted); max-width:56ch; }
+  .section-dark .lead{ color:rgba(247,239,228,.72); }
+  .section-olive .lead{ color:rgba(247,239,228,.82); }
+
+  /* ---------- SOBRE ---------- */
+  .about-grid{ display:grid; gap:clamp(40px, 7vw, 76px); align-items:center; }
+  .about-media{ position:relative; }
+  .about-fig{
+    margin:0; border-radius:var(--arch); overflow:hidden; aspect-ratio:3/4;
+    background:linear-gradient(160deg, #4A3423, #1B1512);
+    box-shadow:var(--shadow-md);
+  }
+  .about-fig img{ width:100%; height:100%; object-fit:cover; }
+  .about-fig-2{
+    position:absolute; right:-4px; bottom:-30px; width:44%;
+    aspect-ratio:1/1; margin:0; border-radius:14px; overflow:hidden;
+    border:8px solid var(--crema);
+    background:linear-gradient(160deg, #33291F, #14100D);
+    box-shadow:var(--shadow-md);
+  }
+  .about-fig-2 img{ width:100%; height:100%; object-fit:cover; }
+
+  .about-copy > p + p{ margin-top:18px; }
+  .about-copy .lead{ margin-top:22px; }
+  .pillars{ list-style:none; margin:38px 0 0; padding:0; display:grid; gap:2px; }
+  .pillars li{
+    display:flex; gap:18px; align-items:flex-start;
+    padding:22px 0; border-top:1px solid rgba(20,16,13,.12);
+  }
+  .pillars li:last-child{ border-bottom:1px solid rgba(20,16,13,.12); }
+  .pillars .p-ico{
+    flex:0 0 auto; width:42px; height:42px; border-radius:50%;
+    display:grid; place-items:center;
+    background:rgba(196,69,31,.09); color:var(--ember);
+  }
+  .pillars .p-ico svg{ width:20px; height:20px; }
+  .pillars h3{ font-size:1.16rem; font-weight:600; font-variation-settings:'opsz' 40; margin-bottom:5px; }
+  .pillars p{ color:var(--muted); font-size:.95rem; }
+
+  /* ---------- CARDÁPIO ---------- */
+  .section-head{ display:grid; gap:22px; margin-bottom:clamp(38px, 6vw, 58px); }
+  .cards{ display:grid; gap:18px; }
+  .card{
+    position:relative; overflow:hidden;
+    background:rgba(247,239,228,.045);
+    border:1px solid rgba(247,239,228,.12);
+    border-radius:20px; padding:clamp(26px, 4vw, 34px);
+    transition:transform .3s cubic-bezier(.4,0,.2,1), border-color .3s ease, background .3s ease;
+  }
+  .card::before{
+    content:''; position:absolute; inset:auto -30% -60% auto; width:200px; height:200px;
+    background:radial-gradient(circle, rgba(196,69,31,.30), rgba(196,69,31,0) 70%);
+    opacity:0; transition:opacity .4s ease;
+  }
+  .card:hover{ transform:translateY(-5px); border-color:rgba(210,165,87,.45); background:rgba(247,239,228,.07); }
+  .card:hover::before{ opacity:1; }
+  .c-ico{
+    width:46px; height:46px; border-radius:12px; display:grid; place-items:center;
+    background:rgba(210,165,87,.14); color:var(--brass); margin-bottom:22px;
+  }
+  .c-ico svg{ width:23px; height:23px; }
+  .card h3{
+    font-size:1.42rem; font-weight:500; font-variation-settings:'opsz' 60;
+    color:#FBF6EE; margin-bottom:10px;
+  }
+  .card p{ color:rgba(247,239,228,.68); font-size:.96rem; }
+  .card .c-tag{
+    display:inline-block; margin-top:18px;
+    font-size:.68rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--brass);
+  }
+  .menu-foot{
+    margin-top:clamp(34px, 5vw, 50px);
+    display:flex; flex-wrap:wrap; gap:16px 26px; align-items:center;
+    padding-top:30px; border-top:1px solid rgba(247,239,228,.13);
+  }
+  .menu-foot .note{ color:rgba(247,239,228,.62); font-size:.9rem; max-width:40ch; }
+
+  /* ---------- GALERIA ---------- */
+  .gallery{ display:grid; gap:12px; grid-template-columns:repeat(2, 1fr); }
+  .gallery figure{
+    margin:0; overflow:hidden; border-radius:16px; aspect-ratio:1/1;
+    background:linear-gradient(160deg,#3A2A1F,#14100D);
+  }
+  .gallery img{
+    width:100%; height:100%; object-fit:cover;
+    transition:transform .7s cubic-bezier(.2,.7,.3,1), filter .5s ease;
+    filter:saturate(.94);
+  }
+  .gallery figure:hover img{ transform:scale(1.06); filter:saturate(1.06); }
+
+  /* ---------- PROVA SOCIAL ---------- */
+  .proof-grid{ display:grid; gap:clamp(34px, 6vw, 64px); align-items:start; }
+  .rating-card{
+    background:var(--crema); color:var(--ink);
+    border-radius:22px; padding:clamp(28px, 5vw, 40px);
+    box-shadow:var(--shadow-md);
+  }
+  .rating-top{ display:flex; align-items:center; gap:18px; }
+  .rating-num{
+    font-family:var(--f-display); font-size:clamp(3.2rem, 12vw, 4.4rem);
+    font-weight:500; line-height:.86; letter-spacing:-.05em; font-variation-settings:'opsz' 144;
+  }
+  .rating-meta .stars svg{ width:18px; height:18px; }
+  .rating-meta small{
+    display:block; margin-top:7px; color:var(--muted);
+    font-size:.8rem; letter-spacing:.06em;
+  }
+  .rating-note{
+    margin-top:24px; padding-top:22px; border-top:1px solid rgba(20,16,13,.12);
+    font-size:.93rem; color:var(--muted);
+  }
+  .rating-note b{ color:var(--ink); font-weight:700; }
+
+  .quotes{ display:grid; gap:16px; }
+  .quote{
+    background:rgba(247,239,228,.05);
+    border:1px solid rgba(247,239,228,.13);
+    border-left:3px solid var(--brass);
+    border-radius:0 16px 16px 0; padding:24px 26px;
+  }
+  .quote h3{
+    font-size:1.12rem; font-weight:600; font-variation-settings:'opsz' 40;
+    color:#FBF6EE; margin-bottom:8px;
+  }
+  .quote p{ color:rgba(247,239,228,.72); font-size:.96rem; }
+  .quote cite{
+    display:block; margin-top:14px; font-style:normal;
+    font-size:.68rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--muted-lt);
+  }
+
+  /* ---------- CTA BAND ---------- */
+  .cta-band{
+    background:var(--ember); color:#fff;
+    padding-block:clamp(56px, 9vw, 96px);
+    position:relative; overflow:hidden;
+  }
+  .cta-band::after{
+    content:''; position:absolute; inset:0; opacity:.16; pointer-events:none;
+    background:radial-gradient(70% 100% at 82% 0%, #fff, transparent 62%);
+  }
+  .cta-inner{ position:relative; z-index:1; display:grid; gap:30px; align-items:center; }
+  .cta-inner h2{ font-size:clamp(1.95rem, 6.2vw, 3.3rem); font-weight:400; font-variation-settings:'opsz' 120; letter-spacing:-.03em; }
+  .cta-inner h2 em{ font-style:italic; }
+  .cta-inner p{ color:rgba(255,255,255,.86); margin-top:14px; max-width:46ch; }
+  .cta-actions{ display:flex; flex-wrap:wrap; gap:14px; }
+  .btn-onember{ background:#fff; color:var(--ember); }
+  .btn-onember:hover{ background:var(--crema); }
+  .btn-onember-ghost{ color:#fff; border-color:rgba(255,255,255,.5); }
+  .btn-onember-ghost:hover{ background:rgba(255,255,255,.14); border-color:#fff; }
+
+  /* ---------- CONTATO ---------- */
+  .contact-grid{ display:grid; gap:clamp(40px, 6vw, 68px); align-items:start; }
+  .info-list{ list-style:none; margin:34px 0 0; padding:0; display:grid; gap:2px; }
+  .info-list li{ display:flex; gap:18px; padding:20px 0; border-top:1px solid rgba(20,16,13,.12); }
+  .info-list li:last-child{ border-bottom:1px solid rgba(20,16,13,.12); }
+  .info-list .i-ico{
+    flex:0 0 auto; width:38px; height:38px; border-radius:50%; display:grid; place-items:center;
+    background:rgba(76,89,65,.12); color:var(--olive);
+  }
+  .info-list .i-ico svg{ width:18px; height:18px; }
+  .info-list h3{
+    font-family:var(--f-body); font-size:.7rem; font-weight:700;
+    letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin-bottom:6px;
+  }
+  .info-list p, .info-list a{ font-size:1.02rem; }
+  .info-list a{ color:var(--ink); text-decoration:none; border-bottom:1px solid rgba(196,69,31,.35); transition:border-color .25s ease, color .25s ease; }
+  .info-list a:hover{ color:var(--ember); border-color:var(--ember); }
+  .info-list small{ display:block; color:var(--muted); font-size:.84rem; margin-top:4px; }
+
+  .form-card{
+    background:var(--ink); color:var(--crema);
+    border-radius:24px; padding:clamp(26px, 5vw, 44px);
+    box-shadow:var(--shadow-md);
+  }
+  .form-card h3{
+    font-size:clamp(1.5rem, 4.6vw, 2rem); font-weight:400;
+    font-variation-settings:'opsz' 90; color:#FBF6EE; margin-bottom:10px;
+  }
+  .form-card > p{ color:rgba(247,239,228,.68); font-size:.95rem; margin-bottom:28px; }
+  .field{ margin-bottom:18px; }
+  .field label{
+    display:block; margin-bottom:8px;
+    font-size:.68rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--muted-lt);
+  }
+  .field input, .field select, .field textarea{
+    width:100%; padding:14px 16px; border-radius:12px;
+    background:rgba(247,239,228,.06); border:1px solid rgba(247,239,228,.16);
+    color:var(--crema); font-family:var(--f-body); font-size:1rem;
+    transition:border-color .25s ease, background .25s ease;
+  }
+  .field textarea{ min-height:92px; resize:vertical; }
+  .field input::placeholder, .field textarea::placeholder{ color:rgba(247,239,228,.38); }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    border-color:var(--brass); background:rgba(247,239,228,.09); outline:none;
+  }
+  .field select{ appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C3B4A3' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; background-size:18px; padding-right:44px; }
+  .field select option{ background:#1E1813; color:var(--crema); }
+  .field-row{ display:grid; gap:18px; grid-template-columns:1fr 1fr; }
+  .form-card .btn{ width:100%; margin-top:8px; }
+  .form-note{ margin-top:16px; font-size:.8rem; color:rgba(247,239,228,.5); text-align:center; }
+
+  .map-link{
+    display:block; margin-top:26px; text-decoration:none; color:inherit;
+    border-radius:18px; overflow:hidden; position:relative;
+    background:
+      linear-gradient(135deg, rgba(76,89,65,.16), rgba(210,165,87,.14)),
+      var(--crema-2);
+    border:1px solid rgba(20,16,13,.12);
+    padding:22px 24px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .map-link:hover{ transform:translateY(-2px); box-shadow:var(--shadow-sm); border-color:var(--olive); }
+  .map-link strong{ display:block; font-family:var(--f-display); font-size:1.1rem; font-weight:500; }
+  .map-link span{ font-size:.86rem; color:var(--muted); }
+  .map-link svg{ width:22px; height:22px; color:var(--olive); flex:0 0 auto; }
+
+  /* ---------- RODAPÉ ---------- */
+  .site-footer{ background:var(--ink); color:var(--crema); padding-block:clamp(52px, 8vw, 82px) 34px; }
+  .site-footer .brand-name{ color:var(--crema); font-size:1.4rem; }
+  .footer-grid{ display:grid; gap:38px; padding-bottom:38px; border-bottom:1px solid rgba(247,239,228,.12); }
+  .footer-about p{ color:rgba(247,239,228,.62); font-size:.94rem; max-width:38ch; margin-top:20px; }
+  .footer-col h4{
+    font-family:var(--f-body); font-size:.68rem; font-weight:700;
+    letter-spacing:.24em; text-transform:uppercase; color:var(--brass); margin-bottom:18px;
+  }
+  .footer-col ul{ list-style:none; margin:0; padding:0; display:grid; gap:11px; }
+  .footer-col a{ color:rgba(247,239,228,.72); text-decoration:none; font-size:.95rem; transition:color .25s ease; }
+  .footer-col a:hover{ color:var(--brass); }
+  .socials{ display:flex; gap:10px; margin-top:20px; }
+  .socials a{
+    width:42px; height:42px; border-radius:50%; display:grid; place-items:center;
+    border:1px solid rgba(247,239,228,.2); color:var(--crema);
+    transition:border-color .25s ease, background .25s ease, transform .25s ease;
+  }
+  .socials a:hover{ border-color:var(--brass); background:rgba(210,165,87,.12); transform:translateY(-2px); }
+  .socials svg{ width:19px; height:19px; }
+  .footer-bottom{
+    padding-top:26px; display:flex; flex-wrap:wrap; gap:10px 26px;
+    justify-content:space-between; font-size:.8rem; color:rgba(247,239,228,.45);
+  }
+
+  /* ---------- FAB WHATSAPP ---------- */
+  .fab{
+    position:fixed; right:16px; bottom:16px; z-index:80;
+    width:56px; height:56px; border-radius:50%;
+    display:grid; place-items:center; background:var(--ember); color:#fff;
+    box-shadow:0 16px 32px -12px rgba(196,69,31,.8);
+    transition:transform .25s ease, background .25s ease;
+  }
+  .fab:hover{ transform:scale(1.07); background:#AE3B18; }
+  .fab svg{ width:27px; height:27px; }
+
+  /* ---------- REVEAL (só ativa se o JS confirmar) ---------- */
+  .has-reveal [data-reveal]{
+    opacity:0; transform:translateY(24px);
+    transition:opacity .75s cubic-bezier(.22,.7,.3,1), transform .75s cubic-bezier(.22,.7,.3,1);
+    transition-delay:var(--d, 0ms);
+    will-change:opacity, transform;
+  }
+  .has-reveal [data-reveal].is-in{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce){
+    .has-reveal [data-reveal]{ opacity:1 !important; transform:none !important; transition:none !important; }
+    *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  }
+
+  /* ---------- BREAKPOINTS ---------- */
+  @media (min-width:640px){
+    .cards{ grid-template-columns:repeat(2, 1fr); }
+    .gallery{ grid-template-columns:repeat(4, 1fr); }
+    .gallery figure:first-child{ grid-column:span 2; aspect-ratio:2/1; }
+  }
+  @media (min-width:900px){
+    .nav{ display:flex; align-items:center; gap:clamp(18px, 2.4vw, 34px); }
+    .header-cta{ display:inline-flex; }
+    .burger{ display:none; }
+    .mobile-panel{ display:none !important; }
+    .hero-grid{ grid-template-columns:1.08fr .92fr; }
+    .hero-figure{ aspect-ratio:3/4; }
+    .about-grid{ grid-template-columns:.86fr 1.14fr; }
+    .cards{ grid-template-columns:repeat(3, 1fr); }
+    .proof-grid{ grid-template-columns:.82fr 1.18fr; }
+    .quotes{ grid-template-columns:repeat(3, 1fr); }
+    .cta-inner{ grid-template-columns:1.25fr .75fr; }
+    .cta-actions{ justify-content:flex-end; }
+    .contact-grid{ grid-template-columns:1.05fr .95fr; }
+    .footer-grid{ grid-template-columns:1.5fr 1fr 1fr; }
+    .fab{ display:none; }
+    .section-head{ grid-template-columns:1.1fr .9fr; align-items:end; }
+  }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" id="topo">
+  <div class="wrap">
+    <div class="header-inner">
+      <a class="brand" href="#topo" aria-label="Forneria Picardia da Barra — início">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+          <path class="arch" d="M13 50V31a19 19 0 0 1 38 0v19" fill="none" stroke-width="3" stroke-linecap="round"/>
+          <path class="arch" d="M9 50h46" fill="none" stroke-width="3" stroke-linecap="round"/>
+          <path class="flame" d="M32 44c-4.3 0-7.2-2.9-7.2-6.7 0-3.6 2.7-5.2 3.6-8.6.7 1.6 1.7 2.5 2.9 3.2-.3-3.4 1.1-6.3 3.8-8.1-.4 3 .9 4.6 2.4 6.3 1.4 1.6 2.2 3.4 1.8 5.9-.4 4.5-3.6 8-7.3 8z"/>
+        </svg>
+        <span class="brand-words">
+          <span class="brand-top">Forneria</span>
+          <span class="brand-name">Picardia <em>da Barra</em></span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#casa">A casa</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="https://wa.me/5521996027162" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        Menu
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="wrap">
+      <ul>
+        <li><a href="#casa">A casa</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato &amp; Reservas</a></li>
+      </ul>
+      <a class="btn btn-primary m-cta" style="width:100%" href="https://wa.me/5521996027162" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow on-dark">Barra da Tijuca &nbsp;·&nbsp; a filial carioca da Picardia de Búzios</p>
+          <h1 id="hero-title">Massa de <span class="accent">longa fermentação</span>, forno em brasa e jazz ao fundo.</h1>
+          <p class="hero-lead">Pizzas clássicas italianas, calzones, rotolinas e antipasti sob o comando do maestro pizzaiolo Ricardo Cicchelli. Uma casa para sentar, dividir uma boa garrafa e ficar — ou receber tudo quentinho em casa.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5521996027162" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+              Pedir no WhatsApp
+            </a>
+            <a class="btn btn-ghost-light" href="#cardapio">Ver o cardápio</a>
+          </div>
+
+          <div class="hero-facts">
+            <span class="fact">
+              <span class="stars" role="img" aria-label="Nota 4,7 de 5 no Google">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              </span>
+              <b>4,7</b> no Google
+            </span>
+            <span class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <b>Ter&nbsp;a&nbsp;Dom</b>, 18h&nbsp;–&nbsp;23h30
+            </span>
+            <span class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Salão, retirada e delivery
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <figure class="hero-figure">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=80"
+                 alt="Pizza artesanal recém-saída do forno, com queijo derretido e folhas de manjericão, sobre superfície escura"
+                 width="1000" height="1250" fetchpriority="high" decoding="async">
+          </figure>
+          <p class="hero-badge"><span>Forno a lenha</span>Assada na hora, servida na hora</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <ul>
+        <li>Longa fermentação</li><li>Pizzas clássicas italianas</li><li>Antipasti &amp; Rotolinas</li>
+        <li>Calzones</li><li>Carta de vinhos</li><li>Noites de jazz</li><li>Barra da Tijuca</li>
+      </ul>
+      <ul>
+        <li>Longa fermentação</li><li>Pizzas clássicas italianas</li><li>Antipasti &amp; Rotolinas</li>
+        <li>Calzones</li><li>Carta de vinhos</li><li>Noites de jazz</li><li>Barra da Tijuca</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="section" id="casa" aria-labelledby="casa-title">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-media" data-reveal>
+          <figure class="about-fig">
+            <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=900&q=80"
+                 alt="Pizza sendo assada dentro de um forno a lenha, com as chamas iluminando a massa"
+                 width="900" height="1200" loading="lazy" decoding="async">
+          </figure>
+          <figure class="about-fig-2">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                 alt="Mesa posta em salão de restaurante com luz quente e taças preparadas para o jantar"
+                 width="600" height="600" loading="lazy" decoding="async">
+          </figure>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow" data-reveal>A casa</p>
+          <h2 class="h2" id="casa-title" data-reveal style="--d:60ms">Duas escolas italianas, <em>um forno só</em>.</h2>
+          <p class="lead" data-reveal style="--d:120ms">A Forneria Picardia nasceu em Búzios e desceu para a Barra da Tijuca trazendo o mesmo método: tempo, farinha boa e fogo no ponto certo.</p>
+          <p data-reveal style="--d:160ms" class="lead">À frente da cozinha está o maestro pizzaiolo <strong>Ricardo Cicchelli</strong> — o único instrutor no Brasil formado pelas duas escolas italianas de referência: a <em>Scuola Italiana Pizzaioli</em> e a <em>Accademia Pizzaioli</em>. É esse rigor que aparece na borda leve, no miolo alveolado e na digestão tranquila depois do jantar.</p>
+
+          <ul class="pillars">
+            <li data-reveal style="--d:60ms">
+              <span class="p-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div>
+                <h3>Massa de longa fermentação</h3>
+                <p>O tempo é o ingrediente que não se compra pronto: massa descansada, leve e fácil de digerir.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:120ms">
+              <span class="p-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 2 5.5 5 5.5 8.5a5.5 5.5 0 0 1-11 0C6.5 8 8.5 5 12 3Z"/><path d="M12 21v-4"/></svg>
+              </span>
+              <div>
+                <h3>Receitas clássicas, sem atalho</h3>
+                <p>Pizzas tradicionais italianas, calzones, rotolinas e antipasti feitos como manda a escola.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:180ms">
+              <span class="p-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+              </span>
+              <div>
+                <h3>Vinho na taça, jazz no salão</h3>
+                <p>Uma noite que pede sobremesa e mais uma conversa. Ambiente pensado para ficar, não para passar.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="section section-dark" id="cardapio" aria-labelledby="cardapio-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow on-dark" data-reveal>O que sai do forno</p>
+          <h2 class="h2" id="cardapio-title" data-reveal style="--d:60ms">Um cardápio para <em>dividir</em> a mesa inteira.</h2>
+        </div>
+        <p class="lead" data-reveal style="--d:120ms">Do antipasto de entrada ao calzone que fecha a noite — tudo assado no forno da casa, na hora do pedido.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 19a22 22 0 0 0 18 0Z"/><circle cx="12" cy="10" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/></svg>
+          </span>
+          <h3>Pizzas clássicas</h3>
+          <p>As italianas de sempre, com borda leve e recheio equilibrado. Massa fermentada por longas horas antes de encontrar o fogo.</p>
+          <span class="c-tag">Salão · Delivery · Retirada</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:70ms">
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16c0-5 3.6-8 8-8s8 3 8 8c-2.5 1.6-5.2 2.4-8 2.4S6.5 17.6 4 16Z"/><path d="M8 12.5c1 .8 2.4 1.2 4 1.2s3-.4 4-1.2"/></svg>
+          </span>
+          <h3>Calzones</h3>
+          <p>Fechado, dourado e generoso — um dos pedidos mais elogiados da casa nas avaliações de quem já sentou aqui.</p>
+          <span class="c-tag">Queridinho da casa</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:140ms">
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
+          </span>
+          <h3>Rotolinas</h3>
+          <p>A massa enrolada em espiral, assada até ficar crocante por fora e macia por dentro. Ideal para começar a noite.</p>
+          <span class="c-tag">Para compartilhar</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:70ms">
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16"/><path d="M6 8v9a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8"/><path d="M9 8V5.5A2.5 2.5 0 0 1 11.5 3h1A2.5 2.5 0 0 1 15 5.5V8"/></svg>
+          </span>
+          <h3>Antipasti</h3>
+          <p>Entradas italianas para abrir o apetite — a burrata é presença frequente nos elogios de quem visita a Forneria.</p>
+          <span class="c-tag">Entradas</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:140ms">
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0L7 3Z"/><path d="M12 14v6"/><path d="M8.5 20h7"/></svg>
+          </span>
+          <h3>Vinhos &amp; taças</h3>
+          <p>Rótulos escolhidos para acompanhar a pizza — do tinto que pede molho de tomate ao branco que combina com burrata.</p>
+          <span class="c-tag">Carta da casa</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:210ms">
+          <span class="c-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+          </span>
+          <h3>Noites de jazz</h3>
+          <p>Música ao fundo, luz baixa e taça na mão. O jantar vira programa — e o programa costuma se estender.</p>
+          <span class="c-tag">Ambiente</span>
+        </article>
+      </div>
+
+      <div class="menu-foot" data-reveal>
+        <a class="btn btn-cream" href="https://picardiabarra.menudino.com" target="_blank" rel="noopener">Cardápio completo</a>
+        <a class="btn btn-ghost-light" href="https://wa.me/5521996027162" target="_blank" rel="noopener">Fazer pedido</a>
+        <p class="note">Ticket médio de R$ 80 a R$ 100 por pessoa. Atendemos no salão, para retirada e por delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section" aria-label="Galeria da Forneria Picardia da Barra">
+    <div class="wrap">
+      <div class="gallery">
+        <figure data-reveal>
+          <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=1200&q=80"
+               alt="Pizza inteira sobre tábua de madeira, com queijo derretido e manjericão fresco"
+               width="1200" height="600" loading="lazy" decoding="async">
+        </figure>
+        <figure data-reveal style="--d:80ms">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+               alt="Salão de restaurante com iluminação quente e mesas preparadas para o jantar"
+               width="700" height="700" loading="lazy" decoding="async">
+        </figure>
+        <figure data-reveal style="--d:160ms">
+          <img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&fit=crop&w=700&q=80"
+               alt="Fatia de pizza sendo servida, com o queijo esticando"
+               width="700" height="700" loading="lazy" decoding="async">
+        </figure>
+        <figure data-reveal style="--d:240ms">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80"
+               alt="Ambiente noturno de restaurante em luz baixa, com clima intimista"
+               width="700" height="700" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="section section-dark" id="avaliacoes" aria-labelledby="avaliacoes-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow on-dark" data-reveal>Quem senta, volta</p>
+          <h2 class="h2" id="avaliacoes-title" data-reveal style="--d:60ms">A nota que a <em>vizinhança</em> nos deu.</h2>
+        </div>
+        <p class="lead" data-reveal style="--d:120ms">Avaliações públicas de quem já jantou na Forneria Picardia da Barra.</p>
+      </div>
+
+      <div class="proof-grid">
+        <div class="rating-card" data-reveal>
+          <div class="rating-top">
+            <span class="rating-num">4,7</span>
+            <div class="rating-meta">
+              <span class="stars" role="img" aria-label="4,7 de 5 estrelas">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
+              </span>
+              <small>67 avaliações no Google</small>
+            </div>
+          </div>
+          <p class="rating-note">Entre os <b>42.071 restaurantes</b> do Rio de Janeiro, a Forneria Picardia da Barra ocupa a <b>posição #3.400</b> — dentro dos 10% mais bem avaliados da cidade.</p>
+        </div>
+
+        <div class="quotes">
+          <article class="quote" data-reveal>
+            <h3>O calzone</h3>
+            <p>Aparece entre os pratos mais citados por quem avalia a casa — dourado, generoso e assado na hora do pedido.</p>
+            <cite>Elogio recorrente nas avaliações</cite>
+          </article>
+          <article class="quote" data-reveal style="--d:80ms">
+            <h3>A burrata</h3>
+            <p>Entrada favorita da mesa: cremosa, servida como abertura de uma noite sem pressa.</p>
+            <cite>Elogio recorrente nas avaliações</cite>
+          </article>
+          <article class="quote" data-reveal style="--d:160ms">
+            <h3>O atendimento</h3>
+            <p>Receber bem faz parte da receita. Quem senta comenta o cuidado da equipe do salão.</p>
+            <cite>Elogio recorrente nas avaliações</cite>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-inner">
+        <div data-reveal>
+          <h2 id="cta-title">Mesa para hoje à noite? <em>Chama no WhatsApp.</em></h2>
+          <p>Reserva, pedido para retirada ou delivery na Barra da Tijuca — respondemos direto por lá, sem formulário e sem espera.</p>
+        </div>
+        <div class="cta-actions" data-reveal style="--d:90ms">
+          <a class="btn btn-onember" href="https://wa.me/5521996027162" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            (21) 99602-7162
+          </a>
+          <a class="btn btn-onember-ghost" href="tel:+5521996027162">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+            Ligar agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow" data-reveal>Onde nos encontrar</p>
+          <h2 class="h2" id="contato-title" data-reveal style="--d:60ms">Na Barra, de <em>terça a domingo</em>.</h2>
+
+          <ul class="info-list">
+            <li data-reveal style="--d:60ms">
+              <span class="i-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <h3>Endereço</h3>
+                <p>Av. Ruy Frazão Soares, 121 — Barra da Tijuca<br>Rio de Janeiro/RJ · CEP 22793-074</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:110ms">
+              <span class="i-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </span>
+              <div>
+                <h3>Horário</h3>
+                <p>Terça a domingo, das 18h às 23h30</p>
+                <small>Fechado às segundas-feiras</small>
+              </div>
+            </li>
+            <li data-reveal style="--d:160ms">
+              <span class="i-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+              </span>
+              <div>
+                <h3>Telefone &amp; WhatsApp</h3>
+                <p><a href="tel:+5521996027162">(21) 99602-7162</a></p>
+                <small><a href="https://wa.me/5521996027162" target="_blank" rel="noopener">Falar no WhatsApp</a></small>
+              </div>
+            </li>
+            <li data-reveal style="--d:210ms">
+              <span class="i-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <div>
+                <h3>E-mail</h3>
+                <p><a href="mailto:barra@picardia.com.br">barra@picardia.com.br</a></p>
+              </div>
+            </li>
+            <li data-reveal style="--d:260ms">
+              <span class="i-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/forneriapicardiabarra" target="_blank" rel="noopener">@forneriapicardiabarra</a></p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="map-link" data-reveal href="https://www.google.com/maps/search/?api=1&query=Av.%20Ruy%20Fraz%C3%A3o%20Soares%2C%20121%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022793-074%20(cadastro%20da%20Receita%20consta%20n%C2%BA%20191%2C%20Ed.%20Jamaica%2C%20loja%20B)%20Rio%20de%20Janeiro" target="_blank" rel="noopener">
+            <span>
+              <strong>Ver no mapa</strong>
+              <span>Traçar rota até a Forneria Picardia da Barra</span>
+            </span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+          </a>
+        </div>
+
+        <div class="form-card" data-reveal style="--d:90ms">
+          <h3>Reservar uma mesa</h3>
+          <p>Preencha e a gente abre a conversa no WhatsApp já com os seus dados — é só apertar enviar.</p>
+
+          <form id="form-reserva" novalidate>
+            <div class="field">
+              <label for="nome">Seu nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="pessoas">Pessoas</label>
+                <select id="pessoas" name="pessoas">
+                  <option>1</option><option selected>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option>Mais de 8</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="horario">Horário</label>
+                <select id="horario" name="horario">
+                  <option>18h00</option><option>18h30</option><option selected>19h00</option>
+                  <option>19h30</option><option>20h00</option><option>20h30</option>
+                  <option>21h00</option><option>21h30</option><option>22h00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="dia">Dia</label>
+              <input id="dia" name="dia" type="text" placeholder="Ex.: sexta, 22" required>
+            </div>
+
+            <div class="field">
+              <label for="obs">Observações (opcional)</label>
+              <textarea id="obs" name="obs" placeholder="Aniversário, mesa perto da janela, restrição alimentar…"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+              Enviar pelo WhatsApp
+            </button>
+            <p class="form-note" role="status" id="form-status">Atendemos de terça a domingo, das 18h às 23h30.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="#topo" aria-label="Forneria Picardia da Barra — voltar ao topo">
+          <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+            <path class="arch" d="M13 50V31a19 19 0 0 1 38 0v19" fill="none" stroke-width="3" stroke-linecap="round"/>
+            <path class="arch" d="M9 50h46" fill="none" stroke-width="3" stroke-linecap="round"/>
+            <path class="flame" d="M32 44c-4.3 0-7.2-2.9-7.2-6.7 0-3.6 2.7-5.2 3.6-8.6.7 1.6 1.7 2.5 2.9 3.2-.3-3.4 1.1-6.3 3.8-8.1-.4 3 .9 4.6 2.4 6.3 1.4 1.6 2.2 3.4 1.8 5.9-.4 4.5-3.6 8-7.3 8z"/>
+          </svg>
+          <span class="brand-words">
+            <span class="brand-top">Forneria</span>
+            <span class="brand-name">Picardia <em>da Barra</em></span>
+          </span>
+        </a>
+        <p>Pizzas de longa fermentação, antipasti, vinhos e jazz na Barra da Tijuca. A filial carioca da Forneria Picardia de Búzios.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/forneriapicardiabarra" target="_blank" rel="noopener" aria-label="Instagram da Forneria Picardia da Barra">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/5521996027162" target="_blank" rel="noopener" aria-label="WhatsApp da Forneria Picardia da Barra">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          </a>
+          <a href="mailto:barra@picardia.com.br" aria-label="Enviar e-mail para a Forneria Picardia da Barra">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Navegação do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#casa">A casa</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato &amp; reservas</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Visite</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Av.%20Ruy%20Fraz%C3%A3o%20Soares%2C%20121%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022793-074%20(cadastro%20da%20Receita%20consta%20n%C2%BA%20191%2C%20Ed.%20Jamaica%2C%20loja%20B)%20Rio%20de%20Janeiro" target="_blank" rel="noopener">Av. Ruy Frazão Soares, 121<br>Barra da Tijuca — Rio de Janeiro/RJ</a></li>
+          <li>Terça a domingo · 18h às 23h30</li>
+          <li><a href="tel:+5521996027162">(21) 99602-7162</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="ano">2026</span> Forneria Picardia Barra Ltda · CNPJ 43.405.017/0001-31</p>
+      <p>Salão · Retirada · Delivery na Barra da Tijuca</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5521996027162" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Forneria Picardia da Barra",
+  "description": "Pizzaria italiana na Barra da Tijuca com massa de longa fermentação, antipasti, rotolinas, calzones, vinhos e jazz. Salão, retirada e delivery.",
+  "url": "https://picardia.com.br/",
+  "telephone": "+55-21-99602-7162",
+  "email": "barra@picardia.com.br",
+  "image": [
+    "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "servesCuisine": ["Italiana", "Pizza"],
+  "priceRange": "$$",
+  "currenciesAccepted": "BRL",
+  "acceptsReservations": "True",
+  "hasMenu": "https://picardiabarra.menudino.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Ruy Frazão Soares, 121",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22793-074",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Barra da Tijuca, Rio de Janeiro",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "18:00",
+      "closes": "23:30"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "67",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://www.instagram.com/forneriapicardiabarra",
+    "https://linktr.ee/picardiabarra",
+    "https://www.facebook.com/picardiabarra"
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Ano no rodapé ---- */
+  var ano = document.getElementById('ano');
+  if (ano) { ano.textContent = String(new Date().getFullYear()); }
+
+  /* ---- Header com estado de scroll ---- */
+  var header = document.querySelector('.site-header');
+  var onScroll = function () {
+    if (!header) return;
+    header.classList.toggle('is-stuck', window.scrollY > 24);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---- Menu mobile ---- */
+  var burger = document.getElementById('burger');
+  var panel = document.getElementById('mobile-panel');
+  var setPanel = function (open) {
+    if (!burger || !panel) return;
+    panel.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+  if (burger && panel) {
+    burger.addEventListener('click', function () {
+      setPanel(burger.getAttribute('aria-expanded') !== 'true');
+    });
+    panel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { setPanel(false); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { setPanel(false); }
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 900) { setPanel(false); }
+    });
+  }
+
+  /* ---- Scroll reveal à prova de falhas ----
+     A classe .has-reveal só foi adicionada ao <html> se o IntersectionObserver
+     existir e o usuário não pedir movimento reduzido. Sem JS, nada some. */
+  var revealAll = function () {
+    var nodes = document.querySelectorAll('[data-reveal]');
+    for (var i = 0; i < nodes.length; i++) { nodes[i].classList.add('is-in'); }
+  };
+
+  if (document.documentElement.classList.contains('has-reveal')) {
+    try {
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+      document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+
+      /* rede de segurança: se algo falhar, tudo aparece */
+      window.setTimeout(revealAll, 3500);
+    } catch (err) {
+      document.documentElement.classList.remove('has-reveal');
+      revealAll();
+    }
+  }
+
+  /* ---- Reserva → WhatsApp ---- */
+  var form = document.getElementById('form-reserva');
+  var status = document.getElementById('form-status');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var nome = (document.getElementById('nome').value || '').trim();
+      var dia = (document.getElementById('dia').value || '').trim();
+      var pessoas = document.getElementById('pessoas').value;
+      var horario = document.getElementById('horario').value;
+      var obs = (document.getElementById('obs').value || '').trim();
+
+      if (!nome || !dia) {
+        if (status) { status.textContent = 'Preencha seu nome e o dia para continuarmos.'; }
+        (!nome ? document.getElementById('nome') : document.getElementById('dia')).focus();
+        return;
+      }
+
+      var msg = 'Olá! Sou ' + nome + ' e gostaria de reservar uma mesa na Forneria Picardia da Barra.' +
+                '\n• Pessoas: ' + pessoas +
+                '\n• Dia: ' + dia +
+                '\n• Horário: ' + horario +
+                (obs ? '\n• Observações: ' + obs : '');
+
+      if (status) { status.textContent = 'Abrindo o WhatsApp com o seu pedido de reserva…'; }
+      window.open('https://wa.me/5521996027162?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  }
+
+  /* ---- Imagens: fallback elegante se a foto não carregar ---- */
+  document.querySelectorAll('img').forEach(function (img) {
+    img.addEventListener('error', function () { img.style.opacity = '0'; });
+  });
+})();
+</script>
+</body>
+</html>
