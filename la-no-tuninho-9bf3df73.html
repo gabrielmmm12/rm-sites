@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lá no Tuninho — Comida mineira, feijoada e cozido na Barra da Tijuca | Rio de Janeiro</title>
+<meta name="description" content="Restaurante mineiro self-service na Barra da Tijuca. Buffet de comida mineira de terça a quinta, feijoada de sexta a domingo e feriados, e cozido nos fins de semana. R. Eng. Carlos Euler, 101 – Loja A. Nota 4,6 no Google.">
+<meta name="theme-color" content="#1E1512">
+<link rel="canonical" href="https://lanotuninho.com.br/">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Lá no Tuninho">
+<meta property="og:title" content="Lá no Tuninho — Comida mineira e feijoada na Barra da Tijuca">
+<meta property="og:description" content="Buffet mineiro de terça a quinta, feijoada de sexta a domingo e feriados, cozido nos fins de semana. Self-service na Barra da Tijuca, Rio de Janeiro.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:url" content="https://lanotuninho.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lá no Tuninho — Comida mineira e feijoada na Barra da Tijuca">
+<meta name="twitter:description" content="Buffet mineiro, feijoada de sexta a domingo e cozido nos fins de semana. Self-service na Barra da Tijuca.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --coal:#1E1512;
+  --coal-2:#2A1E19;
+  --coal-3:#3A2A22;
+  --clay:#C0492B;
+  --clay-deep:#8E3320;
+  --gold:#E7A93A;
+  --leaf:#3E5B43;
+  --cream:#FAF3E7;
+  --cream-2:#F2E7D5;
+  --cream-3:#E8DAC4;
+  --ink:#2B211C;
+  --muted:#7C6A5D;
+  --muted-dark:#C9B7A6;
+  --line:rgba(43,33,28,.14);
+  --line-dark:rgba(250,243,231,.16);
+  --shadow-s:0 2px 6px rgba(30,21,18,.06);
+  --shadow-m:0 14px 34px -18px rgba(30,21,18,.34);
+  --shadow-l:0 40px 80px -40px rgba(30,21,18,.55);
+  --r-s:12px; --r-m:20px; --r-l:28px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --maxw:1180px;
+  --pad:clamp(1.15rem,4vw,2.5rem);
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Karla","Helvetica Neue",Helvetica,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:var(--sans);font-size:clamp(1rem,.96rem + .2vw,1.075rem);
+  line-height:1.65;font-weight:400;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:var(--display);font-weight:600;line-height:1.06;
+  letter-spacing:-.015em;margin:0;
+  font-optical-sizing:auto;font-variation-settings:"SOFT" 30,"WONK" 1;
+}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2.5px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--clay);color:#fff;padding:.75rem 1.1rem;z-index:100;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+
+/* ---------- LOGO ---------- */
+.logo{display:inline-flex;align-items:center;gap:.62rem;line-height:1}
+.logo svg{width:34px;height:34px;flex:none;color:var(--gold)}
+.logo .lock{display:flex;flex-direction:column;gap:.1em}
+.logo .top{
+  font-family:var(--sans);font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;
+  font-weight:700;opacity:.72;padding-left:.12em;
+}
+.logo .name{
+  font-family:var(--display);font-size:1.28rem;font-weight:600;letter-spacing:-.02em;
+  font-variation-settings:"SOFT" 60,"WONK" 1;
+}
+.logo .name i{font-style:italic;color:var(--gold)}
+
+/* ---------- HEADER ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:var(--coal);color:var(--cream);
+  border-bottom:1px solid transparent;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
+}
+.site-header.is-stuck{border-bottom-color:var(--line-dark);box-shadow:0 10px 30px -22px rgba(0,0,0,.9)}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
+.nav{display:none}
+.nav ul{display:flex;align-items:center;gap:clamp(1rem,2.4vw,2rem)}
+.nav a{
+  font-size:.855rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+  color:var(--muted-dark);position:relative;padding-block:.35rem;transition:color .25s var(--ease);
+}
+.nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--gold);
+  transition:right .3s var(--ease);
+}
+.nav a:hover{color:var(--cream)}
+.nav a:hover::after{right:0}
+.hactions{display:flex;align-items:center;gap:.5rem}
+.burger{
+  display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;
+  background:transparent;border:1px solid var(--line-dark);border-radius:11px;color:var(--cream);cursor:pointer;
+  transition:background .25s var(--ease),border-color .25s var(--ease);
+}
+.burger:hover{background:rgba(250,243,231,.08)}
+.burger svg{width:20px;height:20px}
+.burger .x{display:none}
+.site-header[data-open="true"] .burger .x{display:block}
+.site-header[data-open="true"] .burger .m{display:none}
+.mobile-nav{display:none;border-top:1px solid var(--line-dark);padding:.6rem 0 1.3rem}
+.site-header[data-open="true"] .mobile-nav{display:block}
+.mobile-nav a{
+  display:block;padding:.72rem .2rem;font-family:var(--display);font-size:1.28rem;
+  border-bottom:1px solid rgba(250,243,231,.08);
+}
+.mobile-nav a:last-child{border-bottom:0}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:var(--sans);font-weight:700;font-size:.94rem;letter-spacing:.01em;
+  padding:.92rem 1.5rem;border-radius:999px;border:1.5px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease),background .25s var(--ease),color .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease);
+  will-change:transform;
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-primary{background:var(--clay);color:#fff;box-shadow:0 10px 26px -14px rgba(192,73,43,.95)}
+.btn-primary:hover{background:var(--clay-deep);transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(192,73,43,.95)}
+.btn-ghost{border-color:var(--line-dark);color:var(--cream)}
+.btn-ghost:hover{background:rgba(250,243,231,.09);transform:translateY(-2px)}
+.btn-outline{border-color:rgba(43,33,28,.28);color:var(--ink)}
+.btn-outline:hover{border-color:var(--clay);color:var(--clay-deep);transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#241a10}
+.btn-gold:hover{background:#f2b94b;transform:translateY(-2px)}
+.btn-sm{padding:.62rem 1.05rem;font-size:.86rem}
+.btn-icon{width:42px;height:42px;padding:0;border-radius:11px;border-color:var(--line-dark);color:var(--cream)}
+.btn-icon:hover{background:rgba(250,243,231,.09)}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;background:var(--coal);color:var(--cream);overflow:hidden;
+  padding-block:clamp(2.2rem,5vw,4.6rem) clamp(2.6rem,6vw,5.2rem);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(60% 55% at 82% 12%,rgba(231,169,58,.16),transparent 68%),
+    radial-gradient(55% 50% at 4% 88%,rgba(192,73,43,.24),transparent 70%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.4;
+  background-image:repeating-linear-gradient(135deg,rgba(250,243,231,.035) 0 1px,transparent 1px 7px);
+}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;gap:clamp(1.9rem,4vw,3.4rem);align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.55rem;font-size:.72rem;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--gold);
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--gold);opacity:.7}
+.hero h1{
+  font-size:clamp(2.5rem,1.45rem + 5.2vw,4.65rem);margin-top:1rem;letter-spacing:-.03em;
+  font-variation-settings:"SOFT" 20,"WONK" 1;
+}
+.hero h1 em{font-style:italic;color:var(--gold);font-variation-settings:"SOFT" 90,"WONK" 1}
+.hero-lead{margin-top:1.15rem;color:var(--muted-dark);font-size:clamp(1.02rem,.98rem + .32vw,1.2rem);max-width:44ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}
+.hero-facts{
+  display:flex;flex-wrap:wrap;align-items:center;gap:.55rem 1.1rem;margin-top:1.7rem;
+  padding-top:1.35rem;border-top:1px solid var(--line-dark);font-size:.87rem;color:var(--muted-dark);
+}
+.hero-facts b{color:var(--cream);font-weight:700}
+.hero-facts .dot{width:4px;height:4px;border-radius:50%;background:var(--clay);display:inline-block}
+.stars{display:inline-flex;gap:2px;color:var(--gold);vertical-align:-2px}
+.stars svg{width:14px;height:14px}
+
+.hero-media{position:relative}
+.hero-frame{
+  position:relative;overflow:hidden;border-radius:200px 200px var(--r-m) var(--r-m);
+  aspect-ratio:5/4;box-shadow:var(--shadow-l);
+}
+.hero-frame img{width:100%;height:100%;object-fit:cover}
+.hero-frame::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(30,21,18,0) 45%,rgba(30,21,18,.5));
+}
+.hero-ring{
+  position:absolute;inset:-14px -14px auto -14px;height:60%;border:1px solid rgba(231,169,58,.32);
+  border-radius:220px 220px 0 0;pointer-events:none;
+}
+.hero-chip{
+  position:absolute;left:clamp(.5rem,2vw,1.2rem);bottom:clamp(.7rem,2vw,1.3rem);z-index:3;
+  background:var(--cream);color:var(--ink);border-radius:16px;padding:.75rem .95rem;
+  box-shadow:var(--shadow-m);display:flex;align-items:center;gap:.7rem;
+}
+.hero-chip .num{font-family:var(--display);font-size:1.65rem;font-weight:600;line-height:1}
+.hero-chip small{display:block;font-size:.7rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+
+/* ---------- MARQUEE ---------- */
+.strip{background:var(--clay-deep);color:#fff8ee;overflow:hidden;padding-block:.72rem;border-block:1px solid rgba(0,0,0,.14)}
+.strip-track{display:flex;width:max-content;animation:slide 42s linear infinite}
+.strip ul{display:flex;align-items:center;gap:1.7rem;padding-right:1.7rem}
+.strip li{
+  display:flex;align-items:center;gap:1.7rem;white-space:nowrap;font-size:.79rem;font-weight:700;
+  letter-spacing:.19em;text-transform:uppercase;
+}
+.strip li::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.85}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- SECTIONS ---------- */
+section{scroll-margin-top:76px}
+.sec{padding-block:clamp(3.4rem,8vw,6.6rem)}
+.sec-head{max-width:62ch}
+.sec-head h2{font-size:clamp(1.95rem,1.35rem + 2.6vw,3.25rem);margin-top:.85rem;letter-spacing:-.025em}
+.sec-head h2 em{font-style:italic;color:var(--clay-deep)}
+.sec-head p{margin-top:1.05rem;color:var(--muted);font-size:1.03rem}
+.eyebrow.dark{color:var(--clay-deep)}
+.eyebrow.dark::before{background:var(--clay)}
+
+/* sobre */
+.about{background:var(--cream)}
+.about-grid{display:grid;gap:clamp(2rem,5vw,3.6rem);align-items:center}
+.about-media{position:relative;border-radius:var(--r-l);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-m)}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about-badge{
+  position:absolute;right:clamp(.6rem,2vw,1.1rem);top:clamp(.6rem,2vw,1.1rem);
+  background:rgba(30,21,18,.85);color:var(--cream);border:1px solid rgba(231,169,58,.35);
+  border-radius:999px;padding:.45rem .95rem;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  backdrop-filter:blur(6px);
+}
+.pillars{display:grid;gap:1.5rem;margin-top:2.2rem}
+.pillar{display:flex;gap:1rem;align-items:flex-start}
+.pillar .ic{
+  flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;
+  background:var(--cream-2);color:var(--clay-deep);border:1px solid var(--line);
+  transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease);
+}
+.pillar:hover .ic{background:var(--clay);color:#fff;transform:rotate(-4deg)}
+.pillar .ic svg{width:23px;height:23px}
+.pillar h3{font-size:1.13rem;font-family:var(--sans);font-weight:800;letter-spacing:-.005em}
+.pillar p{color:var(--muted);font-size:.965rem;margin-top:.28rem}
+
+/* cardápio */
+.menu{background:var(--cream-2);position:relative}
+.menu::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background-image:radial-gradient(rgba(43,33,28,.07) 1px,transparent 1px);background-size:22px 22px;
+}
+.menu .wrap{position:relative}
+.cards{display:grid;gap:clamp(1.1rem,2.4vw,1.7rem);margin-top:clamp(2rem,4vw,3rem)}
+.card{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow-s);
+  transition:transform .38s var(--ease),box-shadow .38s var(--ease),border-color .38s var(--ease);
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-m);border-color:rgba(192,73,43,.35)}
+.card-img{position:relative;aspect-ratio:16/11;overflow:hidden;background:var(--cream-3)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-days{
+  position:absolute;left:.85rem;top:.85rem;background:rgba(30,21,18,.86);color:var(--gold);
+  border-radius:999px;padding:.34rem .8rem;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+}
+.card-body{padding:clamp(1.25rem,2.4vw,1.65rem);display:flex;flex-direction:column;gap:.6rem;flex:1}
+.card-body h3{font-size:clamp(1.35rem,1.2rem + .5vw,1.6rem)}
+.card-body p{color:var(--muted);font-size:.96rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto;padding-top:.75rem}
+.tag{
+  font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:999px;padding:.28rem .68rem;color:var(--muted);
+}
+.menu-note{
+  margin-top:clamp(1.1rem,2.4vw,1.7rem);background:var(--coal);color:var(--cream);border-radius:var(--r-l);
+  padding:clamp(1.4rem,3vw,2.3rem);display:grid;gap:1.2rem;align-items:center;
+}
+.menu-note h3{font-size:clamp(1.3rem,1.1rem + .8vw,1.75rem)}
+.menu-note p{color:var(--muted-dark);margin-top:.5rem;font-size:.98rem;max-width:52ch}
+.menu-note .acts{display:flex;flex-wrap:wrap;gap:.65rem}
+
+/* prova social */
+.proof{background:var(--coal);color:var(--cream);position:relative;overflow:hidden}
+.proof::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(50% 60% at 88% 20%,rgba(192,73,43,.28),transparent 70%),
+             radial-gradient(45% 50% at 6% 95%,rgba(231,169,58,.12),transparent 70%);
+}
+.proof .wrap{position:relative}
+.proof .sec-head h2 em{color:var(--gold)}
+.proof .sec-head p{color:var(--muted-dark)}
+.rating{
+  display:grid;gap:1.6rem;align-items:center;margin-top:clamp(2rem,4vw,3rem);
+  border:1px solid var(--line-dark);border-radius:var(--r-l);padding:clamp(1.5rem,3.4vw,2.6rem);
+  background:linear-gradient(160deg,rgba(250,243,231,.06),rgba(250,243,231,.015));
+}
+.rating-score{display:flex;align-items:center;gap:1.1rem}
+.rating-score .big{font-family:var(--display);font-size:clamp(3.4rem,2.4rem + 4vw,5.2rem);line-height:.85;font-weight:600}
+.rating-score .stars svg{width:19px;height:19px}
+.rating-score small{display:block;color:var(--muted-dark);font-size:.87rem;margin-top:.5rem}
+.badges{display:grid;gap:.85rem}
+.badge{
+  display:flex;gap:.85rem;align-items:flex-start;border-left:2px solid rgba(231,169,58,.5);padding-left:.95rem;
+}
+.badge svg{width:20px;height:20px;color:var(--gold);flex:none;margin-top:.18rem}
+.badge b{display:block;font-size:.98rem}
+.badge span{color:var(--muted-dark);font-size:.88rem}
+.gallery{display:grid;gap:.8rem;margin-top:clamp(1.4rem,3vw,2rem)}
+.gallery figure{margin:0;border-radius:var(--r-m);overflow:hidden;aspect-ratio:4/3;background:var(--coal-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease),filter .5s var(--ease);filter:saturate(.95)}
+.gallery figure:hover img{transform:scale(1.05);filter:saturate(1.1)}
+
+/* CTA */
+.cta{background:var(--clay);color:#fff;position:relative;overflow:hidden}
+.cta::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background:radial-gradient(45% 60% at 15% 10%,rgba(231,169,58,.45),transparent 65%);
+}
+.cta .wrap{position:relative;text-align:center;display:grid;gap:1.4rem;justify-items:center}
+.cta h2{font-size:clamp(1.95rem,1.3rem + 3vw,3.4rem);max-width:18ch;letter-spacing:-.03em}
+.cta h2 em{font-style:italic;color:#ffe6b6}
+.cta p{max-width:50ch;color:rgba(255,248,238,.9)}
+.cta .acts{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+.cta .btn-white{background:var(--cream);color:var(--clay-deep)}
+.cta .btn-white:hover{background:#fff;transform:translateY(-2px)}
+.cta .btn-line{border-color:rgba(255,255,255,.55);color:#fff}
+.cta .btn-line:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+
+/* contato */
+.contact{background:var(--cream)}
+.contact-grid{display:grid;gap:clamp(1.6rem,4vw,3rem);margin-top:clamp(2rem,4vw,3rem)}
+.info-list{display:grid;gap:1.35rem}
+.info{display:flex;gap:1rem;align-items:flex-start}
+.info .ic{
+  flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  background:var(--coal);color:var(--gold);
+}
+.info .ic svg{width:20px;height:20px}
+.info h3{font-family:var(--sans);font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+.info p,.info a{font-size:1.03rem;margin-top:.18rem;display:block}
+.info a{transition:color .25s var(--ease)}
+.info a:hover{color:var(--clay-deep)}
+.hours{
+  background:var(--cream-2);border:1px solid var(--line);border-radius:var(--r-l);
+  padding:clamp(1.3rem,3vw,2rem);
+}
+.hours h3{font-size:1.3rem;margin-bottom:1rem}
+.hours dl{display:grid;grid-template-columns:1fr auto;gap:.1rem .8rem;margin:0}
+.hours .row{display:contents}
+.hours dt,.hours dd{
+  margin:0;padding:.62rem .55rem;border-bottom:1px dashed rgba(43,33,28,.16);font-size:.95rem;
+  transition:background .3s var(--ease);
+}
+.hours dd{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.hours .is-today dt,.hours .is-today dd{background:rgba(192,73,43,.1);color:var(--clay-deep);border-radius:8px;border-bottom-color:transparent}
+.hours .is-today dt::after{content:"hoje";margin-left:.55rem;font-size:.64rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;background:var(--clay);color:#fff;padding:.16rem .45rem;border-radius:999px;vertical-align:2px}
+.hours .closed{color:var(--muted)}
+.map-card{
+  margin-top:1.2rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;
+  background:var(--coal);color:var(--cream);border-radius:var(--r-m);padding:1.15rem 1.3rem;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.map-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.map-card b{display:block;font-size:1.02rem}
+.map-card span{color:var(--muted-dark);font-size:.86rem}
+.map-card svg{width:22px;height:22px;color:var(--gold);flex:none}
+
+/* footer */
+.site-footer{background:var(--coal-2);color:var(--cream);padding-block:clamp(2.6rem,5vw,4rem) 1.6rem}
+.foot-grid{display:grid;gap:2rem}
+.foot-about p{color:var(--muted-dark);font-size:.94rem;margin-top:1rem;max-width:38ch}
+.socials{display:flex;gap:.55rem;margin-top:1.25rem}
+.socials a{
+  width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  border:1px solid var(--line-dark);color:var(--cream);
+  transition:background .25s var(--ease),color .25s var(--ease),transform .25s var(--ease);
+}
+.socials a:hover{background:var(--gold);color:var(--coal);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px}
+.foot-col h4{font-family:var(--sans);font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--gold)}
+.foot-col ul{margin-top:1rem;display:grid;gap:.6rem}
+.foot-col a,.foot-col li{color:var(--muted-dark);font-size:.94rem}
+.foot-col a:hover{color:var(--cream)}
+.foot-bottom{
+  margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--line-dark);
+  display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;justify-content:space-between;
+  color:var(--muted-dark);font-size:.82rem;
+}
+
+/* reveal (só ativa se o JS confirmar) */
+.has-reveal .reveal{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.has-reveal .reveal.is-in{opacity:1;transform:none}
+
+/* ---------- BREAKPOINTS ---------- */
+@media (min-width:560px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .pillars{gap:1.7rem}
+}
+@media (min-width:860px){
+  .nav{display:block}
+  .burger{display:none}
+  .site-header[data-open="true"] .mobile-nav{display:none}
+  .hero-grid{grid-template-columns:1.08fr .92fr}
+  .hero-frame{border-radius:260px 260px var(--r-m) var(--r-m);aspect-ratio:4/5}
+  .about-grid{grid-template-columns:.95fr 1.05fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .menu-note{grid-template-columns:1.35fr auto;padding-inline:clamp(1.8rem,3.4vw,2.8rem)}
+  .rating{grid-template-columns:auto 1fr;gap:clamp(2rem,5vw,4rem)}
+  .badges{gap:1.05rem}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1.5fr 1fr 1fr}
+}
+@media (min-width:1080px){
+  .foot-grid{grid-template-columns:1.6fr 1fr 1fr 1.05fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .strip-track{animation:none}
+}
+</style>
+<script>
+(function(){
+  try{
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if('IntersectionObserver' in window && !reduce){
+      document.documentElement.classList.add('has-reveal');
+    }
+  }catch(e){}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" id="topo" data-open="false">
+  <div class="wrap hbar">
+    <a class="logo" href="#topo" aria-label="Lá no Tuninho — página inicial">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="true">
+        <path d="M14 9.5c0-2.6 3.2-2.6 3.2-5.2"/>
+        <path d="M20.4 8.2c0-2.6 3.2-2.6 3.2-5.2"/>
+        <path d="M5.5 16.5h29"/>
+        <path d="M8.2 18.6c0 7.6 4.8 13.4 11.8 13.4s11.8-5.8 11.8-13.4"/>
+        <path d="M6.4 18.6 3 22.4M33.6 18.6 37 22.4"/>
+        <path d="M15.6 35.9h8.8"/>
+      </svg>
+      <span class="lock">
+        <span class="top">Cozinha mineira</span>
+        <span class="name">Lá no <i>Tuninho</i></span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">A casa</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hactions">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/552130122516" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.42 1.32 4.9L2 22l5.4-1.42a9.8 9.8 0 0 0 4.64 1.18h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.2.84.86-3.12-.2-.32a8.11 8.11 0 0 1-1.25-4.2c0-4.5 3.68-8.16 8.2-8.16 2.19 0 4.25.85 5.8 2.4a8.09 8.09 0 0 1 2.4 5.77c0 4.5-3.67 8.11-8.14 8.11Zm4.47-6.08c-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.97-1.21-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.45-.59 1.65-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.46-.28Z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn-icon" href="tel:+552130122516" aria-label="Ligar para (21) 3012-2516">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu de navegação">
+        <svg class="m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="menu-mobile" aria-label="Navegação mobile">
+    <div class="wrap">
+      <a href="#sobre">A casa</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Barra da Tijuca &middot; Rio de Janeiro</span>
+          <h1 id="hero-title">Minas serve o<br>almoço <em>na Barra</em>.</h1>
+          <p class="hero-lead">Buffet de comida mineira de terça a quinta, feijoada de sexta a domingo e cozido no fim de semana. Self-service, panela cheia e aquele tempero de fogão de casa — a duas quadras da Av. das Américas.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://wa.me/552130122516" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.42 1.32 4.9L2 22l5.4-1.42a9.8 9.8 0 0 0 4.64 1.18h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2Zm4.47 11.88c-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.97-1.21-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.45-.59 1.65-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.46-.28Z"/></svg>
+              Reservar ou encomendar
+            </a>
+            <a class="btn btn-ghost" href="#cardapio">Ver o cardápio da semana</a>
+          </div>
+          <div class="hero-facts">
+            <span>
+              <span class="stars" role="img" aria-label="Nota 4,6 de 5 no Google">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              </span>
+              <b>4,6</b> no Google
+            </span>
+            <span class="dot" aria-hidden="true"></span>
+            <span><b>R$ 40 a R$ 80</b> por pessoa</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Terça a domingo &middot; <b>almoço e jantar</b></span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <span class="hero-ring" aria-hidden="true"></span>
+          <div class="hero-frame">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80"
+                 alt="Mesa farta vista de cima, com várias travessas de comida caseira servidas para compartilhar"
+                 width="1000" height="1250" fetchpriority="high" decoding="async">
+          </div>
+          <div class="hero-chip">
+            <span class="num">4,6</span>
+            <span>
+              <small>Google</small>
+              <span class="stars" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="strip" role="presentation">
+    <div class="strip-track">
+      <ul>
+        <li>Buffet mineiro</li><li>Feijoada completa</li><li>Cozido</li><li>Tutu de feijão</li><li>Couve refogada</li><li>Torresmo</li><li>Frango com quiabo</li><li>Self-service</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Buffet mineiro</li><li>Feijoada completa</li><li>Cozido</li><li>Tutu de feijão</li><li>Couve refogada</li><li>Torresmo</li><li>Frango com quiabo</li><li>Self-service</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="sec about" id="sobre" aria-labelledby="sobre-title">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
+               alt="Salão de restaurante aconchegante, com mesas de madeira postas e luz quente"
+               width="900" height="675" loading="lazy" decoding="async">
+          <span class="about-badge">Self-service</span>
+        </div>
+
+        <div class="about-copy reveal" style="--d:.1s">
+          <span class="eyebrow dark">A casa</span>
+          <h2 id="sobre-title">Comida de panela,<br><em>sem cerimônia</em>.</h2>
+          <p style="margin-top:1.1rem;color:var(--muted)">O Lá no Tuninho é o tipo de lugar que a Barra precisava: você chega, pega o prato, monta do seu jeito e come sentado, no tempo certo. Nada de espera longa, nada de porção que não te satisfaz — só cozinha mineira feita no dia, com aquele cheiro que atravessa a rua.</p>
+
+          <div class="pillars">
+            <div class="pillar">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16"/><path d="M5.5 12.5c0 4.1 2.9 7.5 6.5 7.5s6.5-3.4 6.5-7.5"/><path d="M9 7.5c0-1.6 2-1.6 2-3.2M14 6.8c0-1.6 2-1.6 2-3.2"/></svg>
+              </span>
+              <div>
+                <h3>Panela nova todo dia</h3>
+                <p>O buffet muda com a semana: comida mineira de terça a quinta, feijoada a partir de sexta e cozido no fim de semana.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v8a3 3 0 0 0 6 0V3"/><path d="M9 11v10"/><path d="M18 3c-1.5 1.6-2 3.6-2 6 0 1.7.7 2.9 2 3.4V21"/></svg>
+              </span>
+              <div>
+                <h3>Você monta o seu prato</h3>
+                <p>Self-service de verdade: come o que quer, na medida que quer. Ideal para o almoço de quem trabalha na região.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-7.5-10a7.5 7.5 0 0 1 15 0c0 5.3-7.5 10-7.5 10Z"/><circle cx="12" cy="11" r="2.6"/></svg>
+              </span>
+              <div>
+                <h3>Fácil de chegar, fácil de voltar</h3>
+                <p>Na Rua Eng. Carlos Euler, 101 — Loja A, coladinho na Av. das Américas 7700. Almoço rápido no meio da semana, mesa cheia no fim de semana.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="sec menu" id="cardapio" aria-labelledby="cardapio-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow dark">Cardápio da semana</span>
+        <h2 id="cardapio-title">Cada dia tem <em>a sua panela</em></h2>
+        <p>Buffet servido no almoço e no jantar, com preço por pessoa entre R$ 40 e R$ 80 conforme o dia e o que você monta no prato.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" style="--d:.05s">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"
+                 alt="Prato caseiro montado com arroz, carne, legumes e verduras frescas"
+                 width="700" height="481" loading="lazy" decoding="async">
+            <span class="card-days">Ter &middot; Qua &middot; Qui</span>
+          </div>
+          <div class="card-body">
+            <h3>Buffet mineiro</h3>
+            <p>O clássico do meio de semana: arroz, feijão bem apurado, carnes do dia, refogados, saladas frescas e as guarnições que só existem em cozinha mineira.</p>
+            <div class="tags">
+              <span class="tag">Almoço e jantar</span>
+              <span class="tag">Self-service</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:.15s">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                 alt="Panela escura com ensopado de feijão e carnes, fumegante, servida à mesa"
+                 width="700" height="481" loading="lazy" decoding="async">
+            <span class="card-days">Sex &middot; Sáb &middot; Dom &middot; Feriados</span>
+          </div>
+          <div class="card-body">
+            <h3>Feijoada completa</h3>
+            <p>A casa é conhecida por ela — e não é à toa: citada entre as melhores feijoadas da Barra da Tijuca. Com os acompanhamentos que fazem parte do ritual, do começo ao fim.</p>
+            <div class="tags">
+              <span class="tag">Buffet de feijoada</span>
+              <span class="tag">Também aos feriados</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:.25s">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+                 alt="Travessa rústica com carnes cozidas e legumes no caldo"
+                 width="700" height="481" loading="lazy" decoding="async">
+            <span class="card-days">Sábado e domingo</span>
+          </div>
+          <div class="card-body">
+            <h3>Cozido</h3>
+            <p>Carnes e legumes cozidos devagar, no caldo, para almoço de fim de semana em família. Serve junto com a feijoada — quem vem, escolhe os dois.</p>
+            <div class="tags">
+              <span class="tag">Fim de semana</span>
+              <span class="tag">Prato de família</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-note reveal">
+        <div>
+          <h3>Executivo, petiscos e encomendas</h3>
+          <p>Almoço executivo no corre do meio-dia, petiscos para a mesa e feijoada encomendada para levar. Fale direto com a casa — sem intermediário, sem aplicativo no meio.</p>
+        </div>
+        <div class="acts">
+          <a class="btn btn-gold" href="https://wa.me/552130122516" target="_blank" rel="noopener">Encomendar no WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+552130122516">(21) 3012-2516</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="sec proof" id="avaliacoes" aria-labelledby="avaliacoes-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Quem senta à mesa</span>
+        <h2 id="avaliacoes-title">A reputação <em>é do bairro</em></h2>
+        <p>Não é propaganda: é o que está publicado nas plataformas onde o cliente pesquisa antes de escolher o almoço.</p>
+      </div>
+
+      <div class="rating reveal">
+        <div class="rating-score">
+          <span class="big">4,6</span>
+          <div>
+            <span class="stars" role="img" aria-label="4,6 de 5 estrelas">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+            </span>
+            <small>Cerca de 159 avaliações no Google</small>
+          </div>
+        </div>
+
+        <div class="badges">
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M17 4H7v6a5 5 0 0 0 10 0V4Z"/><path d="M17 6h3a3 3 0 0 1-3 3M7 6H4a3 3 0 0 0 3 3"/></svg>
+            <div>
+              <b>Entre as 4 melhores feijoadas da Barra</b>
+              <span>Citação editorial em guia gastronômico de 2026.</span>
+            </div>
+          </div>
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 4 5-7 4 5"/><path d="M3 21h18"/></svg>
+            <div>
+              <b>Top 20% dos restaurantes do Rio</b>
+              <span>Posição 7.638 entre 42.071 casas listadas no RestaurantGuru.</span>
+            </div>
+          </div>
+          <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+            <div>
+              <b>10,5 mil seguidores no Instagram</b>
+              <span>Feijoada e cozido do dia publicados em @lanotuninho.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery reveal" style="--d:.1s">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80"
+               alt="Ambiente interno do restaurante com mesas de madeira e iluminação quente"
+               width="600" height="450" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
+               alt="Tigela com salada fresca de folhas e legumes coloridos"
+               width="600" height="450" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+               alt="Prato servido com carne ao molho e acompanhamentos"
+               width="600" height="450" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sec cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <span class="eyebrow reveal" style="color:#ffe6b6">Fale com a casa</span>
+      <h2 id="cta-title" class="reveal" style="--d:.05s">Guarde a sua mesa <em>na feijoada</em></h2>
+      <p class="reveal" style="--d:.1s">Mesa para a família no fim de semana, almoço executivo para a equipe ou feijoada encomendada para levar: chama no WhatsApp que a gente resolve na conversa.</p>
+      <div class="acts reveal" style="--d:.15s">
+        <a class="btn btn-white" href="https://wa.me/552130122516" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.42 1.32 4.9L2 22l5.4-1.42a9.8 9.8 0 0 0 4.64 1.18h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2Zm4.47 11.88c-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.97-1.21-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.45-.59 1.65-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.46-.28Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-line" href="tel:+552130122516">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          (21) 3012-2516
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="sec contact" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow dark">Onde e quando</span>
+        <h2 id="contato-title">Estamos <em>na Barra</em>, esperando você</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-list reveal">
+          <div class="info">
+            <span class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-7.5-10a7.5 7.5 0 0 1 15 0c0 5.3-7.5 10-7.5 10Z"/><circle cx="12" cy="11" r="2.6"/></svg>
+            </span>
+            <div>
+              <h3>Endereço</h3>
+              <p>R. Eng. Carlos Euler, 101 — Loja A<br>Barra da Tijuca, Rio de Janeiro — RJ, 22793-262<br><span style="color:var(--muted);font-size:.92rem">Ao lado da Av. das Américas, 7700</span></p>
+            </div>
+          </div>
+          <div class="info">
+            <span class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <a href="tel:+552130122516">(21) 3012-2516</a>
+              <a href="https://wa.me/552130122516" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            </div>
+          </div>
+          <div class="info">
+            <span class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            </span>
+            <div>
+              <h3>E-mail</h3>
+              <a href="mailto:lanotuninhoo@gmail.com">lanotuninhoo@gmail.com</a>
+            </div>
+          </div>
+          <div class="info">
+            <span class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <div>
+              <h3>Instagram</h3>
+              <a href="https://www.instagram.com/lanotuninho/" target="_blank" rel="noopener">@lanotuninho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="--d:.1s">
+          <div class="hours">
+            <h3>Horário de funcionamento</h3>
+            <dl>
+              <div class="row" data-day="1"><dt>Segunda-feira</dt><dd class="closed">Fechado</dd></div>
+              <div class="row" data-day="2"><dt>Terça-feira</dt><dd>11h30 – 21h</dd></div>
+              <div class="row" data-day="3"><dt>Quarta-feira</dt><dd>11h30 – 21h</dd></div>
+              <div class="row" data-day="4"><dt>Quinta-feira</dt><dd>11h30 – 21h</dd></div>
+              <div class="row" data-day="5"><dt>Sexta-feira</dt><dd>11h30 – 21h</dd></div>
+              <div class="row" data-day="6"><dt>Sábado</dt><dd>11h30 – 16h</dd></div>
+              <div class="row" data-day="0"><dt>Domingo</dt><dd>11h30 – 16h</dd></div>
+            </dl>
+            <p style="margin-top:1rem;color:var(--muted);font-size:.9rem">Feriados com buffet de feijoada. Ticket médio de R$ 40 a R$ 80 por pessoa.</p>
+          </div>
+
+          <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=R.%20Eng.%20Carlos%20Euler%2C%20101%20-%20Loja%20A%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022793-262%20Rio%20de%20Janeiro" target="_blank" rel="noopener">
+            <span>
+              <b>Como chegar</b>
+              <span>Abrir a rota no Google Maps</span>
+            </span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="logo" href="#topo" aria-label="Lá no Tuninho — voltar ao topo">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 9.5c0-2.6 3.2-2.6 3.2-5.2"/>
+            <path d="M20.4 8.2c0-2.6 3.2-2.6 3.2-5.2"/>
+            <path d="M5.5 16.5h29"/>
+            <path d="M8.2 18.6c0 7.6 4.8 13.4 11.8 13.4s11.8-5.8 11.8-13.4"/>
+            <path d="M6.4 18.6 3 22.4M33.6 18.6 37 22.4"/>
+            <path d="M15.6 35.9h8.8"/>
+          </svg>
+          <span class="lock">
+            <span class="top">Cozinha mineira</span>
+            <span class="name">Lá no <i>Tuninho</i></span>
+          </span>
+        </a>
+        <p>Restaurante mineiro self-service na Barra da Tijuca. Buffet, feijoada e cozido feitos no dia, do jeito que se come em Minas.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/lanotuninho/" target="_blank" rel="noopener" aria-label="Instagram do Lá no Tuninho">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/lanotuninho" target="_blank" rel="noopener" aria-label="Facebook do Lá no Tuninho">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7.3c0-.8.2-1.3 1.5-1.3H17V3.1A20 20 0 0 0 14.8 3C12.2 3 10.4 4.5 10.4 7v2H8v3.2h2.4V21H14v-8.8h2.5l.4-3.2H14Z"/></svg>
+          </a>
+          <a href="https://wa.me/552130122516" target="_blank" rel="noopener" aria-label="WhatsApp do Lá no Tuninho">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.42 1.32 4.9L2 22l5.4-1.42a9.8 9.8 0 0 0 4.64 1.18h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2Zm4.47 11.88c-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.97-1.21-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.45-.59 1.65-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.46-.28Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="foot-col" aria-label="Links do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#sobre">A casa</a></li>
+          <li><a href="#cardapio">Cardápio da semana</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="foot-col">
+        <h4>Horários</h4>
+        <ul>
+          <li>Terça a sexta &middot; 11h30 – 21h</li>
+          <li>Sábado e domingo &middot; 11h30 – 16h</li>
+          <li>Segunda &middot; fechado</li>
+          <li>Feriados &middot; buffet de feijoada</li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+552130122516">(21) 3012-2516</a></li>
+          <li><a href="https://wa.me/552130122516" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:lanotuninhoo@gmail.com">lanotuninhoo@gmail.com</a></li>
+          <li>R. Eng. Carlos Euler, 101 — Loja A<br>Barra da Tijuca, Rio de Janeiro — RJ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; <span id="ano">2026</span> Lá no Tuninho — Comida mineira na Barra da Tijuca.</span>
+      <span>Feito com fogo baixo e panela cheia.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Lá no Tuninho",
+  "description":"Restaurante mineiro self-service na Barra da Tijuca, Rio de Janeiro. Buffet de comida mineira de terça a quinta, buffet de feijoada às sextas, sábados, domingos e feriados, e cozido nos fins de semana.",
+  "servesCuisine":["Mineira","Brasileira"],
+  "priceRange":"R$ 40 - R$ 80",
+  "currenciesAccepted":"BRL",
+  "image":"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+  "telephone":"+55-21-3012-2516",
+  "email":"lanotuninhoo@gmail.com",
+  "url":"https://lanotuninho.com.br/",
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=R.%20Eng.%20Carlos%20Euler%2C%20101%20-%20Loja%20A%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022793-262%20Rio%20de%20Janeiro",
+  "acceptsReservations":"True",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"R. Eng. Carlos Euler, 101 - Loja A",
+    "addressLocality":"Rio de Janeiro",
+    "addressRegion":"RJ",
+    "postalCode":"22793-262",
+    "addressCountry":"BR"
+  },
+  "areaServed":"Barra da Tijuca, Rio de Janeiro",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"11:30","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"11:30","closes":"16:00"}
+  ],
+  "aggregateRating":{
+    "@type":"AggregateRating",
+    "ratingValue":"4.6",
+    "reviewCount":"159",
+    "bestRating":"5",
+    "worstRating":"1"
+  },
+  "sameAs":[
+    "https://www.instagram.com/lanotuninho/",
+    "https://www.facebook.com/lanotuninho"
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* menu mobile */
+  var header = document.querySelector('.site-header');
+  var burger = header.querySelector('.burger');
+  burger.addEventListener('click', function(){
+    var open = header.getAttribute('data-open') === 'true';
+    header.setAttribute('data-open', open ? 'false' : 'true');
+    burger.setAttribute('aria-expanded', open ? 'false' : 'true');
+    burger.setAttribute('aria-label', open ? 'Abrir menu de navegação' : 'Fechar menu de navegação');
+  });
+  Array.prototype.forEach.call(header.querySelectorAll('.mobile-nav a'), function(a){
+    a.addEventListener('click', function(){
+      header.setAttribute('data-open','false');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* header ao rolar */
+  var onScroll = function(){
+    header.classList.toggle('is-stuck', window.scrollY > 10);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* scroll reveal — só roda se o CSS foi habilitado */
+  if(document.documentElement.classList.contains('has-reveal')){
+    var items = document.querySelectorAll('.reveal');
+    Array.prototype.forEach.call(items, function(el){
+      var d = el.style.getPropertyValue('--d');
+      if(d){ el.style.transitionDelay = d; }
+    });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    Array.prototype.forEach.call(items, function(el){ io.observe(el); });
+
+    /* à prova de falhas: se algo travar, tudo aparece */
+    window.setTimeout(function(){
+      Array.prototype.forEach.call(items, function(el){ el.classList.add('is-in'); });
+    }, 3500);
+  }
+
+  /* destaca o dia de hoje na tabela de horários */
+  var today = new Date().getDay();
+  var row = document.querySelector('.hours .row[data-day="'+today+'"]');
+  if(row){ row.classList.add('is-today'); }
+
+  /* ano no rodapé */
+  var ano = document.getElementById('ano');
+  if(ano){ ano.textContent = String(new Date().getFullYear()); }
+})();
+</script>
+</body>
+</html>
