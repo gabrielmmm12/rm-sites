@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glitter Coiffeur — Salão de Beleza na Barra da Tijuca | Cabelo, Unhas e Estética</title>
+<meta name="description" content="Glitter Coiffeur (Glitter Cabeleireiro): salão de beleza na Barra da Tijuca. Cabelo, manicure e pedicure, estética e depilação em um espaço moderno, intimista e aconchegante. Agende pelo WhatsApp: (21) 2491-0698.">
+<meta name="theme-color" content="#1A1310">
+<meta name="author" content="Glitter Coiffeur">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Glitter Coiffeur">
+<meta property="og:title" content="Glitter Coiffeur — Salão de Beleza na Barra da Tijuca">
+<meta property="og:description" content="Cabelo, manicure e pedicure, estética e depilação em um espaço moderno, intimista e aconchegante, na Av. Lúcio Costa, 4420. Agende pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta property="og:image:alt" content="Atendimento de cabelo em salão de beleza">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glitter Coiffeur — Salão de Beleza na Barra da Tijuca">
+<meta name="twitter:description" content="Cabelo, unhas, estética e depilação em um espaço intimista na Barra da Tijuca. Agende pelo WhatsApp.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&h=630&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  /* Só esconde conteúdo para animar se o JS realmente puder animar.
+     Sem JS (ou com prefers-reduced-motion), tudo permanece visível. */
+  try {
+    if ('IntersectionObserver' in window &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim');
+    }
+  } catch (e) {}
+</script>
+
+<style>
+  :root{
+    /* ---- Paleta autoral "Areia & Champanhe" ---- */
+    --ink:        #1A1310;
+    --ink-2:      #2E221D;
+    --ink-soft:   #4A3A33;
+    --areia:      #F4EBE1;
+    --areia-2:    #EADFD2;
+    --marfim:     #FCF8F3;
+    --dourado:    #A97C33;
+    --dourado-lt: #E3C48A;
+    --rose:       #B87466;
+    --rose-lt:    #EFD8D1;
+
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-sans: "Jost", "Helvetica Neue", Helvetica, sans-serif;
+
+    --maxw: 1180px;
+    --pad: clamp(1.15rem, 4vw, 2.5rem);
+    --sect: clamp(4.5rem, 10vw, 8.5rem);
+    --r-sm: 10px;
+    --r-md: 18px;
+    --shadow-sm: 0 2px 10px rgba(26,19,16,.06);
+    --shadow-md: 0 18px 44px -22px rgba(26,19,16,.45);
+    --shadow-lg: 0 40px 80px -40px rgba(26,19,16,.55);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+
+  body{
+    margin:0;
+    background:var(--areia);
+    color:var(--ink-soft);
+    font-family:var(--font-sans);
+    font-weight:400;
+    font-size:clamp(1rem,.97rem + .2vw,1.075rem);
+    line-height:1.72;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3,h4{
+    font-family:var(--font-display);
+    color:var(--ink);
+    font-weight:500;
+    line-height:1.06;
+    letter-spacing:-.015em;
+    margin:0 0 .5em;
+    font-variation-settings:"opsz" 96;
+  }
+  h1{font-size:clamp(2.6rem,1.6rem + 4.4vw,4.6rem)}
+  h2{font-size:clamp(2rem,1.35rem + 2.7vw,3.35rem)}
+  h3{font-size:clamp(1.25rem,1.1rem + .7vw,1.55rem);letter-spacing:-.005em}
+  p{margin:0 0 1.15em}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  ul{margin:0;padding:0;list-style:none}
+
+  .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+  .sect{padding-block:var(--sect)}
+
+  .eyebrow{
+    font-size:.72rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--dourado);display:flex;align-items:center;gap:.7rem;margin:0 0 1.15rem;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.55;flex:none}
+  .eyebrow--center{justify-content:center}
+  .eyebrow--center::after{content:"";width:34px;height:1px;background:currentColor;opacity:.55;flex:none}
+
+  .lead{font-size:clamp(1.05rem,1rem + .45vw,1.24rem);color:var(--ink-soft);max-width:56ch;font-weight:300}
+  .muted{color:#6B5A51}
+  .center{text-align:center}
+  .center .lead{margin-inline:auto}
+
+  .ital{font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 40}
+  .accent{color:var(--dourado)}
+
+  /* ---------- Botões ---------- */
+  .btn{
+    -webkit-appearance:none;appearance:none;border:0;cursor:pointer;
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    font-family:var(--font-sans);font-size:.86rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;
+    padding:1.05rem 1.65rem;border-radius:100px;text-decoration:none;
+    transition:transform .25s ease, background-color .25s ease, color .25s ease, box-shadow .25s ease, border-color .25s ease;
+    will-change:transform;
+  }
+  .btn svg{flex:none}
+  .btn--solid{background:var(--ink);color:var(--marfim);box-shadow:var(--shadow-md)}
+  .btn--solid:hover{background:var(--ink-2);transform:translateY(-3px);box-shadow:0 24px 48px -22px rgba(26,19,16,.6)}
+  .btn--line{background:transparent;color:var(--ink);border:1px solid rgba(26,19,16,.24)}
+  .btn--line:hover{border-color:var(--dourado);color:var(--dourado);transform:translateY(-3px)}
+  .btn--gold{background:var(--dourado-lt);color:var(--ink)}
+  .btn--gold:hover{background:#EED4A4;transform:translateY(-3px)}
+  .btn--onDark{background:transparent;color:var(--areia);border:1px solid rgba(244,235,225,.32)}
+  .btn--onDark:hover{border-color:var(--dourado-lt);color:var(--dourado-lt);transform:translateY(-3px)}
+
+  a:focus-visible,button:focus-visible{outline:2px solid var(--dourado);outline-offset:3px;border-radius:6px}
+
+  /* ---------- Logotipo ---------- */
+  .logo{display:inline-flex;align-items:center;gap:.68rem;text-decoration:none;line-height:1}
+  .logo__mark{width:26px;height:26px;flex:none;color:var(--dourado);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+  .logo:hover .logo__mark{transform:rotate(90deg) scale(1.08)}
+  .logo__txt{display:flex;flex-direction:column;gap:.16em}
+  .logo__name{
+    font-family:var(--font-display);font-style:italic;font-weight:600;
+    font-size:1.42rem;letter-spacing:-.01em;color:var(--ink);
+    font-variation-settings:"opsz" 144,"SOFT" 60,"WONK" 1;
+  }
+  .logo__sub{font-size:.545rem;letter-spacing:.42em;text-transform:uppercase;color:var(--dourado);font-weight:500;padding-left:.12em}
+  .logo--light .logo__name{color:var(--marfim)}
+  .logo--light .logo__sub{color:var(--dourado-lt)}
+
+  /* ---------- Header ---------- */
+  .header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(244,235,225,.82);
+    -webkit-backdrop-filter:saturate(140%) blur(14px);
+    backdrop-filter:saturate(140%) blur(14px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease, background-color .3s ease, box-shadow .3s ease;
+  }
+  .header.is-stuck{border-bottom-color:rgba(26,19,16,.10);box-shadow:0 10px 30px -26px rgba(26,19,16,.6)}
+  .header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.95rem}
+  .nav{display:none}
+  .nav a{
+    text-decoration:none;font-size:.83rem;letter-spacing:.08em;text-transform:uppercase;
+    font-weight:500;color:var(--ink);opacity:.78;position:relative;padding-block:.35rem;transition:opacity .2s ease
+  }
+  .nav a::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--dourado);
+    transform:scaleX(0);transform-origin:left;transition:transform .32s cubic-bezier(.2,.8,.2,1)
+  }
+  .nav a:hover{opacity:1}
+  .nav a:hover::after{transform:scaleX(1)}
+  .header__cta{display:none}
+  .burger{
+    display:inline-flex;flex-direction:column;justify-content:center;gap:5px;
+    width:46px;height:46px;padding:0 12px;border-radius:100px;
+    background:transparent;border:1px solid rgba(26,19,16,.18);cursor:pointer
+  }
+  .burger span{display:block;height:1.5px;background:var(--ink);border-radius:2px;transition:transform .3s ease, opacity .2s ease}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+  .panel{
+    border-top:1px solid rgba(26,19,16,.10);
+    background:rgba(252,248,243,.97);
+    padding:1.1rem var(--pad) 1.6rem;
+  }
+  .panel[hidden]{display:none}
+  .panel ul{display:flex;flex-direction:column}
+  .panel a{
+    display:block;text-decoration:none;padding:.85rem 0;color:var(--ink);
+    font-family:var(--font-display);font-size:1.3rem;border-bottom:1px solid rgba(26,19,16,.07)
+  }
+  .panel .btn{width:100%;margin-top:1.2rem}
+
+  @media (min-width:900px){
+    .burger{display:none}
+    .panel{display:none !important}
+    .nav{display:flex;gap:clamp(1.4rem,2.4vw,2.6rem);align-items:center}
+    .header__cta{display:inline-flex}
+  }
+
+  /* ---------- Mídia / molduras ---------- */
+  .media{position:relative;background:linear-gradient(155deg,var(--rose-lt),var(--areia-2) 55%,var(--dourado-lt));overflow:hidden}
+  .media img{width:100%;height:100%;object-fit:cover}
+  .media--arch{border-radius:clamp(120px,26vw,260px) clamp(120px,26vw,260px) var(--r-md) var(--r-md)}
+  .media--soft{border-radius:var(--r-md)}
+
+  /* ---------- HERO (visível imediatamente, sem depender de JS) ---------- */
+  .hero{position:relative;padding-block:clamp(2.6rem,6vw,5rem) clamp(3.5rem,7vw,6rem);overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:-30% -10% auto -20%;height:120%;
+    background:
+      radial-gradient(46% 42% at 18% 22%, rgba(239,216,209,.75), transparent 70%),
+      radial-gradient(40% 38% at 88% 8%, rgba(227,196,138,.42), transparent 70%);
+    pointer-events:none;z-index:0
+  }
+  .hero__grid{position:relative;z-index:1;display:grid;gap:clamp(2.4rem,5vw,3.5rem);align-items:center}
+  .hero h1{margin-bottom:.42em}
+  .hero h1 .ital{color:var(--ink)}
+  .hero__cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+  .hero__meta{
+    display:flex;flex-wrap:wrap;gap:.7rem 1.6rem;margin-top:2.2rem;padding-top:1.5rem;
+    border-top:1px solid rgba(26,19,16,.14);font-size:.82rem;letter-spacing:.05em;color:#6B5A51
+  }
+  .hero__meta span{display:inline-flex;align-items:center;gap:.5rem}
+  .hero__meta svg{color:var(--dourado);flex:none}
+  .hero__figure{position:relative}
+  .hero__figure .media{aspect-ratio:4/5;box-shadow:var(--shadow-lg)}
+  .hero__figure .media img{animation:slowzoom 22s ease-in-out infinite alternate}
+  @keyframes slowzoom{from{transform:scale(1)}to{transform:scale(1.07)}}
+  .hero__frame{
+    position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(169,124,51,.5);
+    border-radius:clamp(120px,26vw,260px) clamp(120px,26vw,260px) var(--r-md) var(--r-md);
+    z-index:-1;pointer-events:none
+  }
+  .hero__badge{
+    position:absolute;left:-6px;bottom:26px;z-index:2;
+    background:var(--marfim);border-radius:100px;padding:.7rem 1.15rem;
+    box-shadow:var(--shadow-md);display:flex;align-items:center;gap:.6rem;
+    font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--ink)
+  }
+  .hero__badge svg{color:var(--dourado);flex:none}
+  @media (min-width:900px){
+    .hero__grid{grid-template-columns:1.02fr .98fr;gap:clamp(3rem,5vw,5rem)}
+    .hero__badge{left:-28px}
+  }
+
+  /* ---------- Marquee de especialidades ---------- */
+  .strip{background:var(--ink);color:var(--areia);overflow:hidden;padding-block:1.05rem}
+  .strip__track{display:flex;gap:0;width:max-content;animation:slide 34s linear infinite}
+  .strip ul{display:flex;align-items:center;gap:2.4rem;padding-right:2.4rem}
+  .strip li{
+    display:inline-flex;align-items:center;gap:2.4rem;white-space:nowrap;
+    font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:var(--areia);opacity:.92
+  }
+  .strip li::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--dourado-lt);flex:none}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion: reduce){
+    .strip__track{animation:none}
+    .hero__figure .media img{animation:none}
+  }
+
+  /* ---------- Sobre ---------- */
+  .about{background:var(--marfim)}
+  .about__grid{display:grid;gap:clamp(2.4rem,5vw,4rem);align-items:center}
+  .about__figs{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem;align-items:end}
+  .about__figs .media:first-child{aspect-ratio:3/4}
+  .about__figs .media:last-child{aspect-ratio:1/1}
+  @media (min-width:900px){ .about__grid{grid-template-columns:1fr 1.05fr} }
+
+  .quote{
+    margin:2rem 0 0;padding:1.4rem 0 1.4rem 1.6rem;border-left:2px solid var(--dourado);
+    font-family:var(--font-display);font-style:italic;font-size:clamp(1.15rem,1.05rem + .6vw,1.5rem);
+    line-height:1.4;color:var(--ink)
+  }
+  .quote cite{display:block;margin-top:.75rem;font-family:var(--font-sans);font-style:normal;
+    font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dourado)}
+
+  .pillars{display:grid;gap:1px;background:rgba(26,19,16,.12);border-block:1px solid rgba(26,19,16,.12);margin-top:clamp(3rem,6vw,4.5rem)}
+  .pillar{background:var(--marfim);padding:clamp(1.6rem,3vw,2.2rem) clamp(1.2rem,2.5vw,2rem)}
+  .pillar svg{color:var(--dourado);margin-bottom:1rem}
+  .pillar h3{font-size:1.12rem;margin-bottom:.4em}
+  .pillar p{font-size:.94rem;margin:0;color:#6B5A51}
+  @media (min-width:680px){ .pillars{grid-template-columns:repeat(2,1fr)} }
+  @media (min-width:1000px){ .pillars{grid-template-columns:repeat(4,1fr)} }
+
+  /* ---------- Serviços ---------- */
+  .services{background:var(--areia)}
+  .services__head{display:grid;gap:1.5rem;align-items:end;margin-bottom:clamp(2.5rem,5vw,3.6rem)}
+  @media (min-width:900px){ .services__head{grid-template-columns:1.15fr .85fr} }
+  .cards{display:grid;gap:clamp(1rem,2vw,1.4rem)}
+  @media (min-width:640px){ .cards{grid-template-columns:repeat(2,1fr)} }
+  @media (min-width:1040px){ .cards{grid-template-columns:repeat(4,1fr)} }
+  .card{
+    position:relative;background:var(--marfim);border:1px solid rgba(26,19,16,.09);
+    border-radius:var(--r-md);padding:clamp(1.5rem,2.6vw,2rem);
+    display:flex;flex-direction:column;overflow:hidden;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease
+  }
+  .card::after{
+    content:"";position:absolute;left:0;right:0;top:0;height:2px;
+    background:linear-gradient(90deg,var(--dourado),var(--rose));
+    transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)
+  }
+  .card:hover{transform:translateY(-7px);box-shadow:var(--shadow-md);border-color:rgba(169,124,51,.35)}
+  .card:hover::after{transform:scaleX(1)}
+  .card__ico{
+    width:52px;height:52px;border-radius:50%;flex:none;display:grid;place-items:center;
+    background:linear-gradient(150deg,var(--rose-lt),var(--areia-2));color:var(--ink);margin-bottom:1.3rem
+  }
+  .card h3{margin-bottom:.45em}
+  .card p{font-size:.94rem;color:#6B5A51}
+  .card ul{margin-top:auto;padding-top:1.1rem;border-top:1px solid rgba(26,19,16,.09);display:grid;gap:.5rem}
+  .card li{position:relative;padding-left:1.15rem;font-size:.9rem;color:var(--ink-soft)}
+  .card li::before{
+    content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--dourado)
+  }
+  .services__note{
+    margin-top:clamp(2rem,4vw,2.8rem);text-align:center;font-size:.92rem;color:#6B5A51
+  }
+
+  /* ---------- Experiência / prova social ---------- */
+  .exp{background:var(--marfim);position:relative;overflow:hidden}
+  .exp::before{
+    content:"";position:absolute;right:-12%;top:-15%;width:60vw;height:60vw;max-width:640px;max-height:640px;
+    background:radial-gradient(circle at center, rgba(227,196,138,.30), transparent 65%);pointer-events:none
+  }
+  .exp__grid{position:relative;display:grid;gap:clamp(1.6rem,3vw,2rem)}
+  @media (min-width:860px){ .exp__grid{grid-template-columns:repeat(3,1fr)} }
+  .exp__item{padding:clamp(1.6rem,3vw,2.2rem) 0;border-top:1px solid rgba(26,19,16,.14)}
+  .exp__num{
+    font-family:var(--font-display);font-style:italic;font-size:1.6rem;color:var(--dourado);
+    display:block;margin-bottom:.9rem
+  }
+  .exp__item h3{font-size:1.2rem}
+  .exp__item p{font-size:.95rem;color:#6B5A51;margin:0}
+
+  /* ---------- CTA escuro ---------- */
+  .cta{background:var(--ink);color:var(--areia);position:relative;overflow:hidden;text-align:center}
+  .cta::before,.cta::after{
+    content:"";position:absolute;border-radius:50%;pointer-events:none
+  }
+  .cta::before{width:70vw;height:70vw;max-width:720px;max-height:720px;left:-22%;top:-45%;
+    background:radial-gradient(circle,rgba(184,116,102,.30),transparent 62%)}
+  .cta::after{width:60vw;height:60vw;max-width:620px;max-height:620px;right:-18%;bottom:-45%;
+    background:radial-gradient(circle,rgba(169,124,51,.28),transparent 62%)}
+  .cta .wrap{position:relative;z-index:1}
+  .cta h2{color:var(--marfim);max-width:18ch;margin-inline:auto}
+  .cta p{color:rgba(244,235,225,.82);max-width:52ch;margin-inline:auto;font-weight:300}
+  .cta .eyebrow{color:var(--dourado-lt);justify-content:center}
+  .cta__btns{display:flex;flex-wrap:wrap;gap:.85rem;justify-content:center;margin-top:2.3rem}
+  .cta__hours{margin-top:2rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,235,225,.6)}
+
+  /* ---------- Contato ---------- */
+  .contact{background:var(--areia)}
+  .contact__grid{display:grid;gap:clamp(2.2rem,5vw,3.5rem)}
+  @media (min-width:900px){ .contact__grid{grid-template-columns:.95fr 1.05fr;align-items:center} }
+  .info{display:grid;gap:1.5rem;margin-top:2rem}
+  .info__row{display:flex;gap:1rem;align-items:flex-start}
+  .info__ico{
+    width:42px;height:42px;border-radius:50%;flex:none;display:grid;place-items:center;
+    border:1px solid rgba(169,124,51,.42);color:var(--dourado);background:rgba(252,248,243,.7)
+  }
+  .info__row h3{font-size:.78rem;font-family:var(--font-sans);letter-spacing:.18em;text-transform:uppercase;
+    color:var(--dourado);margin:0 0 .3rem;font-weight:500}
+  .info__row p{margin:0;color:var(--ink);font-size:1.02rem}
+  .info__row a{text-decoration:none;border-bottom:1px solid rgba(169,124,51,.45);transition:color .2s ease,border-color .2s ease}
+  .info__row a:hover{color:var(--dourado);border-color:var(--dourado)}
+  .map{
+    position:relative;display:block;border-radius:var(--r-md);overflow:hidden;text-decoration:none;
+    background:linear-gradient(150deg,#2E221D,#1A1310 55%,#3A2A22);
+    min-height:clamp(300px,42vw,430px);box-shadow:var(--shadow-md);
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease
+  }
+  .map:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+  .map__svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+  .map__label{
+    position:absolute;left:clamp(1.1rem,3vw,1.8rem);bottom:clamp(1.1rem,3vw,1.8rem);right:clamp(1.1rem,3vw,1.8rem);
+    background:rgba(252,248,243,.95);border-radius:14px;padding:1.1rem 1.3rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem
+  }
+  .map__label strong{display:block;font-family:var(--font-display);font-size:1.05rem;color:var(--ink);font-weight:500}
+  .map__label span{font-size:.85rem;color:#6B5A51}
+  .map__label svg{color:var(--dourado);flex:none;transition:transform .3s ease}
+  .map:hover .map__label svg{transform:translateX(4px)}
+
+  /* ---------- Rodapé ---------- */
+  .footer{background:var(--ink);color:rgba(244,235,225,.72);padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+  .footer__grid{display:grid;gap:2.4rem}
+  @media (min-width:820px){ .footer__grid{grid-template-columns:1.3fr .85fr .85fr} }
+  .footer h4{
+    color:var(--dourado-lt);font-family:var(--font-sans);font-size:.72rem;letter-spacing:.2em;
+    text-transform:uppercase;font-weight:500;margin:0 0 1rem
+  }
+  .footer p{font-size:.92rem;margin:0 0 .5rem;font-weight:300}
+  .footer a{color:rgba(244,235,225,.82);text-decoration:none;transition:color .2s ease}
+  .footer a:hover{color:var(--dourado-lt)}
+  .footer__links{display:grid;gap:.55rem;font-size:.92rem}
+  .footer__logo{margin-bottom:1.2rem}
+  .footer__bottom{
+    margin-top:clamp(2.4rem,5vw,3.4rem);padding-top:1.5rem;border-top:1px solid rgba(244,235,225,.14);
+    display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between;
+    font-size:.78rem;letter-spacing:.06em;color:rgba(244,235,225,.5)
+  }
+
+  /* ---------- Botão flutuante ---------- */
+  .float{
+    position:fixed;right:clamp(1rem,3vw,1.8rem);bottom:clamp(1rem,3vw,1.8rem);z-index:70;
+    width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+    background:var(--ink);color:var(--dourado-lt);box-shadow:var(--shadow-md);text-decoration:none;
+    opacity:0;visibility:hidden;transform:translateY(14px) scale(.9);
+    transition:opacity .3s ease, transform .35s cubic-bezier(.2,.8,.2,1), visibility .3s, background-color .3s ease
+  }
+  .float.is-on{opacity:1;visibility:visible;transform:none}
+  .float:hover{background:var(--ink-2)}
+
+  /* ---------- Scroll reveal (aplicado só com JS ativo) ---------- */
+  .js-anim .reveal{opacity:0;transform:translateY(22px)}
+  .js-anim .reveal.is-in{
+    opacity:1;transform:none;
+    transition:opacity .8s ease var(--d,0s), transform .9s cubic-bezier(.18,.7,.2,1) var(--d,0s)
+  }
+
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0
+  }
+  .skip{
+    position:absolute;left:-9999px;top:0;z-index:100;background:var(--ink);color:var(--marfim);
+    padding:.8rem 1.2rem;border-radius:0 0 10px 0
+  }
+  .skip:focus{left:0}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="sparkle" viewBox="0 0 24 24">
+    <path d="M12 1.2c.9 5.2 4.6 8.9 9.8 9.8v2c-5.2.9-8.9 4.6-9.8 9.8h-2C9.1 17.6 5.4 13.9.2 13V11C5.4 10.1 9.1 6.4 10 1.2h2z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="header" id="topo">
+  <div class="wrap header__in">
+    <a class="logo" href="#topo" aria-label="Glitter Coiffeur — início">
+      <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#sparkle"/></svg>
+      <span class="logo__txt">
+        <span class="logo__name">Glitter</span>
+        <span class="logo__sub">Coiffeur</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#salao">O salão</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn--solid header__cta" href="https://wa.me/552124910698" target="_blank" rel="noopener">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.76 1.45 5.32L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4h.01c5.44 0 9.85-4.4 9.85-9.84C21.9 6.4 17.48 2 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.4-1.28l-.31-.19-2.95.95.96-2.87-.2-.33a8.13 8.13 0 0 1-1.25-4.4c0-4.51 3.67-8.18 8.18-8.18 2.18 0 4.24.85 5.78 2.4a8.13 8.13 0 0 1 2.39 5.79c0 4.52-3.67 8.11-8.19 8.11Zm4.49-6.08c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.23-.17-.48-.29Z"/></svg>
+      Agendar
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="painel-menu">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Abrir menu</span>
+    </button>
+  </div>
+
+  <div class="panel" id="painel-menu" hidden>
+    <ul>
+      <li><a href="#salao">O salão</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn--solid" href="https://wa.me/552124910698" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Barra da Tijuca · Rio de Janeiro</p>
+        <h1 id="h-hero">Beleza sem pressa,<br><span class="ital accent">à beira</span> da orla.</h1>
+        <p class="lead">
+          Cabelo, unhas, estética e depilação em um salão pensado para ser o oposto da correria da Barra:
+          um espaço moderno, intimista e aconchegante, onde cada horário é só seu.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="https://wa.me/552124910698" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.76 1.45 5.32L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4h.01c5.44 0 9.85-4.4 9.85-9.84C21.9 6.4 17.48 2 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.4-1.28l-.31-.19-2.95.95.96-2.87-.2-.33a8.13 8.13 0 0 1-1.25-4.4c0-4.51 3.67-8.18 8.18-8.18 2.18 0 4.24.85 5.78 2.4a8.13 8.13 0 0 1 2.39 5.79c0 4.52-3.67 8.11-8.19 8.11Zm4.49-6.08c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn--line" href="tel:+552124910698">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+            (21) 2491-0698
+          </a>
+        </div>
+
+        <div class="hero__meta">
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Av. Lúcio Costa, 4420
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg>
+            Seg a sex 9h–18h · Sáb 9h–12h
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#sparkle"/></svg>
+            Atendimento com hora marcada
+          </span>
+        </div>
+      </div>
+
+      <figure class="hero__figure">
+        <div class="media media--arch">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=80"
+               alt="Cliente sendo atendida na cadeira de um salão de beleza, com foco no cuidado com os cabelos"
+               width="1100" height="1375" fetchpriority="high" decoding="async"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="hero__frame" aria-hidden="true"></div>
+        <figcaption class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#sparkle"/></svg>
+          Na Barra desde 2014
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FAIXA ============ -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <ul>
+        <li>Corte &amp; finalização</li><li>Coloração</li><li>Mechas e iluminados</li><li>Hidratação</li>
+        <li>Manicure &amp; pedicure</li><li>Limpeza de pele</li><li>Design de sobrancelhas</li><li>Depilação</li>
+      </ul>
+      <ul>
+        <li>Corte &amp; finalização</li><li>Coloração</li><li>Mechas e iluminados</li><li>Hidratação</li>
+        <li>Manicure &amp; pedicure</li><li>Limpeza de pele</li><li>Design de sobrancelhas</li><li>Depilação</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="sect about" id="salao" aria-labelledby="h-salao">
+    <div class="wrap">
+      <div class="about__grid">
+        <div class="about__figs reveal">
+          <div class="media media--soft">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+                 alt="Profissional finalizando o corte de cabelo de uma cliente em um salão"
+                 width="800" height="1066" loading="lazy" decoding="async"
+                 onerror="this.style.display='none'">
+          </div>
+          <div class="media media--soft" style="border-radius:120px 12px 12px 12px">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&q=80"
+                 alt="Detalhe do ambiente de um salão de beleza com cadeiras e espelhos"
+                 width="600" height="600" loading="lazy" decoding="async"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <div class="reveal" style="--d:.08s">
+          <p class="eyebrow">O salão</p>
+          <h2 id="h-salao">Moderno, intimista<br>e <span class="ital accent">aconchegante</span>.</h2>
+          <p class="lead">
+            O Glitter Coiffeur nasceu em uma das ruas mais movimentadas da Barra da Tijuca — e escolheu,
+            desde o começo, ser um respiro dentro dela.
+          </p>
+          <p>
+            Aqui o barulho fica na avenida. Dentro, a proposta é outra: poltrona confortável, conversa boa,
+            profissionais que perguntam antes de fazer e uma agenda organizada para que ninguém precise
+            esperar de pé. É salão de bairro no melhor sentido da palavra, com padrão de acabamento
+            que você espera da Barra.
+          </p>
+          <p>
+            Cabelo, unhas, estética e depilação no mesmo endereço: você resolve tudo em uma visita,
+            com quem já conhece o seu fio, o seu tom e o seu tempo.
+          </p>
+
+          <blockquote class="quote">
+            “Um espaço moderno, intimista e aconchegante.”
+            <cite>Como o próprio salão se descreve</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <ul class="pillars">
+        <li class="pillar reveal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/><path d="m9.5 14.5 1.8 1.8 3.4-3.4"/></svg>
+          <h3>Hora marcada de verdade</h3>
+          <p>Você agenda pelo WhatsApp, confirma o horário e chega para ser atendida — não para entrar na fila.</p>
+        </li>
+        <li class="pillar reveal" style="--d:.08s">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21a9 9 0 1 0-9-9c0 1.6.4 3.1 1.2 4.4L3 21l4.6-1.2A8.9 8.9 0 0 0 12 21Z"/><path d="M8.6 12.2h6.8M10.6 9.4h4.8M9.6 15h4.4"/></svg>
+          <h3>Consulta antes da química</h3>
+          <p>Coloração, mechas e alisamento começam com uma avaliação do fio e uma conversa honesta sobre o resultado possível.</p>
+        </li>
+        <li class="pillar reveal" style="--d:.16s">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3c2.6 2.6 4 5 4 7a4 4 0 0 1-8 0c0-2 1.4-4.4 4-7Z"/><path d="M5 20.5c2.3-1.3 4.6-2 7-2s4.7.7 7 2"/></svg>
+          <h3>Higiene sem atalho</h3>
+          <p>Material esterilizado e descartáveis onde precisa ser descartável. Cuidado que você vê acontecer na sua frente.</p>
+        </li>
+        <li class="pillar reveal" style="--d:.24s">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 6.5 12 3 3.5 6.5v5c0 4.8 3.6 8.4 8.5 9.5 4.9-1.1 8.5-4.7 8.5-9.5v-5Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3>Produtos profissionais</h3>
+          <p>Linhas de uso profissional escolhidas por tipo de cabelo e de pele — nada de fórmula única para todo mundo.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="sect services" id="servicos" aria-labelledby="h-servicos">
+    <div class="wrap">
+      <div class="services__head">
+        <div class="reveal">
+          <p class="eyebrow">Serviços</p>
+          <h2 id="h-servicos">Tudo o que você precisa,<br><span class="ital accent">no mesmo endereço</span>.</h2>
+        </div>
+        <p class="lead reveal" style="--d:.08s">
+          Do corte à esmaltação, da limpeza de pele à depilação: quatro frentes de cuidado,
+          uma agenda só. Valores e disponibilidade a gente combina rapidinho pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card__ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M7.8 16.2 18 4M16.2 16.2 6 4"/></svg>
+          </span>
+          <h3>Cabelo</h3>
+          <p>Corte, cor e tratamento com leitura do fio antes de qualquer decisão.</p>
+          <ul>
+            <li>Corte e finalização</li>
+            <li>Coloração e retoque de raiz</li>
+            <li>Mechas, luzes e iluminados</li>
+            <li>Escova, chapinha e cachos</li>
+            <li>Hidratação e reconstrução</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.08s">
+          <span class="card__ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20V9.2c0-3 1.3-5.2 3-5.2s3 2.2 3 5.2V20a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2Z"/><path d="M9.2 11.6h5.6"/></svg>
+          </span>
+          <h3>Manicure &amp; pedicure</h3>
+          <p>Mão e pé bem-feitos, com material esterilizado e acabamento caprichado.</p>
+          <ul>
+            <li>Cutilagem e esmaltação</li>
+            <li>Esmaltação em gel</li>
+            <li>Spa dos pés</li>
+            <li>Plástica dos pés</li>
+            <li>Combo mão + pé</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.16s">
+          <span class="card__ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c3.6 2.4 5.6 5.2 5.6 8.4A5.6 5.6 0 0 1 12 17.2a5.6 5.6 0 0 1-5.6-5.6c0-3.2 2-6 5.6-8.4Z"/><path d="M12 17.2V21"/></svg>
+          </span>
+          <h3>Estética</h3>
+          <p>Rotinas de pele e olhar para quem quer resultado constante, sem exagero.</p>
+          <ul>
+            <li>Limpeza de pele profunda</li>
+            <li>Hidratação facial</li>
+            <li>Design de sobrancelhas</li>
+            <li>Massagem relaxante</li>
+            <li>Cuidados pré-evento</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d:.24s">
+          <span class="card__ico" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7.5c3-2.2 6-2.2 8 0s5 2.2 8 0"/><path d="M4 12.5c3-2.2 6-2.2 8 0s5 2.2 8 0"/><path d="M4 17.5c3-2.2 6-2.2 8 0s5 2.2 8 0"/></svg>
+          </span>
+          <h3>Depilação</h3>
+          <p>Cera em temperatura controlada, com técnica rápida e o mínimo de desconforto.</p>
+          <ul>
+            <li>Pernas e meia-perna</li>
+            <li>Axilas</li>
+            <li>Virilha e virilha completa</li>
+            <li>Buço e rosto</li>
+            <li>Braços e costas</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="services__note reveal">
+        Quer saber se cabe na sua tarde de sábado?
+        <a href="https://wa.me/552124910698" target="_blank" rel="noopener" style="color:var(--dourado);text-decoration:none;border-bottom:1px solid rgba(169,124,51,.5)">Manda uma mensagem</a>
+        e a gente responde com horário e valor.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIÊNCIA / PROVA SOCIAL ============ -->
+  <section class="sect exp" id="experiencia" aria-labelledby="h-exp">
+    <div class="wrap">
+      <div class="center reveal" style="max-width:720px;margin-inline:auto;margin-bottom:clamp(2.5rem,5vw,3.8rem)">
+        <p class="eyebrow eyebrow--center">Por que as clientes voltam</p>
+        <h2 id="h-exp">Não é sobre <span class="ital accent">impressionar</span>.<br>É sobre você voltar.</h2>
+        <p class="lead">
+          Salão bom não se prova em promessa — se prova em constância. É isso que a gente persegue
+          em cada agendamento.
+        </p>
+      </div>
+
+      <div class="exp__grid">
+        <article class="exp__item reveal">
+          <span class="exp__num">01</span>
+          <h3>Um endereço conhecido da Barra</h3>
+          <p>Na Av. Lúcio Costa, pertinho da praia, em uma das ruas mais movimentadas do bairro — fácil de encontrar, fácil de encaixar na rotina.</p>
+        </article>
+        <article class="exp__item reveal" style="--d:.08s">
+          <span class="exp__num">02</span>
+          <h3>Atendimento próximo, não industrial</h3>
+          <p>Aqui ninguém é senha. A profissional lembra do seu histórico de cor, do corte que você odiou e do que funciona no seu cabelo.</p>
+        </article>
+        <article class="exp__item reveal" style="--d:.16s">
+          <span class="exp__num">03</span>
+          <h3>Agenda respeitada</h3>
+          <p>Horário marcado é compromisso dos dois lados. Confirmação pelo WhatsApp na véspera e atendimento no tempo combinado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="sect cta" aria-labelledby="h-cta">
+    <div class="wrap">
+      <p class="eyebrow">Agende agora</p>
+      <h2 id="h-cta">Sua próxima visita começa com <span class="ital">uma mensagem</span>.</h2>
+      <p>
+        Diga o serviço e o melhor dia para você — a gente confirma o horário disponível e deixa tudo separado
+        para a sua chegada.
+      </p>
+      <div class="cta__btns">
+        <a class="btn btn--gold" href="https://wa.me/552124910698" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.76 1.45 5.32L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4h.01c5.44 0 9.85-4.4 9.85-9.84C21.9 6.4 17.48 2 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.4-1.28l-.31-.19-2.95.95.96-2.87-.2-.33a8.13 8.13 0 0 1-1.25-4.4c0-4.51 3.67-8.18 8.18-8.18 2.18 0 4.24.85 5.78 2.4a8.13 8.13 0 0 1 2.39 5.79c0 4.52-3.67 8.11-8.19 8.11Zm4.49-6.08c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn--onDark" href="tel:+552124910698">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+          Ligar (21) 2491-0698
+        </a>
+      </div>
+      <p class="cta__hours">Segunda a sexta 9h às 18h · Sábado 9h às 12h</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="sect contact" id="contato" aria-labelledby="h-contato">
+    <div class="wrap contact__grid">
+      <div class="reveal">
+        <p class="eyebrow">Contato &amp; localização</p>
+        <h2 id="h-contato">Estamos <span class="ital accent">pertinho</span> de você.</h2>
+        <p class="lead">Na Barra da Tijuca, a poucos passos da orla. Estacione, suba e relaxe.</p>
+
+        <div class="info">
+          <div class="info__row">
+            <span class="info__ico" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <h3>Endereço</h3>
+              <p>Av. Lúcio Costa, 4420 — Barra da Tijuca<br>Rio de Janeiro/RJ · CEP 22630-011</p>
+            </div>
+          </div>
+
+          <div class="info__row">
+            <span class="info__ico" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+            </span>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <p>
+                <a href="tel:+552124910698">(21) 2491-0698</a><br>
+                <a href="https://wa.me/552124910698" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info__row">
+            <span class="info__ico" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg>
+            </span>
+            <div>
+              <h3>Horários</h3>
+              <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 12h<br><span class="muted" style="font-size:.92rem">Domingo: fechado</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="map reveal" style="--d:.08s"
+         href="https://www.google.com/maps/search/?api=1&query=Av.%20L%C3%BAcio%20Costa%2C%204420%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022630-011%20(endere%C3%A7o%20do%20cadastro%20na%20Receita%3A%20Av.%20Oleg%C3%A1rio%20Maciel%2C%20518%2C%20Loja%20F%2C%20CEP%2022621-200)%20Rio%20de%20Janeiro"
+         target="_blank" rel="noopener"
+         aria-label="Abrir o endereço Av. Lúcio Costa, 4420, Barra da Tijuca, no Google Maps">
+        <svg class="map__svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <rect width="400" height="300" fill="#1A1310"/>
+          <path d="M0 232 Q 60 220 120 228 T 260 236 T 400 226 L400 300 L0 300Z" fill="#2A2018"/>
+          <path d="M0 244 Q 70 234 140 242 T 280 250 T 400 240" fill="none" stroke="#B87466" stroke-opacity=".5" stroke-width="1.4"/>
+          <g stroke="#E3C48A" stroke-opacity=".28" stroke-width="1.2" fill="none">
+            <path d="M-20 210 L 420 186"/>
+            <path d="M-20 150 L 420 128"/>
+            <path d="M-20 92 L 420 70"/>
+            <path d="M60 -20 L 92 320"/>
+            <path d="M170 -20 L 196 320"/>
+            <path d="M300 -20 L 320 320"/>
+          </g>
+          <g stroke="#E3C48A" stroke-opacity=".14" stroke-width="1" fill="none">
+            <path d="M-20 50 L 420 32"/><path d="M120 -20 L 146 320"/><path d="M240 -20 L 262 320"/>
+          </g>
+          <circle cx="200" cy="150" r="38" fill="#B87466" fill-opacity=".18"/>
+          <circle cx="200" cy="150" r="20" fill="#B87466" fill-opacity=".25"/>
+          <path d="M200 128c-7.7 0-14 6.3-14 14 0 10.5 14 22 14 22s14-11.5 14-22c0-7.7-6.3-14-14-14Z" fill="#E3C48A"/>
+          <circle cx="200" cy="142" r="5" fill="#1A1310"/>
+        </svg>
+        <span class="map__label">
+          <span>
+            <strong>Av. Lúcio Costa, 4420</strong>
+            <span>Barra da Tijuca · Abrir no Google Maps</span>
+          </span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13"/><path d="m12.5 5.5 6.5 6.5-6.5 6.5"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo logo--light footer__logo" href="#topo" aria-label="Glitter Coiffeur — voltar ao topo">
+          <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="color:var(--dourado-lt)"><use href="#sparkle"/></svg>
+          <span class="logo__txt">
+            <span class="logo__name">Glitter</span>
+            <span class="logo__sub">Coiffeur</span>
+          </span>
+        </a>
+        <p style="max-width:38ch">
+          Salão de beleza na Barra da Tijuca: cabelo, manicure e pedicure, estética e depilação
+          em um espaço moderno, intimista e aconchegante.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegue</h4>
+        <nav class="footer__links" aria-label="Navegação do rodapé">
+          <a href="#salao">O salão</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Fale com a gente</h4>
+        <p><a href="tel:+552124910698">(21) 2491-0698</a></p>
+        <p><a href="https://wa.me/552124910698" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p>Av. Lúcio Costa, 4420<br>Barra da Tijuca — Rio de Janeiro/RJ</p>
+        <p class="muted" style="color:rgba(244,235,225,.55)">Seg a sex 9h–18h · Sáb 9h–12h</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="ano">2026</span> Glitter Coiffeur · Glitter Cabeleireiro</span>
+      <span>Barra da Tijuca · Rio de Janeiro</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float" id="float" href="https://wa.me/552124910698" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.76 1.45 5.32L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4h.01c5.44 0 9.85-4.4 9.85-9.84C21.9 6.4 17.48 2 12.04 2Zm0 17.96h-.01a8.2 8.2 0 0 1-4.4-1.28l-.31-.19-2.95.95.96-2.87-.2-.33a8.13 8.13 0 0 1-1.25-4.4c0-4.51 3.67-8.18 8.18-8.18 2.18 0 4.24.85 5.78 2.4a8.13 8.13 0 0 1 2.39 5.79c0 4.52-3.67 8.11-8.19 8.11Zm4.49-6.08c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.13-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.23-.17-.48-.29Z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Glitter Coiffeur",
+  "alternateName": "Glitter Cabeleireiro",
+  "description": "Salão de beleza na Barra da Tijuca, Rio de Janeiro: cabeleireiro, manicure e pedicure, estética e depilação em um espaço moderno, intimista e aconchegante.",
+  "telephone": "+55-21-2491-0698",
+  "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Lúcio Costa, 4420",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22630-011",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Barra da Tijuca, Rio de Janeiro"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.%20L%C3%BAcio%20Costa%2C%204420%20%E2%80%94%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%2C%20CEP%2022630-011%20Rio%20de%20Janeiro",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços do Glitter Coiffeur",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cabelo: corte, coloração, mechas, escova e tratamentos" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure e pedicure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estética facial e design de sobrancelhas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Depilação com cera" } }
+    ]
+  }
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Menu mobile ---- */
+  var burger = document.getElementById('burger');
+  var painel = document.getElementById('painel-menu');
+
+  function fecharMenu() {
+    if (!burger || !painel) return;
+    burger.setAttribute('aria-expanded', 'false');
+    painel.hidden = true;
+  }
+
+  if (burger && painel) {
+    burger.addEventListener('click', function () {
+      var aberto = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!aberto));
+      painel.hidden = aberto;
+    });
+    painel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) fecharMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') fecharMenu();
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 900) fecharMenu();
+    });
+  }
+
+  /* ---- Header e botão flutuante no scroll ---- */
+  var header = document.querySelector('.header');
+  var float = document.getElementById('float');
+  var ticking = false;
+
+  function onScroll() {
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if (header) header.classList.toggle('is-stuck', y > 12);
+    if (float) float.classList.toggle('is-on', y > window.innerHeight * 0.8);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  onScroll();
+
+  /* ---- Scroll reveal (só quando a classe js-anim está ativa) ---- */
+  if (document.documentElement.classList.contains('js-anim')) {
+    var alvos = document.querySelectorAll('.reveal');
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('is-in');
+          obs.unobserve(entrada.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+    alvos.forEach(function (el) { obs.observe(el); });
+
+    /* Rede de segurança: se algo falhar, nada fica invisível. */
+    window.setTimeout(function () {
+      document.querySelectorAll('.reveal:not(.is-in)').forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight) el.classList.add('is-in');
+      });
+    }, 2500);
+  }
+
+  /* ---- Ano do rodapé ---- */
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
