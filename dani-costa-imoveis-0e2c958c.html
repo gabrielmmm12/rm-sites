@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dani Costa Imóveis | Imobiliária de alto padrão na Barra da Tijuca e Recreio</title>
+<meta name="description" content="Há mais de 15 anos assessorando famílias na compra, venda e locação de imóveis de alto padrão na Barra da Tijuca e no Recreio dos Bandeirantes. Curadoria, financiamento e avaliação com atendimento direto. Fale no WhatsApp: (21) 98272-1481.">
+<meta name="theme-color" content="#0E1F1B">
+<link rel="canonical" href="https://www.danicostaimoveis.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dani Costa Imóveis">
+<meta property="og:title" content="Dani Costa Imóveis | Curadoria imobiliária de alto padrão na Barra e no Recreio">
+<meta property="og:description" content="Compra, venda e locação de imóveis selecionados na Barra da Tijuca e no Recreio dos Bandeirantes. Mais de 15 anos de mercado, atendimento pessoal e discreto.">
+<meta property="og:url" content="https://www.danicostaimoveis.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=630&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dani Costa Imóveis | Alto padrão na Barra e no Recreio">
+<meta name="twitter:description" content="Curadoria imobiliária de alto padrão no Rio de Janeiro. Compra, venda, locação, financiamento e avaliação.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=630&q=80">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+/* Reveal à prova de falhas: o estado invisível só existe se o JS confirmar que vai animar. */
+(function () {
+  try {
+    var reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduz || !('IntersectionObserver' in window)) return;
+    var raiz = document.documentElement;
+    raiz.classList.add('reveal-on');
+    var iniciou = false;
+    function ligar() {
+      try {
+        var alvos = document.querySelectorAll('.reveal');
+        if (!alvos.length) { raiz.classList.remove('reveal-on'); return; }
+        iniciou = true;
+        var obs = new IntersectionObserver(function (entradas) {
+          entradas.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); obs.unobserve(e.target); }
+          });
+        }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+        alvos.forEach(function (el) { obs.observe(el); });
+      } catch (err) { raiz.classList.remove('reveal-on'); }
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ligar);
+    else ligar();
+    setTimeout(function () { if (!iniciou) raiz.classList.remove('reveal-on'); }, 3000);
+  } catch (err) {}
+})();
+</script>
+
+<style>
+:root{
+  --ink:#0E1F1B;
+  --deep:#123A32;
+  --sea:#1B564A;
+  --moss:#3A7B69;
+  --brass:#B87F45;
+  --brass-lt:#DFC098;
+  --sand:#F2ECE1;
+  --bone:#FBF8F2;
+  --paper:#FFFFFF;
+  --stone:#5C6B65;
+  --line:rgba(18,58,50,.14);
+  --shadow-sm:0 2px 10px rgba(14,31,27,.06);
+  --shadow-md:0 18px 40px -22px rgba(14,31,27,.38);
+  --shadow-lg:0 40px 90px -45px rgba(14,31,27,.55);
+  --r-sm:10px; --r-md:18px; --r-lg:28px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Manrope","Segoe UI",Helvetica,sans-serif;
+  --pad:clamp(1.15rem,5vw,2rem);
+  --max:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--bone);color:var(--ink);
+  font-family:var(--sans);font-size:clamp(1rem,.97rem + .2vw,1.075rem);
+  line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.015em;font-optical-sizing:auto}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2.5px solid var(--brass);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:.8rem 1.2rem;z-index:999;border-radius:0 0 var(--r-sm) 0}
+.skip:focus{left:0}
+
+/* ---------- Tipografia utilitária ---------- */
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:.65rem;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;flex:none;opacity:.8}
+.eyebrow.center{justify-content:center}
+.lead{color:var(--stone);font-size:clamp(1.02rem,.98rem + .35vw,1.18rem)}
+.h2{font-size:clamp(1.95rem,1.35rem + 2.5vw,3.15rem)}
+.h3{font-size:clamp(1.2rem,1.08rem + .5vw,1.42rem)}
+em.acc{font-style:italic;color:var(--sea)}
+
+/* ---------- Logotipo ---------- */
+.logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;line-height:1}
+.logo svg{flex:none;width:34px;height:34px}
+.logo .mark-arc{fill:none;stroke:currentColor;stroke-width:1.6}
+.logo .mark-dot{fill:var(--brass)}
+.logo-txt{display:flex;flex-direction:column;gap:.16rem}
+.logo-name{font-family:var(--serif);font-size:1.18rem;font-weight:500;letter-spacing:-.01em}
+.logo-name span{font-style:italic;font-weight:400}
+.logo-sub{font-family:var(--sans);font-size:.56rem;font-weight:600;letter-spacing:.42em;text-transform:uppercase;opacity:.62}
+
+/* ---------- Header ---------- */
+.header{position:sticky;top:0;z-index:60;background:rgba(251,248,242,.82);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid transparent;transition:border-color .3s ease,background .3s ease,box-shadow .3s ease}
+.header.is-stuck{border-bottom-color:var(--line);box-shadow:0 8px 30px -26px rgba(14,31,27,.7)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+.nav{display:none}
+.nav a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink);opacity:.78;position:relative;padding:.3rem 0;transition:opacity .25s ease}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--brass);transition:width .3s cubic-bezier(.22,.8,.28,1)}
+.nav a:hover{opacity:1}
+.nav a:hover::after{width:100%}
+.header-cta{display:none}
+.burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 10px;background:none;border:1px solid var(--line);border-radius:50%;cursor:pointer;color:var(--ink)}
+.burger span{display:block;height:1.5px;background:currentColor;border-radius:2px;transition:transform .3s ease,opacity .25s ease}
+.nav-open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-open .burger span:nth-child(2){opacity:0}
+.nav-open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+.drawer{position:fixed;inset:72px 0 auto 0;background:var(--bone);border-bottom:1px solid var(--line);transform:translateY(-14px);opacity:0;visibility:hidden;transition:opacity .28s ease,transform .28s ease,visibility .28s;z-index:55;box-shadow:var(--shadow-md)}
+.nav-open .drawer{opacity:1;visibility:visible;transform:none}
+.drawer ul{display:flex;flex-direction:column;padding:.6rem var(--pad) 1.4rem}
+.drawer a{display:block;padding:.95rem 0;text-decoration:none;font-family:var(--serif);font-size:1.3rem;border-bottom:1px solid var(--line)}
+.drawer .btn{margin-top:1.2rem;width:100%;justify-content:center}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  font-family:var(--sans);font-size:.92rem;font-weight:600;letter-spacing:.01em;
+  padding:.95rem 1.6rem;border-radius:999px;text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .25s cubic-bezier(.22,.8,.28,1),background .25s ease,color .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-pri{background:var(--sea);color:#fff;box-shadow:0 14px 28px -18px rgba(27,86,74,.9)}
+.btn-pri:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 20px 34px -18px rgba(18,58,50,.95)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--sea);background:rgba(27,86,74,.06);transform:translateY(-2px)}
+.btn-brass{background:var(--brass);color:#fff}
+.btn-brass:hover{background:#a06c37;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--deep)}
+.btn-light:hover{background:var(--sand);transform:translateY(-2px)}
+.btn-outline-lt{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-outline-lt:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.75);transform:translateY(-2px)}
+
+/* ---------- Reveal ---------- */
+html.reveal-on .reveal{opacity:0;transform:translateY(22px);transition:opacity .85s cubic-bezier(.22,.8,.28,1),transform .85s cubic-bezier(.22,.8,.28,1)}
+html.reveal-on .reveal.is-in{opacity:1;transform:none}
+html.reveal-on .reveal.d1{transition-delay:.09s}
+html.reveal-on .reveal.d2{transition-delay:.18s}
+html.reveal-on .reveal.d3{transition-delay:.27s}
+@media (prefers-reduced-motion: reduce){
+  html.reveal-on .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+
+/* ---------- HERO (sempre visível, sem JS) ---------- */
+.hero{position:relative;padding:clamp(2.2rem,6vw,4.2rem) 0 clamp(3rem,7vw,4.6rem);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-30% -20% auto -30%;height:120%;
+  background:radial-gradient(60% 55% at 22% 18%,rgba(27,86,74,.10),transparent 70%),
+             radial-gradient(45% 45% at 92% 8%,rgba(184,127,69,.14),transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{position:relative;display:grid;gap:clamp(2rem,5vw,3.2rem);align-items:center}
+.hero h1{font-size:clamp(2.5rem,1.6rem + 4.6vw,4.35rem);margin:1.15rem 0 0;max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--sea)}
+.hero-lead{margin-top:1.25rem;max-width:52ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero-note{display:flex;align-items:center;gap:.55rem;margin-top:1.4rem;font-size:.85rem;color:var(--stone)}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--moss);position:relative;flex:none}
+.pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--moss);opacity:.5;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+@media (prefers-reduced-motion: reduce){.pulse::after{animation:none}}
+
+.hero-media{position:relative}
+.hero-frame{position:relative;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);background:linear-gradient(150deg,var(--deep),var(--moss))}
+.hero-frame img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(190deg,rgba(14,31,27,0) 45%,rgba(14,31,27,.55));pointer-events:none}
+.hero-tag{
+  position:absolute;left:clamp(.8rem,3vw,1.3rem);bottom:clamp(.8rem,3vw,1.3rem);right:clamp(.8rem,3vw,1.3rem);
+  z-index:2;background:rgba(251,248,242,.94);backdrop-filter:blur(8px);border-radius:var(--r-md);
+  padding:.95rem 1.1rem;display:flex;align-items:center;gap:.9rem;box-shadow:var(--shadow-md);
+}
+.hero-tag svg{width:26px;height:26px;color:var(--brass);flex:none}
+.hero-tag strong{display:block;font-family:var(--serif);font-size:1.02rem;font-weight:600;line-height:1.25}
+.hero-tag span{font-size:.78rem;color:var(--stone);line-height:1.35;display:block}
+.creci-chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(27,86,74,.08);color:var(--sea);border-radius:999px;padding:.4rem .85rem;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem}
+
+/* ---------- Faixa de credenciais ---------- */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sand)}
+.strip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,4vw,2rem);padding:clamp(1.8rem,4vw,2.4rem) 0}
+.strip-item strong{display:block;font-family:var(--serif);font-size:clamp(1.5rem,1.2rem + 1.2vw,2.1rem);font-weight:500;color:var(--deep);line-height:1}
+.strip-item span{display:block;margin-top:.4rem;font-size:.8rem;line-height:1.4;color:var(--stone);letter-spacing:.02em}
+
+/* ---------- Seções ---------- */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(3.6rem,9vw,6.5rem) 0}
+.sec-head{max-width:62ch}
+.sec-head h2{margin:1rem 0 0}
+.sec-head p{margin-top:1.1rem}
+.sec-head.center{margin-inline:auto;text-align:center}
+
+/* Sobre */
+.about-grid{display:grid;gap:clamp(2.2rem,6vw,3.6rem);align-items:center}
+.about-media{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.about-media figure{margin:0;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-md);background:linear-gradient(150deg,var(--sea),var(--moss))}
+.about-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.about-media figure:first-child{margin-top:clamp(1.2rem,4vw,2.6rem)}
+.quote{margin:2rem 0 0;padding:1.4rem 0 0;border-top:1px solid var(--line)}
+.quote p{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,1rem + .6vw,1.35rem);line-height:1.45;color:var(--deep)}
+.quote cite{display:block;margin-top:.9rem;font-family:var(--sans);font-style:normal;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.pillars{display:grid;gap:1.5rem;margin-top:2.2rem}
+.pillar{display:flex;gap:1rem}
+.pillar-ico{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(27,86,74,.08);color:var(--sea)}
+.pillar-ico svg{width:21px;height:21px}
+.pillar h3{font-size:1.05rem;font-family:var(--sans);font-weight:700;letter-spacing:0}
+.pillar p{margin-top:.35rem;font-size:.93rem;color:var(--stone)}
+
+/* Serviços */
+.svc-grid{display:grid;gap:1rem;margin-top:clamp(2.2rem,5vw,3rem)}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);
+  padding:clamp(1.4rem,3.5vw,1.8rem);position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.22,.8,.28,1),box-shadow .35s ease,border-color .35s ease;
+}
+.card::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--brass),var(--brass-lt));transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.22,.8,.28,1)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:rgba(18,58,50,.22)}
+.card:hover::after{transform:scaleX(1)}
+.card-ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--sand);color:var(--sea);margin-bottom:1.1rem}
+.card-ico svg{width:23px;height:23px}
+.card h3{font-size:1.12rem}
+.card p{margin-top:.6rem;font-size:.93rem;color:var(--stone)}
+
+/* Bairros */
+.hoods{background:var(--ink);color:#fff}
+.hoods .eyebrow{color:var(--brass-lt)}
+.hoods .lead{color:rgba(255,255,255,.72)}
+.hood-grid{display:grid;gap:1rem;margin-top:clamp(2.2rem,5vw,3rem)}
+.hood{position:relative;border-radius:var(--r-md);overflow:hidden;min-height:280px;display:flex;align-items:flex-end;background:linear-gradient(160deg,var(--sea),var(--deep));isolation:isolate}
+.hood img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.22,.8,.28,1)}
+.hood::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,31,27,.15) 30%,rgba(14,31,27,.86))}
+.hood:hover img{transform:scale(1.06)}
+.hood-txt{padding:1.4rem}
+.hood-txt h3{font-size:1.35rem}
+.hood-txt p{margin-top:.4rem;font-size:.88rem;color:rgba(255,255,255,.78);max-width:36ch}
+
+/* Prova social */
+.proof-grid{display:grid;gap:1rem;margin-top:clamp(2.2rem,5vw,3rem)}
+.proof{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:clamp(1.5rem,4vw,2rem)}
+.proof .num{font-family:var(--serif);font-size:2.4rem;color:var(--brass);line-height:1;display:block}
+.proof h3{margin-top:.9rem;font-size:1.1rem}
+.proof p{margin-top:.55rem;font-size:.93rem;color:var(--stone)}
+.insta{
+  margin-top:1rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;justify-content:space-between;
+  background:linear-gradient(120deg,var(--deep),var(--sea));color:#fff;border-radius:var(--r-md);
+  padding:clamp(1.5rem,4vw,2.1rem);
+}
+.insta h3{font-size:clamp(1.25rem,1.1rem + .7vw,1.6rem)}
+.insta p{margin-top:.5rem;color:rgba(255,255,255,.75);font-size:.93rem;max-width:46ch}
+
+/* CTA band */
+.band{position:relative;overflow:hidden;background:var(--deep);color:#fff;text-align:center;padding:clamp(3.4rem,8vw,5.4rem) 0}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 70% at 50% 0%,rgba(184,127,69,.28),transparent 70%)}
+.band .wrap{position:relative}
+.band h2{font-size:clamp(1.9rem,1.4rem + 2.4vw,3rem);max-width:20ch;margin-inline:auto}
+.band p{margin:1.1rem auto 0;color:rgba(255,255,255,.76);max-width:52ch}
+.band-cta{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:2rem}
+
+/* Contato */
+.contact-grid{display:grid;gap:clamp(2rem,5vw,3rem);margin-top:clamp(2rem,5vw,2.8rem)}
+.contact-list{display:grid;gap:1.3rem}
+.ci{display:flex;gap:1rem;align-items:flex-start}
+.ci-ico{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--sea)}
+.ci-ico svg{width:20px;height:20px}
+.ci h3{font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+.ci p,.ci a{margin-top:.3rem;font-size:1rem;color:var(--ink);text-decoration:none;display:block;line-height:1.5}
+.ci a:hover{color:var(--sea);text-decoration:underline;text-underline-offset:3px}
+.map-card{position:relative;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-md);background:linear-gradient(150deg,var(--sand),#e3dcce);min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:inherit;border:1px solid var(--line)}
+.map-card svg.mapart{position:absolute;inset:0;width:100%;height:100%;opacity:.75}
+.map-inner{position:relative;background:rgba(251,248,242,.94);backdrop-filter:blur(6px);margin:.9rem;padding:1.1rem 1.2rem;border-radius:var(--r-sm);display:flex;align-items:center;gap:.9rem;transition:transform .3s ease}
+.map-card:hover .map-inner{transform:translateY(-3px)}
+.map-inner strong{display:block;font-family:var(--serif);font-size:1.02rem;font-weight:600}
+.map-inner span{font-size:.83rem;color:var(--stone)}
+.map-inner .arrow{margin-left:auto;color:var(--brass);flex:none}
+
+/* Footer */
+.footer{background:var(--ink);color:rgba(255,255,255,.72);padding:clamp(3rem,7vw,4.4rem) 0 2rem;font-size:.9rem}
+.footer a{text-decoration:none;transition:color .25s ease}
+.footer a:hover{color:#fff}
+.foot-grid{display:grid;gap:2.4rem}
+.footer .logo{color:#fff}
+.footer .logo-sub{opacity:.55}
+.foot-about{margin-top:1.1rem;max-width:42ch;color:rgba(255,255,255,.6);font-size:.9rem}
+.foot-col h4{font-family:var(--sans);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-lt);margin-bottom:1rem}
+.foot-col li{margin-bottom:.65rem}
+.socials{display:flex;gap:.6rem;margin-top:1.4rem}
+.socials a{width:40px;height:40px;border:1px solid rgba(255,255,255,.18);border-radius:50%;display:grid;place-items:center;transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.socials a:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4);transform:translateY(-2px)}
+.socials svg{width:18px;height:18px}
+.foot-bottom{margin-top:2.8rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:.8rem 1.6rem;justify-content:space-between;font-size:.8rem;color:rgba(255,255,255,.5)}
+
+/* Botão flutuante WhatsApp */
+.float-wa{position:fixed;right:16px;bottom:16px;z-index:70;width:56px;height:56px;border-radius:50%;background:var(--sea);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(14,31,27,.7);transition:transform .3s cubic-bezier(.22,.8,.28,1),background .3s ease}
+.float-wa:hover{transform:scale(1.07);background:var(--deep)}
+.float-wa svg{width:28px;height:28px}
+
+/* ---------- Breakpoints ---------- */
+@media (min-width:640px){
+  .strip-grid{grid-template-columns:repeat(4,1fr)}
+  .svc-grid,.hood-grid,.proof-grid{grid-template-columns:repeat(2,1fr)}
+  .pillars{grid-template-columns:repeat(2,1fr);gap:1.6rem 1.4rem}
+  .hero-frame img{aspect-ratio:4/3.4}
+}
+@media (min-width:900px){
+  .header-in{min-height:84px}
+  .nav{display:flex;gap:2rem;align-items:center}
+  .header-cta{display:inline-flex}
+  .burger,.drawer{display:none}
+  .hero-grid{grid-template-columns:1.03fr .97fr}
+  .hero-frame img{aspect-ratio:4/4.5}
+  .about-grid{grid-template-columns:.92fr 1.08fr}
+  .svc-grid{grid-template-columns:repeat(3,1fr)}
+  .hood-grid{grid-template-columns:repeat(4,1fr)}
+  .proof-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:1fr 1.05fr;align-items:start}
+  .foot-grid{grid-template-columns:1.4fr .8fr .8fr 1fr}
+  .float-wa{display:none}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"RealEstateAgent",
+  "name":"Dani Costa Imóveis",
+  "description":"Imobiliária familiar de alto padrão com mais de 15 anos de mercado, especializada em compra, venda e locação na Barra da Tijuca e no Recreio dos Bandeirantes, no Rio de Janeiro. Também atua com financiamento imobiliário, avaliação e cadastro de imóveis.",
+  "url":"https://www.danicostaimoveis.com.br/",
+  "image":"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+  "telephone":"+5521982721481",
+  "email":"contato@danicostaimoveis.com.br",
+  "priceRange":"$$$",
+  "founder":{"@type":"Person","name":"Daniele Costa"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Av. Paisagista José Silva de Azevedo Neto, 200, Bloco 5, Sala 228",
+    "addressLocality":"Rio de Janeiro",
+    "addressRegion":"RJ",
+    "postalCode":"22776-070",
+    "addressCountry":"BR"
+  },
+  "areaServed":[
+    {"@type":"Place","name":"Barra da Tijuca, Rio de Janeiro"},
+    {"@type":"Place","name":"Recreio dos Bandeirantes, Rio de Janeiro"},
+    {"@type":"Place","name":"Jardim Oceânico, Rio de Janeiro"},
+    {"@type":"Place","name":"Península, Barra da Tijuca"}
+  ],
+  "sameAs":[
+    "https://www.instagram.com/danicostaimoveis",
+    "https://www.facebook.com/danicostaimoveis"
+  ],
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=Avenida%20Paisagista%20Jos%C3%A9%20Silva%20de%20Azevedo%20Neto%2C%20200%2C%20Bloco%205%2C%20Sala%20228%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%20-%20CEP%2022776-070%20Rio%20de%20Janeiro",
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Compra de imóveis"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Venda de imóveis"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Locação de imóveis"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Financiamento imobiliário"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Avaliação de imóveis"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cadastro de imóveis de terceiros"}}
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="header" id="header">
+  <div class="wrap header-in">
+    <a class="logo" href="#topo" aria-label="Dani Costa Imóveis — início">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path class="mark-arc" d="M5.5 28V14.2a10.5 10.5 0 0 1 21 0V28"/>
+        <path class="mark-arc" d="M5.5 21.2h21"/>
+        <path class="mark-arc" d="M16 28v-6.8"/>
+        <circle class="mark-dot" cx="16" cy="13" r="2.1"/>
+      </svg>
+      <span class="logo-txt">
+        <span class="logo-name">Dani <span>Costa</span></span>
+        <span class="logo-sub">Imóveis</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">A imobiliária</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#bairros">Bairros</a>
+      <a href="#porque">Por que nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn-pri header-cta" href="https://wa.me/5521982721481?text=Ol%C3%A1%2C%20Dani%20Costa%20Im%C3%B3veis!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+      WhatsApp
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="drawer" id="drawer">
+    <ul>
+      <li><a href="#sobre">A imobiliária</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#bairros">Bairros</a></li>
+      <li><a href="#porque">Por que nós</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a class="btn btn-pri" href="https://wa.me/5521982721481?text=Ol%C3%A1%2C%20Dani%20Costa%20Im%C3%B3veis!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener">Falar no WhatsApp</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="topo" aria-labelledby="hero-titulo">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Barra da Tijuca &middot; Recreio dos Bandeirantes</p>
+        <h1 id="hero-titulo">O seu próximo endereço merece uma <em>curadoria</em> à altura.</h1>
+        <p class="lead hero-lead">Há mais de 15 anos, a Dani Costa Imóveis assessora famílias na compra, venda e locação de imóveis de alto padrão no Rio de Janeiro. Atendimento pessoal, discreto e conduzido do primeiro café à entrega das chaves.</p>
+        <div class="hero-cta">
+          <a class="btn btn-pri" href="https://wa.me/5521982721481?text=Ol%C3%A1%2C%20Dani%20Costa%20Im%C3%B3veis!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel%20na%20Barra%20ou%20no%20Recreio." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Falar com a Daniele
+          </a>
+          <a class="btn btn-ghost" href="tel:+5521982721481">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            (21) 98272-1481
+          </a>
+        </div>
+        <p class="hero-note"><span class="pulse" aria-hidden="true"></span> Atendimento por WhatsApp e visitas com hora marcada</p>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=80"
+               alt="Sala de estar ampla e iluminada de um apartamento de alto padrão, com sofá claro e janelas do chão ao teto"
+               width="1100" height="1240" fetchpriority="high" decoding="async">
+          <div class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20h14V9.8"/><path d="M10 20v-5h4v5"/></svg>
+            <span>
+              <strong>Portfólio ativo e selecionado</strong>
+              <span>De apartamentos compactos a coberturas — 38 imóveis sob curadoria própria.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAIXA ================= -->
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-item reveal"><strong>15+</strong><span>anos de mercado imobiliário carioca</span></div>
+      <div class="strip-item reveal d1"><strong>38</strong><span>imóveis no portfólio ativo</span></div>
+      <div class="strip-item reveal d2"><strong>2</strong><span>bairros de especialidade: Barra e Recreio</span></div>
+      <div class="strip-item reveal d3"><strong>CRECI</strong><span>CJ 12412 — atuação registrada no RJ</span></div>
+    </div>
+  </div>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="sec" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="wrap about-grid">
+      <div class="about-media reveal">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
+               alt="Detalhe de sala decorada com poltrona clara e luz natural suave" loading="lazy" decoding="async" width="700" height="933">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+               alt="Fachada de casa contemporânea com piscina e área externa integrada" loading="lazy" decoding="async" width="700" height="933">
+        </figure>
+      </div>
+
+      <div class="reveal d1">
+        <p class="eyebrow">A imobiliária</p>
+        <h2 class="h2" id="sobre-titulo">Uma casa de família que cuida de outras famílias.</h2>
+        <p class="lead" style="margin-top:1.2rem">Comandada por <strong>Daniele Costa</strong>, a Dani Costa Imóveis nasceu de um jeito antigo de trabalhar: conhecer o cliente pelo nome, conhecer o bairro pela rua e só apresentar o imóvel que realmente faz sentido. São mais de 15 anos acompanhando o crescimento da Barra da Tijuca e do Recreio dos Bandeirantes — e as famílias que escolheram morar aqui.</p>
+
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.7-7-10a7 7 0 0 1 14 0c0 5.3-7 10-7 10Z"/><circle cx="12" cy="11" r="2.6"/></svg></span>
+            <div>
+              <h3>Conhecimento de rua</h3>
+              <p>Condomínio a condomínio, quadra a quadra: sabemos onde bate sol, onde o trânsito complica e onde o metro quadrado ainda tem espaço para valorizar.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.4 6.7 19.2l1.1-5.9L3.5 9.2l5.9-.8L12 3Z"/></svg></span>
+            <div>
+              <h3>Curadoria, não catálogo</h3>
+              <p>Você não recebe cinquenta links. Recebe uma seleção curta, feita à mão, com o que atende ao seu perfil, ao seu prazo e ao seu orçamento.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16.5 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+            <div>
+              <h3>Atendimento direto</h3>
+              <p>Nada de fila de plantão ou corretor diferente a cada ligação. Quem responde é quem conhece o seu processo do começo ao fim.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 14.5 15.5 10"/><path d="M20 12a8 8 0 1 1-3.2-6.4"/><path d="M20 4v4.5h-4.5"/></svg></span>
+            <div>
+              <h3>Do laudo à chave</h3>
+              <p>Avaliação, documentação, financiamento e assinatura: conduzimos cada etapa para que a burocracia não vire um segundo emprego.</p>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="quote">
+          <p>“Imóvel bom é o que combina com a vida de quem vai morar nele. Meu trabalho é entender essa vida antes de abrir qualquer porta.”</p>
+          <cite>Daniele Costa &middot; fundadora</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="sec" id="servicos" style="background:var(--sand);border-block:1px solid var(--line)" aria-labelledby="serv-titulo">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">O que fazemos</p>
+        <h2 class="h2" id="serv-titulo">Assessoria completa, do primeiro contato à escritura</h2>
+        <p class="lead">Comprar, vender ou alugar bem exige mais do que anúncio: exige leitura de mercado, negociação firme e documentação impecável.</p>
+      </div>
+
+      <div class="svc-grid">
+        <article class="card reveal">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20h14V9.8"/><path d="M10 20v-5h4v5"/></svg></span>
+          <h3>Compra assessorada</h3>
+          <p>Entendemos seu perfil, filtramos o mercado e organizamos as visitas em roteiro. Você vê menos imóveis e decide com mais segurança.</p>
+        </article>
+
+        <article class="card reveal d1">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9l8-5 8 5v11"/><path d="M4 20h16"/><path d="M14.5 13.5 10 18"/><circle cx="10.2" cy="13.6" r="1.2"/><circle cx="14.4" cy="17.8" r="1.2"/></svg></span>
+          <h3>Venda com estratégia</h3>
+          <p>Precificação realista, apresentação caprichada e divulgação nos canais certos — para vender pelo valor justo, sem meses parado na vitrine.</p>
+        </article>
+
+        <article class="card reveal d2">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5 19 9 8.5 19.5 4 15 14.5 4.5Z"/><path d="M12.5 6.5 17 11"/><path d="M4 15l-1 5 5-1"/></svg></span>
+          <h3>Locação sem dor de cabeça</h3>
+          <p>Seleção criteriosa de inquilinos, análise de garantias, vistoria e contrato bem redigido. Tranquilidade para quem aluga e para quem mora.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v12H3z"/><path d="M3 11h18"/><path d="M7 15h4"/></svg></span>
+          <h3>Financiamento imobiliário</h3>
+          <p>Simulação, comparação entre bancos e acompanhamento do processo até a liberação do crédito. Você entende cada número antes de assinar.</p>
+        </article>
+
+        <article class="card reveal d1">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15V9"/><path d="M12 15v-9"/><path d="M16 15v-5"/></svg></span>
+          <h3>Avaliação de imóveis</h3>
+          <p>Parecer de valor baseado em comparativos reais do bairro, estado de conservação e liquidez — essencial para vender, herdar ou negociar.</p>
+        </article>
+
+        <article class="card reveal d2">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>Cadastre o seu imóvel</h3>
+          <p>Tem um imóvel na Barra ou no Recreio para vender ou alugar? Cadastre conosco e receba uma avaliação de valor sem compromisso.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BAIRROS ================= -->
+  <section class="sec hoods" id="bairros" aria-labelledby="bairros-titulo">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Onde atuamos</p>
+        <h2 class="h2" id="bairros-titulo">A Barra e o Recreio, de perto</h2>
+        <p class="lead">Cada trecho da orla tem um perfil de morador, um padrão de condomínio e uma dinâmica de preço. Escolha o bairro e conte o que procura.</p>
+      </div>
+
+      <div class="hood-grid">
+        <article class="hood reveal">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Vista aérea do mar azul encontrando a faixa de areia clara" loading="lazy" decoding="async" width="800" height="1000">
+          <div class="hood-txt"><h3>Barra da Tijuca</h3><p>Condomínios com lazer completo, apartamentos amplos e a conveniência de ter tudo por perto.</p></div>
+        </article>
+
+        <article class="hood reveal d1">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Praia de areia clara com mar calmo em dia ensolarado" loading="lazy" decoding="async" width="800" height="1000">
+          <div class="hood-txt"><h3>Recreio dos Bandeirantes</h3><p>Mais verde, mais silêncio e metro quadrado convidativo para quem quer espaço perto do mar.</p></div>
+        </article>
+
+        <article class="hood reveal d2">
+          <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80" alt="Casa contemporânea de fachada branca cercada por vegetação" loading="lazy" decoding="async" width="800" height="1000">
+          <div class="hood-txt"><h3>Jardim Oceânico</h3><p>Vida de bairro, comércio a pé e metrô na porta — o endereço preferido de quem quer praticidade.</p></div>
+        </article>
+
+        <article class="hood reveal d3">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Fachada de edifício residencial moderno com varandas de vidro" loading="lazy" decoding="async" width="800" height="1000">
+          <div class="hood-txt"><h3>Península</h3><p>Planejamento urbano, ciclovias e lâminas residenciais de alto padrão à beira da lagoa.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROVA SOCIAL ================= -->
+  <section class="sec" id="porque" aria-labelledby="porque-titulo">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Por que a Dani Costa</p>
+        <h2 class="h2" id="porque-titulo">Alto padrão é detalhe, e detalhe é gente cuidando</h2>
+        <p class="lead">Não somos um portal com milhares de anúncios. Somos uma operação enxuta, registrada e presente — que responde rápido porque conhece cada imóvel que apresenta.</p>
+      </div>
+
+      <div class="proof-grid">
+        <article class="proof reveal">
+          <span class="num" aria-hidden="true">15+</span>
+          <h3>Anos de mercado carioca</h3>
+          <p>Tempo suficiente para atravessar altas e baixas do mercado e saber a hora certa de negociar — do lado do comprador ou do vendedor.</p>
+        </article>
+
+        <article class="proof reveal d1">
+          <span class="num" aria-hidden="true">1:1</span>
+          <h3>Atendimento pessoal</h3>
+          <p>Um interlocutor do início ao fim. Sem repetir a mesma história para três pessoas diferentes e sem informação se perdendo no caminho.</p>
+        </article>
+
+        <article class="proof reveal d2">
+          <span class="num" aria-hidden="true">RJ</span>
+          <h3>Registro e conformidade</h3>
+          <p>Atuação com registro no CRECI-RJ (CJ 12412), contratos revisados e documentação conferida antes de qualquer assinatura.</p>
+        </article>
+      </div>
+
+      <div class="insta reveal d1">
+        <div>
+          <h3>Acompanhe os lançamentos e as novidades no Instagram</h3>
+          <p>Imóveis novos, bastidores de visitas e leituras de mercado da Barra e do Recreio, direto de quem está na rua todos os dias.</p>
+        </div>
+        <a class="btn btn-light" href="https://www.instagram.com/danicostaimoveis" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.4"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          @danicostaimoveis
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BAND CTA ================= -->
+  <section class="band" aria-labelledby="band-titulo">
+    <div class="wrap">
+      <p class="eyebrow center reveal" style="color:var(--brass-lt)">Vamos conversar</p>
+      <h2 class="h2 reveal d1" id="band-titulo" style="margin-top:1rem">Conte o que você procura. O resto é com a gente.</h2>
+      <p class="reveal d1">Comprar, vender, alugar ou apenas entender quanto vale o seu imóvel hoje: mande uma mensagem e receba uma orientação clara, sem compromisso.</p>
+      <div class="band-cta reveal d2">
+        <a class="btn btn-brass" href="https://wa.me/5521982721481?text=Ol%C3%A1%2C%20Dani%20Costa%20Im%C3%B3veis!%20Gostaria%20de%20uma%20orienta%C3%A7%C3%A3o%20sobre%20im%C3%B3veis%20na%20Barra%20ou%20no%20Recreio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-outline-lt" href="tel:+5521998121444">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          (21) 99812-1444
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="sec" id="contato" aria-labelledby="contato-titulo">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Contato</p>
+        <h2 class="h2" id="contato-titulo">Estamos na Barra — venha tomar um café</h2>
+        <p class="lead">Atendimento por WhatsApp, telefone ou e-mail. Reuniões e visitas acontecem com hora marcada, para dedicarmos o tempo necessário a cada cliente.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-list reveal">
+          <div class="ci">
+            <span class="ci-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.7-7-10a7 7 0 0 1 14 0c0 5.3-7 10-7 10Z"/><circle cx="12" cy="11" r="2.6"/></svg></span>
+            <div>
+              <h3>Endereço</h3>
+              <p>Av. Paisagista José Silva de Azevedo Neto, 200<br>Bloco 5, Sala 228 — Barra da Tijuca<br>Rio de Janeiro/RJ · CEP 22776-070</p>
+            </div>
+          </div>
+
+          <div class="ci">
+            <span class="ci-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <a href="tel:+5521982721481">(21) 98272-1481</a>
+              <a href="tel:+5521998121444">(21) 99812-1444</a>
+            </div>
+          </div>
+
+          <div class="ci">
+            <span class="ci-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
+            <div>
+              <h3>E-mail</h3>
+              <a href="mailto:contato@danicostaimoveis.com.br">contato@danicostaimoveis.com.br</a>
+            </div>
+          </div>
+
+          <div class="ci">
+            <span class="ci-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2"/></svg></span>
+            <div>
+              <h3>Atendimento</h3>
+              <p>Visitas e reuniões com hora marcada, inclusive em finais de semana, conforme a disponibilidade do imóvel.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="map-card reveal d1"
+           href="https://www.google.com/maps/search/?api=1&query=Avenida%20Paisagista%20Jos%C3%A9%20Silva%20de%20Azevedo%20Neto%2C%20200%2C%20Bloco%205%2C%20Sala%20228%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%2FRJ%20-%20CEP%2022776-070%20Rio%20de%20Janeiro"
+           target="_blank" rel="noopener" aria-label="Abrir o endereço da Dani Costa Imóveis no Google Maps">
+          <svg class="mapart" viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="300" fill="#EFE7D8"/>
+            <path d="M-20 210 C 80 190, 150 235, 240 215 S 380 190, 430 205 L430 320 L-20 320Z" fill="#CFE0DA"/>
+            <g stroke="#D8CDB8" stroke-width="10" fill="none">
+              <path d="M0 70 H400"/><path d="M0 140 H400"/><path d="M90 0 V300"/><path d="M250 0 V300"/><path d="M330 0 V300"/>
+            </g>
+            <g stroke="#E7DCC7" stroke-width="4" fill="none">
+              <path d="M0 105 H400"/><path d="M170 0 V300"/><path d="M0 180 H400"/>
+            </g>
+            <g fill="#DCD2BE">
+              <rect x="105" y="18" width="48" height="40" rx="3"/><rect x="192" y="80" width="42" height="48" rx="3"/>
+              <rect x="270" y="18" width="46" height="40" rx="3"/><rect x="20" y="82" width="55" height="46" rx="3"/>
+              <rect x="272" y="82" width="40" height="46" rx="3"/><rect x="20" y="155" width="50" height="30" rx="3"/>
+            </g>
+            <circle cx="200" cy="150" r="30" fill="#1B564A" opacity=".12"/>
+            <path d="M200 128a12 12 0 0 0-12 12c0 8.6 12 20 12 20s12-11.4 12-20a12 12 0 0 0-12-12Z" fill="#B87F45"/>
+            <circle cx="200" cy="140" r="4.4" fill="#FBF8F2"/>
+          </svg>
+          <span class="map-inner">
+            <span>
+              <strong>Barra da Tijuca, Rio de Janeiro</strong>
+              <span>Abrir rota no Google Maps</span>
+            </span>
+            <svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#topo" aria-label="Dani Costa Imóveis — voltar ao topo">
+          <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path class="mark-arc" d="M5.5 28V14.2a10.5 10.5 0 0 1 21 0V28"/>
+            <path class="mark-arc" d="M5.5 21.2h21"/>
+            <path class="mark-arc" d="M16 28v-6.8"/>
+            <circle class="mark-dot" cx="16" cy="13" r="2.1"/>
+          </svg>
+          <span class="logo-txt">
+            <span class="logo-name">Dani <span>Costa</span></span>
+            <span class="logo-sub">Imóveis</span>
+          </span>
+        </a>
+        <p class="foot-about">Curadoria imobiliária de alto padrão na Barra da Tijuca e no Recreio dos Bandeirantes. Compra, venda, locação, financiamento e avaliação — com atendimento de gente que mora aqui.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/danicostaimoveis" target="_blank" rel="noopener" aria-label="Instagram da Dani Costa Imóveis">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.4"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/danicostaimoveis" target="_blank" rel="noopener" aria-label="Facebook da Dani Costa Imóveis">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7.4c0-.8.2-1.2 1.4-1.2H17V3.2A19 19 0 0 0 14.7 3C12.2 3 10.5 4.5 10.5 7.1V9H8v3.4h2.5V21H14v-8.6h2.6l.4-3.4H14Z"/></svg>
+          </a>
+          <a href="https://wa.me/5521982721481" target="_blank" rel="noopener" aria-label="WhatsApp da Dani Costa Imóveis">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="foot-col" aria-label="Navegação do rodapé">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#sobre">A imobiliária</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#bairros">Bairros</a></li>
+          <li><a href="#porque">Por que nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="foot-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Compra</a></li>
+          <li><a href="#servicos">Venda</a></li>
+          <li><a href="#servicos">Locação</a></li>
+          <li><a href="#servicos">Financiamento</a></li>
+          <li><a href="#servicos">Avaliação</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Fale conosco</h4>
+        <ul>
+          <li><a href="tel:+5521982721481">(21) 98272-1481</a></li>
+          <li><a href="tel:+5521998121444">(21) 99812-1444</a></li>
+          <li><a href="mailto:contato@danicostaimoveis.com.br">contato@danicostaimoveis.com.br</a></li>
+          <li style="margin-top:1rem;color:rgba(255,255,255,.55);line-height:1.5">Av. Paisagista José Silva de Azevedo Neto, 200 — Bloco 5, Sala 228, Barra da Tijuca, Rio de Janeiro/RJ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; <span id="ano">2026</span> Dani Costa Imóveis — Todos os direitos reservados.</span>
+      <span>CRECI-RJ CJ 12412</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5521982721481?text=Ol%C3%A1%2C%20Dani%20Costa%20Im%C3%B3veis!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Dani Costa Imóveis">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
+
+<script>
+(function () {
+  /* Estado do cabeçalho ao rolar */
+  var header = document.getElementById('header');
+  var aoRolar = function () {
+    if (window.scrollY > 8) header.classList.add('is-stuck');
+    else header.classList.remove('is-stuck');
+  };
+  aoRolar();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  /* Menu mobile */
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  if (burger && drawer) {
+    var fechar = function () {
+      document.body.classList.remove('nav-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Abrir menu');
+    };
+    burger.addEventListener('click', function () {
+      var aberto = document.body.classList.toggle('nav-open');
+      burger.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      burger.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+    });
+    drawer.addEventListener('click', function (e) { if (e.target.tagName === 'A') fechar(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+  }
+
+  /* Ano corrente no rodapé */
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+
+  /* Fallback visual caso alguma imagem externa falhe */
+  document.querySelectorAll('img').forEach(function (img) {
+    img.addEventListener('error', function () { img.style.opacity = '0'; }, { once: true });
+  });
+})();
+</script>
+</body>
+</html>
