@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellstar Equipe de Limpeza | Limpeza Residencial e Comercial em Jaraguá do Sul</title>
+<meta name="description" content="Limpeza residencial, comercial, pós-obra e pós-festa em Jaraguá do Sul e região. Equipe da Bellstar atende das 7h às 18h com cuidado, pontualidade e capricho. Peça seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#0F3D37">
+
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Bellstar Equipe de Limpeza | Jaraguá do Sul - SC">
+<meta property="og:description" content="Limpeza residencial, comercial, pós-obra, pós-festa e higienização em Jaraguá do Sul. Atendimento das 7h às 18h. Fale agora pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bellstar Equipe de Limpeza",
+  "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+  "telephone": "+5547991364805",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Manoel Pereira de Souza, 80 - Tifa Martins",
+    "addressLocality": "Jaraguá do Sul",
+    "addressRegion": "SC",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Jaraguá do Sul e região",
+  "description": "Equipe de limpeza residencial, comercial, pós-obra, pós-festa, pré-mudança e higienização de galpões e condomínios em Jaraguá do Sul - SC."
+}
+</script>
+
+<style>
+  :root{
+    --color-primary: #0F3D37;
+    --color-primary-dark: #092723;
+    --color-primary-soft: #E4EEE9;
+    --color-secondary: #7FA391;
+    --color-accent: #E08A3E;
+    --color-accent-dark: #C36F27;
+    --color-cream: #FAF6EF;
+    --color-white: #FFFFFF;
+    --color-ink: #1B2420;
+    --color-ink-soft: #4A5650;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Sora", "Segoe UI", sans-serif;
+
+    --shadow-sm: 0 2px 10px rgba(15, 61, 55, 0.08);
+    --shadow-md: 0 12px 32px rgba(15, 61, 55, 0.14);
+    --shadow-lg: 0 24px 64px rgba(9, 39, 35, 0.22);
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+
+    --container: 1160px;
+  }
+
+  *, *::before, *::after{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+
+  body{
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background: var(--color-cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img{ max-width: 100%; display: block; }
+  a{ color: inherit; }
+
+  h1, h2, h3, h4{
+    font-family: var(--font-display);
+    color: var(--color-primary-dark);
+    margin: 0;
+    line-height: 1.12;
+    font-weight: 600;
+  }
+
+  p{ margin: 0; }
+
+  .container{
+    width: 100%;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  .visually-hidden{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  /* ---------- Reveal on scroll (fail-safe) ---------- */
+  .reveal{ opacity: 1; transform: none; }
+  html.js-reveal .reveal{
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+    will-change: opacity, transform;
+  }
+  html.js-reveal .reveal.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  html.js-reveal .reveal-stagger.is-visible > *{
+    transition-delay: calc(var(--stagger-i, 0) * 90ms);
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .01em;
+    padding: .9rem 1.6rem;
+    border-radius: 999px;
+    border: 1.5px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+    white-space: nowrap;
+  }
+  .btn svg{ width: 1.1em; height: 1.1em; flex-shrink: 0; }
+  .btn-accent{
+    background: var(--color-accent);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-accent:hover{ background: var(--color-accent-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .btn-outline{
+    background: transparent;
+    border-color: rgba(250,246,239,0.5);
+    color: var(--color-white);
+  }
+  .btn-outline:hover{ background: rgba(250,246,239,0.12); border-color: var(--color-white); transform: translateY(-2px); }
+  .btn-ghost-dark{
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .btn-ghost-dark:hover{ background: var(--color-primary); color: var(--color-white); transform: translateY(-2px); }
+
+  /* ---------- Header ---------- */
+  .site-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 246, 239, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15,61,55,0.08);
+  }
+  .site-header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: .85rem;
+  }
+
+  .logo{
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+  }
+  .logo svg{ width: 30px; height: 30px; color: var(--color-accent); flex-shrink: 0; }
+  .logo-text{
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .logo-text em{
+    font-style: italic;
+    color: var(--color-accent);
+  }
+  .logo-tagline{
+    display: block;
+    font-family: var(--font-body);
+    font-size: .58rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  .main-nav{
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2.1rem);
+  }
+  .main-nav a{
+    text-decoration: none;
+    font-size: .93rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    position: relative;
+    padding-block: .3rem;
+  }
+  .main-nav a::after{
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 2px;
+    background: var(--color-accent);
+    transition: width .25s ease;
+  }
+  .main-nav a:hover::after{ width: 100%; }
+
+  .header-actions{ display: flex; align-items: center; gap: .8rem; }
+  .header-phone{
+    display: none;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 600;
+    font-size: .9rem;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+  }
+  .header-phone svg{ width: 18px; height: 18px; color: var(--color-accent); }
+
+  .nav-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(15,61,55,0.15);
+    background: transparent;
+    cursor: pointer;
+  }
+  .nav-toggle svg{ width: 20px; height: 20px; color: var(--color-primary-dark); }
+
+  @media (min-width: 900px){
+    .nav-toggle{ display: none; }
+    .main-nav{
+      position: static;
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      max-height: none;
+    }
+    .header-phone{ display: inline-flex; }
+  }
+  @media (max-width: 899px){
+    .main-nav{
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      background: var(--color-cream);
+      box-shadow: var(--shadow-md);
+      padding: 1.25rem clamp(1.25rem, 4vw, 2.5rem);
+      gap: 1rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease, padding .3s ease;
+      border-bottom: 1px solid rgba(15,61,55,0.08);
+    }
+    .main-nav.is-open{
+      max-height: 320px;
+      padding-block: 1.25rem;
+    }
+  }
+
+  /* ---------- Hero (always visible — no reveal classes) ---------- */
+  .hero{
+    position: relative;
+    background: linear-gradient(150deg, var(--color-primary) 0%, var(--color-primary-dark) 62%);
+    overflow: hidden;
+    color: var(--color-white);
+  }
+  .hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 88% 12%, rgba(224,138,62,0.28), transparent 45%),
+      radial-gradient(circle at 8% 90%, rgba(127,163,145,0.35), transparent 40%);
+    pointer-events: none;
+  }
+  .hero .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 5vw, 3rem);
+    padding-block: clamp(3rem, 8vw, 6rem);
+    align-items: center;
+  }
+  .hero-eyebrow{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    background: rgba(250,246,239,0.08);
+    border: 1px solid rgba(250,246,239,0.2);
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.4rem;
+  }
+  .hero-eyebrow svg{ width: 14px; height: 14px; color: var(--color-accent); }
+  .hero h1{
+    color: var(--color-white);
+    font-size: clamp(2.3rem, 5.2vw, 3.6rem);
+    font-weight: 600;
+    letter-spacing: -.01em;
+    max-width: 16ch;
+  }
+  .hero h1 em{
+    font-style: italic;
+    color: var(--color-accent);
+  }
+  .hero-sub{
+    margin-top: 1.4rem;
+    font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+    color: rgba(250,246,239,0.86);
+    max-width: 46ch;
+    line-height: 1.7;
+  }
+  .hero-actions{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero-meta{
+    margin-top: 2.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem 2.4rem;
+  }
+  .hero-meta div{ display: flex; align-items: center; gap: .6rem; }
+  .hero-meta svg{ width: 20px; height: 20px; color: var(--color-accent); flex-shrink: 0; }
+  .hero-meta span{ font-size: .88rem; color: rgba(250,246,239,0.8); font-weight: 500; }
+
+  .hero-media{
+    position: relative;
+  }
+  .hero-media-frame{
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4/5;
+  }
+  .hero-media-frame img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .hero-media-frame::after{
+    content:"";
+    position: absolute; inset: 0;
+    background: linear-gradient(200deg, rgba(15,61,55,0) 40%, rgba(9,39,35,0.55) 100%);
+  }
+  .hero-badge{
+    position: absolute;
+    left: -1rem;
+    bottom: 1.6rem;
+    background: var(--color-white);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.3rem;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    max-width: 240px;
+    z-index: 2;
+  }
+  .hero-badge svg{ width: 30px; height: 30px; color: var(--color-accent); flex-shrink: 0; }
+  .hero-badge strong{ display: block; font-family: var(--font-display); font-size: 1.05rem; }
+  .hero-badge span{ font-size: .78rem; color: var(--color-ink-soft); }
+
+  @media (min-width: 960px){
+    .hero .container{ grid-template-columns: 1.05fr .95fr; }
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding-block: clamp(3.2rem, 8vw, 6rem); }
+  .section-head{
+    max-width: 640px;
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+  }
+  .eyebrow{
+    display: inline-block;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--color-accent-dark);
+    margin-bottom: .8rem;
+  }
+  .section-head h2{
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  }
+  .section-head p{
+    margin-top: 1rem;
+    color: var(--color-ink-soft);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  /* ---------- About ---------- */
+  .about .container{
+    display: grid;
+    gap: clamp(2rem, 5vw, 3.5rem);
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .about-media{
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .about-media img{ width: 100%; height: 100%; object-fit: cover; aspect-ratio: 5/4; }
+  .about-copy p{
+    color: var(--color-ink-soft);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .about-copy p + p{ margin-top: 1rem; }
+  .about-stats{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .about-stat{
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 1.3rem 1.4rem;
+    box-shadow: var(--shadow-sm);
+    border-left: 3px solid var(--color-accent);
+  }
+  .about-stat strong{
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--color-primary-dark);
+    margin-bottom: .25rem;
+  }
+  .about-stat span{ font-size: .85rem; color: var(--color-ink-soft); }
+
+  @media (min-width: 900px){
+    .about .container{ grid-template-columns: .9fr 1.1fr; }
+  }
+
+  /* ---------- Services ---------- */
+  .services{ background: var(--color-white); }
+  .services-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  @media (min-width: 640px){
+    .services-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1000px){
+    .services-grid{ grid-template-columns: repeat(3, 1fr); }
+  }
+  .service-card{
+    background: var(--color-cream);
+    border-radius: var(--radius-md);
+    padding: 1.9rem 1.7rem;
+    border: 1px solid rgba(15,61,55,0.07);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .service-card:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(224,138,62,0.35);
+  }
+  .service-icon{
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: var(--color-primary-soft);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+  .service-icon svg{ width: 26px; height: 26px; color: var(--color-primary); }
+  .service-card h3{
+    font-size: 1.15rem;
+    margin-bottom: .55rem;
+  }
+  .service-card p{
+    color: var(--color-ink-soft);
+    font-size: .95rem;
+    line-height: 1.65;
+  }
+
+  /* ---------- Proof ---------- */
+  .proof{ background: var(--color-primary-soft); }
+  .proof-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  @media (min-width: 760px){
+    .proof-grid{ grid-template-columns: repeat(3, 1fr); }
+  }
+  .proof-card{
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+  }
+  .proof-card svg{ width: 30px; height: 30px; color: var(--color-accent); margin-bottom: 1rem; }
+  .proof-card h3{ font-size: 1.05rem; margin-bottom: .5rem; }
+  .proof-card p{ color: var(--color-ink-soft); font-size: .92rem; line-height: 1.6; }
+
+  /* ---------- CTA banner ---------- */
+  .cta-banner{
+    background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-white);
+  }
+  .cta-banner .container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .cta-banner h2{ color: var(--color-white); font-size: clamp(1.7rem, 3.4vw, 2.3rem); max-width: 20ch; }
+  .cta-banner p{ color: rgba(255,255,255,0.9); max-width: 46ch; font-size: 1.02rem; }
+  .cta-banner .btn-accent{ background: var(--color-white); color: var(--color-accent-dark); }
+  .cta-banner .btn-accent:hover{ background: var(--color-primary-dark); color: var(--color-white); }
+  .cta-banner-actions{ display: flex; flex-wrap: wrap; gap: 1rem; }
+
+  @media (min-width: 800px){
+    .cta-banner .container{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  /* ---------- Contact ---------- */
+  .contact .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  @media (min-width: 860px){
+    .contact .container{ grid-template-columns: 1.1fr .9fr; }
+  }
+  .contact-card{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.8rem, 4vw, 2.6rem);
+  }
+  .contact-card h2{ color: var(--color-white); font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: .8rem; }
+  .contact-card > p{ color: rgba(250,246,239,0.82); font-size: 1rem; line-height: 1.7; max-width: 48ch; }
+  .contact-list{ list-style: none; margin: 1.8rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+  .contact-list li{ display: flex; gap: .85rem; align-items: flex-start; }
+  .contact-list svg{ width: 22px; height: 22px; color: var(--color-accent); flex-shrink: 0; margin-top: 2px; }
+  .contact-list a{ text-decoration: none; color: var(--color-white); font-weight: 600; }
+  .contact-list a:hover{ text-decoration: underline; }
+  .contact-list p{ margin: 0; color: rgba(250,246,239,0.85); font-size: .95rem; }
+  .contact-actions{ margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+
+  .map-card{
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    min-height: 320px;
+    background: var(--color-secondary);
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+  .map-card::before{
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(180deg, rgba(15,61,55,0.05) 0%, rgba(9,39,35,0.78) 100%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 2px, transparent 2px 22px);
+  }
+  .map-card-inner{
+    position: relative;
+    padding: 1.8rem;
+    color: var(--color-white);
+  }
+  .map-card-inner span{ font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,0.75); }
+  .map-card-inner strong{ display: block; font-family: var(--font-display); font-size: 1.3rem; margin: .4rem 0 1rem; }
+  .map-pin{
+    position: absolute;
+    top: 42%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 54px; height: 54px;
+    background: var(--color-accent);
+    border-radius: 50% 50% 50% 0;
+    transform-origin: bottom;
+    rotate: -45deg;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: var(--shadow-md);
+  }
+  .map-pin svg{ rotate: 45deg; width: 22px; height: 22px; color: var(--color-white); }
+
+  /* ---------- Footer ---------- */
+  .site-footer{
+    background: var(--color-primary-dark);
+    color: rgba(250,246,239,0.75);
+    padding-block: clamp(2.4rem, 5vw, 3.2rem) 1.6rem;
+  }
+  .footer-grid{
+    display: grid;
+    gap: 2.2rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 760px){
+    .footer-grid{ grid-template-columns: 1.3fr 1fr 1fr; }
+  }
+  .footer-logo .logo-text{ color: var(--color-white); }
+  .footer-logo p{ margin-top: 1rem; font-size: .92rem; line-height: 1.7; max-width: 34ch; color: rgba(250,246,239,0.65); }
+  .footer-col h4{ color: var(--color-white); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 1rem; font-family: var(--font-body); font-weight: 700; }
+  .footer-col ul{ list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; }
+  .footer-col a{ text-decoration: none; font-size: .92rem; color: rgba(250,246,239,0.75); }
+  .footer-col a:hover{ color: var(--color-accent); }
+  .footer-col li{ display: flex; gap: .5rem; font-size: .92rem; }
+  .footer-col li svg{ width: 16px; height: 16px; color: var(--color-accent); flex-shrink: 0; margin-top: 3px; }
+  .footer-bottom{
+    margin-top: 2.6rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(250,246,239,0.12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .8rem;
+    font-size: .82rem;
+    color: rgba(250,246,239,0.5);
+  }
+
+  /* ---------- Floating WhatsApp ---------- */
+  .float-whatsapp{
+    position: fixed;
+    right: clamp(1rem, 4vw, 2rem);
+    bottom: clamp(1rem, 4vw, 2rem);
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 90;
+    transition: transform .2s ease;
+  }
+  .float-whatsapp:hover{ transform: scale(1.08); }
+  .float-whatsapp svg{ width: 28px; height: 28px; color: var(--color-white); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#inicio" class="logo" aria-label="Bellstar Equipe de Limpeza — início">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 4C25 14 26 22 36 24C26 26 25 34 24 44C23 34 22 26 12 24C22 22 23 14 24 4Z" fill="currentColor"/>
+        <circle cx="38" cy="9" r="2.4" fill="currentColor"/>
+      </svg>
+      <span>
+        <span class="logo-text">Bell<em>star</em></span>
+        <span class="logo-tagline">Equipe de Limpeza</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Nossos Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+5547991364805" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (47) 99136-4805
+      </a>
+      <a class="btn btn-ghost-dark" href="https://wa.me/5547991364805" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO — sempre visível, sem animação de entrada -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.6 5.9L20 9l-6.4 1.1L12 16l-1.6-5.9L4 9l6.4-1.1z"/></svg>
+          Jaraguá do Sul e região
+        </span>
+        <h1>Ambientes impecáveis, do jeito que a <em>sua rotina</em> merece.</h1>
+        <p class="hero-sub">A Bellstar cuida da limpeza da sua casa, empresa ou obra com atenção aos detalhes que fazem diferença — pontualidade, capricho e uma equipe que trata cada ambiente como se fosse o próprio.</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="https://wa.me/5547991364805" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="tel:+5547991364805">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (47) 99136-4805
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Atendimento das 7h às 18h</span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Atendemos Jaraguá do Sul e região</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="false">
+        <div class="hero-media-frame">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="Sala de estar ampla, clara e perfeitamente limpa, com sofá e piso reluzente">
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>
+            <strong>Equipe própria</strong>
+            <span>treinada e de confiança</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM SOMOS -->
+  <section class="about" id="quem-somos">
+    <div class="container">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=900&q=80" alt="Mãos com luvas de proteção higienizando uma superfície com cuidado">
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">Quem somos</span>
+        <h2>Uma equipe local que trata cada ambiente com o cuidado que ele merece</h2>
+        <p>A Bellstar é uma equipe de limpeza sediada em Jaraguá do Sul, formada para atender famílias, empresas e condomínios com um padrão de organização e atenção aos detalhes que faz diferença no dia a dia.</p>
+        <p>Trabalhamos com processos claros, produtos adequados para cada tipo de superfície e uma comunicação direta com o cliente — do primeiro contato até a entrega do serviço. Nada de terceirização sem controle: quem atende é a nossa própria equipe.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <strong>7h às 18h</strong>
+            <span>Horário de atendimento</span>
+          </div>
+          <div class="about-stat">
+            <strong>Equipe própria</strong>
+            <span>Sem intermediários</span>
+          </div>
+          <div class="about-stat">
+            <strong>7 tipos de serviço</strong>
+            <span>Residencial ao pós-obra</span>
+          </div>
+          <div class="about-stat">
+            <strong>Jaraguá do Sul</strong>
+            <span>E toda a região</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nossos serviços</span>
+        <h2>Limpeza sob medida para cada tipo de ambiente</h2>
+        <p>Da rotina da casa ao pós-obra mais pesado, montamos o serviço certo para o seu espaço e para o seu momento.</p>
+      </div>
+
+      <div class="services-grid reveal-stagger reveal">
+        <article class="service-card" style="--stagger-i:0">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+          </div>
+          <h3>Limpeza residencial</h3>
+          <p>Casas e apartamentos com rotina de limpeza leve, pesada ou sob demanda, respeitando o ritmo da sua família.</p>
+        </article>
+
+        <article class="service-card" style="--stagger-i:1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="1.5"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          </div>
+          <h3>Limpeza comercial</h3>
+          <p>Escritórios, lojas e salas comerciais sempre prontos para receber clientes e equipe em um ambiente saudável.</p>
+        </article>
+
+        <article class="service-card" style="--stagger-i:2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>
+          </div>
+          <h3>Pós-obra</h3>
+          <p>Remoção de resíduos de tinta, poeira fina e sujeira pesada para entregar o imóvel pronto para uso.</p>
+        </article>
+
+        <article class="service-card" style="--stagger-i:3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>
+          </div>
+          <h3>Pós-festa</h3>
+          <p>Sua confraternização acabou, a bagunça também termina rápido — devolvemos o espaço limpo e organizado.</p>
+        </article>
+
+        <article class="service-card" style="--stagger-i:4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <h3>Pré-mudança</h3>
+          <p>Higienização completa do imóvel antes da chegada dos móveis, para começar a nova fase em um espaço limpo de verdade.</p>
+        </article>
+
+        <article class="service-card" style="--stagger-i:5">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4.5 8-11.8V5l-8-3-8 3v5.2C4 17.5 12 22 12 22z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Higienização</h3>
+          <p>Higienização profunda de estofados, pisos e superfícies para ambientes mais saudáveis no dia a dia.</p>
+        </article>
+      </div>
+
+      <div class="service-card reveal" style="margin-top:1.4rem; display:flex; flex-wrap:wrap; gap:1.4rem; align-items:center; justify-content:space-between;">
+        <div style="display:flex; gap:1.2rem; align-items:flex-start; max-width:640px;">
+          <div class="service-icon" style="margin-bottom:0;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <div>
+            <h3>Galpões e condomínios</h3>
+            <p>Limpeza de áreas comuns, galpões e espaços de grande metragem, com equipe dimensionada para o tamanho do local.</p>
+          </div>
+        </div>
+        <a class="btn btn-ghost-dark" href="https://wa.me/5547991364805" target="_blank" rel="noopener">Pedir orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="proof">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que a Bellstar</span>
+        <h2>Confiança que se constrói em cada visita</h2>
+      </div>
+      <div class="proof-grid reveal-stagger reveal">
+        <div class="proof-card" style="--stagger-i:0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg>
+          <h3>Capricho em cada detalhe</h3>
+          <p>Seguimos um padrão de organização e atenção que faz o ambiente parecer novo a cada atendimento.</p>
+        </div>
+        <div class="proof-card" style="--stagger-i:1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <h3>Pontualidade real</h3>
+          <p>Atendimento das 7h às 18h, combinado com você — sem enrolação, sem cancelamento de última hora.</p>
+        </div>
+        <div class="proof-card" style="--stagger-i:2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3>Equipe própria e de confiança</h3>
+          <p>Sem intermediários: quem chega até você é a equipe Bellstar, treinada para cada tipo de serviço.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div>
+        <h2>Vamos deixar seu espaço impecável?</h2>
+        <p>Conte o que você precisa e receba uma orientação rápida sobre o serviço ideal para o seu caso — sem compromisso.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a class="btn btn-accent" href="https://wa.me/5547991364805" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z"/></svg>
+          Falar no WhatsApp agora
+        </a>
+        <a class="btn btn-outline" style="border-color: rgba(255,255,255,0.6);" href="tel:+5547991364805">Ligar: (47) 99136-4805</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-card reveal">
+        <span class="eyebrow" style="color: var(--color-secondary);">Contato</span>
+        <h2>Fale com a Bellstar</h2>
+        <p>Atendemos Jaraguá do Sul e região. Envie uma mensagem ou ligue para conversar sobre o serviço ideal para o seu espaço.</p>
+
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <a href="tel:+5547991364805">(47) 99136-4805</a>
+              <p>Telefone e WhatsApp</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <span style="font-weight:600;">7h às 18h</span>
+              <p>Horário de atendimento</p>
+            </div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Manoel%20Pereira%20de%20Souza%2C%2080%20-%20Tifa%20Martins%20-%20Jaragu%C3%A1%20do%20Sul%20-%20SC%20Jaragu%C3%A1%20do%20Sul" target="_blank" rel="noopener">Rua Manoel Pereira de Souza, 80 — Tifa Martins, Jaraguá do Sul - SC</a>
+              <p>Ver rota no mapa</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact-actions">
+          <a class="btn btn-accent" href="https://wa.me/5547991364805" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+5547991364805">Ligar agora</a>
+        </div>
+      </div>
+
+      <a class="map-card reveal" href="https://www.google.com/maps/search/?api=1&query=Rua%20Manoel%20Pereira%20de%20Souza%2C%2080%20-%20Tifa%20Martins%20-%20Jaragu%C3%A1%20do%20Sul%20-%20SC%20Jaragu%C3%A1%20do%20Sul" target="_blank" rel="noopener" aria-label="Abrir localização da Bellstar no Google Maps">
+        <div class="map-pin" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+        </div>
+        <div class="map-card-inner">
+          <span>Tifa Martins</span>
+          <strong>Jaraguá do Sul - SC</strong>
+          <span class="btn btn-outline" style="pointer-events:none;">Ver no Google Maps</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="#inicio" class="logo" aria-label="Bellstar Equipe de Limpeza">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 4C25 14 26 22 36 24C26 26 25 34 24 44C23 34 22 26 12 24C22 22 23 14 24 4Z" fill="#E08A3E"/>
+            <circle cx="38" cy="9" r="2.4" fill="#E08A3E"/>
+          </svg>
+          <span class="logo-text">Bell<em>star</em></span>
+        </a>
+        <p>Equipe de limpeza residencial, comercial e pós-obra em Jaraguá do Sul, com atendimento das 7h às 18h.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#servicos">Nossos Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+5547991364805">(47) 99136-4805</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Rua Manoel Pereira de Souza, 80 — Tifa Martins, Jaraguá do Sul - SC</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Bellstar Equipe de Limpeza. Todos os direitos reservados.</span>
+      <span>Jaraguá do Sul - SC</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-whatsapp" href="https://wa.me/5547991364805" target="_blank" rel="noopener" aria-label="Falar com a Bellstar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+<script>
+  (function(){
+    "use strict";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var navToggle = document.getElementById("nav-toggle");
+    var mainNav = document.getElementById("main-nav");
+    if (navToggle && mainNav) {
+      navToggle.addEventListener("click", function(){
+        var isOpen = mainNav.classList.toggle("is-open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      mainNav.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click", function(){
+          mainNav.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var revealEls = document.querySelectorAll(".reveal");
+
+    if (!reduceMotion && "IntersectionObserver" in window && revealEls.length) {
+      document.documentElement.classList.add("js-reveal");
+
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+
+      revealEls.forEach(function(el){ observer.observe(el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
